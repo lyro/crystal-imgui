@@ -1,0 +1,2617 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="generator" content="Crystal Docs 0.35.1">
+<meta name="crystal_docs.project_version" content="">
+<meta name="crystal_docs.project_name" content="crystal-imgui">
+
+
+<link href="../css/style.css" rel="stylesheet" type="text/css" />
+<script type="text/javascript" src="../js/doc.js"></script>
+
+<svg class="hidden">
+  <symbol id="octicon-link" viewBox="0 0 16 16">
+    <path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path>
+  </symbol>
+</svg>
+
+  <meta id="repository-name" content="crystal-imgui">
+  <title>ImGui::ImFontAtlas - crystal-imgui </title>
+  <script type="text/javascript">
+    CrystalDocs.base_path = "../";
+  </script>
+</head>
+<body>
+
+<div class="sidebar">
+  <div class="sidebar-header">
+    <div class="search-box">
+      <input type="search" class="search-input" placeholder="Search..." spellcheck="false" aria-label="Search">
+    </div>
+
+    <div class="project-summary">
+      <h1 class="project-name">
+        <a href="https://github.com/oprypin/crystal-imgui#readme">
+          crystal-imgui
+        </a>
+      </h1>
+
+      <span class="project-version">
+        
+      </span>
+    </div>
+  </div>
+
+  <div class="search-results" class="hidden">
+    <ul class="search-list"></ul>
+  </div>
+
+  <div class="types-list">
+    <ul>
+  
+  <li class="parent open current" data-id="crystal-imgui/ImGui" data-name="imgui">
+      <a href="../ImGui.html">ImGui</a>
+      
+        <ul>
+  
+  <li class=" " data-id="crystal-imgui/ImGui/ImBitVector" data-name="imgui::imbitvector">
+      <a href="../ImGui/ImBitVector.html">ImBitVector</a>
+      
+    </li>
+  
+  <li class=" " data-id="crystal-imgui/ImGui/ImColor" data-name="imgui::imcolor">
+      <a href="../ImGui/ImColor.html">ImColor</a>
+      
+    </li>
+  
+  <li class=" " data-id="crystal-imgui/ImGui/ImDrawCallback" data-name="imgui::imdrawcallback">
+      <a href="../ImGui/ImDrawCallback.html">ImDrawCallback</a>
+      
+    </li>
+  
+  <li class=" " data-id="crystal-imgui/ImGui/ImDrawChannel" data-name="imgui::imdrawchannel">
+      <a href="../ImGui/ImDrawChannel.html">ImDrawChannel</a>
+      
+    </li>
+  
+  <li class=" " data-id="crystal-imgui/ImGui/ImDrawCmd" data-name="imgui::imdrawcmd">
+      <a href="../ImGui/ImDrawCmd.html">ImDrawCmd</a>
+      
+    </li>
+  
+  <li class=" " data-id="crystal-imgui/ImGui/ImDrawCornerFlags" data-name="imgui::imdrawcornerflags">
+      <a href="../ImGui/ImDrawCornerFlags.html">ImDrawCornerFlags</a>
+      
+    </li>
+  
+  <li class=" " data-id="crystal-imgui/ImGui/ImDrawData" data-name="imgui::imdrawdata">
+      <a href="../ImGui/ImDrawData.html">ImDrawData</a>
+      
+    </li>
+  
+  <li class=" " data-id="crystal-imgui/ImGui/ImDrawDataBuilder" data-name="imgui::imdrawdatabuilder">
+      <a href="../ImGui/ImDrawDataBuilder.html">ImDrawDataBuilder</a>
+      
+    </li>
+  
+  <li class=" " data-id="crystal-imgui/ImGui/ImDrawIdx" data-name="imgui::imdrawidx">
+      <a href="../ImGui/ImDrawIdx.html">ImDrawIdx</a>
+      
+    </li>
+  
+  <li class=" " data-id="crystal-imgui/ImGui/ImDrawList" data-name="imgui::imdrawlist">
+      <a href="../ImGui/ImDrawList.html">ImDrawList</a>
+      
+    </li>
+  
+  <li class=" " data-id="crystal-imgui/ImGui/ImDrawListFlags" data-name="imgui::imdrawlistflags">
+      <a href="../ImGui/ImDrawListFlags.html">ImDrawListFlags</a>
+      
+    </li>
+  
+  <li class=" " data-id="crystal-imgui/ImGui/ImDrawListSharedData" data-name="imgui::imdrawlistshareddata">
+      <a href="../ImGui/ImDrawListSharedData.html">ImDrawListSharedData</a>
+      
+    </li>
+  
+  <li class=" " data-id="crystal-imgui/ImGui/ImDrawListSplitter" data-name="imgui::imdrawlistsplitter">
+      <a href="../ImGui/ImDrawListSplitter.html">ImDrawListSplitter</a>
+      
+    </li>
+  
+  <li class=" " data-id="crystal-imgui/ImGui/ImDrawVert" data-name="imgui::imdrawvert">
+      <a href="../ImGui/ImDrawVert.html">ImDrawVert</a>
+      
+    </li>
+  
+  <li class=" " data-id="crystal-imgui/ImGui/ImFileHandle" data-name="imgui::imfilehandle">
+      <a href="../ImGui/ImFileHandle.html">ImFileHandle</a>
+      
+    </li>
+  
+  <li class=" " data-id="crystal-imgui/ImGui/ImFont" data-name="imgui::imfont">
+      <a href="../ImGui/ImFont.html">ImFont</a>
+      
+    </li>
+  
+  <li class=" current" data-id="crystal-imgui/ImGui/ImFontAtlas" data-name="imgui::imfontatlas">
+      <a href="../ImGui/ImFontAtlas.html">ImFontAtlas</a>
+      
+    </li>
+  
+  <li class=" " data-id="crystal-imgui/ImGui/ImFontAtlasCustomRect" data-name="imgui::imfontatlascustomrect">
+      <a href="../ImGui/ImFontAtlasCustomRect.html">ImFontAtlasCustomRect</a>
+      
+    </li>
+  
+  <li class=" " data-id="crystal-imgui/ImGui/ImFontAtlasFlags" data-name="imgui::imfontatlasflags">
+      <a href="../ImGui/ImFontAtlasFlags.html">ImFontAtlasFlags</a>
+      
+    </li>
+  
+  <li class=" " data-id="crystal-imgui/ImGui/ImFontConfig" data-name="imgui::imfontconfig">
+      <a href="../ImGui/ImFontConfig.html">ImFontConfig</a>
+      
+    </li>
+  
+  <li class=" " data-id="crystal-imgui/ImGui/ImFontGlyph" data-name="imgui::imfontglyph">
+      <a href="../ImGui/ImFontGlyph.html">ImFontGlyph</a>
+      
+    </li>
+  
+  <li class=" " data-id="crystal-imgui/ImGui/ImFontGlyphRangesBuilder" data-name="imgui::imfontglyphrangesbuilder">
+      <a href="../ImGui/ImFontGlyphRangesBuilder.html">ImFontGlyphRangesBuilder</a>
+      
+    </li>
+  
+  <li class=" " data-id="crystal-imgui/ImGui/ImGuiAxis" data-name="imgui::imguiaxis">
+      <a href="../ImGui/ImGuiAxis.html">ImGuiAxis</a>
+      
+    </li>
+  
+  <li class=" " data-id="crystal-imgui/ImGui/ImGuiBackendFlags" data-name="imgui::imguibackendflags">
+      <a href="../ImGui/ImGuiBackendFlags.html">ImGuiBackendFlags</a>
+      
+    </li>
+  
+  <li class=" " data-id="crystal-imgui/ImGui/ImGuiButtonFlags" data-name="imgui::imguibuttonflags">
+      <a href="../ImGui/ImGuiButtonFlags.html">ImGuiButtonFlags</a>
+      
+    </li>
+  
+  <li class=" " data-id="crystal-imgui/ImGui/ImGuiCol" data-name="imgui::imguicol">
+      <a href="../ImGui/ImGuiCol.html">ImGuiCol</a>
+      
+    </li>
+  
+  <li class=" " data-id="crystal-imgui/ImGui/ImGuiColorEditFlags" data-name="imgui::imguicoloreditflags">
+      <a href="../ImGui/ImGuiColorEditFlags.html">ImGuiColorEditFlags</a>
+      
+    </li>
+  
+  <li class=" " data-id="crystal-imgui/ImGui/ImGuiColorMod" data-name="imgui::imguicolormod">
+      <a href="../ImGui/ImGuiColorMod.html">ImGuiColorMod</a>
+      
+    </li>
+  
+  <li class=" " data-id="crystal-imgui/ImGui/ImGuiColumnData" data-name="imgui::imguicolumndata">
+      <a href="../ImGui/ImGuiColumnData.html">ImGuiColumnData</a>
+      
+    </li>
+  
+  <li class=" " data-id="crystal-imgui/ImGui/ImGuiColumns" data-name="imgui::imguicolumns">
+      <a href="../ImGui/ImGuiColumns.html">ImGuiColumns</a>
+      
+    </li>
+  
+  <li class=" " data-id="crystal-imgui/ImGui/ImGuiColumnsFlags" data-name="imgui::imguicolumnsflags">
+      <a href="../ImGui/ImGuiColumnsFlags.html">ImGuiColumnsFlags</a>
+      
+    </li>
+  
+  <li class=" " data-id="crystal-imgui/ImGui/ImGuiComboFlags" data-name="imgui::imguicomboflags">
+      <a href="../ImGui/ImGuiComboFlags.html">ImGuiComboFlags</a>
+      
+    </li>
+  
+  <li class=" " data-id="crystal-imgui/ImGui/ImGuiCond" data-name="imgui::imguicond">
+      <a href="../ImGui/ImGuiCond.html">ImGuiCond</a>
+      
+    </li>
+  
+  <li class=" " data-id="crystal-imgui/ImGui/ImGuiConfigFlags" data-name="imgui::imguiconfigflags">
+      <a href="../ImGui/ImGuiConfigFlags.html">ImGuiConfigFlags</a>
+      
+    </li>
+  
+  <li class=" " data-id="crystal-imgui/ImGui/ImGuiContext" data-name="imgui::imguicontext">
+      <a href="../ImGui/ImGuiContext.html">ImGuiContext</a>
+      
+    </li>
+  
+  <li class=" " data-id="crystal-imgui/ImGui/ImGuiDataType" data-name="imgui::imguidatatype">
+      <a href="../ImGui/ImGuiDataType.html">ImGuiDataType</a>
+      
+    </li>
+  
+  <li class=" " data-id="crystal-imgui/ImGui/ImGuiDataTypeInfo" data-name="imgui::imguidatatypeinfo">
+      <a href="../ImGui/ImGuiDataTypeInfo.html">ImGuiDataTypeInfo</a>
+      
+    </li>
+  
+  <li class=" " data-id="crystal-imgui/ImGui/ImGuiDataTypeTempStorage" data-name="imgui::imguidatatypetempstorage">
+      <a href="../ImGui/ImGuiDataTypeTempStorage.html">ImGuiDataTypeTempStorage</a>
+      
+    </li>
+  
+  <li class=" " data-id="crystal-imgui/ImGui/ImGuiDir" data-name="imgui::imguidir">
+      <a href="../ImGui/ImGuiDir.html">ImGuiDir</a>
+      
+    </li>
+  
+  <li class=" " data-id="crystal-imgui/ImGui/ImGuiDragDropFlags" data-name="imgui::imguidragdropflags">
+      <a href="../ImGui/ImGuiDragDropFlags.html">ImGuiDragDropFlags</a>
+      
+    </li>
+  
+  <li class=" " data-id="crystal-imgui/ImGui/ImGuiFocusedFlags" data-name="imgui::imguifocusedflags">
+      <a href="../ImGui/ImGuiFocusedFlags.html">ImGuiFocusedFlags</a>
+      
+    </li>
+  
+  <li class=" " data-id="crystal-imgui/ImGui/ImGuiGroupData" data-name="imgui::imguigroupdata">
+      <a href="../ImGui/ImGuiGroupData.html">ImGuiGroupData</a>
+      
+    </li>
+  
+  <li class=" " data-id="crystal-imgui/ImGui/ImGuiHoveredFlags" data-name="imgui::imguihoveredflags">
+      <a href="../ImGui/ImGuiHoveredFlags.html">ImGuiHoveredFlags</a>
+      
+    </li>
+  
+  <li class=" " data-id="crystal-imgui/ImGui/ImGuiID" data-name="imgui::imguiid">
+      <a href="../ImGui/ImGuiID.html">ImGuiID</a>
+      
+    </li>
+  
+  <li class=" " data-id="crystal-imgui/ImGui/ImGuiInputReadMode" data-name="imgui::imguiinputreadmode">
+      <a href="../ImGui/ImGuiInputReadMode.html">ImGuiInputReadMode</a>
+      
+    </li>
+  
+  <li class=" " data-id="crystal-imgui/ImGui/ImGuiInputSource" data-name="imgui::imguiinputsource">
+      <a href="../ImGui/ImGuiInputSource.html">ImGuiInputSource</a>
+      
+    </li>
+  
+  <li class=" " data-id="crystal-imgui/ImGui/ImGuiInputTextCallback" data-name="imgui::imguiinputtextcallback">
+      <a href="../ImGui/ImGuiInputTextCallback.html">ImGuiInputTextCallback</a>
+      
+    </li>
+  
+  <li class=" " data-id="crystal-imgui/ImGui/ImGuiInputTextCallbackData" data-name="imgui::imguiinputtextcallbackdata">
+      <a href="../ImGui/ImGuiInputTextCallbackData.html">ImGuiInputTextCallbackData</a>
+      
+    </li>
+  
+  <li class=" " data-id="crystal-imgui/ImGui/ImGuiInputTextFlags" data-name="imgui::imguiinputtextflags">
+      <a href="../ImGui/ImGuiInputTextFlags.html">ImGuiInputTextFlags</a>
+      
+    </li>
+  
+  <li class=" " data-id="crystal-imgui/ImGui/ImGuiInputTextState" data-name="imgui::imguiinputtextstate">
+      <a href="../ImGui/ImGuiInputTextState.html">ImGuiInputTextState</a>
+      
+    </li>
+  
+  <li class=" " data-id="crystal-imgui/ImGui/ImGuiIO" data-name="imgui::imguiio">
+      <a href="../ImGui/ImGuiIO.html">ImGuiIO</a>
+      
+    </li>
+  
+  <li class=" " data-id="crystal-imgui/ImGui/ImGuiItemFlags" data-name="imgui::imguiitemflags">
+      <a href="../ImGui/ImGuiItemFlags.html">ImGuiItemFlags</a>
+      
+    </li>
+  
+  <li class=" " data-id="crystal-imgui/ImGui/ImGuiItemStatusFlags" data-name="imgui::imguiitemstatusflags">
+      <a href="../ImGui/ImGuiItemStatusFlags.html">ImGuiItemStatusFlags</a>
+      
+    </li>
+  
+  <li class=" " data-id="crystal-imgui/ImGui/ImGuiKey" data-name="imgui::imguikey">
+      <a href="../ImGui/ImGuiKey.html">ImGuiKey</a>
+      
+    </li>
+  
+  <li class=" " data-id="crystal-imgui/ImGui/ImGuiKeyModFlags" data-name="imgui::imguikeymodflags">
+      <a href="../ImGui/ImGuiKeyModFlags.html">ImGuiKeyModFlags</a>
+      
+    </li>
+  
+  <li class=" " data-id="crystal-imgui/ImGui/ImGuiLastItemDataBackup" data-name="imgui::imguilastitemdatabackup">
+      <a href="../ImGui/ImGuiLastItemDataBackup.html">ImGuiLastItemDataBackup</a>
+      
+    </li>
+  
+  <li class=" " data-id="crystal-imgui/ImGui/ImGuiLayoutType" data-name="imgui::imguilayouttype">
+      <a href="../ImGui/ImGuiLayoutType.html">ImGuiLayoutType</a>
+      
+    </li>
+  
+  <li class=" " data-id="crystal-imgui/ImGui/ImGuiListClipper" data-name="imgui::imguilistclipper">
+      <a href="../ImGui/ImGuiListClipper.html">ImGuiListClipper</a>
+      
+    </li>
+  
+  <li class=" " data-id="crystal-imgui/ImGui/ImGuiLogType" data-name="imgui::imguilogtype">
+      <a href="../ImGui/ImGuiLogType.html">ImGuiLogType</a>
+      
+    </li>
+  
+  <li class=" " data-id="crystal-imgui/ImGui/ImGuiMenuColumns" data-name="imgui::imguimenucolumns">
+      <a href="../ImGui/ImGuiMenuColumns.html">ImGuiMenuColumns</a>
+      
+    </li>
+  
+  <li class=" " data-id="crystal-imgui/ImGui/ImGuiMouseButton" data-name="imgui::imguimousebutton">
+      <a href="../ImGui/ImGuiMouseButton.html">ImGuiMouseButton</a>
+      
+    </li>
+  
+  <li class=" " data-id="crystal-imgui/ImGui/ImGuiMouseCursor" data-name="imgui::imguimousecursor">
+      <a href="../ImGui/ImGuiMouseCursor.html">ImGuiMouseCursor</a>
+      
+    </li>
+  
+  <li class=" " data-id="crystal-imgui/ImGui/ImGuiNavDirSourceFlags" data-name="imgui::imguinavdirsourceflags">
+      <a href="../ImGui/ImGuiNavDirSourceFlags.html">ImGuiNavDirSourceFlags</a>
+      
+    </li>
+  
+  <li class=" " data-id="crystal-imgui/ImGui/ImGuiNavForward" data-name="imgui::imguinavforward">
+      <a href="../ImGui/ImGuiNavForward.html">ImGuiNavForward</a>
+      
+    </li>
+  
+  <li class=" " data-id="crystal-imgui/ImGui/ImGuiNavHighlightFlags" data-name="imgui::imguinavhighlightflags">
+      <a href="../ImGui/ImGuiNavHighlightFlags.html">ImGuiNavHighlightFlags</a>
+      
+    </li>
+  
+  <li class=" " data-id="crystal-imgui/ImGui/ImGuiNavInput" data-name="imgui::imguinavinput">
+      <a href="../ImGui/ImGuiNavInput.html">ImGuiNavInput</a>
+      
+    </li>
+  
+  <li class=" " data-id="crystal-imgui/ImGui/ImGuiNavLayer" data-name="imgui::imguinavlayer">
+      <a href="../ImGui/ImGuiNavLayer.html">ImGuiNavLayer</a>
+      
+    </li>
+  
+  <li class=" " data-id="crystal-imgui/ImGui/ImGuiNavMoveFlags" data-name="imgui::imguinavmoveflags">
+      <a href="../ImGui/ImGuiNavMoveFlags.html">ImGuiNavMoveFlags</a>
+      
+    </li>
+  
+  <li class=" " data-id="crystal-imgui/ImGui/ImGuiNavMoveResult" data-name="imgui::imguinavmoveresult">
+      <a href="../ImGui/ImGuiNavMoveResult.html">ImGuiNavMoveResult</a>
+      
+    </li>
+  
+  <li class=" " data-id="crystal-imgui/ImGui/ImGuiNextItemData" data-name="imgui::imguinextitemdata">
+      <a href="../ImGui/ImGuiNextItemData.html">ImGuiNextItemData</a>
+      
+    </li>
+  
+  <li class=" " data-id="crystal-imgui/ImGui/ImGuiNextItemDataFlags" data-name="imgui::imguinextitemdataflags">
+      <a href="../ImGui/ImGuiNextItemDataFlags.html">ImGuiNextItemDataFlags</a>
+      
+    </li>
+  
+  <li class=" " data-id="crystal-imgui/ImGui/ImGuiNextWindowData" data-name="imgui::imguinextwindowdata">
+      <a href="../ImGui/ImGuiNextWindowData.html">ImGuiNextWindowData</a>
+      
+    </li>
+  
+  <li class=" " data-id="crystal-imgui/ImGui/ImGuiNextWindowDataFlags" data-name="imgui::imguinextwindowdataflags">
+      <a href="../ImGui/ImGuiNextWindowDataFlags.html">ImGuiNextWindowDataFlags</a>
+      
+    </li>
+  
+  <li class=" " data-id="crystal-imgui/ImGui/ImGuiOnceUponAFrame" data-name="imgui::imguionceuponaframe">
+      <a href="../ImGui/ImGuiOnceUponAFrame.html">ImGuiOnceUponAFrame</a>
+      
+    </li>
+  
+  <li class=" " data-id="crystal-imgui/ImGui/ImGuiPayload" data-name="imgui::imguipayload">
+      <a href="../ImGui/ImGuiPayload.html">ImGuiPayload</a>
+      
+    </li>
+  
+  <li class=" " data-id="crystal-imgui/ImGui/ImGuiPlotType" data-name="imgui::imguiplottype">
+      <a href="../ImGui/ImGuiPlotType.html">ImGuiPlotType</a>
+      
+    </li>
+  
+  <li class=" " data-id="crystal-imgui/ImGui/ImGuiPopupData" data-name="imgui::imguipopupdata">
+      <a href="../ImGui/ImGuiPopupData.html">ImGuiPopupData</a>
+      
+    </li>
+  
+  <li class=" " data-id="crystal-imgui/ImGui/ImGuiPopupFlags" data-name="imgui::imguipopupflags">
+      <a href="../ImGui/ImGuiPopupFlags.html">ImGuiPopupFlags</a>
+      
+    </li>
+  
+  <li class=" " data-id="crystal-imgui/ImGui/ImGuiPopupPositionPolicy" data-name="imgui::imguipopuppositionpolicy">
+      <a href="../ImGui/ImGuiPopupPositionPolicy.html">ImGuiPopupPositionPolicy</a>
+      
+    </li>
+  
+  <li class=" " data-id="crystal-imgui/ImGui/ImGuiPtrOrIndex" data-name="imgui::imguiptrorindex">
+      <a href="../ImGui/ImGuiPtrOrIndex.html">ImGuiPtrOrIndex</a>
+      
+    </li>
+  
+  <li class=" " data-id="crystal-imgui/ImGui/ImGuiSelectableFlags" data-name="imgui::imguiselectableflags">
+      <a href="../ImGui/ImGuiSelectableFlags.html">ImGuiSelectableFlags</a>
+      
+    </li>
+  
+  <li class=" " data-id="crystal-imgui/ImGui/ImGuiSeparatorFlags" data-name="imgui::imguiseparatorflags">
+      <a href="../ImGui/ImGuiSeparatorFlags.html">ImGuiSeparatorFlags</a>
+      
+    </li>
+  
+  <li class=" " data-id="crystal-imgui/ImGui/ImGuiSettingsHandler" data-name="imgui::imguisettingshandler">
+      <a href="../ImGui/ImGuiSettingsHandler.html">ImGuiSettingsHandler</a>
+      
+    </li>
+  
+  <li class=" " data-id="crystal-imgui/ImGui/ImGuiShrinkWidthItem" data-name="imgui::imguishrinkwidthitem">
+      <a href="../ImGui/ImGuiShrinkWidthItem.html">ImGuiShrinkWidthItem</a>
+      
+    </li>
+  
+  <li class=" " data-id="crystal-imgui/ImGui/ImGuiSizeCallback" data-name="imgui::imguisizecallback">
+      <a href="../ImGui/ImGuiSizeCallback.html">ImGuiSizeCallback</a>
+      
+    </li>
+  
+  <li class=" " data-id="crystal-imgui/ImGui/ImGuiSizeCallbackData" data-name="imgui::imguisizecallbackdata">
+      <a href="../ImGui/ImGuiSizeCallbackData.html">ImGuiSizeCallbackData</a>
+      
+    </li>
+  
+  <li class=" " data-id="crystal-imgui/ImGui/ImGuiSliderFlags" data-name="imgui::imguisliderflags">
+      <a href="../ImGui/ImGuiSliderFlags.html">ImGuiSliderFlags</a>
+      
+    </li>
+  
+  <li class=" " data-id="crystal-imgui/ImGui/ImGuiStorage" data-name="imgui::imguistorage">
+      <a href="../ImGui/ImGuiStorage.html">ImGuiStorage</a>
+      
+    </li>
+  
+  <li class=" " data-id="crystal-imgui/ImGui/ImGuiStoragePair" data-name="imgui::imguistoragepair">
+      <a href="../ImGui/ImGuiStoragePair.html">ImGuiStoragePair</a>
+      
+    </li>
+  
+  <li class=" " data-id="crystal-imgui/ImGui/ImGuiStyle" data-name="imgui::imguistyle">
+      <a href="../ImGui/ImGuiStyle.html">ImGuiStyle</a>
+      
+    </li>
+  
+  <li class=" " data-id="crystal-imgui/ImGui/ImGuiStyleMod" data-name="imgui::imguistylemod">
+      <a href="../ImGui/ImGuiStyleMod.html">ImGuiStyleMod</a>
+      
+    </li>
+  
+  <li class=" " data-id="crystal-imgui/ImGui/ImGuiStyleVar" data-name="imgui::imguistylevar">
+      <a href="../ImGui/ImGuiStyleVar.html">ImGuiStyleVar</a>
+      
+    </li>
+  
+  <li class=" " data-id="crystal-imgui/ImGui/ImGuiTabBar" data-name="imgui::imguitabbar">
+      <a href="../ImGui/ImGuiTabBar.html">ImGuiTabBar</a>
+      
+    </li>
+  
+  <li class=" " data-id="crystal-imgui/ImGui/ImGuiTabBarFlags" data-name="imgui::imguitabbarflags">
+      <a href="../ImGui/ImGuiTabBarFlags.html">ImGuiTabBarFlags</a>
+      
+    </li>
+  
+  <li class=" " data-id="crystal-imgui/ImGui/ImGuiTabItem" data-name="imgui::imguitabitem">
+      <a href="../ImGui/ImGuiTabItem.html">ImGuiTabItem</a>
+      
+    </li>
+  
+  <li class=" " data-id="crystal-imgui/ImGui/ImGuiTabItemFlags" data-name="imgui::imguitabitemflags">
+      <a href="../ImGui/ImGuiTabItemFlags.html">ImGuiTabItemFlags</a>
+      
+    </li>
+  
+  <li class=" " data-id="crystal-imgui/ImGui/ImGuiTextBuffer" data-name="imgui::imguitextbuffer">
+      <a href="../ImGui/ImGuiTextBuffer.html">ImGuiTextBuffer</a>
+      
+    </li>
+  
+  <li class=" " data-id="crystal-imgui/ImGui/ImGuiTextFilter" data-name="imgui::imguitextfilter">
+      <a href="../ImGui/ImGuiTextFilter.html">ImGuiTextFilter</a>
+      
+    </li>
+  
+  <li class=" " data-id="crystal-imgui/ImGui/ImGuiTextFlags" data-name="imgui::imguitextflags">
+      <a href="../ImGui/ImGuiTextFlags.html">ImGuiTextFlags</a>
+      
+    </li>
+  
+  <li class=" " data-id="crystal-imgui/ImGui/ImGuiTextRange" data-name="imgui::imguitextrange">
+      <a href="../ImGui/ImGuiTextRange.html">ImGuiTextRange</a>
+      
+    </li>
+  
+  <li class=" " data-id="crystal-imgui/ImGui/ImGuiTooltipFlags" data-name="imgui::imguitooltipflags">
+      <a href="../ImGui/ImGuiTooltipFlags.html">ImGuiTooltipFlags</a>
+      
+    </li>
+  
+  <li class=" " data-id="crystal-imgui/ImGui/ImGuiTreeNodeFlags" data-name="imgui::imguitreenodeflags">
+      <a href="../ImGui/ImGuiTreeNodeFlags.html">ImGuiTreeNodeFlags</a>
+      
+    </li>
+  
+  <li class=" " data-id="crystal-imgui/ImGui/ImGuiWindow" data-name="imgui::imguiwindow">
+      <a href="../ImGui/ImGuiWindow.html">ImGuiWindow</a>
+      
+    </li>
+  
+  <li class=" " data-id="crystal-imgui/ImGui/ImGuiWindowFlags" data-name="imgui::imguiwindowflags">
+      <a href="../ImGui/ImGuiWindowFlags.html">ImGuiWindowFlags</a>
+      
+    </li>
+  
+  <li class=" " data-id="crystal-imgui/ImGui/ImGuiWindowSettings" data-name="imgui::imguiwindowsettings">
+      <a href="../ImGui/ImGuiWindowSettings.html">ImGuiWindowSettings</a>
+      
+    </li>
+  
+  <li class=" " data-id="crystal-imgui/ImGui/ImGuiWindowTempData" data-name="imgui::imguiwindowtempdata">
+      <a href="../ImGui/ImGuiWindowTempData.html">ImGuiWindowTempData</a>
+      
+    </li>
+  
+  <li class=" " data-id="crystal-imgui/ImGui/ImPoolIdx" data-name="imgui::impoolidx">
+      <a href="../ImGui/ImPoolIdx.html">ImPoolIdx</a>
+      
+    </li>
+  
+  <li class=" " data-id="crystal-imgui/ImGui/ImRect" data-name="imgui::imrect">
+      <a href="../ImGui/ImRect.html">ImRect</a>
+      
+    </li>
+  
+  <li class=" " data-id="crystal-imgui/ImGui/ImTextureID" data-name="imgui::imtextureid">
+      <a href="../ImGui/ImTextureID.html">ImTextureID</a>
+      
+    </li>
+  
+  <li class=" " data-id="crystal-imgui/ImGui/ImVec1" data-name="imgui::imvec1">
+      <a href="../ImGui/ImVec1.html">ImVec1</a>
+      
+    </li>
+  
+  <li class=" " data-id="crystal-imgui/ImGui/ImVec2" data-name="imgui::imvec2">
+      <a href="../ImGui/ImVec2.html">ImVec2</a>
+      
+    </li>
+  
+  <li class=" " data-id="crystal-imgui/ImGui/ImVec2ih" data-name="imgui::imvec2ih">
+      <a href="../ImGui/ImVec2ih.html">ImVec2ih</a>
+      
+    </li>
+  
+  <li class=" " data-id="crystal-imgui/ImGui/ImVec4" data-name="imgui::imvec4">
+      <a href="../ImGui/ImVec4.html">ImVec4</a>
+      
+    </li>
+  
+  <li class=" " data-id="crystal-imgui/ImGui/ImVector" data-name="imgui::imvector(t)">
+      <a href="../ImGui/ImVector.html">ImVector</a>
+      
+    </li>
+  
+  <li class=" " data-id="crystal-imgui/ImGui/ImWchar" data-name="imgui::imwchar">
+      <a href="../ImGui/ImWchar.html">ImWchar</a>
+      
+    </li>
+  
+  <li class=" " data-id="crystal-imgui/ImGui/ImWchar16" data-name="imgui::imwchar16">
+      <a href="../ImGui/ImWchar16.html">ImWchar16</a>
+      
+    </li>
+  
+  <li class=" " data-id="crystal-imgui/ImGui/ImWchar32" data-name="imgui::imwchar32">
+      <a href="../ImGui/ImWchar32.html">ImWchar32</a>
+      
+    </li>
+  
+  <li class=" " data-id="crystal-imgui/ImGui/STB_TexteditState" data-name="imgui::stb_texteditstate">
+      <a href="../ImGui/STB_TexteditState.html">STB_TexteditState</a>
+      
+    </li>
+  
+  <li class=" " data-id="crystal-imgui/ImGui/StbTexteditRow" data-name="imgui::stbtexteditrow">
+      <a href="../ImGui/StbTexteditRow.html">StbTexteditRow</a>
+      
+    </li>
+  
+  <li class=" " data-id="crystal-imgui/ImGui/StbUndoRecord" data-name="imgui::stbundorecord">
+      <a href="../ImGui/StbUndoRecord.html">StbUndoRecord</a>
+      
+    </li>
+  
+  <li class=" " data-id="crystal-imgui/ImGui/StbUndoState" data-name="imgui::stbundostate">
+      <a href="../ImGui/StbUndoState.html">StbUndoState</a>
+      
+    </li>
+  
+  <li class=" " data-id="crystal-imgui/ImGui/TextBuffer" data-name="imgui::textbuffer">
+      <a href="../ImGui/TextBuffer.html">TextBuffer</a>
+      
+    </li>
+  
+  <li class="parent " data-id="crystal-imgui/ImGui/TopLevel" data-name="imgui::toplevel">
+      <a href="../ImGui/TopLevel.html">TopLevel</a>
+      
+        <ul>
+  
+  <li class=" " data-id="crystal-imgui/ImGui/TopLevel/ImColor" data-name="imgui::toplevel::imcolor">
+      <a href="../ImGui/TopLevel/ImColor.html">ImColor</a>
+      
+    </li>
+  
+  <li class=" " data-id="crystal-imgui/ImGui/TopLevel/ImDrawChannel" data-name="imgui::toplevel::imdrawchannel">
+      <a href="../ImGui/TopLevel/ImDrawChannel.html">ImDrawChannel</a>
+      
+    </li>
+  
+  <li class=" " data-id="crystal-imgui/ImGui/TopLevel/ImDrawCmd" data-name="imgui::toplevel::imdrawcmd">
+      <a href="../ImGui/TopLevel/ImDrawCmd.html">ImDrawCmd</a>
+      
+    </li>
+  
+  <li class=" " data-id="crystal-imgui/ImGui/TopLevel/ImDrawCornerFlags" data-name="imgui::toplevel::imdrawcornerflags">
+      <a href="../ImGui/TopLevel/ImDrawCornerFlags.html">ImDrawCornerFlags</a>
+      
+    </li>
+  
+  <li class=" " data-id="crystal-imgui/ImGui/TopLevel/ImDrawData" data-name="imgui::toplevel::imdrawdata">
+      <a href="../ImGui/TopLevel/ImDrawData.html">ImDrawData</a>
+      
+    </li>
+  
+  <li class=" " data-id="crystal-imgui/ImGui/TopLevel/ImDrawList" data-name="imgui::toplevel::imdrawlist">
+      <a href="../ImGui/TopLevel/ImDrawList.html">ImDrawList</a>
+      
+    </li>
+  
+  <li class=" " data-id="crystal-imgui/ImGui/TopLevel/ImDrawListFlags" data-name="imgui::toplevel::imdrawlistflags">
+      <a href="../ImGui/TopLevel/ImDrawListFlags.html">ImDrawListFlags</a>
+      
+    </li>
+  
+  <li class=" " data-id="crystal-imgui/ImGui/TopLevel/ImDrawListSplitter" data-name="imgui::toplevel::imdrawlistsplitter">
+      <a href="../ImGui/TopLevel/ImDrawListSplitter.html">ImDrawListSplitter</a>
+      
+    </li>
+  
+  <li class=" " data-id="crystal-imgui/ImGui/TopLevel/ImDrawVert" data-name="imgui::toplevel::imdrawvert">
+      <a href="../ImGui/TopLevel/ImDrawVert.html">ImDrawVert</a>
+      
+    </li>
+  
+  <li class=" " data-id="crystal-imgui/ImGui/TopLevel/ImFont" data-name="imgui::toplevel::imfont">
+      <a href="../ImGui/TopLevel/ImFont.html">ImFont</a>
+      
+    </li>
+  
+  <li class=" " data-id="crystal-imgui/ImGui/TopLevel/ImFontAtlas" data-name="imgui::toplevel::imfontatlas">
+      <a href="../ImGui/TopLevel/ImFontAtlas.html">ImFontAtlas</a>
+      
+    </li>
+  
+  <li class=" " data-id="crystal-imgui/ImGui/TopLevel/ImFontAtlasCustomRect" data-name="imgui::toplevel::imfontatlascustomrect">
+      <a href="../ImGui/TopLevel/ImFontAtlasCustomRect.html">ImFontAtlasCustomRect</a>
+      
+    </li>
+  
+  <li class=" " data-id="crystal-imgui/ImGui/TopLevel/ImFontAtlasFlags" data-name="imgui::toplevel::imfontatlasflags">
+      <a href="../ImGui/TopLevel/ImFontAtlasFlags.html">ImFontAtlasFlags</a>
+      
+    </li>
+  
+  <li class=" " data-id="crystal-imgui/ImGui/TopLevel/ImFontConfig" data-name="imgui::toplevel::imfontconfig">
+      <a href="../ImGui/TopLevel/ImFontConfig.html">ImFontConfig</a>
+      
+    </li>
+  
+  <li class=" " data-id="crystal-imgui/ImGui/TopLevel/ImFontGlyph" data-name="imgui::toplevel::imfontglyph">
+      <a href="../ImGui/TopLevel/ImFontGlyph.html">ImFontGlyph</a>
+      
+    </li>
+  
+  <li class=" " data-id="crystal-imgui/ImGui/TopLevel/ImFontGlyphRangesBuilder" data-name="imgui::toplevel::imfontglyphrangesbuilder">
+      <a href="../ImGui/TopLevel/ImFontGlyphRangesBuilder.html">ImFontGlyphRangesBuilder</a>
+      
+    </li>
+  
+  <li class=" " data-id="crystal-imgui/ImGui/TopLevel/ImGuiAxis" data-name="imgui::toplevel::imguiaxis">
+      <a href="../ImGui/TopLevel/ImGuiAxis.html">ImGuiAxis</a>
+      
+    </li>
+  
+  <li class=" " data-id="crystal-imgui/ImGui/TopLevel/ImGuiBackendFlags" data-name="imgui::toplevel::imguibackendflags">
+      <a href="../ImGui/TopLevel/ImGuiBackendFlags.html">ImGuiBackendFlags</a>
+      
+    </li>
+  
+  <li class=" " data-id="crystal-imgui/ImGui/TopLevel/ImGuiButtonFlags" data-name="imgui::toplevel::imguibuttonflags">
+      <a href="../ImGui/TopLevel/ImGuiButtonFlags.html">ImGuiButtonFlags</a>
+      
+    </li>
+  
+  <li class=" " data-id="crystal-imgui/ImGui/TopLevel/ImGuiCol" data-name="imgui::toplevel::imguicol">
+      <a href="../ImGui/TopLevel/ImGuiCol.html">ImGuiCol</a>
+      
+    </li>
+  
+  <li class=" " data-id="crystal-imgui/ImGui/TopLevel/ImGuiColorEditFlags" data-name="imgui::toplevel::imguicoloreditflags">
+      <a href="../ImGui/TopLevel/ImGuiColorEditFlags.html">ImGuiColorEditFlags</a>
+      
+    </li>
+  
+  <li class=" " data-id="crystal-imgui/ImGui/TopLevel/ImGuiColumnsFlags" data-name="imgui::toplevel::imguicolumnsflags">
+      <a href="../ImGui/TopLevel/ImGuiColumnsFlags.html">ImGuiColumnsFlags</a>
+      
+    </li>
+  
+  <li class=" " data-id="crystal-imgui/ImGui/TopLevel/ImGuiComboFlags" data-name="imgui::toplevel::imguicomboflags">
+      <a href="../ImGui/TopLevel/ImGuiComboFlags.html">ImGuiComboFlags</a>
+      
+    </li>
+  
+  <li class=" " data-id="crystal-imgui/ImGui/TopLevel/ImGuiCond" data-name="imgui::toplevel::imguicond">
+      <a href="../ImGui/TopLevel/ImGuiCond.html">ImGuiCond</a>
+      
+    </li>
+  
+  <li class=" " data-id="crystal-imgui/ImGui/TopLevel/ImGuiConfigFlags" data-name="imgui::toplevel::imguiconfigflags">
+      <a href="../ImGui/TopLevel/ImGuiConfigFlags.html">ImGuiConfigFlags</a>
+      
+    </li>
+  
+  <li class=" " data-id="crystal-imgui/ImGui/TopLevel/ImGuiDataType" data-name="imgui::toplevel::imguidatatype">
+      <a href="../ImGui/TopLevel/ImGuiDataType.html">ImGuiDataType</a>
+      
+    </li>
+  
+  <li class=" " data-id="crystal-imgui/ImGui/TopLevel/ImGuiDir" data-name="imgui::toplevel::imguidir">
+      <a href="../ImGui/TopLevel/ImGuiDir.html">ImGuiDir</a>
+      
+    </li>
+  
+  <li class=" " data-id="crystal-imgui/ImGui/TopLevel/ImGuiDragDropFlags" data-name="imgui::toplevel::imguidragdropflags">
+      <a href="../ImGui/TopLevel/ImGuiDragDropFlags.html">ImGuiDragDropFlags</a>
+      
+    </li>
+  
+  <li class=" " data-id="crystal-imgui/ImGui/TopLevel/ImGuiFocusedFlags" data-name="imgui::toplevel::imguifocusedflags">
+      <a href="../ImGui/TopLevel/ImGuiFocusedFlags.html">ImGuiFocusedFlags</a>
+      
+    </li>
+  
+  <li class=" " data-id="crystal-imgui/ImGui/TopLevel/ImGuiHoveredFlags" data-name="imgui::toplevel::imguihoveredflags">
+      <a href="../ImGui/TopLevel/ImGuiHoveredFlags.html">ImGuiHoveredFlags</a>
+      
+    </li>
+  
+  <li class=" " data-id="crystal-imgui/ImGui/TopLevel/ImGuiInputReadMode" data-name="imgui::toplevel::imguiinputreadmode">
+      <a href="../ImGui/TopLevel/ImGuiInputReadMode.html">ImGuiInputReadMode</a>
+      
+    </li>
+  
+  <li class=" " data-id="crystal-imgui/ImGui/TopLevel/ImGuiInputSource" data-name="imgui::toplevel::imguiinputsource">
+      <a href="../ImGui/TopLevel/ImGuiInputSource.html">ImGuiInputSource</a>
+      
+    </li>
+  
+  <li class=" " data-id="crystal-imgui/ImGui/TopLevel/ImGuiInputTextCallbackData" data-name="imgui::toplevel::imguiinputtextcallbackdata">
+      <a href="../ImGui/TopLevel/ImGuiInputTextCallbackData.html">ImGuiInputTextCallbackData</a>
+      
+    </li>
+  
+  <li class=" " data-id="crystal-imgui/ImGui/TopLevel/ImGuiInputTextFlags" data-name="imgui::toplevel::imguiinputtextflags">
+      <a href="../ImGui/TopLevel/ImGuiInputTextFlags.html">ImGuiInputTextFlags</a>
+      
+    </li>
+  
+  <li class=" " data-id="crystal-imgui/ImGui/TopLevel/ImGuiIO" data-name="imgui::toplevel::imguiio">
+      <a href="../ImGui/TopLevel/ImGuiIO.html">ImGuiIO</a>
+      
+    </li>
+  
+  <li class=" " data-id="crystal-imgui/ImGui/TopLevel/ImGuiItemFlags" data-name="imgui::toplevel::imguiitemflags">
+      <a href="../ImGui/TopLevel/ImGuiItemFlags.html">ImGuiItemFlags</a>
+      
+    </li>
+  
+  <li class=" " data-id="crystal-imgui/ImGui/TopLevel/ImGuiItemStatusFlags" data-name="imgui::toplevel::imguiitemstatusflags">
+      <a href="../ImGui/TopLevel/ImGuiItemStatusFlags.html">ImGuiItemStatusFlags</a>
+      
+    </li>
+  
+  <li class=" " data-id="crystal-imgui/ImGui/TopLevel/ImGuiKey" data-name="imgui::toplevel::imguikey">
+      <a href="../ImGui/TopLevel/ImGuiKey.html">ImGuiKey</a>
+      
+    </li>
+  
+  <li class=" " data-id="crystal-imgui/ImGui/TopLevel/ImGuiKeyModFlags" data-name="imgui::toplevel::imguikeymodflags">
+      <a href="../ImGui/TopLevel/ImGuiKeyModFlags.html">ImGuiKeyModFlags</a>
+      
+    </li>
+  
+  <li class=" " data-id="crystal-imgui/ImGui/TopLevel/ImGuiLayoutType" data-name="imgui::toplevel::imguilayouttype">
+      <a href="../ImGui/TopLevel/ImGuiLayoutType.html">ImGuiLayoutType</a>
+      
+    </li>
+  
+  <li class=" " data-id="crystal-imgui/ImGui/TopLevel/ImGuiListClipper" data-name="imgui::toplevel::imguilistclipper">
+      <a href="../ImGui/TopLevel/ImGuiListClipper.html">ImGuiListClipper</a>
+      
+    </li>
+  
+  <li class=" " data-id="crystal-imgui/ImGui/TopLevel/ImGuiLogType" data-name="imgui::toplevel::imguilogtype">
+      <a href="../ImGui/TopLevel/ImGuiLogType.html">ImGuiLogType</a>
+      
+    </li>
+  
+  <li class=" " data-id="crystal-imgui/ImGui/TopLevel/ImGuiMouseButton" data-name="imgui::toplevel::imguimousebutton">
+      <a href="../ImGui/TopLevel/ImGuiMouseButton.html">ImGuiMouseButton</a>
+      
+    </li>
+  
+  <li class=" " data-id="crystal-imgui/ImGui/TopLevel/ImGuiMouseCursor" data-name="imgui::toplevel::imguimousecursor">
+      <a href="../ImGui/TopLevel/ImGuiMouseCursor.html">ImGuiMouseCursor</a>
+      
+    </li>
+  
+  <li class=" " data-id="crystal-imgui/ImGui/TopLevel/ImGuiNavDirSourceFlags" data-name="imgui::toplevel::imguinavdirsourceflags">
+      <a href="../ImGui/TopLevel/ImGuiNavDirSourceFlags.html">ImGuiNavDirSourceFlags</a>
+      
+    </li>
+  
+  <li class=" " data-id="crystal-imgui/ImGui/TopLevel/ImGuiNavForward" data-name="imgui::toplevel::imguinavforward">
+      <a href="../ImGui/TopLevel/ImGuiNavForward.html">ImGuiNavForward</a>
+      
+    </li>
+  
+  <li class=" " data-id="crystal-imgui/ImGui/TopLevel/ImGuiNavHighlightFlags" data-name="imgui::toplevel::imguinavhighlightflags">
+      <a href="../ImGui/TopLevel/ImGuiNavHighlightFlags.html">ImGuiNavHighlightFlags</a>
+      
+    </li>
+  
+  <li class=" " data-id="crystal-imgui/ImGui/TopLevel/ImGuiNavInput" data-name="imgui::toplevel::imguinavinput">
+      <a href="../ImGui/TopLevel/ImGuiNavInput.html">ImGuiNavInput</a>
+      
+    </li>
+  
+  <li class=" " data-id="crystal-imgui/ImGui/TopLevel/ImGuiNavLayer" data-name="imgui::toplevel::imguinavlayer">
+      <a href="../ImGui/TopLevel/ImGuiNavLayer.html">ImGuiNavLayer</a>
+      
+    </li>
+  
+  <li class=" " data-id="crystal-imgui/ImGui/TopLevel/ImGuiNavMoveFlags" data-name="imgui::toplevel::imguinavmoveflags">
+      <a href="../ImGui/TopLevel/ImGuiNavMoveFlags.html">ImGuiNavMoveFlags</a>
+      
+    </li>
+  
+  <li class=" " data-id="crystal-imgui/ImGui/TopLevel/ImGuiNextItemDataFlags" data-name="imgui::toplevel::imguinextitemdataflags">
+      <a href="../ImGui/TopLevel/ImGuiNextItemDataFlags.html">ImGuiNextItemDataFlags</a>
+      
+    </li>
+  
+  <li class=" " data-id="crystal-imgui/ImGui/TopLevel/ImGuiNextWindowDataFlags" data-name="imgui::toplevel::imguinextwindowdataflags">
+      <a href="../ImGui/TopLevel/ImGuiNextWindowDataFlags.html">ImGuiNextWindowDataFlags</a>
+      
+    </li>
+  
+  <li class=" " data-id="crystal-imgui/ImGui/TopLevel/ImGuiOnceUponAFrame" data-name="imgui::toplevel::imguionceuponaframe">
+      <a href="../ImGui/TopLevel/ImGuiOnceUponAFrame.html">ImGuiOnceUponAFrame</a>
+      
+    </li>
+  
+  <li class=" " data-id="crystal-imgui/ImGui/TopLevel/ImGuiPayload" data-name="imgui::toplevel::imguipayload">
+      <a href="../ImGui/TopLevel/ImGuiPayload.html">ImGuiPayload</a>
+      
+    </li>
+  
+  <li class=" " data-id="crystal-imgui/ImGui/TopLevel/ImGuiPlotType" data-name="imgui::toplevel::imguiplottype">
+      <a href="../ImGui/TopLevel/ImGuiPlotType.html">ImGuiPlotType</a>
+      
+    </li>
+  
+  <li class=" " data-id="crystal-imgui/ImGui/TopLevel/ImGuiPopupFlags" data-name="imgui::toplevel::imguipopupflags">
+      <a href="../ImGui/TopLevel/ImGuiPopupFlags.html">ImGuiPopupFlags</a>
+      
+    </li>
+  
+  <li class=" " data-id="crystal-imgui/ImGui/TopLevel/ImGuiPopupPositionPolicy" data-name="imgui::toplevel::imguipopuppositionpolicy">
+      <a href="../ImGui/TopLevel/ImGuiPopupPositionPolicy.html">ImGuiPopupPositionPolicy</a>
+      
+    </li>
+  
+  <li class=" " data-id="crystal-imgui/ImGui/TopLevel/ImGuiSelectableFlags" data-name="imgui::toplevel::imguiselectableflags">
+      <a href="../ImGui/TopLevel/ImGuiSelectableFlags.html">ImGuiSelectableFlags</a>
+      
+    </li>
+  
+  <li class=" " data-id="crystal-imgui/ImGui/TopLevel/ImGuiSeparatorFlags" data-name="imgui::toplevel::imguiseparatorflags">
+      <a href="../ImGui/TopLevel/ImGuiSeparatorFlags.html">ImGuiSeparatorFlags</a>
+      
+    </li>
+  
+  <li class=" " data-id="crystal-imgui/ImGui/TopLevel/ImGuiSizeCallbackData" data-name="imgui::toplevel::imguisizecallbackdata">
+      <a href="../ImGui/TopLevel/ImGuiSizeCallbackData.html">ImGuiSizeCallbackData</a>
+      
+    </li>
+  
+  <li class=" " data-id="crystal-imgui/ImGui/TopLevel/ImGuiSliderFlags" data-name="imgui::toplevel::imguisliderflags">
+      <a href="../ImGui/TopLevel/ImGuiSliderFlags.html">ImGuiSliderFlags</a>
+      
+    </li>
+  
+  <li class=" " data-id="crystal-imgui/ImGui/TopLevel/ImGuiStorage" data-name="imgui::toplevel::imguistorage">
+      <a href="../ImGui/TopLevel/ImGuiStorage.html">ImGuiStorage</a>
+      
+    </li>
+  
+  <li class=" " data-id="crystal-imgui/ImGui/TopLevel/ImGuiStyle" data-name="imgui::toplevel::imguistyle">
+      <a href="../ImGui/TopLevel/ImGuiStyle.html">ImGuiStyle</a>
+      
+    </li>
+  
+  <li class=" " data-id="crystal-imgui/ImGui/TopLevel/ImGuiStyleVar" data-name="imgui::toplevel::imguistylevar">
+      <a href="../ImGui/TopLevel/ImGuiStyleVar.html">ImGuiStyleVar</a>
+      
+    </li>
+  
+  <li class=" " data-id="crystal-imgui/ImGui/TopLevel/ImGuiTabBarFlags" data-name="imgui::toplevel::imguitabbarflags">
+      <a href="../ImGui/TopLevel/ImGuiTabBarFlags.html">ImGuiTabBarFlags</a>
+      
+    </li>
+  
+  <li class=" " data-id="crystal-imgui/ImGui/TopLevel/ImGuiTabItemFlags" data-name="imgui::toplevel::imguitabitemflags">
+      <a href="../ImGui/TopLevel/ImGuiTabItemFlags.html">ImGuiTabItemFlags</a>
+      
+    </li>
+  
+  <li class=" " data-id="crystal-imgui/ImGui/TopLevel/ImGuiTextFilter" data-name="imgui::toplevel::imguitextfilter">
+      <a href="../ImGui/TopLevel/ImGuiTextFilter.html">ImGuiTextFilter</a>
+      
+    </li>
+  
+  <li class=" " data-id="crystal-imgui/ImGui/TopLevel/ImGuiTextFlags" data-name="imgui::toplevel::imguitextflags">
+      <a href="../ImGui/TopLevel/ImGuiTextFlags.html">ImGuiTextFlags</a>
+      
+    </li>
+  
+  <li class=" " data-id="crystal-imgui/ImGui/TopLevel/ImGuiTooltipFlags" data-name="imgui::toplevel::imguitooltipflags">
+      <a href="../ImGui/TopLevel/ImGuiTooltipFlags.html">ImGuiTooltipFlags</a>
+      
+    </li>
+  
+  <li class=" " data-id="crystal-imgui/ImGui/TopLevel/ImGuiTreeNodeFlags" data-name="imgui::toplevel::imguitreenodeflags">
+      <a href="../ImGui/TopLevel/ImGuiTreeNodeFlags.html">ImGuiTreeNodeFlags</a>
+      
+    </li>
+  
+  <li class=" " data-id="crystal-imgui/ImGui/TopLevel/ImGuiWindowFlags" data-name="imgui::toplevel::imguiwindowflags">
+      <a href="../ImGui/TopLevel/ImGuiWindowFlags.html">ImGuiWindowFlags</a>
+      
+    </li>
+  
+  <li class=" " data-id="crystal-imgui/ImGui/TopLevel/ImVec2" data-name="imgui::toplevel::imvec2">
+      <a href="../ImGui/TopLevel/ImVec2.html">ImVec2</a>
+      
+    </li>
+  
+  <li class=" " data-id="crystal-imgui/ImGui/TopLevel/ImVec4" data-name="imgui::toplevel::imvec4">
+      <a href="../ImGui/TopLevel/ImVec4.html">ImVec4</a>
+      
+    </li>
+  
+  <li class=" " data-id="crystal-imgui/ImGui/TopLevel/ImVector" data-name="imgui::toplevel::imvector">
+      <a href="../ImGui/TopLevel/ImVector.html">ImVector</a>
+      
+    </li>
+  
+</ul>
+
+      
+    </li>
+  
+</ul>
+
+      
+    </li>
+  
+  <li class="parent " data-id="crystal-imgui/ImGuiDemo" data-name="imguidemo">
+      <a href="../ImGuiDemo.html">ImGuiDemo</a>
+      
+        <ul>
+  
+  <li class=" " data-id="crystal-imgui/ImGuiDemo/Element" data-name="imguidemo::element">
+      <a href="../ImGuiDemo/Element.html">Element</a>
+      
+    </li>
+  
+  <li class=" " data-id="crystal-imgui/ImGuiDemo/ExampleAppConsole" data-name="imguidemo::exampleappconsole">
+      <a href="../ImGuiDemo/ExampleAppConsole.html">ExampleAppConsole</a>
+      
+    </li>
+  
+  <li class=" " data-id="crystal-imgui/ImGuiDemo/ExampleAppDocuments" data-name="imguidemo::exampleappdocuments">
+      <a href="../ImGuiDemo/ExampleAppDocuments.html">ExampleAppDocuments</a>
+      
+    </li>
+  
+  <li class=" " data-id="crystal-imgui/ImGuiDemo/ExampleAppLog" data-name="imguidemo::exampleapplog">
+      <a href="../ImGuiDemo/ExampleAppLog.html">ExampleAppLog</a>
+      
+    </li>
+  
+  <li class=" " data-id="crystal-imgui/ImGuiDemo/Mode" data-name="imguidemo::mode">
+      <a href="../ImGuiDemo/Mode.html">Mode</a>
+      
+    </li>
+  
+  <li class=" " data-id="crystal-imgui/ImGuiDemo/MyDocument" data-name="imguidemo::mydocument">
+      <a href="../ImGuiDemo/MyDocument.html">MyDocument</a>
+      
+    </li>
+  
+  <li class=" " data-id="crystal-imgui/ImGuiDemo/StaticValue" data-name="imguidemo::staticvalue(t)">
+      <a href="../ImGuiDemo/StaticValue.html">StaticValue</a>
+      
+    </li>
+  
+</ul>
+
+      
+    </li>
+  
+</ul>
+
+  </div>
+</div>
+
+
+<div class="main-content">
+<h1 class="type-name">
+
+  <span class="kind">struct</span> ImGui::ImFontAtlas
+
+</h1>
+
+
+  <ul class="superclass-hierarchy"><li class="superclass"><a href="../ImGui/ImFontAtlas.html">ImGui::ImFontAtlas</a></li><li class="superclass">Struct</li><li class="superclass">Value</li><li class="superclass">Object</li></ul>
+
+
+
+
+
+
+
+
+  <h2>
+    <a id="included-modules" class="anchor" href="#included-modules">
+  <svg class="octicon-link" aria-hidden="true">
+    <use href="#octicon-link"/>
+  </svg>
+</a>
+    Included Modules
+  </h2>
+  <ul class="other-types-list">
+    
+      <li class="other-type">ImGui::StructClassType(LibImGui::ImFontAtlas)</li>
+    
+  </ul>
+
+
+
+
+
+
+
+
+
+
+  <h2>
+    <a id="defined-in" class="anchor" href="#defined-in">
+  <svg class="octicon-link" aria-hidden="true">
+    <use href="#octicon-link"/>
+  </svg>
+</a>
+    Defined in:
+  </h2>
+  
+    
+      <a href="https://github.com/oprypin/crystal-imgui/blob/master/src/obj.cr#L719" target="_blank">
+        obj.cr
+      </a>
+    
+    <br/>
+  
+
+
+
+
+
+  <h2>
+    <a id="constructors" class="anchor" href="#constructors">
+  <svg class="octicon-link" aria-hidden="true">
+    <use href="#octicon-link"/>
+  </svg>
+</a>
+    Constructors
+  </h2>
+  <ul class="list-summary">
+    
+      <li class="entry-summary">
+        <a href="#new:ImFontAtlas-class-method" class="signature"><strong>.new</strong> : ImFontAtlas</a>
+        
+      </li>
+    
+  </ul>
+
+
+
+
+
+  <h2>
+    <a id="instance-method-summary" class="anchor" href="#instance-method-summary">
+  <svg class="octicon-link" aria-hidden="true">
+    <use href="#octicon-link"/>
+  </svg>
+</a>
+    Instance Method Summary
+  </h2>
+  <ul class="list-summary">
+    
+      <li class="entry-summary">
+        <a href="#add_custom_rect_font_glyph(font:ImFont,id:ImWchar,width:Int32,height:Int32,advance_x:Float32,offset:ImVec2=ImVec2.new(0,0)):Int32-instance-method" class="signature"><strong>#add_custom_rect_font_glyph</strong>(font : ImFont, id : ImWchar, width : Int32, height : Int32, advance_x : Float32, offset : ImVec2 = <span class="t">ImVec2</span>.<span class="k">new</span>(<span class="n">0</span>, <span class="n">0</span>)) : Int32</a>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#add_custom_rect_regular(width:Int32,height:Int32):Int32-instance-method" class="signature"><strong>#add_custom_rect_regular</strong>(width : Int32, height : Int32) : Int32</a>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#add_font(font_cfg:ImFontConfig):ImFont-instance-method" class="signature"><strong>#add_font</strong>(font_cfg : ImFontConfig) : ImFont</a>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#add_font_default(font_cfg:ImFontConfig?=nil):ImFont-instance-method" class="signature"><strong>#add_font_default</strong>(font_cfg : ImFontConfig? = <span class="n">nil</span>) : ImFont</a>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#add_font_from_file_ttf(filename:String,size_pixels:Float32,font_cfg:ImFontConfig?=nil,glyph_ranges:Pointer(ImWchar)=Pointer(ImWchar).null):ImFont-instance-method" class="signature"><strong>#add_font_from_file_ttf</strong>(filename : String, size_pixels : Float32, font_cfg : ImFontConfig? = <span class="n">nil</span>, glyph_ranges : Pointer(ImWchar) = <span class="t">Pointer</span>(<span class="t">ImWchar</span>).null) : ImFont</a>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#add_font_from_memory_compressed_base85_ttf(compressed_font_data_base85:String,size_pixels:Float32,font_cfg:ImFontConfig?=nil,glyph_ranges:Pointer(ImWchar)=Pointer(ImWchar).null):ImFont-instance-method" class="signature"><strong>#add_font_from_memory_compressed_base85_ttf</strong>(compressed_font_data_base85 : String, size_pixels : Float32, font_cfg : ImFontConfig? = <span class="n">nil</span>, glyph_ranges : Pointer(ImWchar) = <span class="t">Pointer</span>(<span class="t">ImWchar</span>).null) : ImFont</a>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#add_font_from_memory_compressed_ttf(compressed_font_data:Pointer(Void),compressed_font_size:Int32,size_pixels:Float32,font_cfg:ImFontConfig?=nil,glyph_ranges:Pointer(ImWchar)=Pointer(ImWchar).null):ImFont-instance-method" class="signature"><strong>#add_font_from_memory_compressed_ttf</strong>(compressed_font_data : Pointer(Void), compressed_font_size : Int32, size_pixels : Float32, font_cfg : ImFontConfig? = <span class="n">nil</span>, glyph_ranges : Pointer(ImWchar) = <span class="t">Pointer</span>(<span class="t">ImWchar</span>).null) : ImFont</a>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#add_font_from_memory_ttf(font_data:Pointer(Void),font_size:Int32,size_pixels:Float32,font_cfg:ImFontConfig?=nil,glyph_ranges:Pointer(ImWchar)=Pointer(ImWchar).null):ImFont-instance-method" class="signature"><strong>#add_font_from_memory_ttf</strong>(font_data : Pointer(Void), font_size : Int32, size_pixels : Float32, font_cfg : ImFontConfig? = <span class="n">nil</span>, glyph_ranges : Pointer(ImWchar) = <span class="t">Pointer</span>(<span class="t">ImWchar</span>).null) : ImFont</a>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#build:Bool-instance-method" class="signature"><strong>#build</strong> : Bool</a>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#calc_custom_rect_uv(rect:ImFontAtlasCustomRect):Tuple(ImGui::ImVec2,ImGui::ImVec2)-instance-method" class="signature"><strong>#calc_custom_rect_uv</strong>(rect : ImFontAtlasCustomRect) : Tuple(ImGui::ImVec2, ImGui::ImVec2)</a>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#clear:Void-instance-method" class="signature"><strong>#clear</strong> : Void</a>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#clear_fonts:Void-instance-method" class="signature"><strong>#clear_fonts</strong> : Void</a>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#clear_input_data:Void-instance-method" class="signature"><strong>#clear_input_data</strong> : Void</a>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#clear_tex_data:Void-instance-method" class="signature"><strong>#clear_tex_data</strong> : Void</a>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#config_data:ImVector(LibImGui::ImFontConfig)-instance-method" class="signature"><strong>#config_data</strong> : ImVector(LibImGui::ImFontConfig)</a>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#config_data=(config_data:ImVector(LibImGui::ImFontConfig))-instance-method" class="signature"><strong>#config_data=</strong>(config_data : ImVector(LibImGui::ImFontConfig))</a>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#custom_rects:ImVector(LibImGui::ImFontAtlasCustomRect)-instance-method" class="signature"><strong>#custom_rects</strong> : ImVector(LibImGui::ImFontAtlasCustomRect)</a>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#custom_rects=(custom_rects:ImVector(LibImGui::ImFontAtlasCustomRect))-instance-method" class="signature"><strong>#custom_rects=</strong>(custom_rects : ImVector(LibImGui::ImFontAtlasCustomRect))</a>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#flags:ImFontAtlasFlags-instance-method" class="signature"><strong>#flags</strong> : ImFontAtlasFlags</a>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#flags=(flags:ImFontAtlasFlags)-instance-method" class="signature"><strong>#flags=</strong>(flags : ImFontAtlasFlags)</a>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#fonts:ImVector(ImFont)-instance-method" class="signature"><strong>#fonts</strong> : ImVector(ImFont)</a>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#fonts=(fonts:ImVector(ImFont))-instance-method" class="signature"><strong>#fonts=</strong>(fonts : ImVector(ImFont))</a>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#get_custom_rect_by_index(index:Int32):ImFontAtlasCustomRect-instance-method" class="signature"><strong>#get_custom_rect_by_index</strong>(index : Int32) : ImFontAtlasCustomRect</a>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#get_glyph_ranges_chinese_full:Pointer(ImWchar)-instance-method" class="signature"><strong>#get_glyph_ranges_chinese_full</strong> : Pointer(ImWchar)</a>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#get_glyph_ranges_chinese_simplified_common:Pointer(ImWchar)-instance-method" class="signature"><strong>#get_glyph_ranges_chinese_simplified_common</strong> : Pointer(ImWchar)</a>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#get_glyph_ranges_cyrillic:Pointer(ImWchar)-instance-method" class="signature"><strong>#get_glyph_ranges_cyrillic</strong> : Pointer(ImWchar)</a>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#get_glyph_ranges_default:Pointer(ImWchar)-instance-method" class="signature"><strong>#get_glyph_ranges_default</strong> : Pointer(ImWchar)</a>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#get_glyph_ranges_japanese:Pointer(ImWchar)-instance-method" class="signature"><strong>#get_glyph_ranges_japanese</strong> : Pointer(ImWchar)</a>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#get_glyph_ranges_korean:Pointer(ImWchar)-instance-method" class="signature"><strong>#get_glyph_ranges_korean</strong> : Pointer(ImWchar)</a>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#get_glyph_ranges_thai:Pointer(ImWchar)-instance-method" class="signature"><strong>#get_glyph_ranges_thai</strong> : Pointer(ImWchar)</a>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#get_glyph_ranges_vietnamese:Pointer(ImWchar)-instance-method" class="signature"><strong>#get_glyph_ranges_vietnamese</strong> : Pointer(ImWchar)</a>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#get_mouse_cursor_tex_data(cursor:ImGuiMouseCursor):Tuple(Bool,ImGui::ImVec2,ImGui::ImVec2,Slice(ImGui::ImVec2),Slice(ImGui::ImVec2))-instance-method" class="signature"><strong>#get_mouse_cursor_tex_data</strong>(cursor : ImGuiMouseCursor) : Tuple(Bool, ImGui::ImVec2, ImGui::ImVec2, Slice(ImGui::ImVec2), Slice(ImGui::ImVec2))</a>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#get_tex_data_as_alpha8:Tuple(Pointer(LibC::UChar),LibC::Int,LibC::Int,LibC::Int)-instance-method" class="signature"><strong>#get_tex_data_as_alpha8</strong> : Tuple(Pointer(LibC::UChar), LibC::Int, LibC::Int, LibC::Int)</a>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#get_tex_data_as_rgba32:Tuple(Pointer(LibC::UChar),LibC::Int,LibC::Int,LibC::Int)-instance-method" class="signature"><strong>#get_tex_data_as_rgba32</strong> : Tuple(Pointer(LibC::UChar), LibC::Int, LibC::Int, LibC::Int)</a>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#is_built:Bool-instance-method" class="signature"><strong>#is_built</strong> : Bool</a>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#locked:Bool-instance-method" class="signature"><strong>#locked</strong> : Bool</a>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#locked=(locked:Bool)-instance-method" class="signature"><strong>#locked=</strong>(locked : Bool)</a>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#pack_id_lines:Int32-instance-method" class="signature"><strong>#pack_id_lines</strong> : Int32</a>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#pack_id_lines=(pack_id_lines:Int32)-instance-method" class="signature"><strong>#pack_id_lines=</strong>(pack_id_lines : Int32)</a>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#pack_id_mouse_cursors:Int32-instance-method" class="signature"><strong>#pack_id_mouse_cursors</strong> : Int32</a>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#pack_id_mouse_cursors=(pack_id_mouse_cursors:Int32)-instance-method" class="signature"><strong>#pack_id_mouse_cursors=</strong>(pack_id_mouse_cursors : Int32)</a>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#set_tex_id(id:ImTextureID):Void-instance-method" class="signature"><strong>#set_tex_id</strong>(id : ImTextureID) : Void</a>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#tex_desired_width:Int32-instance-method" class="signature"><strong>#tex_desired_width</strong> : Int32</a>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#tex_desired_width=(tex_desired_width:Int32)-instance-method" class="signature"><strong>#tex_desired_width=</strong>(tex_desired_width : Int32)</a>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#tex_glyph_padding:Int32-instance-method" class="signature"><strong>#tex_glyph_padding</strong> : Int32</a>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#tex_glyph_padding=(tex_glyph_padding:Int32)-instance-method" class="signature"><strong>#tex_glyph_padding=</strong>(tex_glyph_padding : Int32)</a>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#tex_height:Int32-instance-method" class="signature"><strong>#tex_height</strong> : Int32</a>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#tex_height=(tex_height:Int32)-instance-method" class="signature"><strong>#tex_height=</strong>(tex_height : Int32)</a>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#tex_id:ImTextureID-instance-method" class="signature"><strong>#tex_id</strong> : ImTextureID</a>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#tex_id=(tex_id:ImTextureID)-instance-method" class="signature"><strong>#tex_id=</strong>(tex_id : ImTextureID)</a>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#tex_pixels_alpha8:Pointer(LibC::UChar)-instance-method" class="signature"><strong>#tex_pixels_alpha8</strong> : Pointer(LibC::UChar)</a>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#tex_pixels_alpha8=(tex_pixels_alpha8:Pointer(LibC::UChar))-instance-method" class="signature"><strong>#tex_pixels_alpha8=</strong>(tex_pixels_alpha8 : Pointer(LibC::UChar))</a>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#tex_pixels_rgba32:Pointer(UInt32)-instance-method" class="signature"><strong>#tex_pixels_rgba32</strong> : Pointer(UInt32)</a>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#tex_pixels_rgba32=(tex_pixels_rgba32:Pointer(UInt32))-instance-method" class="signature"><strong>#tex_pixels_rgba32=</strong>(tex_pixels_rgba32 : Pointer(UInt32))</a>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#tex_uv_lines:Slice(ImVec4)-instance-method" class="signature"><strong>#tex_uv_lines</strong> : Slice(ImVec4)</a>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#tex_uv_lines=(tex_uv_lines:Slice(ImVec4))-instance-method" class="signature"><strong>#tex_uv_lines=</strong>(tex_uv_lines : Slice(ImVec4))</a>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#tex_uv_scale:ImVec2-instance-method" class="signature"><strong>#tex_uv_scale</strong> : ImVec2</a>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#tex_uv_scale=(tex_uv_scale:ImVec2)-instance-method" class="signature"><strong>#tex_uv_scale=</strong>(tex_uv_scale : ImVec2)</a>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#tex_uv_white_pixel:ImVec2-instance-method" class="signature"><strong>#tex_uv_white_pixel</strong> : ImVec2</a>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#tex_uv_white_pixel=(tex_uv_white_pixel:ImVec2)-instance-method" class="signature"><strong>#tex_uv_white_pixel=</strong>(tex_uv_white_pixel : ImVec2)</a>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#tex_width:Int32-instance-method" class="signature"><strong>#tex_width</strong> : Int32</a>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#tex_width=(tex_width:Int32)-instance-method" class="signature"><strong>#tex_width=</strong>(tex_width : Int32)</a>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#to_unsafe:Pointer(T)-instance-method" class="signature"><strong>#to_unsafe</strong> : Pointer(T)</a>
+        
+      </li>
+    
+  </ul>
+
+
+
+
+
+<div class="methods-inherited">
+  
+    
+
+
+    
+
+
+    
+
+
+  
+    
+
+
+    
+
+
+    
+
+
+  
+    
+
+
+    
+
+
+    
+
+
+  
+    
+
+
+    
+
+
+    
+
+
+  
+</div>
+
+
+  <h2>
+    <a id="constructor-detail" class="anchor" href="#constructor-detail">
+  <svg class="octicon-link" aria-hidden="true">
+    <use href="#octicon-link"/>
+  </svg>
+</a>
+    Constructor Detail
+  </h2>
+  
+    <div class="entry-detail" id="new:ImFontAtlas-class-method">
+      <div class="signature">
+        
+        def self.<strong>new</strong> : <a href="../ImGui/ImFontAtlas.html">ImFontAtlas</a>
+
+        <a class="method-permalink" href="#new:ImFontAtlas-class-method">#</a>
+      </div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/oprypin/crystal-imgui/blob/master/src/obj.cr#L976" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+
+
+
+
+
+  <h2>
+    <a id="instance-method-detail" class="anchor" href="#instance-method-detail">
+  <svg class="octicon-link" aria-hidden="true">
+    <use href="#octicon-link"/>
+  </svg>
+</a>
+    Instance Method Detail
+  </h2>
+  
+    <div class="entry-detail" id="add_custom_rect_font_glyph(font:ImFont,id:ImWchar,width:Int32,height:Int32,advance_x:Float32,offset:ImVec2=ImVec2.new(0,0)):Int32-instance-method">
+      <div class="signature">
+        
+        def <strong>add_custom_rect_font_glyph</strong>(font : <a href="../ImGui/ImFont.html">ImFont</a>, id : <a href="../ImGui/ImWchar.html">ImWchar</a>, width : Int32, height : Int32, advance_x : Float32, offset : <a href="../ImGui/ImVec2.html">ImVec2</a> = <span class="t">ImVec2</span>.<span class="k">new</span>(<span class="n">0</span>, <span class="n">0</span>)) : Int32
+
+        <a class="method-permalink" href="#add_custom_rect_font_glyph(font:ImFont,id:ImWchar,width:Int32,height:Int32,advance_x:Float32,offset:ImVec2=ImVec2.new(0,0)):Int32-instance-method">#</a>
+      </div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/oprypin/crystal-imgui/blob/master/src/obj.cr#L861" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="add_custom_rect_regular(width:Int32,height:Int32):Int32-instance-method">
+      <div class="signature">
+        
+        def <strong>add_custom_rect_regular</strong>(width : Int32, height : Int32) : Int32
+
+        <a class="method-permalink" href="#add_custom_rect_regular(width:Int32,height:Int32):Int32-instance-method">#</a>
+      </div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/oprypin/crystal-imgui/blob/master/src/obj.cr#L865" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="add_font(font_cfg:ImFontConfig):ImFont-instance-method">
+      <div class="signature">
+        
+        def <strong>add_font</strong>(font_cfg : <a href="../ImGui/ImFontConfig.html">ImFontConfig</a>) : <a href="../ImGui/ImFont.html">ImFont</a>
+
+        <a class="method-permalink" href="#add_font(font_cfg:ImFontConfig):ImFont-instance-method">#</a>
+      </div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/oprypin/crystal-imgui/blob/master/src/obj.cr#L869" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="add_font_default(font_cfg:ImFontConfig?=nil):ImFont-instance-method">
+      <div class="signature">
+        
+        def <strong>add_font_default</strong>(font_cfg : <a href="../ImGui/ImFontConfig.html">ImFontConfig</a>? = <span class="n">nil</span>) : <a href="../ImGui/ImFont.html">ImFont</a>
+
+        <a class="method-permalink" href="#add_font_default(font_cfg:ImFontConfig?=nil):ImFont-instance-method">#</a>
+      </div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/oprypin/crystal-imgui/blob/master/src/obj.cr#L874" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="add_font_from_file_ttf(filename:String,size_pixels:Float32,font_cfg:ImFontConfig?=nil,glyph_ranges:Pointer(ImWchar)=Pointer(ImWchar).null):ImFont-instance-method">
+      <div class="signature">
+        
+        def <strong>add_font_from_file_ttf</strong>(filename : String, size_pixels : Float32, font_cfg : <a href="../ImGui/ImFontConfig.html">ImFontConfig</a>? = <span class="n">nil</span>, glyph_ranges : Pointer(<a href="../ImGui/ImWchar.html">ImWchar</a>) = <span class="t">Pointer</span>(<span class="t">ImWchar</span>).null) : <a href="../ImGui/ImFont.html">ImFont</a>
+
+        <a class="method-permalink" href="#add_font_from_file_ttf(filename:String,size_pixels:Float32,font_cfg:ImFontConfig?=nil,glyph_ranges:Pointer(ImWchar)=Pointer(ImWchar).null):ImFont-instance-method">#</a>
+      </div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/oprypin/crystal-imgui/blob/master/src/obj.cr#L879" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="add_font_from_memory_compressed_base85_ttf(compressed_font_data_base85:String,size_pixels:Float32,font_cfg:ImFontConfig?=nil,glyph_ranges:Pointer(ImWchar)=Pointer(ImWchar).null):ImFont-instance-method">
+      <div class="signature">
+        
+        def <strong>add_font_from_memory_compressed_base85_ttf</strong>(compressed_font_data_base85 : String, size_pixels : Float32, font_cfg : <a href="../ImGui/ImFontConfig.html">ImFontConfig</a>? = <span class="n">nil</span>, glyph_ranges : Pointer(<a href="../ImGui/ImWchar.html">ImWchar</a>) = <span class="t">Pointer</span>(<span class="t">ImWchar</span>).null) : <a href="../ImGui/ImFont.html">ImFont</a>
+
+        <a class="method-permalink" href="#add_font_from_memory_compressed_base85_ttf(compressed_font_data_base85:String,size_pixels:Float32,font_cfg:ImFontConfig?=nil,glyph_ranges:Pointer(ImWchar)=Pointer(ImWchar).null):ImFont-instance-method">#</a>
+      </div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/oprypin/crystal-imgui/blob/master/src/obj.cr#L884" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="add_font_from_memory_compressed_ttf(compressed_font_data:Pointer(Void),compressed_font_size:Int32,size_pixels:Float32,font_cfg:ImFontConfig?=nil,glyph_ranges:Pointer(ImWchar)=Pointer(ImWchar).null):ImFont-instance-method">
+      <div class="signature">
+        
+        def <strong>add_font_from_memory_compressed_ttf</strong>(compressed_font_data : Pointer(Void), compressed_font_size : Int32, size_pixels : Float32, font_cfg : <a href="../ImGui/ImFontConfig.html">ImFontConfig</a>? = <span class="n">nil</span>, glyph_ranges : Pointer(<a href="../ImGui/ImWchar.html">ImWchar</a>) = <span class="t">Pointer</span>(<span class="t">ImWchar</span>).null) : <a href="../ImGui/ImFont.html">ImFont</a>
+
+        <a class="method-permalink" href="#add_font_from_memory_compressed_ttf(compressed_font_data:Pointer(Void),compressed_font_size:Int32,size_pixels:Float32,font_cfg:ImFontConfig?=nil,glyph_ranges:Pointer(ImWchar)=Pointer(ImWchar).null):ImFont-instance-method">#</a>
+      </div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/oprypin/crystal-imgui/blob/master/src/obj.cr#L889" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="add_font_from_memory_ttf(font_data:Pointer(Void),font_size:Int32,size_pixels:Float32,font_cfg:ImFontConfig?=nil,glyph_ranges:Pointer(ImWchar)=Pointer(ImWchar).null):ImFont-instance-method">
+      <div class="signature">
+        
+        def <strong>add_font_from_memory_ttf</strong>(font_data : Pointer(Void), font_size : Int32, size_pixels : Float32, font_cfg : <a href="../ImGui/ImFontConfig.html">ImFontConfig</a>? = <span class="n">nil</span>, glyph_ranges : Pointer(<a href="../ImGui/ImWchar.html">ImWchar</a>) = <span class="t">Pointer</span>(<span class="t">ImWchar</span>).null) : <a href="../ImGui/ImFont.html">ImFont</a>
+
+        <a class="method-permalink" href="#add_font_from_memory_ttf(font_data:Pointer(Void),font_size:Int32,size_pixels:Float32,font_cfg:ImFontConfig?=nil,glyph_ranges:Pointer(ImWchar)=Pointer(ImWchar).null):ImFont-instance-method">#</a>
+      </div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/oprypin/crystal-imgui/blob/master/src/obj.cr#L894" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="build:Bool-instance-method">
+      <div class="signature">
+        
+        def <strong>build</strong> : Bool
+
+        <a class="method-permalink" href="#build:Bool-instance-method">#</a>
+      </div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/oprypin/crystal-imgui/blob/master/src/obj.cr#L899" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="calc_custom_rect_uv(rect:ImFontAtlasCustomRect):Tuple(ImGui::ImVec2,ImGui::ImVec2)-instance-method">
+      <div class="signature">
+        
+        def <strong>calc_custom_rect_uv</strong>(rect : <a href="../ImGui/ImFontAtlasCustomRect.html">ImFontAtlasCustomRect</a>) : Tuple(<a href="../ImGui/ImVec2.html">ImGui::ImVec2</a>, <a href="../ImGui/ImVec2.html">ImGui::ImVec2</a>)
+
+        <a class="method-permalink" href="#calc_custom_rect_uv(rect:ImFontAtlasCustomRect):Tuple(ImGui::ImVec2,ImGui::ImVec2)-instance-method">#</a>
+      </div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/oprypin/crystal-imgui/blob/master/src/obj.cr#L903" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="clear:Void-instance-method">
+      <div class="signature">
+        
+        def <strong>clear</strong> : Void
+
+        <a class="method-permalink" href="#clear:Void-instance-method">#</a>
+      </div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/oprypin/crystal-imgui/blob/master/src/obj.cr#L908" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="clear_fonts:Void-instance-method">
+      <div class="signature">
+        
+        def <strong>clear_fonts</strong> : Void
+
+        <a class="method-permalink" href="#clear_fonts:Void-instance-method">#</a>
+      </div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/oprypin/crystal-imgui/blob/master/src/obj.cr#L912" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="clear_input_data:Void-instance-method">
+      <div class="signature">
+        
+        def <strong>clear_input_data</strong> : Void
+
+        <a class="method-permalink" href="#clear_input_data:Void-instance-method">#</a>
+      </div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/oprypin/crystal-imgui/blob/master/src/obj.cr#L916" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="clear_tex_data:Void-instance-method">
+      <div class="signature">
+        
+        def <strong>clear_tex_data</strong> : Void
+
+        <a class="method-permalink" href="#clear_tex_data:Void-instance-method">#</a>
+      </div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/oprypin/crystal-imgui/blob/master/src/obj.cr#L920" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="config_data:ImVector(LibImGui::ImFontConfig)-instance-method">
+      <div class="signature">
+        
+        def <strong>config_data</strong> : <a href="../ImGui/ImVector.html">ImVector</a>(LibImGui::ImFontConfig)
+
+        <a class="method-permalink" href="#config_data:ImVector(LibImGui::ImFontConfig)-instance-method">#</a>
+      </div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/oprypin/crystal-imgui/blob/master/src/obj.cr#L828" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="config_data=(config_data:ImVector(LibImGui::ImFontConfig))-instance-method">
+      <div class="signature">
+        
+        def <strong>config_data=</strong>(config_data : <a href="../ImGui/ImVector.html">ImVector</a>(LibImGui::ImFontConfig))
+
+        <a class="method-permalink" href="#config_data=(config_data:ImVector(LibImGui::ImFontConfig))-instance-method">#</a>
+      </div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/oprypin/crystal-imgui/blob/master/src/obj.cr#L833" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="custom_rects:ImVector(LibImGui::ImFontAtlasCustomRect)-instance-method">
+      <div class="signature">
+        
+        def <strong>custom_rects</strong> : <a href="../ImGui/ImVector.html">ImVector</a>(LibImGui::ImFontAtlasCustomRect)
+
+        <a class="method-permalink" href="#custom_rects:ImVector(LibImGui::ImFontAtlasCustomRect)-instance-method">#</a>
+      </div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/oprypin/crystal-imgui/blob/master/src/obj.cr#L819" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="custom_rects=(custom_rects:ImVector(LibImGui::ImFontAtlasCustomRect))-instance-method">
+      <div class="signature">
+        
+        def <strong>custom_rects=</strong>(custom_rects : <a href="../ImGui/ImVector.html">ImVector</a>(LibImGui::ImFontAtlasCustomRect))
+
+        <a class="method-permalink" href="#custom_rects=(custom_rects:ImVector(LibImGui::ImFontAtlasCustomRect))-instance-method">#</a>
+      </div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/oprypin/crystal-imgui/blob/master/src/obj.cr#L824" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="flags:ImFontAtlasFlags-instance-method">
+      <div class="signature">
+        
+        def <strong>flags</strong> : <a href="../ImGui/ImFontAtlasFlags.html">ImFontAtlasFlags</a>
+
+        <a class="method-permalink" href="#flags:ImFontAtlasFlags-instance-method">#</a>
+      </div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/oprypin/crystal-imgui/blob/master/src/obj.cr#L730" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="flags=(flags:ImFontAtlasFlags)-instance-method">
+      <div class="signature">
+        
+        def <strong>flags=</strong>(flags : <a href="../ImGui/ImFontAtlasFlags.html">ImFontAtlasFlags</a>)
+
+        <a class="method-permalink" href="#flags=(flags:ImFontAtlasFlags)-instance-method">#</a>
+      </div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/oprypin/crystal-imgui/blob/master/src/obj.cr#L734" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="fonts:ImVector(ImFont)-instance-method">
+      <div class="signature">
+        
+        def <strong>fonts</strong> : <a href="../ImGui/ImVector.html">ImVector</a>(<a href="../ImGui/ImFont.html">ImFont</a>)
+
+        <a class="method-permalink" href="#fonts:ImVector(ImFont)-instance-method">#</a>
+      </div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/oprypin/crystal-imgui/blob/master/src/obj.cr#L810" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="fonts=(fonts:ImVector(ImFont))-instance-method">
+      <div class="signature">
+        
+        def <strong>fonts=</strong>(fonts : <a href="../ImGui/ImVector.html">ImVector</a>(<a href="../ImGui/ImFont.html">ImFont</a>))
+
+        <a class="method-permalink" href="#fonts=(fonts:ImVector(ImFont))-instance-method">#</a>
+      </div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/oprypin/crystal-imgui/blob/master/src/obj.cr#L815" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="get_custom_rect_by_index(index:Int32):ImFontAtlasCustomRect-instance-method">
+      <div class="signature">
+        
+        def <strong>get_custom_rect_by_index</strong>(index : Int32) : <a href="../ImGui/ImFontAtlasCustomRect.html">ImFontAtlasCustomRect</a>
+
+        <a class="method-permalink" href="#get_custom_rect_by_index(index:Int32):ImFontAtlasCustomRect-instance-method">#</a>
+      </div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/oprypin/crystal-imgui/blob/master/src/obj.cr#L924" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="get_glyph_ranges_chinese_full:Pointer(ImWchar)-instance-method">
+      <div class="signature">
+        
+        def <strong>get_glyph_ranges_chinese_full</strong> : Pointer(<a href="../ImGui/ImWchar.html">ImWchar</a>)
+
+        <a class="method-permalink" href="#get_glyph_ranges_chinese_full:Pointer(ImWchar)-instance-method">#</a>
+      </div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/oprypin/crystal-imgui/blob/master/src/obj.cr#L929" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="get_glyph_ranges_chinese_simplified_common:Pointer(ImWchar)-instance-method">
+      <div class="signature">
+        
+        def <strong>get_glyph_ranges_chinese_simplified_common</strong> : Pointer(<a href="../ImGui/ImWchar.html">ImWchar</a>)
+
+        <a class="method-permalink" href="#get_glyph_ranges_chinese_simplified_common:Pointer(ImWchar)-instance-method">#</a>
+      </div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/oprypin/crystal-imgui/blob/master/src/obj.cr#L933" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="get_glyph_ranges_cyrillic:Pointer(ImWchar)-instance-method">
+      <div class="signature">
+        
+        def <strong>get_glyph_ranges_cyrillic</strong> : Pointer(<a href="../ImGui/ImWchar.html">ImWchar</a>)
+
+        <a class="method-permalink" href="#get_glyph_ranges_cyrillic:Pointer(ImWchar)-instance-method">#</a>
+      </div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/oprypin/crystal-imgui/blob/master/src/obj.cr#L937" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="get_glyph_ranges_default:Pointer(ImWchar)-instance-method">
+      <div class="signature">
+        
+        def <strong>get_glyph_ranges_default</strong> : Pointer(<a href="../ImGui/ImWchar.html">ImWchar</a>)
+
+        <a class="method-permalink" href="#get_glyph_ranges_default:Pointer(ImWchar)-instance-method">#</a>
+      </div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/oprypin/crystal-imgui/blob/master/src/obj.cr#L941" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="get_glyph_ranges_japanese:Pointer(ImWchar)-instance-method">
+      <div class="signature">
+        
+        def <strong>get_glyph_ranges_japanese</strong> : Pointer(<a href="../ImGui/ImWchar.html">ImWchar</a>)
+
+        <a class="method-permalink" href="#get_glyph_ranges_japanese:Pointer(ImWchar)-instance-method">#</a>
+      </div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/oprypin/crystal-imgui/blob/master/src/obj.cr#L945" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="get_glyph_ranges_korean:Pointer(ImWchar)-instance-method">
+      <div class="signature">
+        
+        def <strong>get_glyph_ranges_korean</strong> : Pointer(<a href="../ImGui/ImWchar.html">ImWchar</a>)
+
+        <a class="method-permalink" href="#get_glyph_ranges_korean:Pointer(ImWchar)-instance-method">#</a>
+      </div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/oprypin/crystal-imgui/blob/master/src/obj.cr#L949" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="get_glyph_ranges_thai:Pointer(ImWchar)-instance-method">
+      <div class="signature">
+        
+        def <strong>get_glyph_ranges_thai</strong> : Pointer(<a href="../ImGui/ImWchar.html">ImWchar</a>)
+
+        <a class="method-permalink" href="#get_glyph_ranges_thai:Pointer(ImWchar)-instance-method">#</a>
+      </div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/oprypin/crystal-imgui/blob/master/src/obj.cr#L953" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="get_glyph_ranges_vietnamese:Pointer(ImWchar)-instance-method">
+      <div class="signature">
+        
+        def <strong>get_glyph_ranges_vietnamese</strong> : Pointer(<a href="../ImGui/ImWchar.html">ImWchar</a>)
+
+        <a class="method-permalink" href="#get_glyph_ranges_vietnamese:Pointer(ImWchar)-instance-method">#</a>
+      </div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/oprypin/crystal-imgui/blob/master/src/obj.cr#L957" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="get_mouse_cursor_tex_data(cursor:ImGuiMouseCursor):Tuple(Bool,ImGui::ImVec2,ImGui::ImVec2,Slice(ImGui::ImVec2),Slice(ImGui::ImVec2))-instance-method">
+      <div class="signature">
+        
+        def <strong>get_mouse_cursor_tex_data</strong>(cursor : <a href="../ImGui/ImGuiMouseCursor.html">ImGuiMouseCursor</a>) : Tuple(Bool, <a href="../ImGui/ImVec2.html">ImGui::ImVec2</a>, <a href="../ImGui/ImVec2.html">ImGui::ImVec2</a>, Slice(<a href="../ImGui/ImVec2.html">ImGui::ImVec2</a>), Slice(<a href="../ImGui/ImVec2.html">ImGui::ImVec2</a>))
+
+        <a class="method-permalink" href="#get_mouse_cursor_tex_data(cursor:ImGuiMouseCursor):Tuple(Bool,ImGui::ImVec2,ImGui::ImVec2,Slice(ImGui::ImVec2),Slice(ImGui::ImVec2))-instance-method">#</a>
+      </div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/oprypin/crystal-imgui/blob/master/src/obj.cr#L961" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="get_tex_data_as_alpha8:Tuple(Pointer(LibC::UChar),LibC::Int,LibC::Int,LibC::Int)-instance-method">
+      <div class="signature">
+        
+        def <strong>get_tex_data_as_alpha8</strong> : Tuple(Pointer(LibC::UChar), LibC::Int, LibC::Int, LibC::Int)
+
+        <a class="method-permalink" href="#get_tex_data_as_alpha8:Tuple(Pointer(LibC::UChar),LibC::Int,LibC::Int,LibC::Int)-instance-method">#</a>
+      </div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/oprypin/crystal-imgui/blob/master/src/obj.cr#L966" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="get_tex_data_as_rgba32:Tuple(Pointer(LibC::UChar),LibC::Int,LibC::Int,LibC::Int)-instance-method">
+      <div class="signature">
+        
+        def <strong>get_tex_data_as_rgba32</strong> : Tuple(Pointer(LibC::UChar), LibC::Int, LibC::Int, LibC::Int)
+
+        <a class="method-permalink" href="#get_tex_data_as_rgba32:Tuple(Pointer(LibC::UChar),LibC::Int,LibC::Int,LibC::Int)-instance-method">#</a>
+      </div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/oprypin/crystal-imgui/blob/master/src/obj.cr#L971" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="is_built:Bool-instance-method">
+      <div class="signature">
+        
+        def <strong>is_built</strong> : Bool
+
+        <a class="method-permalink" href="#is_built:Bool-instance-method">#</a>
+      </div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/oprypin/crystal-imgui/blob/master/src/obj.cr#L981" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="locked:Bool-instance-method">
+      <div class="signature">
+        
+        def <strong>locked</strong> : Bool
+
+        <a class="method-permalink" href="#locked:Bool-instance-method">#</a>
+      </div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/oprypin/crystal-imgui/blob/master/src/obj.cr#L722" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="locked=(locked:Bool)-instance-method">
+      <div class="signature">
+        
+        def <strong>locked=</strong>(locked : Bool)
+
+        <a class="method-permalink" href="#locked=(locked:Bool)-instance-method">#</a>
+      </div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/oprypin/crystal-imgui/blob/master/src/obj.cr#L726" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="pack_id_lines:Int32-instance-method">
+      <div class="signature">
+        
+        def <strong>pack_id_lines</strong> : Int32
+
+        <a class="method-permalink" href="#pack_id_lines:Int32-instance-method">#</a>
+      </div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/oprypin/crystal-imgui/blob/master/src/obj.cr#L853" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="pack_id_lines=(pack_id_lines:Int32)-instance-method">
+      <div class="signature">
+        
+        def <strong>pack_id_lines=</strong>(pack_id_lines : Int32)
+
+        <a class="method-permalink" href="#pack_id_lines=(pack_id_lines:Int32)-instance-method">#</a>
+      </div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/oprypin/crystal-imgui/blob/master/src/obj.cr#L857" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="pack_id_mouse_cursors:Int32-instance-method">
+      <div class="signature">
+        
+        def <strong>pack_id_mouse_cursors</strong> : Int32
+
+        <a class="method-permalink" href="#pack_id_mouse_cursors:Int32-instance-method">#</a>
+      </div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/oprypin/crystal-imgui/blob/master/src/obj.cr#L845" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="pack_id_mouse_cursors=(pack_id_mouse_cursors:Int32)-instance-method">
+      <div class="signature">
+        
+        def <strong>pack_id_mouse_cursors=</strong>(pack_id_mouse_cursors : Int32)
+
+        <a class="method-permalink" href="#pack_id_mouse_cursors=(pack_id_mouse_cursors:Int32)-instance-method">#</a>
+      </div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/oprypin/crystal-imgui/blob/master/src/obj.cr#L849" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="set_tex_id(id:ImTextureID):Void-instance-method">
+      <div class="signature">
+        
+        def <strong>set_tex_id</strong>(id : <a href="../ImGui/ImTextureID.html">ImTextureID</a>) : Void
+
+        <a class="method-permalink" href="#set_tex_id(id:ImTextureID):Void-instance-method">#</a>
+      </div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/oprypin/crystal-imgui/blob/master/src/obj.cr#L985" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="tex_desired_width:Int32-instance-method">
+      <div class="signature">
+        
+        def <strong>tex_desired_width</strong> : Int32
+
+        <a class="method-permalink" href="#tex_desired_width:Int32-instance-method">#</a>
+      </div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/oprypin/crystal-imgui/blob/master/src/obj.cr#L746" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="tex_desired_width=(tex_desired_width:Int32)-instance-method">
+      <div class="signature">
+        
+        def <strong>tex_desired_width=</strong>(tex_desired_width : Int32)
+
+        <a class="method-permalink" href="#tex_desired_width=(tex_desired_width:Int32)-instance-method">#</a>
+      </div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/oprypin/crystal-imgui/blob/master/src/obj.cr#L750" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="tex_glyph_padding:Int32-instance-method">
+      <div class="signature">
+        
+        def <strong>tex_glyph_padding</strong> : Int32
+
+        <a class="method-permalink" href="#tex_glyph_padding:Int32-instance-method">#</a>
+      </div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/oprypin/crystal-imgui/blob/master/src/obj.cr#L754" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="tex_glyph_padding=(tex_glyph_padding:Int32)-instance-method">
+      <div class="signature">
+        
+        def <strong>tex_glyph_padding=</strong>(tex_glyph_padding : Int32)
+
+        <a class="method-permalink" href="#tex_glyph_padding=(tex_glyph_padding:Int32)-instance-method">#</a>
+      </div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/oprypin/crystal-imgui/blob/master/src/obj.cr#L758" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="tex_height:Int32-instance-method">
+      <div class="signature">
+        
+        def <strong>tex_height</strong> : Int32
+
+        <a class="method-permalink" href="#tex_height:Int32-instance-method">#</a>
+      </div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/oprypin/crystal-imgui/blob/master/src/obj.cr#L786" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="tex_height=(tex_height:Int32)-instance-method">
+      <div class="signature">
+        
+        def <strong>tex_height=</strong>(tex_height : Int32)
+
+        <a class="method-permalink" href="#tex_height=(tex_height:Int32)-instance-method">#</a>
+      </div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/oprypin/crystal-imgui/blob/master/src/obj.cr#L790" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="tex_id:ImTextureID-instance-method">
+      <div class="signature">
+        
+        def <strong>tex_id</strong> : <a href="../ImGui/ImTextureID.html">ImTextureID</a>
+
+        <a class="method-permalink" href="#tex_id:ImTextureID-instance-method">#</a>
+      </div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/oprypin/crystal-imgui/blob/master/src/obj.cr#L738" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="tex_id=(tex_id:ImTextureID)-instance-method">
+      <div class="signature">
+        
+        def <strong>tex_id=</strong>(tex_id : <a href="../ImGui/ImTextureID.html">ImTextureID</a>)
+
+        <a class="method-permalink" href="#tex_id=(tex_id:ImTextureID)-instance-method">#</a>
+      </div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/oprypin/crystal-imgui/blob/master/src/obj.cr#L742" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="tex_pixels_alpha8:Pointer(LibC::UChar)-instance-method">
+      <div class="signature">
+        
+        def <strong>tex_pixels_alpha8</strong> : Pointer(LibC::UChar)
+
+        <a class="method-permalink" href="#tex_pixels_alpha8:Pointer(LibC::UChar)-instance-method">#</a>
+      </div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/oprypin/crystal-imgui/blob/master/src/obj.cr#L762" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="tex_pixels_alpha8=(tex_pixels_alpha8:Pointer(LibC::UChar))-instance-method">
+      <div class="signature">
+        
+        def <strong>tex_pixels_alpha8=</strong>(tex_pixels_alpha8 : Pointer(LibC::UChar))
+
+        <a class="method-permalink" href="#tex_pixels_alpha8=(tex_pixels_alpha8:Pointer(LibC::UChar))-instance-method">#</a>
+      </div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/oprypin/crystal-imgui/blob/master/src/obj.cr#L766" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="tex_pixels_rgba32:Pointer(UInt32)-instance-method">
+      <div class="signature">
+        
+        def <strong>tex_pixels_rgba32</strong> : Pointer(UInt32)
+
+        <a class="method-permalink" href="#tex_pixels_rgba32:Pointer(UInt32)-instance-method">#</a>
+      </div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/oprypin/crystal-imgui/blob/master/src/obj.cr#L770" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="tex_pixels_rgba32=(tex_pixels_rgba32:Pointer(UInt32))-instance-method">
+      <div class="signature">
+        
+        def <strong>tex_pixels_rgba32=</strong>(tex_pixels_rgba32 : Pointer(UInt32))
+
+        <a class="method-permalink" href="#tex_pixels_rgba32=(tex_pixels_rgba32:Pointer(UInt32))-instance-method">#</a>
+      </div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/oprypin/crystal-imgui/blob/master/src/obj.cr#L774" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="tex_uv_lines:Slice(ImVec4)-instance-method">
+      <div class="signature">
+        
+        def <strong>tex_uv_lines</strong> : Slice(<a href="../ImGui/ImVec4.html">ImVec4</a>)
+
+        <a class="method-permalink" href="#tex_uv_lines:Slice(ImVec4)-instance-method">#</a>
+      </div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/oprypin/crystal-imgui/blob/master/src/obj.cr#L837" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="tex_uv_lines=(tex_uv_lines:Slice(ImVec4))-instance-method">
+      <div class="signature">
+        
+        def <strong>tex_uv_lines=</strong>(tex_uv_lines : Slice(<a href="../ImGui/ImVec4.html">ImVec4</a>))
+
+        <a class="method-permalink" href="#tex_uv_lines=(tex_uv_lines:Slice(ImVec4))-instance-method">#</a>
+      </div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/oprypin/crystal-imgui/blob/master/src/obj.cr#L841" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="tex_uv_scale:ImVec2-instance-method">
+      <div class="signature">
+        
+        def <strong>tex_uv_scale</strong> : <a href="../ImGui/ImVec2.html">ImVec2</a>
+
+        <a class="method-permalink" href="#tex_uv_scale:ImVec2-instance-method">#</a>
+      </div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/oprypin/crystal-imgui/blob/master/src/obj.cr#L794" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="tex_uv_scale=(tex_uv_scale:ImVec2)-instance-method">
+      <div class="signature">
+        
+        def <strong>tex_uv_scale=</strong>(tex_uv_scale : <a href="../ImGui/ImVec2.html">ImVec2</a>)
+
+        <a class="method-permalink" href="#tex_uv_scale=(tex_uv_scale:ImVec2)-instance-method">#</a>
+      </div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/oprypin/crystal-imgui/blob/master/src/obj.cr#L798" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="tex_uv_white_pixel:ImVec2-instance-method">
+      <div class="signature">
+        
+        def <strong>tex_uv_white_pixel</strong> : <a href="../ImGui/ImVec2.html">ImVec2</a>
+
+        <a class="method-permalink" href="#tex_uv_white_pixel:ImVec2-instance-method">#</a>
+      </div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/oprypin/crystal-imgui/blob/master/src/obj.cr#L802" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="tex_uv_white_pixel=(tex_uv_white_pixel:ImVec2)-instance-method">
+      <div class="signature">
+        
+        def <strong>tex_uv_white_pixel=</strong>(tex_uv_white_pixel : <a href="../ImGui/ImVec2.html">ImVec2</a>)
+
+        <a class="method-permalink" href="#tex_uv_white_pixel=(tex_uv_white_pixel:ImVec2)-instance-method">#</a>
+      </div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/oprypin/crystal-imgui/blob/master/src/obj.cr#L806" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="tex_width:Int32-instance-method">
+      <div class="signature">
+        
+        def <strong>tex_width</strong> : Int32
+
+        <a class="method-permalink" href="#tex_width:Int32-instance-method">#</a>
+      </div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/oprypin/crystal-imgui/blob/master/src/obj.cr#L778" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="tex_width=(tex_width:Int32)-instance-method">
+      <div class="signature">
+        
+        def <strong>tex_width=</strong>(tex_width : Int32)
+
+        <a class="method-permalink" href="#tex_width=(tex_width:Int32)-instance-method">#</a>
+      </div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/oprypin/crystal-imgui/blob/master/src/obj.cr#L782" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="to_unsafe:Pointer(T)-instance-method">
+      <div class="signature">
+        
+        def <strong>to_unsafe</strong> : Pointer(T)
+
+        <a class="method-permalink" href="#to_unsafe:Pointer(T)-instance-method">#</a>
+      </div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/oprypin/crystal-imgui/blob/master/src/obj.cr#L720" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+
+
+
+
+</div>
+
+</body>
+</html>
