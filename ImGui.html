@@ -1393,7 +1393,7 @@
       </li>
     
       <li class="entry-summary">
-        <a href="#checkbox_flags_(label:String,flags:Pointer(Enum),flags_value:Enum):Bool-class-method" class="signature"><strong>.checkbox_flags_</strong>(label : String, flags : Pointer(Enum), flags_value : Enum) : Bool</a>
+        <a href="#checkbox_flags(label:String,flags:Pointer(Enum),flags_value:Enum):Bool-class-method" class="signature"><strong>.checkbox_flags</strong>(label : String, flags : Pointer(Enum), flags_value : Enum) : Bool</a>
         
       </li>
     
@@ -1483,6 +1483,16 @@
       </li>
     
       <li class="entry-summary">
+        <a href="#combo(label:String,current_item:Pointer(Int32),items_count:Int32,popup_max_height_in_items:Int32=-1,&block:Int32-%3ESlice(UInt8)%7CString%7CNil):Bool-class-method" class="signature"><strong>.combo</strong>(label : String, current_item : Pointer(Int32), items_count : Int32, popup_max_height_in_items : Int32 = <span class="n">-1</span>, &block : Int32 -> Slice(UInt8) | String | Nil) : Bool</a>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#combo(label:String,current_item:Pointer(Int32),items:Indexable(String),popup_max_height_in_items:Int32=-1)-class-method" class="signature"><strong>.combo</strong>(label : String, current_item : Pointer(Int32), items : Indexable(String), popup_max_height_in_items : Int32 = <span class="n">-1</span>)</a>
+        
+      </li>
+    
+      <li class="entry-summary">
         <a href="#combo(label:String,current_item:Pointer(Int32),items:Indexable(Pointer(LibC::Char)),popup_max_height_in_items:Int32=-1):Bool-class-method" class="signature"><strong>.combo</strong>(label : String, current_item : Pointer(Int32), items : Indexable(Pointer(LibC::Char)), popup_max_height_in_items : Int32 = <span class="n">-1</span>) : Bool</a>
         
       </li>
@@ -1494,16 +1504,6 @@
     
       <li class="entry-summary">
         <a href="#combo(label:String,current_item:Pointer(Int32),items_separated_by_zeros:String,popup_max_height_in_items:Int32=-1):Bool-class-method" class="signature"><strong>.combo</strong>(label : String, current_item : Pointer(Int32), items_separated_by_zeros : String, popup_max_height_in_items : Int32 = <span class="n">-1</span>) : Bool</a>
-        
-      </li>
-    
-      <li class="entry-summary">
-        <a href="#combo_(label:String,current_item:Pointer(Int32),items_count:Int32,popup_max_height_in_items:Int32=-1,&block:Int32-%3ESlice(UInt8)%7CString?):Bool-class-method" class="signature"><strong>.combo_</strong>(label : String, current_item : Pointer(Int32), items_count : Int32, popup_max_height_in_items : Int32 = <span class="n">-1</span>, &block : Int32 -> Slice(UInt8) | String?) : Bool</a>
-        
-      </li>
-    
-      <li class="entry-summary">
-        <a href="#combo_(label:String,current_item:Pointer(Int32),items:Indexable(String),popup_max_height_in_items:Int32=-1)-class-method" class="signature"><strong>.combo_</strong>(label : String, current_item : Pointer(Int32), items : Indexable(String), popup_max_height_in_items : Int32 = <span class="n">-1</span>)</a>
         
       </li>
     
@@ -2448,17 +2448,17 @@
       </li>
     
       <li class="entry-summary">
+        <a href="#list_box(label:String,current_item:Pointer(Int32),items_count:Int32,height_in_items:Int32=-1,&block:Int32-%3ESlice(UInt8)%7CString%7CNil):Bool-class-method" class="signature"><strong>.list_box</strong>(label : String, current_item : Pointer(Int32), items_count : Int32, height_in_items : Int32 = <span class="n">-1</span>, &block : Int32 -> Slice(UInt8) | String | Nil) : Bool</a>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#list_box(label:String,current_item:Pointer(Int32),items:Indexable(String),height_in_items:Int32=-1)-class-method" class="signature"><strong>.list_box</strong>(label : String, current_item : Pointer(Int32), items : Indexable(String), height_in_items : Int32 = <span class="n">-1</span>)</a>
+        
+      </li>
+    
+      <li class="entry-summary">
         <a href="#list_box(label:String,current_item:Pointer(Int32),items_getter:Pointer(Void),Int32,Pointer(Pointer(LibC::Char))-%3EBool,data:Pointer(Void),items_count:Int32,height_in_items:Int32=-1):Bool-class-method" class="signature"><strong>.list_box</strong>(label : String, current_item : Pointer(Int32), items_getter : Pointer(Void), Int32, Pointer(Pointer(LibC::Char)) -> Bool, data : Pointer(Void), items_count : Int32, height_in_items : Int32 = <span class="n">-1</span>) : Bool</a>
-        
-      </li>
-    
-      <li class="entry-summary">
-        <a href="#list_box_(label:String,current_item:Pointer(Int32),items_count:Int32,height_in_items:Int32=-1,&block:Int32-%3ESlice(UInt8)%7CString?):Bool-class-method" class="signature"><strong>.list_box_</strong>(label : String, current_item : Pointer(Int32), items_count : Int32, height_in_items : Int32 = <span class="n">-1</span>, &block : Int32 -> Slice(UInt8) | String?) : Bool</a>
-        
-      </li>
-    
-      <li class="entry-summary">
-        <a href="#list_box_(label:String,current_item:Pointer(Int32),items:Indexable(String),height_in_items:Int32=-1)-class-method" class="signature"><strong>.list_box_</strong>(label : String, current_item : Pointer(Int32), items : Indexable(String), height_in_items : Int32 = <span class="n">-1</span>)</a>
         
       </li>
     
@@ -4180,12 +4180,12 @@
       </div>
     </div>
   
-    <div class="entry-detail" id="checkbox_flags_(label:String,flags:Pointer(Enum),flags_value:Enum):Bool-class-method">
+    <div class="entry-detail" id="checkbox_flags(label:String,flags:Pointer(Enum),flags_value:Enum):Bool-class-method">
       <div class="signature">
         
-        def self.<strong>checkbox_flags_</strong>(label : String, flags : Pointer(Enum), flags_value : Enum) : Bool
+        def self.<strong>checkbox_flags</strong>(label : String, flags : Pointer(Enum), flags_value : Enum) : Bool
 
-        <a class="method-permalink" href="#checkbox_flags_(label:String,flags:Pointer(Enum),flags_value:Enum):Bool-class-method">#</a>
+        <a class="method-permalink" href="#checkbox_flags(label:String,flags:Pointer(Enum),flags_value:Enum):Bool-class-method">#</a>
       </div>
       
       <br/>
@@ -4468,6 +4468,36 @@
       </div>
     </div>
   
+    <div class="entry-detail" id="combo(label:String,current_item:Pointer(Int32),items_count:Int32,popup_max_height_in_items:Int32=-1,&block:Int32->Slice(UInt8)|String|Nil):Bool-class-method">
+      <div class="signature">
+        
+        def self.<strong>combo</strong>(label : String, current_item : Pointer(Int32), items_count : Int32, popup_max_height_in_items : Int32 = <span class="n">-1</span>, &block : Int32 -> Slice(UInt8) | String | Nil) : Bool
+
+        <a class="method-permalink" href="#combo(label:String,current_item:Pointer(Int32),items_count:Int32,popup_max_height_in_items:Int32=-1,&block:Int32-%3ESlice(UInt8)%7CString%7CNil):Bool-class-method">#</a>
+      </div>
+      
+      <br/>
+      <div>
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="combo(label:String,current_item:Pointer(Int32),items:Indexable(String),popup_max_height_in_items:Int32=-1)-class-method">
+      <div class="signature">
+        
+        def self.<strong>combo</strong>(label : String, current_item : Pointer(Int32), items : Indexable(String), popup_max_height_in_items : Int32 = <span class="n">-1</span>)
+
+        <a class="method-permalink" href="#combo(label:String,current_item:Pointer(Int32),items:Indexable(String),popup_max_height_in_items:Int32=-1)-class-method">#</a>
+      </div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/oprypin/crystal-imgui/blob/master/src/imgui.cr#L311" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
     <div class="entry-detail" id="combo(label:String,current_item:Pointer(Int32),items:Indexable(Pointer(LibC::Char)),popup_max_height_in_items:Int32=-1):Bool-class-method">
       <div class="signature">
         
@@ -4512,38 +4542,6 @@
       <div>
         
           [<a href="https://github.com/oprypin/crystal-imgui/blob/master/src/obj.cr#L2949" target="_blank">View source</a>]
-        
-      </div>
-    </div>
-  
-    <div class="entry-detail" id="combo_(label:String,current_item:Pointer(Int32),items_count:Int32,popup_max_height_in_items:Int32=-1,&block:Int32->Slice(UInt8)|String?):Bool-class-method">
-      <div class="signature">
-        
-        def self.<strong>combo_</strong>(label : String, current_item : Pointer(Int32), items_count : Int32, popup_max_height_in_items : Int32 = <span class="n">-1</span>, &block : Int32 -> Slice(UInt8) | String?) : Bool
-
-        <a class="method-permalink" href="#combo_(label:String,current_item:Pointer(Int32),items_count:Int32,popup_max_height_in_items:Int32=-1,&block:Int32-%3ESlice(UInt8)%7CString?):Bool-class-method">#</a>
-      </div>
-      
-      <br/>
-      <div>
-        
-          [<a href="https://github.com/oprypin/crystal-imgui/blob/master/src/imgui.cr#L309" target="_blank">View source</a>]
-        
-      </div>
-    </div>
-  
-    <div class="entry-detail" id="combo_(label:String,current_item:Pointer(Int32),items:Indexable(String),popup_max_height_in_items:Int32=-1)-class-method">
-      <div class="signature">
-        
-        def self.<strong>combo_</strong>(label : String, current_item : Pointer(Int32), items : Indexable(String), popup_max_height_in_items : Int32 = <span class="n">-1</span>)
-
-        <a class="method-permalink" href="#combo_(label:String,current_item:Pointer(Int32),items:Indexable(String),popup_max_height_in_items:Int32=-1)-class-method">#</a>
-      </div>
-      
-      <br/>
-      <div>
-        
-          [<a href="https://github.com/oprypin/crystal-imgui/blob/master/src/imgui.cr#L311" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -7476,6 +7474,36 @@
       </div>
     </div>
   
+    <div class="entry-detail" id="list_box(label:String,current_item:Pointer(Int32),items_count:Int32,height_in_items:Int32=-1,&block:Int32->Slice(UInt8)|String|Nil):Bool-class-method">
+      <div class="signature">
+        
+        def self.<strong>list_box</strong>(label : String, current_item : Pointer(Int32), items_count : Int32, height_in_items : Int32 = <span class="n">-1</span>, &block : Int32 -> Slice(UInt8) | String | Nil) : Bool
+
+        <a class="method-permalink" href="#list_box(label:String,current_item:Pointer(Int32),items_count:Int32,height_in_items:Int32=-1,&block:Int32-%3ESlice(UInt8)%7CString%7CNil):Bool-class-method">#</a>
+      </div>
+      
+      <br/>
+      <div>
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="list_box(label:String,current_item:Pointer(Int32),items:Indexable(String),height_in_items:Int32=-1)-class-method">
+      <div class="signature">
+        
+        def self.<strong>list_box</strong>(label : String, current_item : Pointer(Int32), items : Indexable(String), height_in_items : Int32 = <span class="n">-1</span>)
+
+        <a class="method-permalink" href="#list_box(label:String,current_item:Pointer(Int32),items:Indexable(String),height_in_items:Int32=-1)-class-method">#</a>
+      </div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/oprypin/crystal-imgui/blob/master/src/imgui.cr#L317" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
     <div class="entry-detail" id="list_box(label:String,current_item:Pointer(Int32),items_getter:Pointer(Void),Int32,Pointer(Pointer(LibC::Char))->Bool,data:Pointer(Void),items_count:Int32,height_in_items:Int32=-1):Bool-class-method">
       <div class="signature">
         
@@ -7488,38 +7516,6 @@
       <div>
         
           [<a href="https://github.com/oprypin/crystal-imgui/blob/master/src/obj.cr#L3570" target="_blank">View source</a>]
-        
-      </div>
-    </div>
-  
-    <div class="entry-detail" id="list_box_(label:String,current_item:Pointer(Int32),items_count:Int32,height_in_items:Int32=-1,&block:Int32->Slice(UInt8)|String?):Bool-class-method">
-      <div class="signature">
-        
-        def self.<strong>list_box_</strong>(label : String, current_item : Pointer(Int32), items_count : Int32, height_in_items : Int32 = <span class="n">-1</span>, &block : Int32 -> Slice(UInt8) | String?) : Bool
-
-        <a class="method-permalink" href="#list_box_(label:String,current_item:Pointer(Int32),items_count:Int32,height_in_items:Int32=-1,&block:Int32-%3ESlice(UInt8)%7CString?):Bool-class-method">#</a>
-      </div>
-      
-      <br/>
-      <div>
-        
-          [<a href="https://github.com/oprypin/crystal-imgui/blob/master/src/imgui.cr#L315" target="_blank">View source</a>]
-        
-      </div>
-    </div>
-  
-    <div class="entry-detail" id="list_box_(label:String,current_item:Pointer(Int32),items:Indexable(String),height_in_items:Int32=-1)-class-method">
-      <div class="signature">
-        
-        def self.<strong>list_box_</strong>(label : String, current_item : Pointer(Int32), items : Indexable(String), height_in_items : Int32 = <span class="n">-1</span>)
-
-        <a class="method-permalink" href="#list_box_(label:String,current_item:Pointer(Int32),items:Indexable(String),height_in_items:Int32=-1)-class-method">#</a>
-      </div>
-      
-      <br/>
-      <div>
-        
-          [<a href="https://github.com/oprypin/crystal-imgui/blob/master/src/imgui.cr#L317" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -10385,7 +10381,7 @@
       <br/>
       <div>
         
-          [<a href="https://github.com/oprypin/crystal-imgui/blob/master/src/obj.cr#L2883" target="_blank">View source</a>]
+          [<a href="https://github.com/oprypin/crystal-imgui/blob/master/src/imgui.cr#L262" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -10481,7 +10477,7 @@
       <br/>
       <div>
         
-          [<a href="https://github.com/oprypin/crystal-imgui/blob/master/src/obj.cr#L2952" target="_blank">View source</a>]
+          [<a href="https://github.com/oprypin/crystal-imgui/blob/master/src/imgui.cr#L311" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -10857,7 +10853,7 @@
       <br/>
       <div>
         
-          [<a href="https://github.com/oprypin/crystal-imgui/blob/master/src/obj.cr#L3570" target="_blank">View source</a>]
+          [<a href="https://github.com/oprypin/crystal-imgui/blob/master/src/imgui.cr#L317" target="_blank">View source</a>]
         
       </div>
     </div>
