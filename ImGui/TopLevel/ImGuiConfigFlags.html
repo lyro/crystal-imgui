@@ -771,7 +771,7 @@
   </h2>
   
     
-      <a href="https://github.com/oprypin/crystal-imgui/blob/master/src/types.cr#L187" target="_blank">
+      <a href="https://github.com/oprypin/crystal-imgui/blob/master/src/types.cr#L509" target="_blank">
         types.cr
       </a>
     
@@ -796,40 +796,72 @@
         <strong>IsSRGB</strong> = <code><span class="n">1048576</span></code>
       </dt>
       
+      <dd class="entry-const-doc">
+        <p>Application is SRGB-aware.</p>
+      </dd>
+      
     
       <dt class="entry-const" id="IsTouchScreen">
         <strong>IsTouchScreen</strong> = <code><span class="n">2097152</span></code>
       </dt>
+      
+      <dd class="entry-const-doc">
+        <p>Application is using a touch screen instead of a mouse.</p>
+      </dd>
       
     
       <dt class="entry-const" id="NavEnableGamepad">
         <strong>NavEnableGamepad</strong> = <code><span class="n">2</span></code>
       </dt>
       
+      <dd class="entry-const-doc">
+        <p>Master gamepad navigation enable flag. This is mostly to instruct your imgui back-end to fill io.NavInputs[]. Back-end also needs to set ImGuiBackendFlags_HasGamepad.</p>
+      </dd>
+      
     
       <dt class="entry-const" id="NavEnableKeyboard">
         <strong>NavEnableKeyboard</strong> = <code><span class="n">1</span></code>
       </dt>
+      
+      <dd class="entry-const-doc">
+        <p>Master keyboard navigation enable flag. NewFrame() will automatically fill io.NavInputs[] based on io.KeysDown[].</p>
+      </dd>
       
     
       <dt class="entry-const" id="NavEnableSetMousePos">
         <strong>NavEnableSetMousePos</strong> = <code><span class="n">4</span></code>
       </dt>
       
+      <dd class="entry-const-doc">
+        <p>Instruct navigation to move the mouse cursor. May be useful on TV/console systems where moving a virtual mouse is awkward. Will update io.MousePos and set io.WantSetMousePos=true. If enabled you MUST honor io.WantSetMousePos requests in your binding, otherwise ImGui will react as if the mouse is jumping around back and forth.</p>
+      </dd>
+      
     
       <dt class="entry-const" id="NavNoCaptureKeyboard">
         <strong>NavNoCaptureKeyboard</strong> = <code><span class="n">8</span></code>
       </dt>
+      
+      <dd class="entry-const-doc">
+        <p>Instruct navigation to not set the io.WantCaptureKeyboard flag when io.NavActive is set.</p>
+      </dd>
       
     
       <dt class="entry-const" id="NoMouse">
         <strong>NoMouse</strong> = <code><span class="n">16</span></code>
       </dt>
       
+      <dd class="entry-const-doc">
+        <p>Instruct imgui to clear mouse position/buttons in NewFrame(). This allows ignoring the mouse information set by the back-end.</p>
+      </dd>
+      
     
       <dt class="entry-const" id="NoMouseCursorChange">
         <strong>NoMouseCursorChange</strong> = <code><span class="n">32</span></code>
       </dt>
+      
+      <dd class="entry-const-doc">
+        <p>Instruct back-end to not alter mouse cursor shape and visibility. Use if the back-end cursor changes are interfering with yours and you don't want to use SetMouseCursor() to change mouse cursor. You may want to honor requests from imgui by reading GetMouseCursor() yourself instead.</p>
+      </dd>
       
     
       <dt class="entry-const" id="None">

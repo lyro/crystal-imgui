@@ -749,7 +749,7 @@
     Overview
   </h2>
 
-  <p>[<a href="https://github.com/ocornut/imgui/blob/v1.78/imgui.h#L2394" target="_blank">View C++ header</a>]</p>
+  <p><a href="https://github.com/ocornut/imgui/blob/v1.78/imgui.h#L2394" target="_blank">struct ImFont</a></p>
 
 
 
@@ -788,7 +788,7 @@
   </h2>
   
     
-      <a href="https://github.com/oprypin/crystal-imgui/blob/master/src/obj.cr#L566" target="_blank">
+      <a href="https://github.com/oprypin/crystal-imgui/blob/master/src/obj.cr#L5243" target="_blank">
         obj.cr
       </a>
     
@@ -812,7 +812,7 @@
       <li class="entry-summary">
         <a href="#new:ImFont-class-method" class="signature"><strong>.new</strong> : ImFont</a>
         
-          <div class="summary"><p>[<a href="https://github.com/ocornut/imgui/blob/v1.78/imgui.h#L2420" target="_blank">View C++ header</a>]</p></div>
+          <div class="summary"><p><a href="https://github.com/ocornut/imgui/blob/v1.78/imgui.h#L2420" target="_blank">ImFont::ImFont()</a></p></div>
         
       </li>
     
@@ -835,19 +835,21 @@
       <li class="entry-summary">
         <a href="#add_glyph(src_cfg:ImFontConfig,c:ImWchar,x0:Float32,y0:Float32,x1:Float32,y1:Float32,u0:Float32,v0:Float32,u1:Float32,v1:Float32,advance_x:Float32):Void-instance-method" class="signature"><strong>#add_glyph</strong>(src_cfg : ImFontConfig, c : ImWchar, x0 : Float32, y0 : Float32, x1 : Float32, y1 : Float32, u0 : Float32, v0 : Float32, u1 : Float32, v1 : Float32, advance_x : Float32) : Void</a>
         
-          <div class="summary"><p>[<a href="https://github.com/ocornut/imgui/blob/v1.78/imgui.h#L2439" target="_blank">View C++ header</a>]</p></div>
+          <div class="summary"><p><a href="https://github.com/ocornut/imgui/blob/v1.78/imgui.h#L2439" target="_blank">ImFont::AddGlyph()</a></p></div>
         
       </li>
     
       <li class="entry-summary">
         <a href="#add_remap_char(dst:ImWchar,src:ImWchar,overwrite_dst:Bool=true):Void-instance-method" class="signature"><strong>#add_remap_char</strong>(dst : ImWchar, src : ImWchar, overwrite_dst : Bool = <span class="n">true</span>) : Void</a>
         
-          <div class="summary"><p>[<a href="https://github.com/ocornut/imgui/blob/v1.78/imgui.h#L2440" target="_blank">View C++ header</a>]</p></div>
+          <div class="summary"><p>Makes 'dst' character/glyph points to 'src' character/glyph.</p></div>
         
       </li>
     
       <li class="entry-summary">
         <a href="#ascent:Float32-instance-method" class="signature"><strong>#ascent</strong> : Float32</a>
+        
+          <div class="summary"><p>4+4 out Ascent: distance from top to bottom of e.g.</p></div>
         
       </li>
     
@@ -859,33 +861,35 @@
       <li class="entry-summary">
         <a href="#build_lookup_table:Void-instance-method" class="signature"><strong>#build_lookup_table</strong> : Void</a>
         
-          <div class="summary"><p>[<a href="https://github.com/ocornut/imgui/blob/v1.78/imgui.h#L2436" target="_blank">View C++ header</a>]</p></div>
+          <div class="summary"><p><a href="https://github.com/ocornut/imgui/blob/v1.78/imgui.h#L2436" target="_blank">ImFont::BuildLookupTable()</a></p></div>
         
       </li>
     
       <li class="entry-summary">
         <a href="#calc_text_size_a(size:Float32,max_width:Float32,wrap_width:Float32,text:Bytes%7CString,remaining:Pointer(Pointer(LibC::Char))=Pointer(::Pointer(LibC::Char)).null):ImGui::ImVec2-instance-method" class="signature"><strong>#calc_text_size_a</strong>(size : Float32, max_width : Float32, wrap_width : Float32, text : Bytes | String, remaining : Pointer(Pointer(LibC::Char)) = <span class="t">Pointer</span>(<span class="t">::</span><span class="t">Pointer</span>(<span class="t">LibC</span><span class="t">::</span><span class="t">Char</span>)).null) : ImGui::ImVec2</a>
         
-          <div class="summary"><p>[<a href="https://github.com/ocornut/imgui/blob/v1.78/imgui.h#L2430" target="_blank">View C++ header</a>]</p></div>
+          <div class="summary"><p>utf8</p></div>
         
       </li>
     
       <li class="entry-summary">
         <a href="#calc_word_wrap_position_a(scale:Float32,text:Bytes%7CString,wrap_width:Float32):String-instance-method" class="signature"><strong>#calc_word_wrap_position_a</strong>(scale : Float32, text : Bytes | String, wrap_width : Float32) : String</a>
         
-          <div class="summary"><p>[<a href="https://github.com/ocornut/imgui/blob/v1.78/imgui.h#L2431" target="_blank">View C++ header</a>]</p></div>
+          <div class="summary"><p><a href="https://github.com/ocornut/imgui/blob/v1.78/imgui.h#L2431" target="_blank">ImFont::CalcWordWrapPositionA()</a></p></div>
         
       </li>
     
       <li class="entry-summary">
         <a href="#clear_output_data:Void-instance-method" class="signature"><strong>#clear_output_data</strong> : Void</a>
         
-          <div class="summary"><p>[<a href="https://github.com/ocornut/imgui/blob/v1.78/imgui.h#L2437" target="_blank">View C++ header</a>]</p></div>
+          <div class="summary"><p><a href="https://github.com/ocornut/imgui/blob/v1.78/imgui.h#L2437" target="_blank">ImFont::ClearOutputData()</a></p></div>
         
       </li>
     
       <li class="entry-summary">
         <a href="#config_data:Slice(ImFontConfig)-instance-method" class="signature"><strong>#config_data</strong> : Slice(ImFontConfig)</a>
+        
+          <div class="summary"><p>4-8 in Pointer within ContainerAtlas->ConfigData</p></div>
         
       </li>
     
@@ -897,6 +901,8 @@
       <li class="entry-summary">
         <a href="#config_data_count:Int16-instance-method" class="signature"><strong>#config_data_count</strong> : Int16</a>
         
+          <div class="summary"><p>2 in ~ 1 Number of ImFontConfig involved in creating this font.</p></div>
+        
       </li>
     
       <li class="entry-summary">
@@ -906,6 +912,8 @@
     
       <li class="entry-summary">
         <a href="#container_atlas:ImFontAtlas-instance-method" class="signature"><strong>#container_atlas</strong> : ImFontAtlas</a>
+        
+          <div class="summary"><p>4-8 out What we has been loaded into</p></div>
         
       </li>
     
@@ -917,6 +925,8 @@
       <li class="entry-summary">
         <a href="#descent:Float32-instance-method" class="signature"><strong>#descent</strong> : Float32</a>
         
+          <div class="summary"><p>4+4 out Ascent: distance from top to bottom of e.g.</p></div>
+        
       </li>
     
       <li class="entry-summary">
@@ -926,6 +936,8 @@
     
       <li class="entry-summary">
         <a href="#dirty_lookup_tables:Bool-instance-method" class="signature"><strong>#dirty_lookup_tables</strong> : Bool</a>
+        
+          <div class="summary"><p>1 out //</p></div>
         
       </li>
     
@@ -937,6 +949,8 @@
       <li class="entry-summary">
         <a href="#display_offset:ImVec2-instance-method" class="signature"><strong>#display_offset</strong> : ImVec2</a>
         
+          <div class="summary"><p>8 in = (0,0) Offset font rendering by xx pixels</p></div>
+        
       </li>
     
       <li class="entry-summary">
@@ -946,6 +960,8 @@
     
       <li class="entry-summary">
         <a href="#ellipsis_char:ImWchar-instance-method" class="signature"><strong>#ellipsis_char</strong> : ImWchar</a>
+        
+          <div class="summary"><p>2 out = -1 Character used for ellipsis rendering.</p></div>
         
       </li>
     
@@ -957,6 +973,8 @@
       <li class="entry-summary">
         <a href="#fallback_advance_x:Float32-instance-method" class="signature"><strong>#fallback_advance_x</strong> : Float32</a>
         
+          <div class="summary"><p>4 out = FallbackGlyph->AdvanceX</p></div>
+        
       </li>
     
       <li class="entry-summary">
@@ -966,6 +984,8 @@
     
       <li class="entry-summary">
         <a href="#fallback_char:ImWchar-instance-method" class="signature"><strong>#fallback_char</strong> : ImWchar</a>
+        
+          <div class="summary"><p>2 in = '?' Replacement character if a glyph isn't found.</p></div>
         
       </li>
     
@@ -977,6 +997,8 @@
       <li class="entry-summary">
         <a href="#fallback_glyph:ImFontGlyph?-instance-method" class="signature"><strong>#fallback_glyph</strong> : ImFontGlyph?</a>
         
+          <div class="summary"><p>4-8 out = FindGlyph(FontFallbackChar)</p></div>
+        
       </li>
     
       <li class="entry-summary">
@@ -987,19 +1009,21 @@
       <li class="entry-summary">
         <a href="#find_glyph(c:ImWchar):ImFontGlyph-instance-method" class="signature"><strong>#find_glyph</strong>(c : ImWchar) : ImFontGlyph</a>
         
-          <div class="summary"><p>[<a href="https://github.com/ocornut/imgui/blob/v1.78/imgui.h#L2422" target="_blank">View C++ header</a>]</p></div>
+          <div class="summary"><p><a href="https://github.com/ocornut/imgui/blob/v1.78/imgui.h#L2422" target="_blank">ImFont::FindGlyph()</a></p></div>
         
       </li>
     
       <li class="entry-summary">
         <a href="#find_glyph_no_fallback(c:ImWchar):ImFontGlyph-instance-method" class="signature"><strong>#find_glyph_no_fallback</strong>(c : ImWchar) : ImFontGlyph</a>
         
-          <div class="summary"><p>[<a href="https://github.com/ocornut/imgui/blob/v1.78/imgui.h#L2423" target="_blank">View C++ header</a>]</p></div>
+          <div class="summary"><p><a href="https://github.com/ocornut/imgui/blob/v1.78/imgui.h#L2423" target="_blank">ImFont::FindGlyphNoFallback()</a></p></div>
         
       </li>
     
       <li class="entry-summary">
         <a href="#font_size:Float32-instance-method" class="signature"><strong>#font_size</strong> : Float32</a>
+        
+          <div class="summary"><p>4 in Height of characters/line, set during loading (don't change after loading)</p></div>
         
       </li>
     
@@ -1011,19 +1035,21 @@
       <li class="entry-summary">
         <a href="#get_char_advance(c:ImWchar):Float32-instance-method" class="signature"><strong>#get_char_advance</strong>(c : ImWchar) : Float32</a>
         
-          <div class="summary"><p>[<a href="https://github.com/ocornut/imgui/blob/v1.78/imgui.h#L2424" target="_blank">View C++ header</a>]</p></div>
+          <div class="summary"><p><a href="https://github.com/ocornut/imgui/blob/v1.78/imgui.h#L2424" target="_blank">ImFont::GetCharAdvance()</a></p></div>
         
       </li>
     
       <li class="entry-summary">
         <a href="#get_debug_name:String-instance-method" class="signature"><strong>#get_debug_name</strong> : String</a>
         
-          <div class="summary"><p>[<a href="https://github.com/ocornut/imgui/blob/v1.78/imgui.h#L2426" target="_blank">View C++ header</a>]</p></div>
+          <div class="summary"><p><a href="https://github.com/ocornut/imgui/blob/v1.78/imgui.h#L2426" target="_blank">ImFont::GetDebugName()</a></p></div>
         
       </li>
     
       <li class="entry-summary">
         <a href="#glyphs:ImVector(ImFontGlyph)-instance-method" class="signature"><strong>#glyphs</strong> : ImVector(ImFontGlyph)</a>
+        
+          <div class="summary"><p>12-16 out All glyphs.</p></div>
         
       </li>
     
@@ -1035,12 +1061,14 @@
       <li class="entry-summary">
         <a href="#grow_index(new_size:Int32):Void-instance-method" class="signature"><strong>#grow_index</strong>(new_size : Int32) : Void</a>
         
-          <div class="summary"><p>[<a href="https://github.com/ocornut/imgui/blob/v1.78/imgui.h#L2438" target="_blank">View C++ header</a>]</p></div>
+          <div class="summary"><p><a href="https://github.com/ocornut/imgui/blob/v1.78/imgui.h#L2438" target="_blank">ImFont::GrowIndex()</a></p></div>
         
       </li>
     
       <li class="entry-summary">
         <a href="#index_advance_x:ImVector(Float32)-instance-method" class="signature"><strong>#index_advance_x</strong> : ImVector(Float32)</a>
+        
+          <div class="summary"><p>12-16 out Sparse.</p></div>
         
       </li>
     
@@ -1052,6 +1080,8 @@
       <li class="entry-summary">
         <a href="#index_lookup:ImVector(ImWchar)-instance-method" class="signature"><strong>#index_lookup</strong> : ImVector(ImWchar)</a>
         
+          <div class="summary"><p>12-16 out Sparse.</p></div>
+        
       </li>
     
       <li class="entry-summary">
@@ -1062,19 +1092,21 @@
       <li class="entry-summary">
         <a href="#is_glyph_range_unused(c_begin:UInt32,c_last:UInt32):Bool-instance-method" class="signature"><strong>#is_glyph_range_unused</strong>(c_begin : UInt32, c_last : UInt32) : Bool</a>
         
-          <div class="summary"><p>[<a href="https://github.com/ocornut/imgui/blob/v1.78/imgui.h#L2443" target="_blank">View C++ header</a>]</p></div>
+          <div class="summary"><p><a href="https://github.com/ocornut/imgui/blob/v1.78/imgui.h#L2443" target="_blank">ImFont::IsGlyphRangeUnused()</a></p></div>
         
       </li>
     
       <li class="entry-summary">
         <a href="#is_loaded:Bool-instance-method" class="signature"><strong>#is_loaded</strong> : Bool</a>
         
-          <div class="summary"><p>[<a href="https://github.com/ocornut/imgui/blob/v1.78/imgui.h#L2425" target="_blank">View C++ header</a>]</p></div>
+          <div class="summary"><p><a href="https://github.com/ocornut/imgui/blob/v1.78/imgui.h#L2425" target="_blank">ImFont::IsLoaded()</a></p></div>
         
       </li>
     
       <li class="entry-summary">
         <a href="#metrics_total_surface:Int32-instance-method" class="signature"><strong>#metrics_total_surface</strong> : Int32</a>
+        
+          <div class="summary"><p>4 out Total surface in pixels to get an idea of the font rasterization/texture cost (not exact, we approximate the cost of padding between glyphs)</p></div>
         
       </li>
     
@@ -1086,19 +1118,21 @@
       <li class="entry-summary">
         <a href="#render_char(draw_list:ImDrawList,size:Float32,pos:ImVec2,col:UInt32,c:ImWchar):Void-instance-method" class="signature"><strong>#render_char</strong>(draw_list : ImDrawList, size : Float32, pos : ImVec2, col : UInt32, c : ImWchar) : Void</a>
         
-          <div class="summary"><p>[<a href="https://github.com/ocornut/imgui/blob/v1.78/imgui.h#L2432" target="_blank">View C++ header</a>]</p></div>
+          <div class="summary"><p><a href="https://github.com/ocornut/imgui/blob/v1.78/imgui.h#L2432" target="_blank">ImFont::RenderChar()</a></p></div>
         
       </li>
     
       <li class="entry-summary">
         <a href="#render_text(draw_list:ImDrawList,size:Float32,pos:ImVec2,col:UInt32,clip_rect:ImVec4,text:Bytes%7CString,wrap_width:Float32=0.0,cpu_fine_clip:Bool=false):Void-instance-method" class="signature"><strong>#render_text</strong>(draw_list : ImDrawList, size : Float32, pos : ImVec2, col : UInt32, clip_rect : ImVec4, text : Bytes | String, wrap_width : Float32 = <span class="n">0.0</span>, cpu_fine_clip : Bool = <span class="n">false</span>) : Void</a>
         
-          <div class="summary"><p>[<a href="https://github.com/ocornut/imgui/blob/v1.78/imgui.h#L2433" target="_blank">View C++ header</a>]</p></div>
+          <div class="summary"><p><a href="https://github.com/ocornut/imgui/blob/v1.78/imgui.h#L2433" target="_blank">ImFont::RenderText()</a></p></div>
         
       </li>
     
       <li class="entry-summary">
         <a href="#scale:Float32-instance-method" class="signature"><strong>#scale</strong> : Float32</a>
+        
+          <div class="summary"><p>4 in = 1.f Base font scale, multiplied by the per-window font scale which you can adjust with SetWindowFontScale()</p></div>
         
       </li>
     
@@ -1110,14 +1144,14 @@
       <li class="entry-summary">
         <a href="#set_fallback_char(c:ImWchar):Void-instance-method" class="signature"><strong>#set_fallback_char</strong>(c : ImWchar) : Void</a>
         
-          <div class="summary"><p>[<a href="https://github.com/ocornut/imgui/blob/v1.78/imgui.h#L2442" target="_blank">View C++ header</a>]</p></div>
+          <div class="summary"><p><a href="https://github.com/ocornut/imgui/blob/v1.78/imgui.h#L2442" target="_blank">ImFont::SetFallbackChar()</a></p></div>
         
       </li>
     
       <li class="entry-summary">
         <a href="#set_glyph_visible(c:ImWchar,visible:Bool):Void-instance-method" class="signature"><strong>#set_glyph_visible</strong>(c : ImWchar, visible : Bool) : Void</a>
         
-          <div class="summary"><p>[<a href="https://github.com/ocornut/imgui/blob/v1.78/imgui.h#L2441" target="_blank">View C++ header</a>]</p></div>
+          <div class="summary"><p><a href="https://github.com/ocornut/imgui/blob/v1.78/imgui.h#L2441" target="_blank">ImFont::SetGlyphVisible()</a></p></div>
         
       </li>
     
@@ -1128,6 +1162,8 @@
     
       <li class="entry-summary">
         <a href="#used4k_pages_map:Slice(UInt8)-instance-method" class="signature"><strong>#used4k_pages_map</strong> : Slice(UInt8)</a>
+        
+          <div class="summary"><p>2 bytes if ImWchar=ImWchar16, 34 bytes if ImWchar==ImWchar32.</p></div>
         
       </li>
     
@@ -1206,13 +1242,13 @@
       
         <div class="doc">
           
-          <p>[<a href="https://github.com/ocornut/imgui/blob/v1.78/imgui.h#L2420" target="_blank">View C++ header</a>]</p>
+          <p><a href="https://github.com/ocornut/imgui/blob/v1.78/imgui.h#L2420" target="_blank">ImFont::ImFont()</a></p>
         </div>
       
       <br/>
       <div>
         
-          [<a href="https://github.com/oprypin/crystal-imgui/blob/master/src/obj.cr#L777" target="_blank">View source</a>]
+          [<a href="https://github.com/oprypin/crystal-imgui/blob/master/src/obj.cr#L5450" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -1241,13 +1277,13 @@
       
         <div class="doc">
           
-          <p>[<a href="https://github.com/ocornut/imgui/blob/v1.78/imgui.h#L2439" target="_blank">View C++ header</a>]</p>
+          <p><a href="https://github.com/ocornut/imgui/blob/v1.78/imgui.h#L2439" target="_blank">ImFont::AddGlyph()</a></p>
         </div>
       
       <br/>
       <div>
         
-          [<a href="https://github.com/oprypin/crystal-imgui/blob/master/src/obj.cr#L717" target="_blank">View source</a>]
+          [<a href="https://github.com/oprypin/crystal-imgui/blob/master/src/obj.cr#L5523" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -1262,13 +1298,15 @@
       
         <div class="doc">
           
-          <p>[<a href="https://github.com/ocornut/imgui/blob/v1.78/imgui.h#L2440" target="_blank">View C++ header</a>]</p>
+          <p>Makes 'dst' character/glyph points to 'src' character/glyph. Currently needs to be called AFTER fonts have been built.</p>
+
+<p><a href="https://github.com/ocornut/imgui/blob/v1.78/imgui.h#L2440" target="_blank">ImFont::AddRemapChar()</a></p>
         </div>
       
       <br/>
       <div>
         
-          [<a href="https://github.com/oprypin/crystal-imgui/blob/master/src/obj.cr#L722" target="_blank">View source</a>]
+          [<a href="https://github.com/oprypin/crystal-imgui/blob/master/src/obj.cr#L5530" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -1281,10 +1319,17 @@
         <a class="method-permalink" href="#ascent:Float32-instance-method">#</a>
       </div>
       
+        <div class="doc">
+          
+          <p>4+4
+out
+Ascent: distance from top to bottom of e.g. 'A' [0..FontSize]</p>
+        </div>
+      
       <br/>
       <div>
         
-          [<a href="https://github.com/oprypin/crystal-imgui/blob/master/src/obj.cr#L684" target="_blank">View source</a>]
+          [<a href="https://github.com/oprypin/crystal-imgui/blob/master/src/obj.cr#L5410" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -1300,7 +1345,7 @@
       <br/>
       <div>
         
-          [<a href="https://github.com/oprypin/crystal-imgui/blob/master/src/obj.cr#L688" target="_blank">View source</a>]
+          [<a href="https://github.com/oprypin/crystal-imgui/blob/master/src/obj.cr#L5414" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -1315,13 +1360,13 @@
       
         <div class="doc">
           
-          <p>[<a href="https://github.com/ocornut/imgui/blob/v1.78/imgui.h#L2436" target="_blank">View C++ header</a>]</p>
+          <p><a href="https://github.com/ocornut/imgui/blob/v1.78/imgui.h#L2436" target="_blank">ImFont::BuildLookupTable()</a></p>
         </div>
       
       <br/>
       <div>
         
-          [<a href="https://github.com/oprypin/crystal-imgui/blob/master/src/obj.cr#L727" target="_blank">View source</a>]
+          [<a href="https://github.com/oprypin/crystal-imgui/blob/master/src/obj.cr#L5508" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -1336,13 +1381,15 @@
       
         <div class="doc">
           
-          <p>[<a href="https://github.com/ocornut/imgui/blob/v1.78/imgui.h#L2430" target="_blank">View C++ header</a>]</p>
+          <p>utf8</p>
+
+<p><a href="https://github.com/ocornut/imgui/blob/v1.78/imgui.h#L2430" target="_blank">ImFont::CalcTextSizeA()</a></p>
         </div>
       
       <br/>
       <div>
         
-          [<a href="https://github.com/oprypin/crystal-imgui/blob/master/src/obj.cr#L732" target="_blank">View source</a>]
+          [<a href="https://github.com/oprypin/crystal-imgui/blob/master/src/obj.cr#L5486" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -1357,13 +1404,13 @@
       
         <div class="doc">
           
-          <p>[<a href="https://github.com/ocornut/imgui/blob/v1.78/imgui.h#L2431" target="_blank">View C++ header</a>]</p>
+          <p><a href="https://github.com/ocornut/imgui/blob/v1.78/imgui.h#L2431" target="_blank">ImFont::CalcWordWrapPositionA()</a></p>
         </div>
       
       <br/>
       <div>
         
-          [<a href="https://github.com/oprypin/crystal-imgui/blob/master/src/obj.cr#L738" target="_blank">View source</a>]
+          [<a href="https://github.com/oprypin/crystal-imgui/blob/master/src/obj.cr#L5492" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -1378,13 +1425,13 @@
       
         <div class="doc">
           
-          <p>[<a href="https://github.com/ocornut/imgui/blob/v1.78/imgui.h#L2437" target="_blank">View C++ header</a>]</p>
+          <p><a href="https://github.com/ocornut/imgui/blob/v1.78/imgui.h#L2437" target="_blank">ImFont::ClearOutputData()</a></p>
         </div>
       
       <br/>
       <div>
         
-          [<a href="https://github.com/oprypin/crystal-imgui/blob/master/src/obj.cr#L744" target="_blank">View source</a>]
+          [<a href="https://github.com/oprypin/crystal-imgui/blob/master/src/obj.cr#L5513" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -1397,10 +1444,17 @@
         <a class="method-permalink" href="#config_data:Slice(ImFontConfig)-instance-method">#</a>
       </div>
       
+        <div class="doc">
+          
+          <p>4-8
+in
+Pointer within ContainerAtlas->ConfigData</p>
+        </div>
+      
       <br/>
       <div>
         
-          [<a href="https://github.com/oprypin/crystal-imgui/blob/master/src/obj.cr#L636" target="_blank">View source</a>]
+          [<a href="https://github.com/oprypin/crystal-imgui/blob/master/src/obj.cr#L5341" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -1416,7 +1470,7 @@
       <br/>
       <div>
         
-          [<a href="https://github.com/oprypin/crystal-imgui/blob/master/src/obj.cr#L640" target="_blank">View source</a>]
+          [<a href="https://github.com/oprypin/crystal-imgui/blob/master/src/obj.cr#L5345" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -1429,10 +1483,18 @@
         <a class="method-permalink" href="#config_data_count:Int16-instance-method">#</a>
       </div>
       
+        <div class="doc">
+          
+          <p>2
+in
+~ 1
+Number of ImFontConfig involved in creating this font. Bigger than 1 when merging multiple font sources into one ImFont.</p>
+        </div>
+      
       <br/>
       <div>
         
-          [<a href="https://github.com/oprypin/crystal-imgui/blob/master/src/obj.cr#L644" target="_blank">View source</a>]
+          [<a href="https://github.com/oprypin/crystal-imgui/blob/master/src/obj.cr#L5353" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -1448,7 +1510,7 @@
       <br/>
       <div>
         
-          [<a href="https://github.com/oprypin/crystal-imgui/blob/master/src/obj.cr#L648" target="_blank">View source</a>]
+          [<a href="https://github.com/oprypin/crystal-imgui/blob/master/src/obj.cr#L5357" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -1461,10 +1523,17 @@
         <a class="method-permalink" href="#container_atlas:ImFontAtlas-instance-method">#</a>
       </div>
       
+        <div class="doc">
+          
+          <p>4-8
+out
+What we has been loaded into</p>
+        </div>
+      
       <br/>
       <div>
         
-          [<a href="https://github.com/oprypin/crystal-imgui/blob/master/src/obj.cr#L628" target="_blank">View source</a>]
+          [<a href="https://github.com/oprypin/crystal-imgui/blob/master/src/obj.cr#L5330" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -1480,7 +1549,7 @@
       <br/>
       <div>
         
-          [<a href="https://github.com/oprypin/crystal-imgui/blob/master/src/obj.cr#L632" target="_blank">View source</a>]
+          [<a href="https://github.com/oprypin/crystal-imgui/blob/master/src/obj.cr#L5334" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -1493,10 +1562,17 @@
         <a class="method-permalink" href="#descent:Float32-instance-method">#</a>
       </div>
       
+        <div class="doc">
+          
+          <p>4+4
+out
+Ascent: distance from top to bottom of e.g. 'A' [0..FontSize]</p>
+        </div>
+      
       <br/>
       <div>
         
-          [<a href="https://github.com/oprypin/crystal-imgui/blob/master/src/obj.cr#L692" target="_blank">View source</a>]
+          [<a href="https://github.com/oprypin/crystal-imgui/blob/master/src/obj.cr#L5421" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -1512,7 +1588,7 @@
       <br/>
       <div>
         
-          [<a href="https://github.com/oprypin/crystal-imgui/blob/master/src/obj.cr#L696" target="_blank">View source</a>]
+          [<a href="https://github.com/oprypin/crystal-imgui/blob/master/src/obj.cr#L5425" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -1525,10 +1601,16 @@
         <a class="method-permalink" href="#dirty_lookup_tables:Bool-instance-method">#</a>
       </div>
       
+        <div class="doc">
+          
+          <p>1
+out //</p>
+        </div>
+      
       <br/>
       <div>
         
-          [<a href="https://github.com/oprypin/crystal-imgui/blob/master/src/obj.cr#L668" target="_blank">View source</a>]
+          [<a href="https://github.com/oprypin/crystal-imgui/blob/master/src/obj.cr#L5387" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -1544,7 +1626,7 @@
       <br/>
       <div>
         
-          [<a href="https://github.com/oprypin/crystal-imgui/blob/master/src/obj.cr#L672" target="_blank">View source</a>]
+          [<a href="https://github.com/oprypin/crystal-imgui/blob/master/src/obj.cr#L5391" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -1557,10 +1639,18 @@
         <a class="method-permalink" href="#display_offset:ImVec2-instance-method">#</a>
       </div>
       
+        <div class="doc">
+          
+          <p>8
+in
+= (0,0)
+Offset font rendering by xx pixels</p>
+        </div>
+      
       <br/>
       <div>
         
-          [<a href="https://github.com/oprypin/crystal-imgui/blob/master/src/obj.cr#L620" target="_blank">View source</a>]
+          [<a href="https://github.com/oprypin/crystal-imgui/blob/master/src/obj.cr#L5319" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -1576,7 +1666,7 @@
       <br/>
       <div>
         
-          [<a href="https://github.com/oprypin/crystal-imgui/blob/master/src/obj.cr#L624" target="_blank">View source</a>]
+          [<a href="https://github.com/oprypin/crystal-imgui/blob/master/src/obj.cr#L5323" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -1589,10 +1679,18 @@
         <a class="method-permalink" href="#ellipsis_char:ImWchar-instance-method">#</a>
       </div>
       
+        <div class="doc">
+          
+          <p>2
+out
+= -1
+Character used for ellipsis rendering.</p>
+        </div>
+      
       <br/>
       <div>
         
-          [<a href="https://github.com/oprypin/crystal-imgui/blob/master/src/obj.cr#L660" target="_blank">View source</a>]
+          [<a href="https://github.com/oprypin/crystal-imgui/blob/master/src/obj.cr#L5377" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -1608,7 +1706,7 @@
       <br/>
       <div>
         
-          [<a href="https://github.com/oprypin/crystal-imgui/blob/master/src/obj.cr#L664" target="_blank">View source</a>]
+          [<a href="https://github.com/oprypin/crystal-imgui/blob/master/src/obj.cr#L5381" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -1621,10 +1719,17 @@
         <a class="method-permalink" href="#fallback_advance_x:Float32-instance-method">#</a>
       </div>
       
+        <div class="doc">
+          
+          <p>4
+out
+= FallbackGlyph->AdvanceX</p>
+        </div>
+      
       <br/>
       <div>
         
-          [<a href="https://github.com/oprypin/crystal-imgui/blob/master/src/obj.cr#L578" target="_blank">View source</a>]
+          [<a href="https://github.com/oprypin/crystal-imgui/blob/master/src/obj.cr#L5261" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -1640,7 +1745,7 @@
       <br/>
       <div>
         
-          [<a href="https://github.com/oprypin/crystal-imgui/blob/master/src/obj.cr#L582" target="_blank">View source</a>]
+          [<a href="https://github.com/oprypin/crystal-imgui/blob/master/src/obj.cr#L5265" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -1653,10 +1758,18 @@
         <a class="method-permalink" href="#fallback_char:ImWchar-instance-method">#</a>
       </div>
       
+        <div class="doc">
+          
+          <p>2
+in
+= '?'
+Replacement character if a glyph isn't found. Only set via SetFallbackChar()</p>
+        </div>
+      
       <br/>
       <div>
         
-          [<a href="https://github.com/oprypin/crystal-imgui/blob/master/src/obj.cr#L652" target="_blank">View source</a>]
+          [<a href="https://github.com/oprypin/crystal-imgui/blob/master/src/obj.cr#L5365" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -1672,7 +1785,7 @@
       <br/>
       <div>
         
-          [<a href="https://github.com/oprypin/crystal-imgui/blob/master/src/obj.cr#L656" target="_blank">View source</a>]
+          [<a href="https://github.com/oprypin/crystal-imgui/blob/master/src/obj.cr#L5369" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -1685,10 +1798,17 @@
         <a class="method-permalink" href="#fallback_glyph:ImFontGlyph?-instance-method">#</a>
       </div>
       
+        <div class="doc">
+          
+          <p>4-8
+out
+= FindGlyph(FontFallbackChar)</p>
+        </div>
+      
       <br/>
       <div>
         
-          [<a href="https://github.com/oprypin/crystal-imgui/blob/master/src/obj.cr#L612" target="_blank">View source</a>]
+          [<a href="https://github.com/oprypin/crystal-imgui/blob/master/src/obj.cr#L5307" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -1704,7 +1824,7 @@
       <br/>
       <div>
         
-          [<a href="https://github.com/oprypin/crystal-imgui/blob/master/src/obj.cr#L616" target="_blank">View source</a>]
+          [<a href="https://github.com/oprypin/crystal-imgui/blob/master/src/obj.cr#L5311" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -1719,13 +1839,13 @@
       
         <div class="doc">
           
-          <p>[<a href="https://github.com/ocornut/imgui/blob/v1.78/imgui.h#L2422" target="_blank">View C++ header</a>]</p>
+          <p><a href="https://github.com/ocornut/imgui/blob/v1.78/imgui.h#L2422" target="_blank">ImFont::FindGlyph()</a></p>
         </div>
       
       <br/>
       <div>
         
-          [<a href="https://github.com/oprypin/crystal-imgui/blob/master/src/obj.cr#L749" target="_blank">View source</a>]
+          [<a href="https://github.com/oprypin/crystal-imgui/blob/master/src/obj.cr#L5456" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -1740,13 +1860,13 @@
       
         <div class="doc">
           
-          <p>[<a href="https://github.com/ocornut/imgui/blob/v1.78/imgui.h#L2423" target="_blank">View C++ header</a>]</p>
+          <p><a href="https://github.com/ocornut/imgui/blob/v1.78/imgui.h#L2423" target="_blank">ImFont::FindGlyphNoFallback()</a></p>
         </div>
       
       <br/>
       <div>
         
-          [<a href="https://github.com/oprypin/crystal-imgui/blob/master/src/obj.cr#L755" target="_blank">View source</a>]
+          [<a href="https://github.com/oprypin/crystal-imgui/blob/master/src/obj.cr#L5462" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -1759,10 +1879,17 @@
         <a class="method-permalink" href="#font_size:Float32-instance-method">#</a>
       </div>
       
+        <div class="doc">
+          
+          <p>4
+in
+Height of characters/line, set during loading (don't change after loading)</p>
+        </div>
+      
       <br/>
       <div>
         
-          [<a href="https://github.com/oprypin/crystal-imgui/blob/master/src/obj.cr#L586" target="_blank">View source</a>]
+          [<a href="https://github.com/oprypin/crystal-imgui/blob/master/src/obj.cr#L5272" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -1778,7 +1905,7 @@
       <br/>
       <div>
         
-          [<a href="https://github.com/oprypin/crystal-imgui/blob/master/src/obj.cr#L590" target="_blank">View source</a>]
+          [<a href="https://github.com/oprypin/crystal-imgui/blob/master/src/obj.cr#L5276" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -1793,13 +1920,13 @@
       
         <div class="doc">
           
-          <p>[<a href="https://github.com/ocornut/imgui/blob/v1.78/imgui.h#L2424" target="_blank">View C++ header</a>]</p>
+          <p><a href="https://github.com/ocornut/imgui/blob/v1.78/imgui.h#L2424" target="_blank">ImFont::GetCharAdvance()</a></p>
         </div>
       
       <br/>
       <div>
         
-          [<a href="https://github.com/oprypin/crystal-imgui/blob/master/src/obj.cr#L761" target="_blank">View source</a>]
+          [<a href="https://github.com/oprypin/crystal-imgui/blob/master/src/obj.cr#L5468" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -1814,13 +1941,13 @@
       
         <div class="doc">
           
-          <p>[<a href="https://github.com/ocornut/imgui/blob/v1.78/imgui.h#L2426" target="_blank">View C++ header</a>]</p>
+          <p><a href="https://github.com/ocornut/imgui/blob/v1.78/imgui.h#L2426" target="_blank">ImFont::GetDebugName()</a></p>
         </div>
       
       <br/>
       <div>
         
-          [<a href="https://github.com/oprypin/crystal-imgui/blob/master/src/obj.cr#L766" target="_blank">View source</a>]
+          [<a href="https://github.com/oprypin/crystal-imgui/blob/master/src/obj.cr#L5478" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -1833,10 +1960,17 @@
         <a class="method-permalink" href="#glyphs:ImVector(ImFontGlyph)-instance-method">#</a>
       </div>
       
+        <div class="doc">
+          
+          <p>12-16
+out
+All glyphs.</p>
+        </div>
+      
       <br/>
       <div>
         
-          [<a href="https://github.com/oprypin/crystal-imgui/blob/master/src/obj.cr#L603" target="_blank">View source</a>]
+          [<a href="https://github.com/oprypin/crystal-imgui/blob/master/src/obj.cr#L5295" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -1852,7 +1986,7 @@
       <br/>
       <div>
         
-          [<a href="https://github.com/oprypin/crystal-imgui/blob/master/src/obj.cr#L608" target="_blank">View source</a>]
+          [<a href="https://github.com/oprypin/crystal-imgui/blob/master/src/obj.cr#L5300" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -1867,13 +2001,13 @@
       
         <div class="doc">
           
-          <p>[<a href="https://github.com/ocornut/imgui/blob/v1.78/imgui.h#L2438" target="_blank">View C++ header</a>]</p>
+          <p><a href="https://github.com/ocornut/imgui/blob/v1.78/imgui.h#L2438" target="_blank">ImFont::GrowIndex()</a></p>
         </div>
       
       <br/>
       <div>
         
-          [<a href="https://github.com/oprypin/crystal-imgui/blob/master/src/obj.cr#L772" target="_blank">View source</a>]
+          [<a href="https://github.com/oprypin/crystal-imgui/blob/master/src/obj.cr#L5518" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -1886,10 +2020,17 @@
         <a class="method-permalink" href="#index_advance_x:ImVector(Float32)-instance-method">#</a>
       </div>
       
+        <div class="doc">
+          
+          <p>12-16
+out
+Sparse. Glyphs->AdvanceX in a directly indexable way (cache-friendly for CalcTextSize functions which only this this info, and are often bottleneck in large UI).</p>
+        </div>
+      
       <br/>
       <div>
         
-          [<a href="https://github.com/oprypin/crystal-imgui/blob/master/src/obj.cr#L569" target="_blank">View source</a>]
+          [<a href="https://github.com/oprypin/crystal-imgui/blob/master/src/obj.cr#L5249" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -1905,7 +2046,7 @@
       <br/>
       <div>
         
-          [<a href="https://github.com/oprypin/crystal-imgui/blob/master/src/obj.cr#L574" target="_blank">View source</a>]
+          [<a href="https://github.com/oprypin/crystal-imgui/blob/master/src/obj.cr#L5254" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -1918,10 +2059,17 @@
         <a class="method-permalink" href="#index_lookup:ImVector(ImWchar)-instance-method">#</a>
       </div>
       
+        <div class="doc">
+          
+          <p>12-16
+out
+Sparse. Index glyphs by Unicode code-point.</p>
+        </div>
+      
       <br/>
       <div>
         
-          [<a href="https://github.com/oprypin/crystal-imgui/blob/master/src/obj.cr#L594" target="_blank">View source</a>]
+          [<a href="https://github.com/oprypin/crystal-imgui/blob/master/src/obj.cr#L5283" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -1937,7 +2085,7 @@
       <br/>
       <div>
         
-          [<a href="https://github.com/oprypin/crystal-imgui/blob/master/src/obj.cr#L599" target="_blank">View source</a>]
+          [<a href="https://github.com/oprypin/crystal-imgui/blob/master/src/obj.cr#L5288" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -1952,13 +2100,13 @@
       
         <div class="doc">
           
-          <p>[<a href="https://github.com/ocornut/imgui/blob/v1.78/imgui.h#L2443" target="_blank">View C++ header</a>]</p>
+          <p><a href="https://github.com/ocornut/imgui/blob/v1.78/imgui.h#L2443" target="_blank">ImFont::IsGlyphRangeUnused()</a></p>
         </div>
       
       <br/>
       <div>
         
-          [<a href="https://github.com/oprypin/crystal-imgui/blob/master/src/obj.cr#L783" target="_blank">View source</a>]
+          [<a href="https://github.com/oprypin/crystal-imgui/blob/master/src/obj.cr#L5545" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -1973,13 +2121,13 @@
       
         <div class="doc">
           
-          <p>[<a href="https://github.com/ocornut/imgui/blob/v1.78/imgui.h#L2425" target="_blank">View C++ header</a>]</p>
+          <p><a href="https://github.com/ocornut/imgui/blob/v1.78/imgui.h#L2425" target="_blank">ImFont::IsLoaded()</a></p>
         </div>
       
       <br/>
       <div>
         
-          [<a href="https://github.com/oprypin/crystal-imgui/blob/master/src/obj.cr#L788" target="_blank">View source</a>]
+          [<a href="https://github.com/oprypin/crystal-imgui/blob/master/src/obj.cr#L5473" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -1992,10 +2140,17 @@
         <a class="method-permalink" href="#metrics_total_surface:Int32-instance-method">#</a>
       </div>
       
+        <div class="doc">
+          
+          <p>4
+out
+Total surface in pixels to get an idea of the font rasterization/texture cost (not exact, we approximate the cost of padding between glyphs)</p>
+        </div>
+      
       <br/>
       <div>
         
-          [<a href="https://github.com/oprypin/crystal-imgui/blob/master/src/obj.cr#L700" target="_blank">View source</a>]
+          [<a href="https://github.com/oprypin/crystal-imgui/blob/master/src/obj.cr#L5432" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -2011,7 +2166,7 @@
       <br/>
       <div>
         
-          [<a href="https://github.com/oprypin/crystal-imgui/blob/master/src/obj.cr#L704" target="_blank">View source</a>]
+          [<a href="https://github.com/oprypin/crystal-imgui/blob/master/src/obj.cr#L5436" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -2026,13 +2181,13 @@
       
         <div class="doc">
           
-          <p>[<a href="https://github.com/ocornut/imgui/blob/v1.78/imgui.h#L2432" target="_blank">View C++ header</a>]</p>
+          <p><a href="https://github.com/ocornut/imgui/blob/v1.78/imgui.h#L2432" target="_blank">ImFont::RenderChar()</a></p>
         </div>
       
       <br/>
       <div>
         
-          [<a href="https://github.com/oprypin/crystal-imgui/blob/master/src/obj.cr#L793" target="_blank">View source</a>]
+          [<a href="https://github.com/oprypin/crystal-imgui/blob/master/src/obj.cr#L5498" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -2047,13 +2202,13 @@
       
         <div class="doc">
           
-          <p>[<a href="https://github.com/ocornut/imgui/blob/v1.78/imgui.h#L2433" target="_blank">View C++ header</a>]</p>
+          <p><a href="https://github.com/ocornut/imgui/blob/v1.78/imgui.h#L2433" target="_blank">ImFont::RenderText()</a></p>
         </div>
       
       <br/>
       <div>
         
-          [<a href="https://github.com/oprypin/crystal-imgui/blob/master/src/obj.cr#L798" target="_blank">View source</a>]
+          [<a href="https://github.com/oprypin/crystal-imgui/blob/master/src/obj.cr#L5503" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -2066,10 +2221,18 @@
         <a class="method-permalink" href="#scale:Float32-instance-method">#</a>
       </div>
       
+        <div class="doc">
+          
+          <p>4
+in
+= 1.f
+Base font scale, multiplied by the per-window font scale which you can adjust with SetWindowFontScale()</p>
+        </div>
+      
       <br/>
       <div>
         
-          [<a href="https://github.com/oprypin/crystal-imgui/blob/master/src/obj.cr#L676" target="_blank">View source</a>]
+          [<a href="https://github.com/oprypin/crystal-imgui/blob/master/src/obj.cr#L5399" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -2085,7 +2248,7 @@
       <br/>
       <div>
         
-          [<a href="https://github.com/oprypin/crystal-imgui/blob/master/src/obj.cr#L680" target="_blank">View source</a>]
+          [<a href="https://github.com/oprypin/crystal-imgui/blob/master/src/obj.cr#L5403" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -2100,13 +2263,13 @@
       
         <div class="doc">
           
-          <p>[<a href="https://github.com/ocornut/imgui/blob/v1.78/imgui.h#L2442" target="_blank">View C++ header</a>]</p>
+          <p><a href="https://github.com/ocornut/imgui/blob/v1.78/imgui.h#L2442" target="_blank">ImFont::SetFallbackChar()</a></p>
         </div>
       
       <br/>
       <div>
         
-          [<a href="https://github.com/oprypin/crystal-imgui/blob/master/src/obj.cr#L803" target="_blank">View source</a>]
+          [<a href="https://github.com/oprypin/crystal-imgui/blob/master/src/obj.cr#L5540" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -2121,13 +2284,13 @@
       
         <div class="doc">
           
-          <p>[<a href="https://github.com/ocornut/imgui/blob/v1.78/imgui.h#L2441" target="_blank">View C++ header</a>]</p>
+          <p><a href="https://github.com/ocornut/imgui/blob/v1.78/imgui.h#L2441" target="_blank">ImFont::SetGlyphVisible()</a></p>
         </div>
       
       <br/>
       <div>
         
-          [<a href="https://github.com/oprypin/crystal-imgui/blob/master/src/obj.cr#L808" target="_blank">View source</a>]
+          [<a href="https://github.com/oprypin/crystal-imgui/blob/master/src/obj.cr#L5535" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -2143,7 +2306,7 @@
       <br/>
       <div>
         
-          [<a href="https://github.com/oprypin/crystal-imgui/blob/master/src/obj.cr#L567" target="_blank">View source</a>]
+          [<a href="https://github.com/oprypin/crystal-imgui/blob/master/src/obj.cr#L5244" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -2156,10 +2319,15 @@
         <a class="method-permalink" href="#used4k_pages_map:Slice(UInt8)-instance-method">#</a>
       </div>
       
+        <div class="doc">
+          
+          <p>2 bytes if ImWchar=ImWchar16, 34 bytes if ImWchar==ImWchar32. Store 1-bit for each block of 4K codepoints that has one active glyph. This is mainly used to facilitate iterations across all used codepoints.</p>
+        </div>
+      
       <br/>
       <div>
         
-          [<a href="https://github.com/oprypin/crystal-imgui/blob/master/src/obj.cr#L708" target="_blank">View source</a>]
+          [<a href="https://github.com/oprypin/crystal-imgui/blob/master/src/obj.cr#L5441" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -2175,7 +2343,7 @@
       <br/>
       <div>
         
-          [<a href="https://github.com/oprypin/crystal-imgui/blob/master/src/obj.cr#L712" target="_blank">View source</a>]
+          [<a href="https://github.com/oprypin/crystal-imgui/blob/master/src/obj.cr#L5445" target="_blank">View source</a>]
         
       </div>
     </div>

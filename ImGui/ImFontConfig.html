@@ -749,7 +749,7 @@
     Overview
   </h2>
 
-  <p>[<a href="https://github.com/ocornut/imgui/blob/v1.78/imgui.h#L2206" target="_blank">View C++ header</a>]</p>
+  <p><a href="https://github.com/ocornut/imgui/blob/v1.78/imgui.h#L2206" target="_blank">struct ImFontConfig</a></p>
 
 
 
@@ -788,7 +788,7 @@
   </h2>
   
     
-      <a href="https://github.com/oprypin/crystal-imgui/blob/master/src/obj.cr#L1206" target="_blank">
+      <a href="https://github.com/oprypin/crystal-imgui/blob/master/src/obj.cr#L4513" target="_blank">
         obj.cr
       </a>
     
@@ -812,7 +812,7 @@
       <li class="entry-summary">
         <a href="#new:ImFontConfig-class-method" class="signature"><strong>.new</strong> : ImFontConfig</a>
         
-          <div class="summary"><p>[<a href="https://github.com/ocornut/imgui/blob/v1.78/imgui.h#L2230" target="_blank">View C++ header</a>]</p></div>
+          <div class="summary"><p><a href="https://github.com/ocornut/imgui/blob/v1.78/imgui.h#L2230" target="_blank">ImFontConfig::ImFontConfig()</a></p></div>
         
       </li>
     
@@ -845,6 +845,8 @@
       <li class="entry-summary">
         <a href="#ellipsis_char:ImWchar-instance-method" class="signature"><strong>#ellipsis_char</strong> : ImWchar</a>
         
+          <div class="summary"><p>-1 Explicitly specify unicode codepoint of ellipsis character.</p></div>
+        
       </li>
     
       <li class="entry-summary">
@@ -854,6 +856,8 @@
     
       <li class="entry-summary">
         <a href="#font_data:Pointer(Void)-instance-method" class="signature"><strong>#font_data</strong> : Pointer(Void)</a>
+        
+          <div class="summary"><p>TTF/OTF data</p></div>
         
       </li>
     
@@ -865,6 +869,8 @@
       <li class="entry-summary">
         <a href="#font_data_owned_by_atlas:Bool-instance-method" class="signature"><strong>#font_data_owned_by_atlas</strong> : Bool</a>
         
+          <div class="summary"><p>true TTF/OTF data ownership taken by the container ImFontAtlas (will delete memory itself).</p></div>
+        
       </li>
     
       <li class="entry-summary">
@@ -874,6 +880,8 @@
     
       <li class="entry-summary">
         <a href="#font_data_size:Int32-instance-method" class="signature"><strong>#font_data_size</strong> : Int32</a>
+        
+          <div class="summary"><p>TTF/OTF data size</p></div>
         
       </li>
     
@@ -885,6 +893,8 @@
       <li class="entry-summary">
         <a href="#font_no:Int32-instance-method" class="signature"><strong>#font_no</strong> : Int32</a>
         
+          <div class="summary"><p>0 Index of font within TTF/OTF file</p></div>
+        
       </li>
     
       <li class="entry-summary">
@@ -894,6 +904,8 @@
     
       <li class="entry-summary">
         <a href="#glyph_extra_spacing:ImVec2-instance-method" class="signature"><strong>#glyph_extra_spacing</strong> : ImVec2</a>
+        
+          <div class="summary"><p>0, 0 Extra spacing (in pixels) between glyphs.</p></div>
         
       </li>
     
@@ -905,6 +917,8 @@
       <li class="entry-summary">
         <a href="#glyph_max_advance_x:Float32-instance-method" class="signature"><strong>#glyph_max_advance_x</strong> : Float32</a>
         
+          <div class="summary"><p>FLT_MAX Maximum AdvanceX for glyphs</p></div>
+        
       </li>
     
       <li class="entry-summary">
@@ -914,6 +928,8 @@
     
       <li class="entry-summary">
         <a href="#glyph_min_advance_x:Float32-instance-method" class="signature"><strong>#glyph_min_advance_x</strong> : Float32</a>
+        
+          <div class="summary"><p>0 Minimum AdvanceX for glyphs, set Min to align font icons, set both Min/Max to enforce mono-space font</p></div>
         
       </li>
     
@@ -925,6 +941,8 @@
       <li class="entry-summary">
         <a href="#glyph_offset:ImVec2-instance-method" class="signature"><strong>#glyph_offset</strong> : ImVec2</a>
         
+          <div class="summary"><p>0, 0 Offset all glyphs from this font input.</p></div>
+        
       </li>
     
       <li class="entry-summary">
@@ -934,6 +952,8 @@
     
       <li class="entry-summary">
         <a href="#glyph_ranges:Pointer(ImWchar)-instance-method" class="signature"><strong>#glyph_ranges</strong> : Pointer(ImWchar)</a>
+        
+          <div class="summary"><p>NULL Pointer to a user-provided list of Unicode range (2 value per range, values are inclusive, zero-terminated list).</p></div>
         
       </li>
     
@@ -945,6 +965,8 @@
       <li class="entry-summary">
         <a href="#merge_mode:Bool-instance-method" class="signature"><strong>#merge_mode</strong> : Bool</a>
         
+          <div class="summary"><p>false Merge into previous ImFont, so you can combine multiple inputs font into one ImFont (e.g.</p></div>
+        
       </li>
     
       <li class="entry-summary">
@@ -954,6 +976,8 @@
     
       <li class="entry-summary">
         <a href="#name:Slice(LibC::Char)-instance-method" class="signature"><strong>#name</strong> : Slice(LibC::Char)</a>
+        
+          <div class="summary"><p>Name (strictly to ease debugging)</p></div>
         
       </li>
     
@@ -965,6 +989,8 @@
       <li class="entry-summary">
         <a href="#oversample_h:Int32-instance-method" class="signature"><strong>#oversample_h</strong> : Int32</a>
         
+          <div class="summary"><p>3 Rasterize at higher quality for sub-pixel positioning.</p></div>
+        
       </li>
     
       <li class="entry-summary">
@@ -974,6 +1000,8 @@
     
       <li class="entry-summary">
         <a href="#oversample_v:Int32-instance-method" class="signature"><strong>#oversample_v</strong> : Int32</a>
+        
+          <div class="summary"><p>1 Rasterize at higher quality for sub-pixel positioning.</p></div>
         
       </li>
     
@@ -985,6 +1013,8 @@
       <li class="entry-summary">
         <a href="#pixel_snap_h:Bool-instance-method" class="signature"><strong>#pixel_snap_h</strong> : Bool</a>
         
+          <div class="summary"><p>false Align every glyph to pixel boundary.</p></div>
+        
       </li>
     
       <li class="entry-summary">
@@ -994,6 +1024,8 @@
     
       <li class="entry-summary">
         <a href="#rasterizer_flags:UInt32-instance-method" class="signature"><strong>#rasterizer_flags</strong> : UInt32</a>
+        
+          <div class="summary"><p>0x00 Settings for custom font rasterizer (e.g.</p></div>
         
       </li>
     
@@ -1005,6 +1037,8 @@
       <li class="entry-summary">
         <a href="#rasterizer_multiply:Float32-instance-method" class="signature"><strong>#rasterizer_multiply</strong> : Float32</a>
         
+          <div class="summary"><ol><li>0f Brighten (>1.0f) or darken (&lt;1.0f) font output.</li></ol></div>
+        
       </li>
     
       <li class="entry-summary">
@@ -1014,6 +1048,8 @@
     
       <li class="entry-summary">
         <a href="#size_pixels:Float32-instance-method" class="signature"><strong>#size_pixels</strong> : Float32</a>
+        
+          <div class="summary"><p>Size in pixels for rasterizer (more or less maps to the resulting font height).</p></div>
         
       </li>
     
@@ -1097,13 +1133,13 @@
       
         <div class="doc">
           
-          <p>[<a href="https://github.com/ocornut/imgui/blob/v1.78/imgui.h#L2230" target="_blank">View C++ header</a>]</p>
+          <p><a href="https://github.com/ocornut/imgui/blob/v1.78/imgui.h#L2230" target="_blank">ImFontConfig::ImFontConfig()</a></p>
         </div>
       
       <br/>
       <div>
         
-          [<a href="https://github.com/oprypin/crystal-imgui/blob/master/src/obj.cr#L1362" target="_blank">View source</a>]
+          [<a href="https://github.com/oprypin/crystal-imgui/blob/master/src/obj.cr#L4701" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -1133,7 +1169,7 @@
       <br/>
       <div>
         
-          [<a href="https://github.com/oprypin/crystal-imgui/blob/master/src/obj.cr#L1353" target="_blank">View source</a>]
+          [<a href="https://github.com/oprypin/crystal-imgui/blob/master/src/obj.cr#L4692" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -1149,7 +1185,7 @@
       <br/>
       <div>
         
-          [<a href="https://github.com/oprypin/crystal-imgui/blob/master/src/obj.cr#L1357" target="_blank">View source</a>]
+          [<a href="https://github.com/oprypin/crystal-imgui/blob/master/src/obj.cr#L4696" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -1162,10 +1198,16 @@
         <a class="method-permalink" href="#ellipsis_char:ImWchar-instance-method">#</a>
       </div>
       
+        <div class="doc">
+          
+          <p>-1
+Explicitly specify unicode codepoint of ellipsis character. When fonts are being merged first specified ellipsis will be used.</p>
+        </div>
+      
       <br/>
       <div>
         
-          [<a href="https://github.com/oprypin/crystal-imgui/blob/master/src/obj.cr#L1337" target="_blank">View source</a>]
+          [<a href="https://github.com/oprypin/crystal-imgui/blob/master/src/obj.cr#L4675" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -1181,7 +1223,7 @@
       <br/>
       <div>
         
-          [<a href="https://github.com/oprypin/crystal-imgui/blob/master/src/obj.cr#L1341" target="_blank">View source</a>]
+          [<a href="https://github.com/oprypin/crystal-imgui/blob/master/src/obj.cr#L4679" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -1194,10 +1236,15 @@
         <a class="method-permalink" href="#font_data:Pointer(Void)-instance-method">#</a>
       </div>
       
+        <div class="doc">
+          
+          <p>TTF/OTF data</p>
+        </div>
+      
       <br/>
       <div>
         
-          [<a href="https://github.com/oprypin/crystal-imgui/blob/master/src/obj.cr#L1209" target="_blank">View source</a>]
+          [<a href="https://github.com/oprypin/crystal-imgui/blob/master/src/obj.cr#L4517" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -1213,7 +1260,7 @@
       <br/>
       <div>
         
-          [<a href="https://github.com/oprypin/crystal-imgui/blob/master/src/obj.cr#L1213" target="_blank">View source</a>]
+          [<a href="https://github.com/oprypin/crystal-imgui/blob/master/src/obj.cr#L4521" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -1226,10 +1273,16 @@
         <a class="method-permalink" href="#font_data_owned_by_atlas:Bool-instance-method">#</a>
       </div>
       
+        <div class="doc">
+          
+          <p>true
+TTF/OTF data ownership taken by the container ImFontAtlas (will delete memory itself).</p>
+        </div>
+      
       <br/>
       <div>
         
-          [<a href="https://github.com/oprypin/crystal-imgui/blob/master/src/obj.cr#L1225" target="_blank">View source</a>]
+          [<a href="https://github.com/oprypin/crystal-imgui/blob/master/src/obj.cr#L4536" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -1245,7 +1298,7 @@
       <br/>
       <div>
         
-          [<a href="https://github.com/oprypin/crystal-imgui/blob/master/src/obj.cr#L1229" target="_blank">View source</a>]
+          [<a href="https://github.com/oprypin/crystal-imgui/blob/master/src/obj.cr#L4540" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -1258,10 +1311,15 @@
         <a class="method-permalink" href="#font_data_size:Int32-instance-method">#</a>
       </div>
       
+        <div class="doc">
+          
+          <p>TTF/OTF data size</p>
+        </div>
+      
       <br/>
       <div>
         
-          [<a href="https://github.com/oprypin/crystal-imgui/blob/master/src/obj.cr#L1217" target="_blank">View source</a>]
+          [<a href="https://github.com/oprypin/crystal-imgui/blob/master/src/obj.cr#L4526" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -1277,7 +1335,7 @@
       <br/>
       <div>
         
-          [<a href="https://github.com/oprypin/crystal-imgui/blob/master/src/obj.cr#L1221" target="_blank">View source</a>]
+          [<a href="https://github.com/oprypin/crystal-imgui/blob/master/src/obj.cr#L4530" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -1290,10 +1348,16 @@
         <a class="method-permalink" href="#font_no:Int32-instance-method">#</a>
       </div>
       
+        <div class="doc">
+          
+          <p>0
+Index of font within TTF/OTF file</p>
+        </div>
+      
       <br/>
       <div>
         
-          [<a href="https://github.com/oprypin/crystal-imgui/blob/master/src/obj.cr#L1233" target="_blank">View source</a>]
+          [<a href="https://github.com/oprypin/crystal-imgui/blob/master/src/obj.cr#L4546" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -1309,7 +1373,7 @@
       <br/>
       <div>
         
-          [<a href="https://github.com/oprypin/crystal-imgui/blob/master/src/obj.cr#L1237" target="_blank">View source</a>]
+          [<a href="https://github.com/oprypin/crystal-imgui/blob/master/src/obj.cr#L4550" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -1322,10 +1386,16 @@
         <a class="method-permalink" href="#glyph_extra_spacing:ImVec2-instance-method">#</a>
       </div>
       
+        <div class="doc">
+          
+          <p>0, 0
+Extra spacing (in pixels) between glyphs. Only X axis is supported for now.</p>
+        </div>
+      
       <br/>
       <div>
         
-          [<a href="https://github.com/oprypin/crystal-imgui/blob/master/src/obj.cr#L1273" target="_blank">View source</a>]
+          [<a href="https://github.com/oprypin/crystal-imgui/blob/master/src/obj.cr#L4595" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -1341,7 +1411,7 @@
       <br/>
       <div>
         
-          [<a href="https://github.com/oprypin/crystal-imgui/blob/master/src/obj.cr#L1277" target="_blank">View source</a>]
+          [<a href="https://github.com/oprypin/crystal-imgui/blob/master/src/obj.cr#L4599" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -1354,10 +1424,16 @@
         <a class="method-permalink" href="#glyph_max_advance_x:Float32-instance-method">#</a>
       </div>
       
+        <div class="doc">
+          
+          <p>FLT_MAX
+Maximum AdvanceX for glyphs</p>
+        </div>
+      
       <br/>
       <div>
         
-          [<a href="https://github.com/oprypin/crystal-imgui/blob/master/src/obj.cr#L1305" target="_blank">View source</a>]
+          [<a href="https://github.com/oprypin/crystal-imgui/blob/master/src/obj.cr#L4635" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -1373,7 +1449,7 @@
       <br/>
       <div>
         
-          [<a href="https://github.com/oprypin/crystal-imgui/blob/master/src/obj.cr#L1309" target="_blank">View source</a>]
+          [<a href="https://github.com/oprypin/crystal-imgui/blob/master/src/obj.cr#L4639" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -1386,10 +1462,16 @@
         <a class="method-permalink" href="#glyph_min_advance_x:Float32-instance-method">#</a>
       </div>
       
+        <div class="doc">
+          
+          <p>0
+Minimum AdvanceX for glyphs, set Min to align font icons, set both Min/Max to enforce mono-space font</p>
+        </div>
+      
       <br/>
       <div>
         
-          [<a href="https://github.com/oprypin/crystal-imgui/blob/master/src/obj.cr#L1297" target="_blank">View source</a>]
+          [<a href="https://github.com/oprypin/crystal-imgui/blob/master/src/obj.cr#L4625" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -1405,7 +1487,7 @@
       <br/>
       <div>
         
-          [<a href="https://github.com/oprypin/crystal-imgui/blob/master/src/obj.cr#L1301" target="_blank">View source</a>]
+          [<a href="https://github.com/oprypin/crystal-imgui/blob/master/src/obj.cr#L4629" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -1418,10 +1500,16 @@
         <a class="method-permalink" href="#glyph_offset:ImVec2-instance-method">#</a>
       </div>
       
+        <div class="doc">
+          
+          <p>0, 0
+Offset all glyphs from this font input.</p>
+        </div>
+      
       <br/>
       <div>
         
-          [<a href="https://github.com/oprypin/crystal-imgui/blob/master/src/obj.cr#L1281" target="_blank">View source</a>]
+          [<a href="https://github.com/oprypin/crystal-imgui/blob/master/src/obj.cr#L4605" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -1437,7 +1525,7 @@
       <br/>
       <div>
         
-          [<a href="https://github.com/oprypin/crystal-imgui/blob/master/src/obj.cr#L1285" target="_blank">View source</a>]
+          [<a href="https://github.com/oprypin/crystal-imgui/blob/master/src/obj.cr#L4609" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -1450,10 +1538,16 @@
         <a class="method-permalink" href="#glyph_ranges:Pointer(ImWchar)-instance-method">#</a>
       </div>
       
+        <div class="doc">
+          
+          <p>NULL
+Pointer to a user-provided list of Unicode range (2 value per range, values are inclusive, zero-terminated list). THE ARRAY DATA NEEDS TO PERSIST AS LONG AS THE FONT IS ALIVE.</p>
+        </div>
+      
       <br/>
       <div>
         
-          [<a href="https://github.com/oprypin/crystal-imgui/blob/master/src/obj.cr#L1289" target="_blank">View source</a>]
+          [<a href="https://github.com/oprypin/crystal-imgui/blob/master/src/obj.cr#L4615" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -1469,7 +1563,7 @@
       <br/>
       <div>
         
-          [<a href="https://github.com/oprypin/crystal-imgui/blob/master/src/obj.cr#L1293" target="_blank">View source</a>]
+          [<a href="https://github.com/oprypin/crystal-imgui/blob/master/src/obj.cr#L4619" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -1482,10 +1576,16 @@
         <a class="method-permalink" href="#merge_mode:Bool-instance-method">#</a>
       </div>
       
+        <div class="doc">
+          
+          <p>false
+Merge into previous ImFont, so you can combine multiple inputs font into one ImFont (e.g. ASCII font + icons + Japanese glyphs). You may want to use GlyphOffset.y when merge font of different heights.</p>
+        </div>
+      
       <br/>
       <div>
         
-          [<a href="https://github.com/oprypin/crystal-imgui/blob/master/src/obj.cr#L1313" target="_blank">View source</a>]
+          [<a href="https://github.com/oprypin/crystal-imgui/blob/master/src/obj.cr#L4645" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -1501,7 +1601,7 @@
       <br/>
       <div>
         
-          [<a href="https://github.com/oprypin/crystal-imgui/blob/master/src/obj.cr#L1317" target="_blank">View source</a>]
+          [<a href="https://github.com/oprypin/crystal-imgui/blob/master/src/obj.cr#L4649" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -1514,10 +1614,15 @@
         <a class="method-permalink" href="#name:Slice(LibC::Char)-instance-method">#</a>
       </div>
       
+        <div class="doc">
+          
+          <p>Name (strictly to ease debugging)</p>
+        </div>
+      
       <br/>
       <div>
         
-          [<a href="https://github.com/oprypin/crystal-imgui/blob/master/src/obj.cr#L1345" target="_blank">View source</a>]
+          [<a href="https://github.com/oprypin/crystal-imgui/blob/master/src/obj.cr#L4684" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -1533,7 +1638,7 @@
       <br/>
       <div>
         
-          [<a href="https://github.com/oprypin/crystal-imgui/blob/master/src/obj.cr#L1349" target="_blank">View source</a>]
+          [<a href="https://github.com/oprypin/crystal-imgui/blob/master/src/obj.cr#L4688" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -1546,10 +1651,16 @@
         <a class="method-permalink" href="#oversample_h:Int32-instance-method">#</a>
       </div>
       
+        <div class="doc">
+          
+          <p>3
+Rasterize at higher quality for sub-pixel positioning. Read https://github.com/nothings/stb/blob/master/tests/oversample/README.md for details.</p>
+        </div>
+      
       <br/>
       <div>
         
-          [<a href="https://github.com/oprypin/crystal-imgui/blob/master/src/obj.cr#L1249" target="_blank">View source</a>]
+          [<a href="https://github.com/oprypin/crystal-imgui/blob/master/src/obj.cr#L4565" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -1565,7 +1676,7 @@
       <br/>
       <div>
         
-          [<a href="https://github.com/oprypin/crystal-imgui/blob/master/src/obj.cr#L1253" target="_blank">View source</a>]
+          [<a href="https://github.com/oprypin/crystal-imgui/blob/master/src/obj.cr#L4569" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -1578,10 +1689,16 @@
         <a class="method-permalink" href="#oversample_v:Int32-instance-method">#</a>
       </div>
       
+        <div class="doc">
+          
+          <p>1
+Rasterize at higher quality for sub-pixel positioning. We don't use sub-pixel positions on the Y axis.</p>
+        </div>
+      
       <br/>
       <div>
         
-          [<a href="https://github.com/oprypin/crystal-imgui/blob/master/src/obj.cr#L1257" target="_blank">View source</a>]
+          [<a href="https://github.com/oprypin/crystal-imgui/blob/master/src/obj.cr#L4575" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -1597,7 +1714,7 @@
       <br/>
       <div>
         
-          [<a href="https://github.com/oprypin/crystal-imgui/blob/master/src/obj.cr#L1261" target="_blank">View source</a>]
+          [<a href="https://github.com/oprypin/crystal-imgui/blob/master/src/obj.cr#L4579" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -1610,10 +1727,16 @@
         <a class="method-permalink" href="#pixel_snap_h:Bool-instance-method">#</a>
       </div>
       
+        <div class="doc">
+          
+          <p>false
+Align every glyph to pixel boundary. Useful e.g. if you are merging a non-pixel aligned font with the default font. If enabled, you can set OversampleH/V to 1.</p>
+        </div>
+      
       <br/>
       <div>
         
-          [<a href="https://github.com/oprypin/crystal-imgui/blob/master/src/obj.cr#L1265" target="_blank">View source</a>]
+          [<a href="https://github.com/oprypin/crystal-imgui/blob/master/src/obj.cr#L4585" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -1629,7 +1752,7 @@
       <br/>
       <div>
         
-          [<a href="https://github.com/oprypin/crystal-imgui/blob/master/src/obj.cr#L1269" target="_blank">View source</a>]
+          [<a href="https://github.com/oprypin/crystal-imgui/blob/master/src/obj.cr#L4589" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -1642,10 +1765,16 @@
         <a class="method-permalink" href="#rasterizer_flags:UInt32-instance-method">#</a>
       </div>
       
+        <div class="doc">
+          
+          <p>0x00
+Settings for custom font rasterizer (e.g. ImGuiFreeType). Leave as zero if you aren't using one.</p>
+        </div>
+      
       <br/>
       <div>
         
-          [<a href="https://github.com/oprypin/crystal-imgui/blob/master/src/obj.cr#L1321" target="_blank">View source</a>]
+          [<a href="https://github.com/oprypin/crystal-imgui/blob/master/src/obj.cr#L4655" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -1661,7 +1790,7 @@
       <br/>
       <div>
         
-          [<a href="https://github.com/oprypin/crystal-imgui/blob/master/src/obj.cr#L1325" target="_blank">View source</a>]
+          [<a href="https://github.com/oprypin/crystal-imgui/blob/master/src/obj.cr#L4659" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -1674,10 +1803,16 @@
         <a class="method-permalink" href="#rasterizer_multiply:Float32-instance-method">#</a>
       </div>
       
+        <div class="doc">
+          
+          <ol><li>0f
+Brighten (>1.0f) or darken (&lt;1.0f) font output. Brightening small fonts may be a good workaround to make them more readable.</li></ol>
+        </div>
+      
       <br/>
       <div>
         
-          [<a href="https://github.com/oprypin/crystal-imgui/blob/master/src/obj.cr#L1329" target="_blank">View source</a>]
+          [<a href="https://github.com/oprypin/crystal-imgui/blob/master/src/obj.cr#L4665" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -1693,7 +1828,7 @@
       <br/>
       <div>
         
-          [<a href="https://github.com/oprypin/crystal-imgui/blob/master/src/obj.cr#L1333" target="_blank">View source</a>]
+          [<a href="https://github.com/oprypin/crystal-imgui/blob/master/src/obj.cr#L4669" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -1706,10 +1841,15 @@
         <a class="method-permalink" href="#size_pixels:Float32-instance-method">#</a>
       </div>
       
+        <div class="doc">
+          
+          <p>Size in pixels for rasterizer (more or less maps to the resulting font height).</p>
+        </div>
+      
       <br/>
       <div>
         
-          [<a href="https://github.com/oprypin/crystal-imgui/blob/master/src/obj.cr#L1241" target="_blank">View source</a>]
+          [<a href="https://github.com/oprypin/crystal-imgui/blob/master/src/obj.cr#L4555" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -1725,7 +1865,7 @@
       <br/>
       <div>
         
-          [<a href="https://github.com/oprypin/crystal-imgui/blob/master/src/obj.cr#L1245" target="_blank">View source</a>]
+          [<a href="https://github.com/oprypin/crystal-imgui/blob/master/src/obj.cr#L4559" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -1741,7 +1881,7 @@
       <br/>
       <div>
         
-          [<a href="https://github.com/oprypin/crystal-imgui/blob/master/src/obj.cr#L1207" target="_blank">View source</a>]
+          [<a href="https://github.com/oprypin/crystal-imgui/blob/master/src/obj.cr#L4514" target="_blank">View source</a>]
         
       </div>
     </div>

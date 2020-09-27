@@ -749,7 +749,7 @@
     Overview
   </h2>
 
-  <p>[<a href="https://github.com/ocornut/imgui/blob/v1.78/imgui.h#L2183" target="_blank">View C++ header</a>]</p>
+  <p><a href="https://github.com/ocornut/imgui/blob/v1.78/imgui.h#L2183" target="_blank">struct ImDrawData</a></p>
 
 
 
@@ -788,7 +788,7 @@
   </h2>
   
     
-      <a href="https://github.com/oprypin/crystal-imgui/blob/master/src/obj.cr#L125" target="_blank">
+      <a href="https://github.com/oprypin/crystal-imgui/blob/master/src/obj.cr#L4407" target="_blank">
         obj.cr
       </a>
     
@@ -812,7 +812,7 @@
       <li class="entry-summary">
         <a href="#new:ImDrawData-class-method" class="signature"><strong>.new</strong> : ImDrawData</a>
         
-          <div class="summary"><p>[<a href="https://github.com/ocornut/imgui/blob/v1.78/imgui.h#L2195" target="_blank">View C++ header</a>]</p></div>
+          <div class="summary"><p><a href="https://github.com/ocornut/imgui/blob/v1.78/imgui.h#L2195" target="_blank">ImDrawData::ImDrawData()</a></p></div>
         
       </li>
     
@@ -835,12 +835,14 @@
       <li class="entry-summary">
         <a href="#clear:Void-instance-method" class="signature"><strong>#clear</strong> : Void</a>
         
-          <div class="summary"><p>[<a href="https://github.com/ocornut/imgui/blob/v1.78/imgui.h#L2197" target="_blank">View C++ header</a>]</p></div>
+          <div class="summary"><p>The ImDrawList are owned by ImGuiContext!</p></div>
         
       </li>
     
       <li class="entry-summary">
         <a href="#cmd_lists:Slice(ImDrawList)-instance-method" class="signature"><strong>#cmd_lists</strong> : Slice(ImDrawList)</a>
+        
+          <div class="summary"><p>Array of ImDrawList* to render.</p></div>
         
       </li>
     
@@ -852,6 +854,8 @@
       <li class="entry-summary">
         <a href="#cmd_lists_count:Int32-instance-method" class="signature"><strong>#cmd_lists_count</strong> : Int32</a>
         
+          <div class="summary"><p>Number of ImDrawList* to render</p></div>
+        
       </li>
     
       <li class="entry-summary">
@@ -862,12 +866,14 @@
       <li class="entry-summary">
         <a href="#de_index_all_buffers:Void-instance-method" class="signature"><strong>#de_index_all_buffers</strong> : Void</a>
         
-          <div class="summary"><p>[<a href="https://github.com/ocornut/imgui/blob/v1.78/imgui.h#L2198" target="_blank">View C++ header</a>]</p></div>
+          <div class="summary"><p>Helper to convert all buffers from indexed to non-indexed, in case you cannot render indexed.</p></div>
         
       </li>
     
       <li class="entry-summary">
         <a href="#display_pos:ImVec2-instance-method" class="signature"><strong>#display_pos</strong> : ImVec2</a>
+        
+          <div class="summary"><p>Upper-left position of the viewport to render (== upper-left of the orthogonal projection matrix to use)</p></div>
         
       </li>
     
@@ -879,6 +885,8 @@
       <li class="entry-summary">
         <a href="#display_size:ImVec2-instance-method" class="signature"><strong>#display_size</strong> : ImVec2</a>
         
+          <div class="summary"><p>Size of the viewport to render (== io.DisplaySize for the main viewport) (DisplayPos + DisplaySize == lower-right of the orthogonal projection matrix to use)</p></div>
+        
       </li>
     
       <li class="entry-summary">
@@ -888,6 +896,8 @@
     
       <li class="entry-summary">
         <a href="#framebuffer_scale:ImVec2-instance-method" class="signature"><strong>#framebuffer_scale</strong> : ImVec2</a>
+        
+          <div class="summary"><p>Amount of pixels for each unit of DisplaySize.</p></div>
         
       </li>
     
@@ -899,7 +909,7 @@
       <li class="entry-summary">
         <a href="#scale_clip_rects(fb_scale:ImVec2):Void-instance-method" class="signature"><strong>#scale_clip_rects</strong>(fb_scale : ImVec2) : Void</a>
         
-          <div class="summary"><p>[<a href="https://github.com/ocornut/imgui/blob/v1.78/imgui.h#L2199" target="_blank">View C++ header</a>]</p></div>
+          <div class="summary"><p>Helper to scale the ClipRect field of each ImDrawCmd.</p></div>
         
       </li>
     
@@ -911,6 +921,8 @@
       <li class="entry-summary">
         <a href="#total_idx_count:Int32-instance-method" class="signature"><strong>#total_idx_count</strong> : Int32</a>
         
+          <div class="summary"><p>For convenience, sum of all ImDrawList's IdxBuffer.Size</p></div>
+        
       </li>
     
       <li class="entry-summary">
@@ -921,6 +933,8 @@
       <li class="entry-summary">
         <a href="#total_vtx_count:Int32-instance-method" class="signature"><strong>#total_vtx_count</strong> : Int32</a>
         
+          <div class="summary"><p>For convenience, sum of all ImDrawList's VtxBuffer.Size</p></div>
+        
       </li>
     
       <li class="entry-summary">
@@ -930,6 +944,8 @@
     
       <li class="entry-summary">
         <a href="#valid:Bool-instance-method" class="signature"><strong>#valid</strong> : Bool</a>
+        
+          <div class="summary"><p>Only valid after Render() is called and before the next NewFrame() is called.</p></div>
         
       </li>
     
@@ -1008,13 +1024,13 @@
       
         <div class="doc">
           
-          <p>[<a href="https://github.com/ocornut/imgui/blob/v1.78/imgui.h#L2195" target="_blank">View C++ header</a>]</p>
+          <p><a href="https://github.com/ocornut/imgui/blob/v1.78/imgui.h#L2195" target="_blank">ImDrawData::ImDrawData()</a></p>
         </div>
       
       <br/>
       <div>
         
-          [<a href="https://github.com/oprypin/crystal-imgui/blob/master/src/obj.cr#L203" target="_blank">View source</a>]
+          [<a href="https://github.com/oprypin/crystal-imgui/blob/master/src/obj.cr#L4483" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -1043,13 +1059,15 @@
       
         <div class="doc">
           
-          <p>[<a href="https://github.com/ocornut/imgui/blob/v1.78/imgui.h#L2197" target="_blank">View C++ header</a>]</p>
+          <p>The ImDrawList are owned by ImGuiContext!</p>
+
+<p><a href="https://github.com/ocornut/imgui/blob/v1.78/imgui.h#L2197" target="_blank">ImDrawData::Clear()</a></p>
         </div>
       
       <br/>
       <div>
         
-          [<a href="https://github.com/oprypin/crystal-imgui/blob/master/src/obj.cr#L193" target="_blank">View source</a>]
+          [<a href="https://github.com/oprypin/crystal-imgui/blob/master/src/obj.cr#L4491" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -1062,10 +1080,15 @@
         <a class="method-permalink" href="#cmd_lists:Slice(ImDrawList)-instance-method">#</a>
       </div>
       
+        <div class="doc">
+          
+          <p>Array of ImDrawList* to render. The ImDrawList are owned by ImGuiContext and only pointed to from here.</p>
+        </div>
+      
       <br/>
       <div>
         
-          [<a href="https://github.com/oprypin/crystal-imgui/blob/master/src/obj.cr#L136" target="_blank">View source</a>]
+          [<a href="https://github.com/oprypin/crystal-imgui/blob/master/src/obj.cr#L4420" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -1081,7 +1104,7 @@
       <br/>
       <div>
         
-          [<a href="https://github.com/oprypin/crystal-imgui/blob/master/src/obj.cr#L140" target="_blank">View source</a>]
+          [<a href="https://github.com/oprypin/crystal-imgui/blob/master/src/obj.cr#L4424" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -1094,10 +1117,15 @@
         <a class="method-permalink" href="#cmd_lists_count:Int32-instance-method">#</a>
       </div>
       
+        <div class="doc">
+          
+          <p>Number of ImDrawList* to render</p>
+        </div>
+      
       <br/>
       <div>
         
-          [<a href="https://github.com/oprypin/crystal-imgui/blob/master/src/obj.cr#L144" target="_blank">View source</a>]
+          [<a href="https://github.com/oprypin/crystal-imgui/blob/master/src/obj.cr#L4429" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -1113,7 +1141,7 @@
       <br/>
       <div>
         
-          [<a href="https://github.com/oprypin/crystal-imgui/blob/master/src/obj.cr#L148" target="_blank">View source</a>]
+          [<a href="https://github.com/oprypin/crystal-imgui/blob/master/src/obj.cr#L4433" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -1128,13 +1156,15 @@
       
         <div class="doc">
           
-          <p>[<a href="https://github.com/ocornut/imgui/blob/v1.78/imgui.h#L2198" target="_blank">View C++ header</a>]</p>
+          <p>Helper to convert all buffers from indexed to non-indexed, in case you cannot render indexed. Note: this is slow and most likely a waste of resources. Always prefer indexed rendering!</p>
+
+<p><a href="https://github.com/ocornut/imgui/blob/v1.78/imgui.h#L2198" target="_blank">ImDrawData::DeIndexAllBuffers()</a></p>
         </div>
       
       <br/>
       <div>
         
-          [<a href="https://github.com/oprypin/crystal-imgui/blob/master/src/obj.cr#L198" target="_blank">View source</a>]
+          [<a href="https://github.com/oprypin/crystal-imgui/blob/master/src/obj.cr#L4498" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -1147,10 +1177,15 @@
         <a class="method-permalink" href="#display_pos:ImVec2-instance-method">#</a>
       </div>
       
+        <div class="doc">
+          
+          <p>Upper-left position of the viewport to render (== upper-left of the orthogonal projection matrix to use)</p>
+        </div>
+      
       <br/>
       <div>
         
-          [<a href="https://github.com/oprypin/crystal-imgui/blob/master/src/obj.cr#L168" target="_blank">View source</a>]
+          [<a href="https://github.com/oprypin/crystal-imgui/blob/master/src/obj.cr#L4456" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -1166,7 +1201,7 @@
       <br/>
       <div>
         
-          [<a href="https://github.com/oprypin/crystal-imgui/blob/master/src/obj.cr#L172" target="_blank">View source</a>]
+          [<a href="https://github.com/oprypin/crystal-imgui/blob/master/src/obj.cr#L4460" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -1179,10 +1214,15 @@
         <a class="method-permalink" href="#display_size:ImVec2-instance-method">#</a>
       </div>
       
+        <div class="doc">
+          
+          <p>Size of the viewport to render (== io.DisplaySize for the main viewport) (DisplayPos + DisplaySize == lower-right of the orthogonal projection matrix to use)</p>
+        </div>
+      
       <br/>
       <div>
         
-          [<a href="https://github.com/oprypin/crystal-imgui/blob/master/src/obj.cr#L176" target="_blank">View source</a>]
+          [<a href="https://github.com/oprypin/crystal-imgui/blob/master/src/obj.cr#L4465" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -1198,7 +1238,7 @@
       <br/>
       <div>
         
-          [<a href="https://github.com/oprypin/crystal-imgui/blob/master/src/obj.cr#L180" target="_blank">View source</a>]
+          [<a href="https://github.com/oprypin/crystal-imgui/blob/master/src/obj.cr#L4469" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -1211,10 +1251,15 @@
         <a class="method-permalink" href="#framebuffer_scale:ImVec2-instance-method">#</a>
       </div>
       
+        <div class="doc">
+          
+          <p>Amount of pixels for each unit of DisplaySize. Based on io.DisplayFramebufferScale. Generally (1,1) on normal display, (2,2) on OSX with Retina display.</p>
+        </div>
+      
       <br/>
       <div>
         
-          [<a href="https://github.com/oprypin/crystal-imgui/blob/master/src/obj.cr#L184" target="_blank">View source</a>]
+          [<a href="https://github.com/oprypin/crystal-imgui/blob/master/src/obj.cr#L4474" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -1230,7 +1275,7 @@
       <br/>
       <div>
         
-          [<a href="https://github.com/oprypin/crystal-imgui/blob/master/src/obj.cr#L188" target="_blank">View source</a>]
+          [<a href="https://github.com/oprypin/crystal-imgui/blob/master/src/obj.cr#L4478" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -1245,13 +1290,15 @@
       
         <div class="doc">
           
-          <p>[<a href="https://github.com/ocornut/imgui/blob/v1.78/imgui.h#L2199" target="_blank">View C++ header</a>]</p>
+          <p>Helper to scale the ClipRect field of each ImDrawCmd. Use if your final output buffer is at a different scale than Dear ImGui expects, or if there is a difference between your window resolution and framebuffer resolution.</p>
+
+<p><a href="https://github.com/ocornut/imgui/blob/v1.78/imgui.h#L2199" target="_blank">ImDrawData::ScaleClipRects()</a></p>
         </div>
       
       <br/>
       <div>
         
-          [<a href="https://github.com/oprypin/crystal-imgui/blob/master/src/obj.cr#L209" target="_blank">View source</a>]
+          [<a href="https://github.com/oprypin/crystal-imgui/blob/master/src/obj.cr#L4505" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -1267,7 +1314,7 @@
       <br/>
       <div>
         
-          [<a href="https://github.com/oprypin/crystal-imgui/blob/master/src/obj.cr#L126" target="_blank">View source</a>]
+          [<a href="https://github.com/oprypin/crystal-imgui/blob/master/src/obj.cr#L4408" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -1280,10 +1327,15 @@
         <a class="method-permalink" href="#total_idx_count:Int32-instance-method">#</a>
       </div>
       
+        <div class="doc">
+          
+          <p>For convenience, sum of all ImDrawList's IdxBuffer.Size</p>
+        </div>
+      
       <br/>
       <div>
         
-          [<a href="https://github.com/oprypin/crystal-imgui/blob/master/src/obj.cr#L152" target="_blank">View source</a>]
+          [<a href="https://github.com/oprypin/crystal-imgui/blob/master/src/obj.cr#L4438" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -1299,7 +1351,7 @@
       <br/>
       <div>
         
-          [<a href="https://github.com/oprypin/crystal-imgui/blob/master/src/obj.cr#L156" target="_blank">View source</a>]
+          [<a href="https://github.com/oprypin/crystal-imgui/blob/master/src/obj.cr#L4442" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -1312,10 +1364,15 @@
         <a class="method-permalink" href="#total_vtx_count:Int32-instance-method">#</a>
       </div>
       
+        <div class="doc">
+          
+          <p>For convenience, sum of all ImDrawList's VtxBuffer.Size</p>
+        </div>
+      
       <br/>
       <div>
         
-          [<a href="https://github.com/oprypin/crystal-imgui/blob/master/src/obj.cr#L160" target="_blank">View source</a>]
+          [<a href="https://github.com/oprypin/crystal-imgui/blob/master/src/obj.cr#L4447" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -1331,7 +1388,7 @@
       <br/>
       <div>
         
-          [<a href="https://github.com/oprypin/crystal-imgui/blob/master/src/obj.cr#L164" target="_blank">View source</a>]
+          [<a href="https://github.com/oprypin/crystal-imgui/blob/master/src/obj.cr#L4451" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -1344,10 +1401,15 @@
         <a class="method-permalink" href="#valid:Bool-instance-method">#</a>
       </div>
       
+        <div class="doc">
+          
+          <p>Only valid after Render() is called and before the next NewFrame() is called.</p>
+        </div>
+      
       <br/>
       <div>
         
-          [<a href="https://github.com/oprypin/crystal-imgui/blob/master/src/obj.cr#L128" target="_blank">View source</a>]
+          [<a href="https://github.com/oprypin/crystal-imgui/blob/master/src/obj.cr#L4411" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -1363,7 +1425,7 @@
       <br/>
       <div>
         
-          [<a href="https://github.com/oprypin/crystal-imgui/blob/master/src/obj.cr#L132" target="_blank">View source</a>]
+          [<a href="https://github.com/oprypin/crystal-imgui/blob/master/src/obj.cr#L4415" target="_blank">View source</a>]
         
       </div>
     </div>

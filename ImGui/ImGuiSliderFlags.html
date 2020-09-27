@@ -747,7 +747,7 @@
     Overview
   </h2>
 
-  <p>[<a href="https://github.com/ocornut/imgui/blob/v1.78/imgui.h#L1295" target="_blank">View C++ header</a>]</p>
+  <p><a href="https://github.com/ocornut/imgui/blob/v1.78/imgui.h#L1295" target="_blank">enum ImGuiSliderFlags_</a></p>
 
 
 
@@ -772,7 +772,7 @@
   </h2>
   
     
-      <a href="https://github.com/oprypin/crystal-imgui/blob/master/src/types.cr#L405" target="_blank">
+      <a href="https://github.com/oprypin/crystal-imgui/blob/master/src/types.cr#L723" target="_blank">
         types.cr
       </a>
     
@@ -802,25 +802,45 @@
         <strong>ClampOnInput</strong> = <code><span class="n">16</span></code>
       </dt>
       
+      <dd class="entry-const-doc">
+        <p>Clamp value to min/max bounds when input manually with CTRL+Click. By default CTRL+Click allows going out of bounds.</p>
+      </dd>
+      
     
       <dt class="entry-const" id="Logarithmic">
         <strong>Logarithmic</strong> = <code><span class="n">32</span></code>
       </dt>
+      
+      <dd class="entry-const-doc">
+        <p>Make the widget logarithmic (linear otherwise). Consider using ImGuiSliderFlags_NoRoundToFormat with this if using a format-string with small amount of digits.</p>
+      </dd>
       
     
       <dt class="entry-const" id="NoRoundToFormat">
         <strong>NoRoundToFormat</strong> = <code><span class="n">64</span></code>
       </dt>
       
+      <dd class="entry-const-doc">
+        <p>Disable rounding underlying value to match precision of the display format string (e.g. %.3f values are rounded to those 3 digits)</p>
+      </dd>
+      
     
       <dt class="entry-const" id="NoInput">
         <strong>NoInput</strong> = <code><span class="n">128</span></code>
       </dt>
       
+      <dd class="entry-const-doc">
+        <p>Disable CTRL+Click or Enter key allowing to input text directly into the widget</p>
+      </dd>
+      
     
       <dt class="entry-const" id="InvalidMask_">
         <strong>InvalidMask_</strong> = <code><span class="n">1879048207</span></code>
       </dt>
+      
+      <dd class="entry-const-doc">
+        <p>[Internal] We treat using those bits as being potentially a 'float power' argument from the previous API that has got miscast to this enum, and will trigger an assert if needed.</p>
+      </dd>
       
     
   </dl>
@@ -946,7 +966,7 @@
       <br/>
       <div>
         
-          [<a href="https://github.com/oprypin/crystal-imgui/blob/master/src/types.cr#L407" target="_blank">View source</a>]
+          [<a href="https://github.com/oprypin/crystal-imgui/blob/master/src/types.cr#L726" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -962,7 +982,7 @@
       <br/>
       <div>
         
-          [<a href="https://github.com/oprypin/crystal-imgui/blob/master/src/types.cr#L411" target="_blank">View source</a>]
+          [<a href="https://github.com/oprypin/crystal-imgui/blob/master/src/types.cr#L734" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -978,7 +998,7 @@
       <br/>
       <div>
         
-          [<a href="https://github.com/oprypin/crystal-imgui/blob/master/src/types.cr#L408" target="_blank">View source</a>]
+          [<a href="https://github.com/oprypin/crystal-imgui/blob/master/src/types.cr#L728" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -994,7 +1014,7 @@
       <br/>
       <div>
         
-          [<a href="https://github.com/oprypin/crystal-imgui/blob/master/src/types.cr#L410" target="_blank">View source</a>]
+          [<a href="https://github.com/oprypin/crystal-imgui/blob/master/src/types.cr#L732" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -1010,7 +1030,7 @@
       <br/>
       <div>
         
-          [<a href="https://github.com/oprypin/crystal-imgui/blob/master/src/types.cr#L409" target="_blank">View source</a>]
+          [<a href="https://github.com/oprypin/crystal-imgui/blob/master/src/types.cr#L730" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -1026,7 +1046,7 @@
       <br/>
       <div>
         
-          [<a href="https://github.com/oprypin/crystal-imgui/blob/master/src/types.cr#L406" target="_blank">View source</a>]
+          [<a href="https://github.com/oprypin/crystal-imgui/blob/master/src/types.cr#L724" target="_blank">View source</a>]
         
       </div>
     </div>

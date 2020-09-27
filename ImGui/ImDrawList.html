@@ -749,7 +749,7 @@
     Overview
   </h2>
 
-  <p>[<a href="https://github.com/ocornut/imgui/blob/v1.78/imgui.h#L2069" target="_blank">View C++ header</a>]</p>
+  <p><a href="https://github.com/ocornut/imgui/blob/v1.78/imgui.h#L2069" target="_blank">struct ImDrawList</a></p>
 
 
 
@@ -788,7 +788,7 @@
   </h2>
   
     
-      <a href="https://github.com/oprypin/crystal-imgui/blob/master/src/obj.cr#L217" target="_blank">
+      <a href="https://github.com/oprypin/crystal-imgui/blob/master/src/obj.cr#L4080" target="_blank">
         obj.cr
       </a>
     
@@ -812,7 +812,7 @@
       <li class="entry-summary">
         <a href="#new(shared_data:ImDrawListSharedData):ImDrawList-class-method" class="signature"><strong>.new</strong>(shared_data : ImDrawListSharedData) : ImDrawList</a>
         
-          <div class="summary"><p>[<a href="https://github.com/ocornut/imgui/blob/v1.78/imgui.h#L2090" target="_blank">View C++ header</a>]</p></div>
+          <div class="summary"><p><a href="https://github.com/ocornut/imgui/blob/v1.78/imgui.h#L2090" target="_blank">ImDrawList::ImDrawList()</a></p></div>
         
       </li>
     
@@ -835,187 +835,189 @@
       <li class="entry-summary">
         <a href="#add_bezier_curve(p1:ImVec2,p2:ImVec2,p3:ImVec2,p4:ImVec2,col:UInt32,thickness:Float32,num_segments:Int32=0):Void-instance-method" class="signature"><strong>#add_bezier_curve</strong>(p1 : ImVec2, p2 : ImVec2, p3 : ImVec2, p4 : ImVec2, col : UInt32, thickness : Float32, num_segments : Int32 = <span class="n">0</span>) : Void</a>
         
-          <div class="summary"><p>[<a href="https://github.com/ocornut/imgui/blob/v1.78/imgui.h#L2123" target="_blank">View C++ header</a>]</p></div>
+          <div class="summary"><p><a href="https://github.com/ocornut/imgui/blob/v1.78/imgui.h#L2123" target="_blank">ImDrawList::AddBezierCurve()</a></p></div>
         
       </li>
     
       <li class="entry-summary">
         <a href="#add_callback(callback:ImDrawCallback,callback_data:Pointer(Void)):Void-instance-method" class="signature"><strong>#add_callback</strong>(callback : ImDrawCallback, callback_data : Pointer(Void)) : Void</a>
         
-          <div class="summary"><p>[<a href="https://github.com/ocornut/imgui/blob/v1.78/imgui.h#L2145" target="_blank">View C++ header</a>]</p></div>
+          <div class="summary"><p>Your rendering function must check for 'UserCallback' in ImDrawCmd and call the function instead of rendering triangles.</p></div>
         
       </li>
     
       <li class="entry-summary">
         <a href="#add_circle(center:ImVec2,radius:Float32,col:UInt32,num_segments:Int32=0,thickness:Float32=1.0):Void-instance-method" class="signature"><strong>#add_circle</strong>(center : ImVec2, radius : Float32, col : UInt32, num_segments : Int32 = <span class="n">0</span>, thickness : Float32 = <span class="n">1.0</span>) : Void</a>
         
-          <div class="summary"><p>[<a href="https://github.com/ocornut/imgui/blob/v1.78/imgui.h#L2115" target="_blank">View C++ header</a>]</p></div>
+          <div class="summary"><p><a href="https://github.com/ocornut/imgui/blob/v1.78/imgui.h#L2115" target="_blank">ImDrawList::AddCircle()</a></p></div>
         
       </li>
     
       <li class="entry-summary">
         <a href="#add_circle_filled(center:ImVec2,radius:Float32,col:UInt32,num_segments:Int32=0):Void-instance-method" class="signature"><strong>#add_circle_filled</strong>(center : ImVec2, radius : Float32, col : UInt32, num_segments : Int32 = <span class="n">0</span>) : Void</a>
         
-          <div class="summary"><p>[<a href="https://github.com/ocornut/imgui/blob/v1.78/imgui.h#L2116" target="_blank">View C++ header</a>]</p></div>
+          <div class="summary"><p><a href="https://github.com/ocornut/imgui/blob/v1.78/imgui.h#L2116" target="_blank">ImDrawList::AddCircleFilled()</a></p></div>
         
       </li>
     
       <li class="entry-summary">
         <a href="#add_convex_poly_filled(points:Pointer(ImVec2),num_points:Int32,col:UInt32):Void-instance-method" class="signature"><strong>#add_convex_poly_filled</strong>(points : Pointer(ImVec2), num_points : Int32, col : UInt32) : Void</a>
         
-          <div class="summary"><p>[<a href="https://github.com/ocornut/imgui/blob/v1.78/imgui.h#L2122" target="_blank">View C++ header</a>]</p></div>
+          <div class="summary"><p>Note: Anti-aliased filling requires points to be in clockwise order.</p></div>
         
       </li>
     
       <li class="entry-summary">
         <a href="#add_draw_cmd:Void-instance-method" class="signature"><strong>#add_draw_cmd</strong> : Void</a>
         
-          <div class="summary"><p>[<a href="https://github.com/ocornut/imgui/blob/v1.78/imgui.h#L2146" target="_blank">View C++ header</a>]</p></div>
+          <div class="summary"><p>This is useful if you need to forcefully create a new draw call (to allow for dependent rendering / blending).</p></div>
         
       </li>
     
       <li class="entry-summary">
         <a href="#add_image(user_texture_id:ImTextureID,p_min:ImVec2,p_max:ImVec2,uv_min:ImVec2=ImVec2.new(0,0),uv_max:ImVec2=ImVec2.new(1,1),col:UInt32=4294967295_i64):Void-instance-method" class="signature"><strong>#add_image</strong>(user_texture_id : ImTextureID, p_min : ImVec2, p_max : ImVec2, uv_min : ImVec2 = <span class="t">ImVec2</span>.<span class="k">new</span>(<span class="n">0</span>, <span class="n">0</span>), uv_max : ImVec2 = <span class="t">ImVec2</span>.<span class="k">new</span>(<span class="n">1</span>, <span class="n">1</span>), col : UInt32 = <span class="n">4294967295_i64</span>) : Void</a>
         
-          <div class="summary"><p>[<a href="https://github.com/ocornut/imgui/blob/v1.78/imgui.h#L2129" target="_blank">View C++ header</a>]</p></div>
+          <div class="summary"><p><a href="https://github.com/ocornut/imgui/blob/v1.78/imgui.h#L2129" target="_blank">ImDrawList::AddImage()</a></p></div>
         
       </li>
     
       <li class="entry-summary">
         <a href="#add_image_quad(user_texture_id:ImTextureID,p1:ImVec2,p2:ImVec2,p3:ImVec2,p4:ImVec2,uv1:ImVec2=ImVec2.new(0,0),uv2:ImVec2=ImVec2.new(1,0),uv3:ImVec2=ImVec2.new(1,1),uv4:ImVec2=ImVec2.new(0,1),col:UInt32=4294967295_i64):Void-instance-method" class="signature"><strong>#add_image_quad</strong>(user_texture_id : ImTextureID, p1 : ImVec2, p2 : ImVec2, p3 : ImVec2, p4 : ImVec2, uv1 : ImVec2 = <span class="t">ImVec2</span>.<span class="k">new</span>(<span class="n">0</span>, <span class="n">0</span>), uv2 : ImVec2 = <span class="t">ImVec2</span>.<span class="k">new</span>(<span class="n">1</span>, <span class="n">0</span>), uv3 : ImVec2 = <span class="t">ImVec2</span>.<span class="k">new</span>(<span class="n">1</span>, <span class="n">1</span>), uv4 : ImVec2 = <span class="t">ImVec2</span>.<span class="k">new</span>(<span class="n">0</span>, <span class="n">1</span>), col : UInt32 = <span class="n">4294967295_i64</span>) : Void</a>
         
-          <div class="summary"><p>[<a href="https://github.com/ocornut/imgui/blob/v1.78/imgui.h#L2130" target="_blank">View C++ header</a>]</p></div>
+          <div class="summary"><p><a href="https://github.com/ocornut/imgui/blob/v1.78/imgui.h#L2130" target="_blank">ImDrawList::AddImageQuad()</a></p></div>
         
       </li>
     
       <li class="entry-summary">
         <a href="#add_image_rounded(user_texture_id:ImTextureID,p_min:ImVec2,p_max:ImVec2,uv_min:ImVec2,uv_max:ImVec2,col:UInt32,rounding:Float32,rounding_corners:ImDrawCornerFlags=ImDrawCornerFlags::All):Void-instance-method" class="signature"><strong>#add_image_rounded</strong>(user_texture_id : ImTextureID, p_min : ImVec2, p_max : ImVec2, uv_min : ImVec2, uv_max : ImVec2, col : UInt32, rounding : Float32, rounding_corners : ImDrawCornerFlags = <span class="t">ImDrawCornerFlags</span><span class="t">::</span><span class="t">All</span>) : Void</a>
         
-          <div class="summary"><p>[<a href="https://github.com/ocornut/imgui/blob/v1.78/imgui.h#L2131" target="_blank">View C++ header</a>]</p></div>
+          <div class="summary"><p><a href="https://github.com/ocornut/imgui/blob/v1.78/imgui.h#L2131" target="_blank">ImDrawList::AddImageRounded()</a></p></div>
         
       </li>
     
       <li class="entry-summary">
         <a href="#add_line(p1:ImVec2,p2:ImVec2,col:UInt32,thickness:Float32=1.0):Void-instance-method" class="signature"><strong>#add_line</strong>(p1 : ImVec2, p2 : ImVec2, col : UInt32, thickness : Float32 = <span class="n">1.0</span>) : Void</a>
         
-          <div class="summary"><p>[<a href="https://github.com/ocornut/imgui/blob/v1.78/imgui.h#L2107" target="_blank">View C++ header</a>]</p></div>
+          <div class="summary"><p><a href="https://github.com/ocornut/imgui/blob/v1.78/imgui.h#L2107" target="_blank">ImDrawList::AddLine()</a></p></div>
         
       </li>
     
       <li class="entry-summary">
         <a href="#add_ngon(center:ImVec2,radius:Float32,col:UInt32,num_segments:Int32,thickness:Float32=1.0):Void-instance-method" class="signature"><strong>#add_ngon</strong>(center : ImVec2, radius : Float32, col : UInt32, num_segments : Int32, thickness : Float32 = <span class="n">1.0</span>) : Void</a>
         
-          <div class="summary"><p>[<a href="https://github.com/ocornut/imgui/blob/v1.78/imgui.h#L2117" target="_blank">View C++ header</a>]</p></div>
+          <div class="summary"><p><a href="https://github.com/ocornut/imgui/blob/v1.78/imgui.h#L2117" target="_blank">ImDrawList::AddNgon()</a></p></div>
         
       </li>
     
       <li class="entry-summary">
         <a href="#add_ngon_filled(center:ImVec2,radius:Float32,col:UInt32,num_segments:Int32):Void-instance-method" class="signature"><strong>#add_ngon_filled</strong>(center : ImVec2, radius : Float32, col : UInt32, num_segments : Int32) : Void</a>
         
-          <div class="summary"><p>[<a href="https://github.com/ocornut/imgui/blob/v1.78/imgui.h#L2118" target="_blank">View C++ header</a>]</p></div>
+          <div class="summary"><p><a href="https://github.com/ocornut/imgui/blob/v1.78/imgui.h#L2118" target="_blank">ImDrawList::AddNgonFilled()</a></p></div>
         
       </li>
     
       <li class="entry-summary">
         <a href="#add_polyline(points:Pointer(ImVec2),num_points:Int32,col:UInt32,closed:Bool,thickness:Float32):Void-instance-method" class="signature"><strong>#add_polyline</strong>(points : Pointer(ImVec2), num_points : Int32, col : UInt32, closed : Bool, thickness : Float32) : Void</a>
         
-          <div class="summary"><p>[<a href="https://github.com/ocornut/imgui/blob/v1.78/imgui.h#L2121" target="_blank">View C++ header</a>]</p></div>
+          <div class="summary"><p><a href="https://github.com/ocornut/imgui/blob/v1.78/imgui.h#L2121" target="_blank">ImDrawList::AddPolyline()</a></p></div>
         
       </li>
     
       <li class="entry-summary">
         <a href="#add_quad(p1:ImVec2,p2:ImVec2,p3:ImVec2,p4:ImVec2,col:UInt32,thickness:Float32=1.0):Void-instance-method" class="signature"><strong>#add_quad</strong>(p1 : ImVec2, p2 : ImVec2, p3 : ImVec2, p4 : ImVec2, col : UInt32, thickness : Float32 = <span class="n">1.0</span>) : Void</a>
         
-          <div class="summary"><p>[<a href="https://github.com/ocornut/imgui/blob/v1.78/imgui.h#L2111" target="_blank">View C++ header</a>]</p></div>
+          <div class="summary"><p><a href="https://github.com/ocornut/imgui/blob/v1.78/imgui.h#L2111" target="_blank">ImDrawList::AddQuad()</a></p></div>
         
       </li>
     
       <li class="entry-summary">
         <a href="#add_quad_filled(p1:ImVec2,p2:ImVec2,p3:ImVec2,p4:ImVec2,col:UInt32):Void-instance-method" class="signature"><strong>#add_quad_filled</strong>(p1 : ImVec2, p2 : ImVec2, p3 : ImVec2, p4 : ImVec2, col : UInt32) : Void</a>
         
-          <div class="summary"><p>[<a href="https://github.com/ocornut/imgui/blob/v1.78/imgui.h#L2112" target="_blank">View C++ header</a>]</p></div>
+          <div class="summary"><p><a href="https://github.com/ocornut/imgui/blob/v1.78/imgui.h#L2112" target="_blank">ImDrawList::AddQuadFilled()</a></p></div>
         
       </li>
     
       <li class="entry-summary">
         <a href="#add_rect(p_min:ImVec2,p_max:ImVec2,col:UInt32,rounding:Float32=0.0,rounding_corners:ImDrawCornerFlags=ImDrawCornerFlags::All,thickness:Float32=1.0):Void-instance-method" class="signature"><strong>#add_rect</strong>(p_min : ImVec2, p_max : ImVec2, col : UInt32, rounding : Float32 = <span class="n">0.0</span>, rounding_corners : ImDrawCornerFlags = <span class="t">ImDrawCornerFlags</span><span class="t">::</span><span class="t">All</span>, thickness : Float32 = <span class="n">1.0</span>) : Void</a>
         
-          <div class="summary"><p>[<a href="https://github.com/ocornut/imgui/blob/v1.78/imgui.h#L2108" target="_blank">View C++ header</a>]</p></div>
+          <div class="summary"><p>a: upper-left, b: lower-right (== upper-left + size), rounding_corners_flags: 4 bits corresponding to which corner to round</p></div>
         
       </li>
     
       <li class="entry-summary">
         <a href="#add_rect_filled(p_min:ImVec2,p_max:ImVec2,col:UInt32,rounding:Float32=0.0,rounding_corners:ImDrawCornerFlags=ImDrawCornerFlags::All):Void-instance-method" class="signature"><strong>#add_rect_filled</strong>(p_min : ImVec2, p_max : ImVec2, col : UInt32, rounding : Float32 = <span class="n">0.0</span>, rounding_corners : ImDrawCornerFlags = <span class="t">ImDrawCornerFlags</span><span class="t">::</span><span class="t">All</span>) : Void</a>
         
-          <div class="summary"><p>[<a href="https://github.com/ocornut/imgui/blob/v1.78/imgui.h#L2109" target="_blank">View C++ header</a>]</p></div>
+          <div class="summary"><p>a: upper-left, b: lower-right (== upper-left + size)</p></div>
         
       </li>
     
       <li class="entry-summary">
         <a href="#add_rect_filled_multi_color(p_min:ImVec2,p_max:ImVec2,col_upr_left:UInt32,col_upr_right:UInt32,col_bot_right:UInt32,col_bot_left:UInt32):Void-instance-method" class="signature"><strong>#add_rect_filled_multi_color</strong>(p_min : ImVec2, p_max : ImVec2, col_upr_left : UInt32, col_upr_right : UInt32, col_bot_right : UInt32, col_bot_left : UInt32) : Void</a>
         
-          <div class="summary"><p>[<a href="https://github.com/ocornut/imgui/blob/v1.78/imgui.h#L2110" target="_blank">View C++ header</a>]</p></div>
+          <div class="summary"><p><a href="https://github.com/ocornut/imgui/blob/v1.78/imgui.h#L2110" target="_blank">ImDrawList::AddRectFilledMultiColor()</a></p></div>
         
       </li>
     
       <li class="entry-summary">
         <a href="#add_text(pos:ImVec2,col:UInt32,text:Bytes%7CString):Void-instance-method" class="signature"><strong>#add_text</strong>(pos : ImVec2, col : UInt32, text : Bytes | String) : Void</a>
         
-          <div class="summary"><p>[<a href="https://github.com/ocornut/imgui/blob/v1.78/imgui.h#L2119" target="_blank">View C++ header</a>]</p></div>
+          <div class="summary"><p><a href="https://github.com/ocornut/imgui/blob/v1.78/imgui.h#L2119" target="_blank">ImDrawList::AddText()</a></p></div>
         
       </li>
     
       <li class="entry-summary">
         <a href="#add_text(font:ImFont,font_size:Float32,pos:ImVec2,col:UInt32,text:Bytes%7CString,wrap_width:Float32=0.0,cpu_fine_clip_rect:Pointer(ImVec4)=Pointer(ImVec4).null):Void-instance-method" class="signature"><strong>#add_text</strong>(font : ImFont, font_size : Float32, pos : ImVec2, col : UInt32, text : Bytes | String, wrap_width : Float32 = <span class="n">0.0</span>, cpu_fine_clip_rect : Pointer(ImVec4) = <span class="t">Pointer</span>(<span class="t">ImVec4</span>).null) : Void</a>
         
-          <div class="summary"><p>[<a href="https://github.com/ocornut/imgui/blob/v1.78/imgui.h#L2120" target="_blank">View C++ header</a>]</p></div>
+          <div class="summary"><p><a href="https://github.com/ocornut/imgui/blob/v1.78/imgui.h#L2120" target="_blank">ImDrawList::AddText()</a></p></div>
         
       </li>
     
       <li class="entry-summary">
         <a href="#add_triangle(p1:ImVec2,p2:ImVec2,p3:ImVec2,col:UInt32,thickness:Float32=1.0):Void-instance-method" class="signature"><strong>#add_triangle</strong>(p1 : ImVec2, p2 : ImVec2, p3 : ImVec2, col : UInt32, thickness : Float32 = <span class="n">1.0</span>) : Void</a>
         
-          <div class="summary"><p>[<a href="https://github.com/ocornut/imgui/blob/v1.78/imgui.h#L2113" target="_blank">View C++ header</a>]</p></div>
+          <div class="summary"><p><a href="https://github.com/ocornut/imgui/blob/v1.78/imgui.h#L2113" target="_blank">ImDrawList::AddTriangle()</a></p></div>
         
       </li>
     
       <li class="entry-summary">
         <a href="#add_triangle_filled(p1:ImVec2,p2:ImVec2,p3:ImVec2,col:UInt32):Void-instance-method" class="signature"><strong>#add_triangle_filled</strong>(p1 : ImVec2, p2 : ImVec2, p3 : ImVec2, col : UInt32) : Void</a>
         
-          <div class="summary"><p>[<a href="https://github.com/ocornut/imgui/blob/v1.78/imgui.h#L2114" target="_blank">View C++ header</a>]</p></div>
+          <div class="summary"><p><a href="https://github.com/ocornut/imgui/blob/v1.78/imgui.h#L2114" target="_blank">ImDrawList::AddTriangleFilled()</a></p></div>
         
       </li>
     
       <li class="entry-summary">
         <a href="#channels_merge:Void-instance-method" class="signature"><strong>#channels_merge</strong> : Void</a>
         
-          <div class="summary"><p>[<a href="https://github.com/ocornut/imgui/blob/v1.78/imgui.h#L2156" target="_blank">View C++ header</a>]</p></div>
+          <div class="summary"><p><a href="https://github.com/ocornut/imgui/blob/v1.78/imgui.h#L2156" target="_blank">ImDrawList::ChannelsMerge()</a></p></div>
         
       </li>
     
       <li class="entry-summary">
         <a href="#channels_set_current(n:Int32):Void-instance-method" class="signature"><strong>#channels_set_current</strong>(n : Int32) : Void</a>
         
-          <div class="summary"><p>[<a href="https://github.com/ocornut/imgui/blob/v1.78/imgui.h#L2157" target="_blank">View C++ header</a>]</p></div>
+          <div class="summary"><p><a href="https://github.com/ocornut/imgui/blob/v1.78/imgui.h#L2157" target="_blank">ImDrawList::ChannelsSetCurrent()</a></p></div>
         
       </li>
     
       <li class="entry-summary">
         <a href="#channels_split(count:Int32):Void-instance-method" class="signature"><strong>#channels_split</strong>(count : Int32) : Void</a>
         
-          <div class="summary"><p>[<a href="https://github.com/ocornut/imgui/blob/v1.78/imgui.h#L2155" target="_blank">View C++ header</a>]</p></div>
+          <div class="summary"><p><a href="https://github.com/ocornut/imgui/blob/v1.78/imgui.h#L2155" target="_blank">ImDrawList::ChannelsSplit()</a></p></div>
         
       </li>
     
       <li class="entry-summary">
         <a href="#clone_output:ImDrawList-instance-method" class="signature"><strong>#clone_output</strong> : ImDrawList</a>
         
-          <div class="summary"><p>[<a href="https://github.com/ocornut/imgui/blob/v1.78/imgui.h#L2147" target="_blank">View C++ header</a>]</p></div>
+          <div class="summary"><p>Create a clone of the CmdBuffer/IdxBuffer/VtxBuffer.</p></div>
         
       </li>
     
       <li class="entry-summary">
         <a href="#cmd_buffer:ImVector(LibImGui::ImDrawCmd)-instance-method" class="signature"><strong>#cmd_buffer</strong> : ImVector(LibImGui::ImDrawCmd)</a>
+        
+          <div class="summary"><p>Draw commands.</p></div>
         
       </li>
     
@@ -1027,6 +1029,8 @@
       <li class="entry-summary">
         <a href="#flags:ImDrawListFlags-instance-method" class="signature"><strong>#flags</strong> : ImDrawListFlags</a>
         
+          <div class="summary"><p>Flags, you may poke into these to adjust anti-aliasing settings per-primitive.</p></div>
+        
       </li>
     
       <li class="entry-summary">
@@ -1037,19 +1041,21 @@
       <li class="entry-summary">
         <a href="#get_clip_rect_max:ImGui::ImVec2-instance-method" class="signature"><strong>#get_clip_rect_max</strong> : ImGui::ImVec2</a>
         
-          <div class="summary"><p>[<a href="https://github.com/ocornut/imgui/blob/v1.78/imgui.h#L2099" target="_blank">View C++ header</a>]</p></div>
+          <div class="summary"><p><a href="https://github.com/ocornut/imgui/blob/v1.78/imgui.h#L2099" target="_blank">ImDrawList::GetClipRectMax()</a></p></div>
         
       </li>
     
       <li class="entry-summary">
         <a href="#get_clip_rect_min:ImGui::ImVec2-instance-method" class="signature"><strong>#get_clip_rect_min</strong> : ImGui::ImVec2</a>
         
-          <div class="summary"><p>[<a href="https://github.com/ocornut/imgui/blob/v1.78/imgui.h#L2098" target="_blank">View C++ header</a>]</p></div>
+          <div class="summary"><p><a href="https://github.com/ocornut/imgui/blob/v1.78/imgui.h#L2098" target="_blank">ImDrawList::GetClipRectMin()</a></p></div>
         
       </li>
     
       <li class="entry-summary">
         <a href="#idx_buffer:ImVector(ImDrawIdx)-instance-method" class="signature"><strong>#idx_buffer</strong> : ImVector(ImDrawIdx)</a>
+        
+          <div class="summary"><p>Index buffer.</p></div>
         
       </li>
     
@@ -1061,154 +1067,154 @@
       <li class="entry-summary">
         <a href="#path_arc_to(center:ImVec2,radius:Float32,a_min:Float32,a_max:Float32,num_segments:Int32=10):Void-instance-method" class="signature"><strong>#path_arc_to</strong>(center : ImVec2, radius : Float32, a_min : Float32, a_max : Float32, num_segments : Int32 = <span class="n">10</span>) : Void</a>
         
-          <div class="summary"><p>[<a href="https://github.com/ocornut/imgui/blob/v1.78/imgui.h#L2139" target="_blank">View C++ header</a>]</p></div>
+          <div class="summary"><p><a href="https://github.com/ocornut/imgui/blob/v1.78/imgui.h#L2139" target="_blank">ImDrawList::PathArcTo()</a></p></div>
         
       </li>
     
       <li class="entry-summary">
         <a href="#path_arc_to_fast(center:ImVec2,radius:Float32,a_min_of_12:Int32,a_max_of_12:Int32):Void-instance-method" class="signature"><strong>#path_arc_to_fast</strong>(center : ImVec2, radius : Float32, a_min_of_12 : Int32, a_max_of_12 : Int32) : Void</a>
         
-          <div class="summary"><p>[<a href="https://github.com/ocornut/imgui/blob/v1.78/imgui.h#L2140" target="_blank">View C++ header</a>]</p></div>
+          <div class="summary"><p>Use precomputed angles for a 12 steps circle</p></div>
         
       </li>
     
       <li class="entry-summary">
         <a href="#path_bezier_curve_to(p2:ImVec2,p3:ImVec2,p4:ImVec2,num_segments:Int32=0):Void-instance-method" class="signature"><strong>#path_bezier_curve_to</strong>(p2 : ImVec2, p3 : ImVec2, p4 : ImVec2, num_segments : Int32 = <span class="n">0</span>) : Void</a>
         
-          <div class="summary"><p>[<a href="https://github.com/ocornut/imgui/blob/v1.78/imgui.h#L2141" target="_blank">View C++ header</a>]</p></div>
+          <div class="summary"><p><a href="https://github.com/ocornut/imgui/blob/v1.78/imgui.h#L2141" target="_blank">ImDrawList::PathBezierCurveTo()</a></p></div>
         
       </li>
     
       <li class="entry-summary">
         <a href="#path_clear:Void-instance-method" class="signature"><strong>#path_clear</strong> : Void</a>
         
-          <div class="summary"><p>[<a href="https://github.com/ocornut/imgui/blob/v1.78/imgui.h#L2134" target="_blank">View C++ header</a>]</p></div>
+          <div class="summary"><p><a href="https://github.com/ocornut/imgui/blob/v1.78/imgui.h#L2134" target="_blank">ImDrawList::PathClear()</a></p></div>
         
       </li>
     
       <li class="entry-summary">
         <a href="#path_fill_convex(col:UInt32):Void-instance-method" class="signature"><strong>#path_fill_convex</strong>(col : UInt32) : Void</a>
         
-          <div class="summary"><p>[<a href="https://github.com/ocornut/imgui/blob/v1.78/imgui.h#L2137" target="_blank">View C++ header</a>]</p></div>
+          <div class="summary"><p>Note: Anti-aliased filling requires points to be in clockwise order.</p></div>
         
       </li>
     
       <li class="entry-summary">
         <a href="#path_line_to(pos:ImVec2):Void-instance-method" class="signature"><strong>#path_line_to</strong>(pos : ImVec2) : Void</a>
         
-          <div class="summary"><p>[<a href="https://github.com/ocornut/imgui/blob/v1.78/imgui.h#L2135" target="_blank">View C++ header</a>]</p></div>
+          <div class="summary"><p><a href="https://github.com/ocornut/imgui/blob/v1.78/imgui.h#L2135" target="_blank">ImDrawList::PathLineTo()</a></p></div>
         
       </li>
     
       <li class="entry-summary">
         <a href="#path_line_to_merge_duplicate(pos:ImVec2):Void-instance-method" class="signature"><strong>#path_line_to_merge_duplicate</strong>(pos : ImVec2) : Void</a>
         
-          <div class="summary"><p>[<a href="https://github.com/ocornut/imgui/blob/v1.78/imgui.h#L2136" target="_blank">View C++ header</a>]</p></div>
+          <div class="summary"><p><a href="https://github.com/ocornut/imgui/blob/v1.78/imgui.h#L2136" target="_blank">ImDrawList::PathLineToMergeDuplicate()</a></p></div>
         
       </li>
     
       <li class="entry-summary">
         <a href="#path_rect(rect_min:ImVec2,rect_max:ImVec2,rounding:Float32=0.0,rounding_corners:ImDrawCornerFlags=ImDrawCornerFlags::All):Void-instance-method" class="signature"><strong>#path_rect</strong>(rect_min : ImVec2, rect_max : ImVec2, rounding : Float32 = <span class="n">0.0</span>, rounding_corners : ImDrawCornerFlags = <span class="t">ImDrawCornerFlags</span><span class="t">::</span><span class="t">All</span>) : Void</a>
         
-          <div class="summary"><p>[<a href="https://github.com/ocornut/imgui/blob/v1.78/imgui.h#L2142" target="_blank">View C++ header</a>]</p></div>
+          <div class="summary"><p><a href="https://github.com/ocornut/imgui/blob/v1.78/imgui.h#L2142" target="_blank">ImDrawList::PathRect()</a></p></div>
         
       </li>
     
       <li class="entry-summary">
         <a href="#path_stroke(col:UInt32,closed:Bool,thickness:Float32=1.0):Void-instance-method" class="signature"><strong>#path_stroke</strong>(col : UInt32, closed : Bool, thickness : Float32 = <span class="n">1.0</span>) : Void</a>
         
-          <div class="summary"><p>[<a href="https://github.com/ocornut/imgui/blob/v1.78/imgui.h#L2138" target="_blank">View C++ header</a>]</p></div>
+          <div class="summary"><p><a href="https://github.com/ocornut/imgui/blob/v1.78/imgui.h#L2138" target="_blank">ImDrawList::PathStroke()</a></p></div>
         
       </li>
     
       <li class="entry-summary">
         <a href="#pop_clip_rect:Void-instance-method" class="signature"><strong>#pop_clip_rect</strong> : Void</a>
         
-          <div class="summary"><p>[<a href="https://github.com/ocornut/imgui/blob/v1.78/imgui.h#L2095" target="_blank">View C++ header</a>]</p></div>
+          <div class="summary"><p><a href="https://github.com/ocornut/imgui/blob/v1.78/imgui.h#L2095" target="_blank">ImDrawList::PopClipRect()</a></p></div>
         
       </li>
     
       <li class="entry-summary">
         <a href="#pop_texture_id:Void-instance-method" class="signature"><strong>#pop_texture_id</strong> : Void</a>
         
-          <div class="summary"><p>[<a href="https://github.com/ocornut/imgui/blob/v1.78/imgui.h#L2097" target="_blank">View C++ header</a>]</p></div>
+          <div class="summary"><p><a href="https://github.com/ocornut/imgui/blob/v1.78/imgui.h#L2097" target="_blank">ImDrawList::PopTextureID()</a></p></div>
         
       </li>
     
       <li class="entry-summary">
         <a href="#prim_quad_uv(a:ImVec2,b:ImVec2,c:ImVec2,d:ImVec2,uv_a:ImVec2,uv_b:ImVec2,uv_c:ImVec2,uv_d:ImVec2,col:UInt32):Void-instance-method" class="signature"><strong>#prim_quad_uv</strong>(a : ImVec2, b : ImVec2, c : ImVec2, d : ImVec2, uv_a : ImVec2, uv_b : ImVec2, uv_c : ImVec2, uv_d : ImVec2, col : UInt32) : Void</a>
         
-          <div class="summary"><p>[<a href="https://github.com/ocornut/imgui/blob/v1.78/imgui.h#L2166" target="_blank">View C++ header</a>]</p></div>
+          <div class="summary"><p><a href="https://github.com/ocornut/imgui/blob/v1.78/imgui.h#L2166" target="_blank">ImDrawList::PrimQuadUV()</a></p></div>
         
       </li>
     
       <li class="entry-summary">
         <a href="#prim_rect(a:ImVec2,b:ImVec2,col:UInt32):Void-instance-method" class="signature"><strong>#prim_rect</strong>(a : ImVec2, b : ImVec2, col : UInt32) : Void</a>
         
-          <div class="summary"><p>[<a href="https://github.com/ocornut/imgui/blob/v1.78/imgui.h#L2164" target="_blank">View C++ header</a>]</p></div>
+          <div class="summary"><p>Axis aligned rectangle (composed of two triangles)</p></div>
         
       </li>
     
       <li class="entry-summary">
         <a href="#prim_rect_uv(a:ImVec2,b:ImVec2,uv_a:ImVec2,uv_b:ImVec2,col:UInt32):Void-instance-method" class="signature"><strong>#prim_rect_uv</strong>(a : ImVec2, b : ImVec2, uv_a : ImVec2, uv_b : ImVec2, col : UInt32) : Void</a>
         
-          <div class="summary"><p>[<a href="https://github.com/ocornut/imgui/blob/v1.78/imgui.h#L2165" target="_blank">View C++ header</a>]</p></div>
+          <div class="summary"><p><a href="https://github.com/ocornut/imgui/blob/v1.78/imgui.h#L2165" target="_blank">ImDrawList::PrimRectUV()</a></p></div>
         
       </li>
     
       <li class="entry-summary">
         <a href="#prim_reserve(idx_count:Int32,vtx_count:Int32):Void-instance-method" class="signature"><strong>#prim_reserve</strong>(idx_count : Int32, vtx_count : Int32) : Void</a>
         
-          <div class="summary"><p>[<a href="https://github.com/ocornut/imgui/blob/v1.78/imgui.h#L2162" target="_blank">View C++ header</a>]</p></div>
+          <div class="summary"><p><a href="https://github.com/ocornut/imgui/blob/v1.78/imgui.h#L2162" target="_blank">ImDrawList::PrimReserve()</a></p></div>
         
       </li>
     
       <li class="entry-summary">
         <a href="#prim_unreserve(idx_count:Int32,vtx_count:Int32):Void-instance-method" class="signature"><strong>#prim_unreserve</strong>(idx_count : Int32, vtx_count : Int32) : Void</a>
         
-          <div class="summary"><p>[<a href="https://github.com/ocornut/imgui/blob/v1.78/imgui.h#L2163" target="_blank">View C++ header</a>]</p></div>
+          <div class="summary"><p><a href="https://github.com/ocornut/imgui/blob/v1.78/imgui.h#L2163" target="_blank">ImDrawList::PrimUnreserve()</a></p></div>
         
       </li>
     
       <li class="entry-summary">
         <a href="#prim_vtx(pos:ImVec2,uv:ImVec2,col:UInt32):Void-instance-method" class="signature"><strong>#prim_vtx</strong>(pos : ImVec2, uv : ImVec2, col : UInt32) : Void</a>
         
-          <div class="summary"><p>[<a href="https://github.com/ocornut/imgui/blob/v1.78/imgui.h#L2169" target="_blank">View C++ header</a>]</p></div>
+          <div class="summary"><p>Write vertex with unique index</p></div>
         
       </li>
     
       <li class="entry-summary">
         <a href="#prim_write_idx(idx:ImDrawIdx):Void-instance-method" class="signature"><strong>#prim_write_idx</strong>(idx : ImDrawIdx) : Void</a>
         
-          <div class="summary"><p>[<a href="https://github.com/ocornut/imgui/blob/v1.78/imgui.h#L2168" target="_blank">View C++ header</a>]</p></div>
+          <div class="summary"><p><a href="https://github.com/ocornut/imgui/blob/v1.78/imgui.h#L2168" target="_blank">ImDrawList::PrimWriteIdx()</a></p></div>
         
       </li>
     
       <li class="entry-summary">
         <a href="#prim_write_vtx(pos:ImVec2,uv:ImVec2,col:UInt32):Void-instance-method" class="signature"><strong>#prim_write_vtx</strong>(pos : ImVec2, uv : ImVec2, col : UInt32) : Void</a>
         
-          <div class="summary"><p>[<a href="https://github.com/ocornut/imgui/blob/v1.78/imgui.h#L2167" target="_blank">View C++ header</a>]</p></div>
+          <div class="summary"><p><a href="https://github.com/ocornut/imgui/blob/v1.78/imgui.h#L2167" target="_blank">ImDrawList::PrimWriteVtx()</a></p></div>
         
       </li>
     
       <li class="entry-summary">
         <a href="#push_clip_rect(clip_rect_min:ImVec2,clip_rect_max:ImVec2,intersect_with_current_clip_rect:Bool=false):Void-instance-method" class="signature"><strong>#push_clip_rect</strong>(clip_rect_min : ImVec2, clip_rect_max : ImVec2, intersect_with_current_clip_rect : Bool = <span class="n">false</span>) : Void</a>
         
-          <div class="summary"><p>[<a href="https://github.com/ocornut/imgui/blob/v1.78/imgui.h#L2093" target="_blank">View C++ header</a>]</p></div>
+          <div class="summary"><p>Render-level scissoring.</p></div>
         
       </li>
     
       <li class="entry-summary">
         <a href="#push_clip_rect_full_screen:Void-instance-method" class="signature"><strong>#push_clip_rect_full_screen</strong> : Void</a>
         
-          <div class="summary"><p>[<a href="https://github.com/ocornut/imgui/blob/v1.78/imgui.h#L2094" target="_blank">View C++ header</a>]</p></div>
+          <div class="summary"><p><a href="https://github.com/ocornut/imgui/blob/v1.78/imgui.h#L2094" target="_blank">ImDrawList::PushClipRectFullScreen()</a></p></div>
         
       </li>
     
       <li class="entry-summary">
         <a href="#push_texture_id(texture_id:ImTextureID):Void-instance-method" class="signature"><strong>#push_texture_id</strong>(texture_id : ImTextureID) : Void</a>
         
-          <div class="summary"><p>[<a href="https://github.com/ocornut/imgui/blob/v1.78/imgui.h#L2096" target="_blank">View C++ header</a>]</p></div>
+          <div class="summary"><p><a href="https://github.com/ocornut/imgui/blob/v1.78/imgui.h#L2096" target="_blank">ImDrawList::PushTextureID()</a></p></div>
         
       </li>
     
@@ -1219,6 +1225,8 @@
     
       <li class="entry-summary">
         <a href="#vtx_buffer:ImVector(ImDrawVert)-instance-method" class="signature"><strong>#vtx_buffer</strong> : ImVector(ImDrawVert)</a>
+        
+          <div class="summary"><p>Vertex buffer.</p></div>
         
       </li>
     
@@ -1297,13 +1305,13 @@
       
         <div class="doc">
           
-          <p>[<a href="https://github.com/ocornut/imgui/blob/v1.78/imgui.h#L2090" target="_blank">View C++ header</a>]</p>
+          <p><a href="https://github.com/ocornut/imgui/blob/v1.78/imgui.h#L2090" target="_blank">ImDrawList::ImDrawList()</a></p>
         </div>
       
       <br/>
       <div>
         
-          [<a href="https://github.com/oprypin/crystal-imgui/blob/master/src/obj.cr#L399" target="_blank">View source</a>]
+          [<a href="https://github.com/oprypin/crystal-imgui/blob/master/src/obj.cr#L4123" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -1332,13 +1340,13 @@
       
         <div class="doc">
           
-          <p>[<a href="https://github.com/ocornut/imgui/blob/v1.78/imgui.h#L2123" target="_blank">View C++ header</a>]</p>
+          <p><a href="https://github.com/ocornut/imgui/blob/v1.78/imgui.h#L2123" target="_blank">ImDrawList::AddBezierCurve()</a></p>
         </div>
       
       <br/>
       <div>
         
-          [<a href="https://github.com/oprypin/crystal-imgui/blob/master/src/obj.cr#L256" target="_blank">View source</a>]
+          [<a href="https://github.com/oprypin/crystal-imgui/blob/master/src/obj.cr#L4254" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -1353,13 +1361,15 @@
       
         <div class="doc">
           
-          <p>[<a href="https://github.com/ocornut/imgui/blob/v1.78/imgui.h#L2145" target="_blank">View C++ header</a>]</p>
+          <p>Your rendering function must check for 'UserCallback' in ImDrawCmd and call the function instead of rendering triangles.</p>
+
+<p><a href="https://github.com/ocornut/imgui/blob/v1.78/imgui.h#L2145" target="_blank">ImDrawList::AddCallback()</a></p>
         </div>
       
       <br/>
       <div>
         
-          [<a href="https://github.com/oprypin/crystal-imgui/blob/master/src/obj.cr#L261" target="_blank">View source</a>]
+          [<a href="https://github.com/oprypin/crystal-imgui/blob/master/src/obj.cr#L4325" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -1374,13 +1384,13 @@
       
         <div class="doc">
           
-          <p>[<a href="https://github.com/ocornut/imgui/blob/v1.78/imgui.h#L2115" target="_blank">View C++ header</a>]</p>
+          <p><a href="https://github.com/ocornut/imgui/blob/v1.78/imgui.h#L2115" target="_blank">ImDrawList::AddCircle()</a></p>
         </div>
       
       <br/>
       <div>
         
-          [<a href="https://github.com/oprypin/crystal-imgui/blob/master/src/obj.cr#L266" target="_blank">View source</a>]
+          [<a href="https://github.com/oprypin/crystal-imgui/blob/master/src/obj.cr#L4212" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -1395,13 +1405,13 @@
       
         <div class="doc">
           
-          <p>[<a href="https://github.com/ocornut/imgui/blob/v1.78/imgui.h#L2116" target="_blank">View C++ header</a>]</p>
+          <p><a href="https://github.com/ocornut/imgui/blob/v1.78/imgui.h#L2116" target="_blank">ImDrawList::AddCircleFilled()</a></p>
         </div>
       
       <br/>
       <div>
         
-          [<a href="https://github.com/oprypin/crystal-imgui/blob/master/src/obj.cr#L271" target="_blank">View source</a>]
+          [<a href="https://github.com/oprypin/crystal-imgui/blob/master/src/obj.cr#L4217" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -1416,13 +1426,15 @@
       
         <div class="doc">
           
-          <p>[<a href="https://github.com/ocornut/imgui/blob/v1.78/imgui.h#L2122" target="_blank">View C++ header</a>]</p>
+          <p>Note: Anti-aliased filling requires points to be in clockwise order.</p>
+
+<p><a href="https://github.com/ocornut/imgui/blob/v1.78/imgui.h#L2122" target="_blank">ImDrawList::AddConvexPolyFilled()</a></p>
         </div>
       
       <br/>
       <div>
         
-          [<a href="https://github.com/oprypin/crystal-imgui/blob/master/src/obj.cr#L276" target="_blank">View source</a>]
+          [<a href="https://github.com/oprypin/crystal-imgui/blob/master/src/obj.cr#L4249" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -1437,13 +1449,15 @@
       
         <div class="doc">
           
-          <p>[<a href="https://github.com/ocornut/imgui/blob/v1.78/imgui.h#L2146" target="_blank">View C++ header</a>]</p>
+          <p>This is useful if you need to forcefully create a new draw call (to allow for dependent rendering / blending). Otherwise primitives are merged into the same draw-call as much as possible</p>
+
+<p><a href="https://github.com/ocornut/imgui/blob/v1.78/imgui.h#L2146" target="_blank">ImDrawList::AddDrawCmd()</a></p>
         </div>
       
       <br/>
       <div>
         
-          [<a href="https://github.com/oprypin/crystal-imgui/blob/master/src/obj.cr#L281" target="_blank">View source</a>]
+          [<a href="https://github.com/oprypin/crystal-imgui/blob/master/src/obj.cr#L4332" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -1458,13 +1472,13 @@
       
         <div class="doc">
           
-          <p>[<a href="https://github.com/ocornut/imgui/blob/v1.78/imgui.h#L2129" target="_blank">View C++ header</a>]</p>
+          <p><a href="https://github.com/ocornut/imgui/blob/v1.78/imgui.h#L2129" target="_blank">ImDrawList::AddImage()</a></p>
         </div>
       
       <br/>
       <div>
         
-          [<a href="https://github.com/oprypin/crystal-imgui/blob/master/src/obj.cr#L286" target="_blank">View source</a>]
+          [<a href="https://github.com/oprypin/crystal-imgui/blob/master/src/obj.cr#L4259" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -1479,13 +1493,13 @@
       
         <div class="doc">
           
-          <p>[<a href="https://github.com/ocornut/imgui/blob/v1.78/imgui.h#L2130" target="_blank">View C++ header</a>]</p>
+          <p><a href="https://github.com/ocornut/imgui/blob/v1.78/imgui.h#L2130" target="_blank">ImDrawList::AddImageQuad()</a></p>
         </div>
       
       <br/>
       <div>
         
-          [<a href="https://github.com/oprypin/crystal-imgui/blob/master/src/obj.cr#L291" target="_blank">View source</a>]
+          [<a href="https://github.com/oprypin/crystal-imgui/blob/master/src/obj.cr#L4264" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -1500,13 +1514,13 @@
       
         <div class="doc">
           
-          <p>[<a href="https://github.com/ocornut/imgui/blob/v1.78/imgui.h#L2131" target="_blank">View C++ header</a>]</p>
+          <p><a href="https://github.com/ocornut/imgui/blob/v1.78/imgui.h#L2131" target="_blank">ImDrawList::AddImageRounded()</a></p>
         </div>
       
       <br/>
       <div>
         
-          [<a href="https://github.com/oprypin/crystal-imgui/blob/master/src/obj.cr#L296" target="_blank">View source</a>]
+          [<a href="https://github.com/oprypin/crystal-imgui/blob/master/src/obj.cr#L4269" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -1521,13 +1535,13 @@
       
         <div class="doc">
           
-          <p>[<a href="https://github.com/ocornut/imgui/blob/v1.78/imgui.h#L2107" target="_blank">View C++ header</a>]</p>
+          <p><a href="https://github.com/ocornut/imgui/blob/v1.78/imgui.h#L2107" target="_blank">ImDrawList::AddLine()</a></p>
         </div>
       
       <br/>
       <div>
         
-          [<a href="https://github.com/oprypin/crystal-imgui/blob/master/src/obj.cr#L301" target="_blank">View source</a>]
+          [<a href="https://github.com/oprypin/crystal-imgui/blob/master/src/obj.cr#L4168" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -1542,13 +1556,13 @@
       
         <div class="doc">
           
-          <p>[<a href="https://github.com/ocornut/imgui/blob/v1.78/imgui.h#L2117" target="_blank">View C++ header</a>]</p>
+          <p><a href="https://github.com/ocornut/imgui/blob/v1.78/imgui.h#L2117" target="_blank">ImDrawList::AddNgon()</a></p>
         </div>
       
       <br/>
       <div>
         
-          [<a href="https://github.com/oprypin/crystal-imgui/blob/master/src/obj.cr#L306" target="_blank">View source</a>]
+          [<a href="https://github.com/oprypin/crystal-imgui/blob/master/src/obj.cr#L4222" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -1563,13 +1577,13 @@
       
         <div class="doc">
           
-          <p>[<a href="https://github.com/ocornut/imgui/blob/v1.78/imgui.h#L2118" target="_blank">View C++ header</a>]</p>
+          <p><a href="https://github.com/ocornut/imgui/blob/v1.78/imgui.h#L2118" target="_blank">ImDrawList::AddNgonFilled()</a></p>
         </div>
       
       <br/>
       <div>
         
-          [<a href="https://github.com/oprypin/crystal-imgui/blob/master/src/obj.cr#L311" target="_blank">View source</a>]
+          [<a href="https://github.com/oprypin/crystal-imgui/blob/master/src/obj.cr#L4227" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -1584,13 +1598,13 @@
       
         <div class="doc">
           
-          <p>[<a href="https://github.com/ocornut/imgui/blob/v1.78/imgui.h#L2121" target="_blank">View C++ header</a>]</p>
+          <p><a href="https://github.com/ocornut/imgui/blob/v1.78/imgui.h#L2121" target="_blank">ImDrawList::AddPolyline()</a></p>
         </div>
       
       <br/>
       <div>
         
-          [<a href="https://github.com/oprypin/crystal-imgui/blob/master/src/obj.cr#L316" target="_blank">View source</a>]
+          [<a href="https://github.com/oprypin/crystal-imgui/blob/master/src/obj.cr#L4242" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -1605,13 +1619,13 @@
       
         <div class="doc">
           
-          <p>[<a href="https://github.com/ocornut/imgui/blob/v1.78/imgui.h#L2111" target="_blank">View C++ header</a>]</p>
+          <p><a href="https://github.com/ocornut/imgui/blob/v1.78/imgui.h#L2111" target="_blank">ImDrawList::AddQuad()</a></p>
         </div>
       
       <br/>
       <div>
         
-          [<a href="https://github.com/oprypin/crystal-imgui/blob/master/src/obj.cr#L321" target="_blank">View source</a>]
+          [<a href="https://github.com/oprypin/crystal-imgui/blob/master/src/obj.cr#L4192" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -1626,13 +1640,13 @@
       
         <div class="doc">
           
-          <p>[<a href="https://github.com/ocornut/imgui/blob/v1.78/imgui.h#L2112" target="_blank">View C++ header</a>]</p>
+          <p><a href="https://github.com/ocornut/imgui/blob/v1.78/imgui.h#L2112" target="_blank">ImDrawList::AddQuadFilled()</a></p>
         </div>
       
       <br/>
       <div>
         
-          [<a href="https://github.com/oprypin/crystal-imgui/blob/master/src/obj.cr#L326" target="_blank">View source</a>]
+          [<a href="https://github.com/oprypin/crystal-imgui/blob/master/src/obj.cr#L4197" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -1647,13 +1661,15 @@
       
         <div class="doc">
           
-          <p>[<a href="https://github.com/ocornut/imgui/blob/v1.78/imgui.h#L2108" target="_blank">View C++ header</a>]</p>
+          <p>a: upper-left, b: lower-right (== upper-left + size), rounding_corners_flags: 4 bits corresponding to which corner to round</p>
+
+<p><a href="https://github.com/ocornut/imgui/blob/v1.78/imgui.h#L2108" target="_blank">ImDrawList::AddRect()</a></p>
         </div>
       
       <br/>
       <div>
         
-          [<a href="https://github.com/oprypin/crystal-imgui/blob/master/src/obj.cr#L331" target="_blank">View source</a>]
+          [<a href="https://github.com/oprypin/crystal-imgui/blob/master/src/obj.cr#L4175" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -1668,13 +1684,15 @@
       
         <div class="doc">
           
-          <p>[<a href="https://github.com/ocornut/imgui/blob/v1.78/imgui.h#L2109" target="_blank">View C++ header</a>]</p>
+          <p>a: upper-left, b: lower-right (== upper-left + size)</p>
+
+<p><a href="https://github.com/ocornut/imgui/blob/v1.78/imgui.h#L2109" target="_blank">ImDrawList::AddRectFilled()</a></p>
         </div>
       
       <br/>
       <div>
         
-          [<a href="https://github.com/oprypin/crystal-imgui/blob/master/src/obj.cr#L336" target="_blank">View source</a>]
+          [<a href="https://github.com/oprypin/crystal-imgui/blob/master/src/obj.cr#L4182" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -1689,13 +1707,13 @@
       
         <div class="doc">
           
-          <p>[<a href="https://github.com/ocornut/imgui/blob/v1.78/imgui.h#L2110" target="_blank">View C++ header</a>]</p>
+          <p><a href="https://github.com/ocornut/imgui/blob/v1.78/imgui.h#L2110" target="_blank">ImDrawList::AddRectFilledMultiColor()</a></p>
         </div>
       
       <br/>
       <div>
         
-          [<a href="https://github.com/oprypin/crystal-imgui/blob/master/src/obj.cr#L341" target="_blank">View source</a>]
+          [<a href="https://github.com/oprypin/crystal-imgui/blob/master/src/obj.cr#L4187" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -1710,13 +1728,13 @@
       
         <div class="doc">
           
-          <p>[<a href="https://github.com/ocornut/imgui/blob/v1.78/imgui.h#L2119" target="_blank">View C++ header</a>]</p>
+          <p><a href="https://github.com/ocornut/imgui/blob/v1.78/imgui.h#L2119" target="_blank">ImDrawList::AddText()</a></p>
         </div>
       
       <br/>
       <div>
         
-          [<a href="https://github.com/oprypin/crystal-imgui/blob/master/src/obj.cr#L346" target="_blank">View source</a>]
+          [<a href="https://github.com/oprypin/crystal-imgui/blob/master/src/obj.cr#L4232" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -1731,13 +1749,13 @@
       
         <div class="doc">
           
-          <p>[<a href="https://github.com/ocornut/imgui/blob/v1.78/imgui.h#L2120" target="_blank">View C++ header</a>]</p>
+          <p><a href="https://github.com/ocornut/imgui/blob/v1.78/imgui.h#L2120" target="_blank">ImDrawList::AddText()</a></p>
         </div>
       
       <br/>
       <div>
         
-          [<a href="https://github.com/oprypin/crystal-imgui/blob/master/src/obj.cr#L351" target="_blank">View source</a>]
+          [<a href="https://github.com/oprypin/crystal-imgui/blob/master/src/obj.cr#L4237" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -1752,13 +1770,13 @@
       
         <div class="doc">
           
-          <p>[<a href="https://github.com/ocornut/imgui/blob/v1.78/imgui.h#L2113" target="_blank">View C++ header</a>]</p>
+          <p><a href="https://github.com/ocornut/imgui/blob/v1.78/imgui.h#L2113" target="_blank">ImDrawList::AddTriangle()</a></p>
         </div>
       
       <br/>
       <div>
         
-          [<a href="https://github.com/oprypin/crystal-imgui/blob/master/src/obj.cr#L356" target="_blank">View source</a>]
+          [<a href="https://github.com/oprypin/crystal-imgui/blob/master/src/obj.cr#L4202" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -1773,13 +1791,13 @@
       
         <div class="doc">
           
-          <p>[<a href="https://github.com/ocornut/imgui/blob/v1.78/imgui.h#L2114" target="_blank">View C++ header</a>]</p>
+          <p><a href="https://github.com/ocornut/imgui/blob/v1.78/imgui.h#L2114" target="_blank">ImDrawList::AddTriangleFilled()</a></p>
         </div>
       
       <br/>
       <div>
         
-          [<a href="https://github.com/oprypin/crystal-imgui/blob/master/src/obj.cr#L361" target="_blank">View source</a>]
+          [<a href="https://github.com/oprypin/crystal-imgui/blob/master/src/obj.cr#L4207" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -1794,13 +1812,13 @@
       
         <div class="doc">
           
-          <p>[<a href="https://github.com/ocornut/imgui/blob/v1.78/imgui.h#L2156" target="_blank">View C++ header</a>]</p>
+          <p><a href="https://github.com/ocornut/imgui/blob/v1.78/imgui.h#L2156" target="_blank">ImDrawList::ChannelsMerge()</a></p>
         </div>
       
       <br/>
       <div>
         
-          [<a href="https://github.com/oprypin/crystal-imgui/blob/master/src/obj.cr#L366" target="_blank">View source</a>]
+          [<a href="https://github.com/oprypin/crystal-imgui/blob/master/src/obj.cr#L4350" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -1815,13 +1833,13 @@
       
         <div class="doc">
           
-          <p>[<a href="https://github.com/ocornut/imgui/blob/v1.78/imgui.h#L2157" target="_blank">View C++ header</a>]</p>
+          <p><a href="https://github.com/ocornut/imgui/blob/v1.78/imgui.h#L2157" target="_blank">ImDrawList::ChannelsSetCurrent()</a></p>
         </div>
       
       <br/>
       <div>
         
-          [<a href="https://github.com/oprypin/crystal-imgui/blob/master/src/obj.cr#L371" target="_blank">View source</a>]
+          [<a href="https://github.com/oprypin/crystal-imgui/blob/master/src/obj.cr#L4355" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -1836,13 +1854,13 @@
       
         <div class="doc">
           
-          <p>[<a href="https://github.com/ocornut/imgui/blob/v1.78/imgui.h#L2155" target="_blank">View C++ header</a>]</p>
+          <p><a href="https://github.com/ocornut/imgui/blob/v1.78/imgui.h#L2155" target="_blank">ImDrawList::ChannelsSplit()</a></p>
         </div>
       
       <br/>
       <div>
         
-          [<a href="https://github.com/oprypin/crystal-imgui/blob/master/src/obj.cr#L376" target="_blank">View source</a>]
+          [<a href="https://github.com/oprypin/crystal-imgui/blob/master/src/obj.cr#L4345" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -1857,13 +1875,15 @@
       
         <div class="doc">
           
-          <p>[<a href="https://github.com/ocornut/imgui/blob/v1.78/imgui.h#L2147" target="_blank">View C++ header</a>]</p>
+          <p>Create a clone of the CmdBuffer/IdxBuffer/VtxBuffer.</p>
+
+<p><a href="https://github.com/ocornut/imgui/blob/v1.78/imgui.h#L2147" target="_blank">ImDrawList::CloneOutput()</a></p>
         </div>
       
       <br/>
       <div>
         
-          [<a href="https://github.com/oprypin/crystal-imgui/blob/master/src/obj.cr#L381" target="_blank">View source</a>]
+          [<a href="https://github.com/oprypin/crystal-imgui/blob/master/src/obj.cr#L4339" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -1876,10 +1896,15 @@
         <a class="method-permalink" href="#cmd_buffer:ImVector(LibImGui::ImDrawCmd)-instance-method">#</a>
       </div>
       
+        <div class="doc">
+          
+          <p>Draw commands. Typically 1 command = 1 GPU draw call, unless the command is a callback.</p>
+        </div>
+      
       <br/>
       <div>
         
-          [<a href="https://github.com/oprypin/crystal-imgui/blob/master/src/obj.cr#L220" target="_blank">View source</a>]
+          [<a href="https://github.com/oprypin/crystal-imgui/blob/master/src/obj.cr#L4084" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -1895,7 +1920,7 @@
       <br/>
       <div>
         
-          [<a href="https://github.com/oprypin/crystal-imgui/blob/master/src/obj.cr#L225" target="_blank">View source</a>]
+          [<a href="https://github.com/oprypin/crystal-imgui/blob/master/src/obj.cr#L4089" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -1908,10 +1933,15 @@
         <a class="method-permalink" href="#flags:ImDrawListFlags-instance-method">#</a>
       </div>
       
+        <div class="doc">
+          
+          <p>Flags, you may poke into these to adjust anti-aliasing settings per-primitive.</p>
+        </div>
+      
       <br/>
       <div>
         
-          [<a href="https://github.com/oprypin/crystal-imgui/blob/master/src/obj.cr#L247" target="_blank">View source</a>]
+          [<a href="https://github.com/oprypin/crystal-imgui/blob/master/src/obj.cr#L4114" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -1927,7 +1957,7 @@
       <br/>
       <div>
         
-          [<a href="https://github.com/oprypin/crystal-imgui/blob/master/src/obj.cr#L251" target="_blank">View source</a>]
+          [<a href="https://github.com/oprypin/crystal-imgui/blob/master/src/obj.cr#L4118" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -1942,13 +1972,13 @@
       
         <div class="doc">
           
-          <p>[<a href="https://github.com/ocornut/imgui/blob/v1.78/imgui.h#L2099" target="_blank">View C++ header</a>]</p>
+          <p><a href="https://github.com/ocornut/imgui/blob/v1.78/imgui.h#L2099" target="_blank">ImDrawList::GetClipRectMax()</a></p>
         </div>
       
       <br/>
       <div>
         
-          [<a href="https://github.com/oprypin/crystal-imgui/blob/master/src/obj.cr#L387" target="_blank">View source</a>]
+          [<a href="https://github.com/oprypin/crystal-imgui/blob/master/src/obj.cr#L4162" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -1963,13 +1993,13 @@
       
         <div class="doc">
           
-          <p>[<a href="https://github.com/ocornut/imgui/blob/v1.78/imgui.h#L2098" target="_blank">View C++ header</a>]</p>
+          <p><a href="https://github.com/ocornut/imgui/blob/v1.78/imgui.h#L2098" target="_blank">ImDrawList::GetClipRectMin()</a></p>
         </div>
       
       <br/>
       <div>
         
-          [<a href="https://github.com/oprypin/crystal-imgui/blob/master/src/obj.cr#L393" target="_blank">View source</a>]
+          [<a href="https://github.com/oprypin/crystal-imgui/blob/master/src/obj.cr#L4156" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -1982,10 +2012,15 @@
         <a class="method-permalink" href="#idx_buffer:ImVector(ImDrawIdx)-instance-method">#</a>
       </div>
       
+        <div class="doc">
+          
+          <p>Index buffer. Each command consume ImDrawCmd::ElemCount of those</p>
+        </div>
+      
       <br/>
       <div>
         
-          [<a href="https://github.com/oprypin/crystal-imgui/blob/master/src/obj.cr#L229" target="_blank">View source</a>]
+          [<a href="https://github.com/oprypin/crystal-imgui/blob/master/src/obj.cr#L4094" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -2001,7 +2036,7 @@
       <br/>
       <div>
         
-          [<a href="https://github.com/oprypin/crystal-imgui/blob/master/src/obj.cr#L234" target="_blank">View source</a>]
+          [<a href="https://github.com/oprypin/crystal-imgui/blob/master/src/obj.cr#L4099" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -2016,13 +2051,13 @@
       
         <div class="doc">
           
-          <p>[<a href="https://github.com/ocornut/imgui/blob/v1.78/imgui.h#L2139" target="_blank">View C++ header</a>]</p>
+          <p><a href="https://github.com/ocornut/imgui/blob/v1.78/imgui.h#L2139" target="_blank">ImDrawList::PathArcTo()</a></p>
         </div>
       
       <br/>
       <div>
         
-          [<a href="https://github.com/oprypin/crystal-imgui/blob/master/src/obj.cr#L405" target="_blank">View source</a>]
+          [<a href="https://github.com/oprypin/crystal-imgui/blob/master/src/obj.cr#L4301" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -2037,13 +2072,15 @@
       
         <div class="doc">
           
-          <p>[<a href="https://github.com/ocornut/imgui/blob/v1.78/imgui.h#L2140" target="_blank">View C++ header</a>]</p>
+          <p>Use precomputed angles for a 12 steps circle</p>
+
+<p><a href="https://github.com/ocornut/imgui/blob/v1.78/imgui.h#L2140" target="_blank">ImDrawList::PathArcToFast()</a></p>
         </div>
       
       <br/>
       <div>
         
-          [<a href="https://github.com/oprypin/crystal-imgui/blob/master/src/obj.cr#L410" target="_blank">View source</a>]
+          [<a href="https://github.com/oprypin/crystal-imgui/blob/master/src/obj.cr#L4308" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -2058,13 +2095,13 @@
       
         <div class="doc">
           
-          <p>[<a href="https://github.com/ocornut/imgui/blob/v1.78/imgui.h#L2141" target="_blank">View C++ header</a>]</p>
+          <p><a href="https://github.com/ocornut/imgui/blob/v1.78/imgui.h#L2141" target="_blank">ImDrawList::PathBezierCurveTo()</a></p>
         </div>
       
       <br/>
       <div>
         
-          [<a href="https://github.com/oprypin/crystal-imgui/blob/master/src/obj.cr#L415" target="_blank">View source</a>]
+          [<a href="https://github.com/oprypin/crystal-imgui/blob/master/src/obj.cr#L4313" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -2079,13 +2116,13 @@
       
         <div class="doc">
           
-          <p>[<a href="https://github.com/ocornut/imgui/blob/v1.78/imgui.h#L2134" target="_blank">View C++ header</a>]</p>
+          <p><a href="https://github.com/ocornut/imgui/blob/v1.78/imgui.h#L2134" target="_blank">ImDrawList::PathClear()</a></p>
         </div>
       
       <br/>
       <div>
         
-          [<a href="https://github.com/oprypin/crystal-imgui/blob/master/src/obj.cr#L420" target="_blank">View source</a>]
+          [<a href="https://github.com/oprypin/crystal-imgui/blob/master/src/obj.cr#L4274" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -2100,13 +2137,15 @@
       
         <div class="doc">
           
-          <p>[<a href="https://github.com/ocornut/imgui/blob/v1.78/imgui.h#L2137" target="_blank">View C++ header</a>]</p>
+          <p>Note: Anti-aliased filling requires points to be in clockwise order.</p>
+
+<p><a href="https://github.com/ocornut/imgui/blob/v1.78/imgui.h#L2137" target="_blank">ImDrawList::PathFillConvex()</a></p>
         </div>
       
       <br/>
       <div>
         
-          [<a href="https://github.com/oprypin/crystal-imgui/blob/master/src/obj.cr#L425" target="_blank">View source</a>]
+          [<a href="https://github.com/oprypin/crystal-imgui/blob/master/src/obj.cr#L4291" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -2121,13 +2160,13 @@
       
         <div class="doc">
           
-          <p>[<a href="https://github.com/ocornut/imgui/blob/v1.78/imgui.h#L2135" target="_blank">View C++ header</a>]</p>
+          <p><a href="https://github.com/ocornut/imgui/blob/v1.78/imgui.h#L2135" target="_blank">ImDrawList::PathLineTo()</a></p>
         </div>
       
       <br/>
       <div>
         
-          [<a href="https://github.com/oprypin/crystal-imgui/blob/master/src/obj.cr#L430" target="_blank">View source</a>]
+          [<a href="https://github.com/oprypin/crystal-imgui/blob/master/src/obj.cr#L4279" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -2142,13 +2181,13 @@
       
         <div class="doc">
           
-          <p>[<a href="https://github.com/ocornut/imgui/blob/v1.78/imgui.h#L2136" target="_blank">View C++ header</a>]</p>
+          <p><a href="https://github.com/ocornut/imgui/blob/v1.78/imgui.h#L2136" target="_blank">ImDrawList::PathLineToMergeDuplicate()</a></p>
         </div>
       
       <br/>
       <div>
         
-          [<a href="https://github.com/oprypin/crystal-imgui/blob/master/src/obj.cr#L435" target="_blank">View source</a>]
+          [<a href="https://github.com/oprypin/crystal-imgui/blob/master/src/obj.cr#L4284" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -2163,13 +2202,13 @@
       
         <div class="doc">
           
-          <p>[<a href="https://github.com/ocornut/imgui/blob/v1.78/imgui.h#L2142" target="_blank">View C++ header</a>]</p>
+          <p><a href="https://github.com/ocornut/imgui/blob/v1.78/imgui.h#L2142" target="_blank">ImDrawList::PathRect()</a></p>
         </div>
       
       <br/>
       <div>
         
-          [<a href="https://github.com/oprypin/crystal-imgui/blob/master/src/obj.cr#L440" target="_blank">View source</a>]
+          [<a href="https://github.com/oprypin/crystal-imgui/blob/master/src/obj.cr#L4318" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -2184,13 +2223,13 @@
       
         <div class="doc">
           
-          <p>[<a href="https://github.com/ocornut/imgui/blob/v1.78/imgui.h#L2138" target="_blank">View C++ header</a>]</p>
+          <p><a href="https://github.com/ocornut/imgui/blob/v1.78/imgui.h#L2138" target="_blank">ImDrawList::PathStroke()</a></p>
         </div>
       
       <br/>
       <div>
         
-          [<a href="https://github.com/oprypin/crystal-imgui/blob/master/src/obj.cr#L445" target="_blank">View source</a>]
+          [<a href="https://github.com/oprypin/crystal-imgui/blob/master/src/obj.cr#L4296" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -2205,13 +2244,13 @@
       
         <div class="doc">
           
-          <p>[<a href="https://github.com/ocornut/imgui/blob/v1.78/imgui.h#L2095" target="_blank">View C++ header</a>]</p>
+          <p><a href="https://github.com/ocornut/imgui/blob/v1.78/imgui.h#L2095" target="_blank">ImDrawList::PopClipRect()</a></p>
         </div>
       
       <br/>
       <div>
         
-          [<a href="https://github.com/oprypin/crystal-imgui/blob/master/src/obj.cr#L450" target="_blank">View source</a>]
+          [<a href="https://github.com/oprypin/crystal-imgui/blob/master/src/obj.cr#L4141" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -2226,13 +2265,13 @@
       
         <div class="doc">
           
-          <p>[<a href="https://github.com/ocornut/imgui/blob/v1.78/imgui.h#L2097" target="_blank">View C++ header</a>]</p>
+          <p><a href="https://github.com/ocornut/imgui/blob/v1.78/imgui.h#L2097" target="_blank">ImDrawList::PopTextureID()</a></p>
         </div>
       
       <br/>
       <div>
         
-          [<a href="https://github.com/oprypin/crystal-imgui/blob/master/src/obj.cr#L455" target="_blank">View source</a>]
+          [<a href="https://github.com/oprypin/crystal-imgui/blob/master/src/obj.cr#L4151" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -2247,13 +2286,13 @@
       
         <div class="doc">
           
-          <p>[<a href="https://github.com/ocornut/imgui/blob/v1.78/imgui.h#L2166" target="_blank">View C++ header</a>]</p>
+          <p><a href="https://github.com/ocornut/imgui/blob/v1.78/imgui.h#L2166" target="_blank">ImDrawList::PrimQuadUV()</a></p>
         </div>
       
       <br/>
       <div>
         
-          [<a href="https://github.com/oprypin/crystal-imgui/blob/master/src/obj.cr#L460" target="_blank">View source</a>]
+          [<a href="https://github.com/oprypin/crystal-imgui/blob/master/src/obj.cr#L4382" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -2268,13 +2307,15 @@
       
         <div class="doc">
           
-          <p>[<a href="https://github.com/ocornut/imgui/blob/v1.78/imgui.h#L2164" target="_blank">View C++ header</a>]</p>
+          <p>Axis aligned rectangle (composed of two triangles)</p>
+
+<p><a href="https://github.com/ocornut/imgui/blob/v1.78/imgui.h#L2164" target="_blank">ImDrawList::PrimRect()</a></p>
         </div>
       
       <br/>
       <div>
         
-          [<a href="https://github.com/oprypin/crystal-imgui/blob/master/src/obj.cr#L465" target="_blank">View source</a>]
+          [<a href="https://github.com/oprypin/crystal-imgui/blob/master/src/obj.cr#L4372" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -2289,13 +2330,13 @@
       
         <div class="doc">
           
-          <p>[<a href="https://github.com/ocornut/imgui/blob/v1.78/imgui.h#L2165" target="_blank">View C++ header</a>]</p>
+          <p><a href="https://github.com/ocornut/imgui/blob/v1.78/imgui.h#L2165" target="_blank">ImDrawList::PrimRectUV()</a></p>
         </div>
       
       <br/>
       <div>
         
-          [<a href="https://github.com/oprypin/crystal-imgui/blob/master/src/obj.cr#L470" target="_blank">View source</a>]
+          [<a href="https://github.com/oprypin/crystal-imgui/blob/master/src/obj.cr#L4377" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -2310,13 +2351,13 @@
       
         <div class="doc">
           
-          <p>[<a href="https://github.com/ocornut/imgui/blob/v1.78/imgui.h#L2162" target="_blank">View C++ header</a>]</p>
+          <p><a href="https://github.com/ocornut/imgui/blob/v1.78/imgui.h#L2162" target="_blank">ImDrawList::PrimReserve()</a></p>
         </div>
       
       <br/>
       <div>
         
-          [<a href="https://github.com/oprypin/crystal-imgui/blob/master/src/obj.cr#L475" target="_blank">View source</a>]
+          [<a href="https://github.com/oprypin/crystal-imgui/blob/master/src/obj.cr#L4360" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -2331,13 +2372,13 @@
       
         <div class="doc">
           
-          <p>[<a href="https://github.com/ocornut/imgui/blob/v1.78/imgui.h#L2163" target="_blank">View C++ header</a>]</p>
+          <p><a href="https://github.com/ocornut/imgui/blob/v1.78/imgui.h#L2163" target="_blank">ImDrawList::PrimUnreserve()</a></p>
         </div>
       
       <br/>
       <div>
         
-          [<a href="https://github.com/oprypin/crystal-imgui/blob/master/src/obj.cr#L480" target="_blank">View source</a>]
+          [<a href="https://github.com/oprypin/crystal-imgui/blob/master/src/obj.cr#L4365" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -2352,13 +2393,15 @@
       
         <div class="doc">
           
-          <p>[<a href="https://github.com/ocornut/imgui/blob/v1.78/imgui.h#L2169" target="_blank">View C++ header</a>]</p>
+          <p>Write vertex with unique index</p>
+
+<p><a href="https://github.com/ocornut/imgui/blob/v1.78/imgui.h#L2169" target="_blank">ImDrawList::PrimVtx()</a></p>
         </div>
       
       <br/>
       <div>
         
-          [<a href="https://github.com/oprypin/crystal-imgui/blob/master/src/obj.cr#L485" target="_blank">View source</a>]
+          [<a href="https://github.com/oprypin/crystal-imgui/blob/master/src/obj.cr#L4399" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -2373,13 +2416,13 @@
       
         <div class="doc">
           
-          <p>[<a href="https://github.com/ocornut/imgui/blob/v1.78/imgui.h#L2168" target="_blank">View C++ header</a>]</p>
+          <p><a href="https://github.com/ocornut/imgui/blob/v1.78/imgui.h#L2168" target="_blank">ImDrawList::PrimWriteIdx()</a></p>
         </div>
       
       <br/>
       <div>
         
-          [<a href="https://github.com/oprypin/crystal-imgui/blob/master/src/obj.cr#L490" target="_blank">View source</a>]
+          [<a href="https://github.com/oprypin/crystal-imgui/blob/master/src/obj.cr#L4392" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -2394,13 +2437,13 @@
       
         <div class="doc">
           
-          <p>[<a href="https://github.com/ocornut/imgui/blob/v1.78/imgui.h#L2167" target="_blank">View C++ header</a>]</p>
+          <p><a href="https://github.com/ocornut/imgui/blob/v1.78/imgui.h#L2167" target="_blank">ImDrawList::PrimWriteVtx()</a></p>
         </div>
       
       <br/>
       <div>
         
-          [<a href="https://github.com/oprypin/crystal-imgui/blob/master/src/obj.cr#L495" target="_blank">View source</a>]
+          [<a href="https://github.com/oprypin/crystal-imgui/blob/master/src/obj.cr#L4387" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -2415,13 +2458,15 @@
       
         <div class="doc">
           
-          <p>[<a href="https://github.com/ocornut/imgui/blob/v1.78/imgui.h#L2093" target="_blank">View C++ header</a>]</p>
+          <p>Render-level scissoring. This is passed down to your render function but not used for CPU-side coarse clipping. Prefer using higher-level ImGui::PushClipRect() to affect logic (hit-testing and widget culling)</p>
+
+<p><a href="https://github.com/ocornut/imgui/blob/v1.78/imgui.h#L2093" target="_blank">ImDrawList::PushClipRect()</a></p>
         </div>
       
       <br/>
       <div>
         
-          [<a href="https://github.com/oprypin/crystal-imgui/blob/master/src/obj.cr#L500" target="_blank">View source</a>]
+          [<a href="https://github.com/oprypin/crystal-imgui/blob/master/src/obj.cr#L4131" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -2436,13 +2481,13 @@
       
         <div class="doc">
           
-          <p>[<a href="https://github.com/ocornut/imgui/blob/v1.78/imgui.h#L2094" target="_blank">View C++ header</a>]</p>
+          <p><a href="https://github.com/ocornut/imgui/blob/v1.78/imgui.h#L2094" target="_blank">ImDrawList::PushClipRectFullScreen()</a></p>
         </div>
       
       <br/>
       <div>
         
-          [<a href="https://github.com/oprypin/crystal-imgui/blob/master/src/obj.cr#L505" target="_blank">View source</a>]
+          [<a href="https://github.com/oprypin/crystal-imgui/blob/master/src/obj.cr#L4136" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -2457,13 +2502,13 @@
       
         <div class="doc">
           
-          <p>[<a href="https://github.com/ocornut/imgui/blob/v1.78/imgui.h#L2096" target="_blank">View C++ header</a>]</p>
+          <p><a href="https://github.com/ocornut/imgui/blob/v1.78/imgui.h#L2096" target="_blank">ImDrawList::PushTextureID()</a></p>
         </div>
       
       <br/>
       <div>
         
-          [<a href="https://github.com/oprypin/crystal-imgui/blob/master/src/obj.cr#L510" target="_blank">View source</a>]
+          [<a href="https://github.com/oprypin/crystal-imgui/blob/master/src/obj.cr#L4146" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -2479,7 +2524,7 @@
       <br/>
       <div>
         
-          [<a href="https://github.com/oprypin/crystal-imgui/blob/master/src/obj.cr#L218" target="_blank">View source</a>]
+          [<a href="https://github.com/oprypin/crystal-imgui/blob/master/src/obj.cr#L4081" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -2492,10 +2537,15 @@
         <a class="method-permalink" href="#vtx_buffer:ImVector(ImDrawVert)-instance-method">#</a>
       </div>
       
+        <div class="doc">
+          
+          <p>Vertex buffer.</p>
+        </div>
+      
       <br/>
       <div>
         
-          [<a href="https://github.com/oprypin/crystal-imgui/blob/master/src/obj.cr#L238" target="_blank">View source</a>]
+          [<a href="https://github.com/oprypin/crystal-imgui/blob/master/src/obj.cr#L4104" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -2511,7 +2561,7 @@
       <br/>
       <div>
         
-          [<a href="https://github.com/oprypin/crystal-imgui/blob/master/src/obj.cr#L243" target="_blank">View source</a>]
+          [<a href="https://github.com/oprypin/crystal-imgui/blob/master/src/obj.cr#L4109" target="_blank">View source</a>]
         
       </div>
     </div>

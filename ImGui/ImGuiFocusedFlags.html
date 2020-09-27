@@ -747,7 +747,7 @@
     Overview
   </h2>
 
-  <p>[<a href="https://github.com/ocornut/imgui/blob/v1.78/imgui.h#L958" target="_blank">View C++ header</a>]</p>
+  <p><a href="https://github.com/ocornut/imgui/blob/v1.78/imgui.h#L958" target="_blank">enum ImGuiFocusedFlags_</a></p>
 
 
 
@@ -772,7 +772,7 @@
   </h2>
   
     
-      <a href="https://github.com/oprypin/crystal-imgui/blob/master/src/types.cr#L233" target="_blank">
+      <a href="https://github.com/oprypin/crystal-imgui/blob/master/src/types.cr#L292" target="_blank">
         types.cr
       </a>
     
@@ -802,15 +802,27 @@
         <strong>ChildWindows</strong> = <code><span class="n">1</span></code>
       </dt>
       
+      <dd class="entry-const-doc">
+        <p>IsWindowFocused(): Return true if any children of the window is focused</p>
+      </dd>
+      
     
       <dt class="entry-const" id="RootWindow">
         <strong>RootWindow</strong> = <code><span class="n">2</span></code>
       </dt>
       
+      <dd class="entry-const-doc">
+        <p>IsWindowFocused(): Test from root window (top most parent of the current hierarchy)</p>
+      </dd>
+      
     
       <dt class="entry-const" id="AnyWindow">
         <strong>AnyWindow</strong> = <code><span class="n">4</span></code>
       </dt>
+      
+      <dd class="entry-const-doc">
+        <p>IsWindowFocused(): Return true if any window is focused. Important: If you are trying to tell how to dispatch your low-level inputs, do NOT use this. Use 'io.WantCaptureMouse' instead! Please read the FAQ!</p>
+      </dd>
       
     
       <dt class="entry-const" id="RootAndChildWindows">
@@ -936,7 +948,7 @@
       <br/>
       <div>
         
-          [<a href="https://github.com/oprypin/crystal-imgui/blob/master/src/types.cr#L237" target="_blank">View source</a>]
+          [<a href="https://github.com/oprypin/crystal-imgui/blob/master/src/types.cr#L299" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -952,7 +964,7 @@
       <br/>
       <div>
         
-          [<a href="https://github.com/oprypin/crystal-imgui/blob/master/src/types.cr#L235" target="_blank">View source</a>]
+          [<a href="https://github.com/oprypin/crystal-imgui/blob/master/src/types.cr#L295" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -968,7 +980,7 @@
       <br/>
       <div>
         
-          [<a href="https://github.com/oprypin/crystal-imgui/blob/master/src/types.cr#L234" target="_blank">View source</a>]
+          [<a href="https://github.com/oprypin/crystal-imgui/blob/master/src/types.cr#L293" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -984,7 +996,7 @@
       <br/>
       <div>
         
-          [<a href="https://github.com/oprypin/crystal-imgui/blob/master/src/types.cr#L238" target="_blank">View source</a>]
+          [<a href="https://github.com/oprypin/crystal-imgui/blob/master/src/types.cr#L300" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -1000,7 +1012,7 @@
       <br/>
       <div>
         
-          [<a href="https://github.com/oprypin/crystal-imgui/blob/master/src/types.cr#L236" target="_blank">View source</a>]
+          [<a href="https://github.com/oprypin/crystal-imgui/blob/master/src/types.cr#L297" target="_blank">View source</a>]
         
       </div>
     </div>

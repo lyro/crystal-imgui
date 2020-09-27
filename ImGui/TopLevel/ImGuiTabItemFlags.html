@@ -771,7 +771,7 @@
   </h2>
   
     
-      <a href="https://github.com/oprypin/crystal-imgui/blob/master/src/types.cr#L470" target="_blank">
+      <a href="https://github.com/oprypin/crystal-imgui/blob/master/src/types.cr#L288" target="_blank">
         types.cr
       </a>
     
@@ -796,6 +796,10 @@
         <strong>NoCloseWithMiddleMouseButton</strong> = <code><span class="n">4</span></code>
       </dt>
       
+      <dd class="entry-const-doc">
+        <p>Disable behavior of closing tabs (that are submitted with p_open != NULL) with middle mouse button. You can still repro this behavior on user's side with if (IsItemHovered() && IsMouseClicked(2)) *p_open = false.</p>
+      </dd>
+      
     
       <dt class="entry-const" id="None">
         <strong>None</strong> = <code><span class="n">0</span></code>
@@ -806,20 +810,36 @@
         <strong>NoPushId</strong> = <code><span class="n">8</span></code>
       </dt>
       
+      <dd class="entry-const-doc">
+        <p>Don't call PushID(tab->ID)/PopID() on BeginTabItem()/EndTabItem()</p>
+      </dd>
+      
     
       <dt class="entry-const" id="NoTooltip">
         <strong>NoTooltip</strong> = <code><span class="n">16</span></code>
       </dt>
+      
+      <dd class="entry-const-doc">
+        <p>Disable tooltip for the given tab</p>
+      </dd>
       
     
       <dt class="entry-const" id="SetSelected">
         <strong>SetSelected</strong> = <code><span class="n">2</span></code>
       </dt>
       
+      <dd class="entry-const-doc">
+        <p>Trigger flag to programmatically make the tab selected when calling BeginTabItem()</p>
+      </dd>
+      
     
       <dt class="entry-const" id="UnsavedDocument">
         <strong>UnsavedDocument</strong> = <code><span class="n">1</span></code>
       </dt>
+      
+      <dd class="entry-const-doc">
+        <p>Append '*' to title without affecting the ID, as a convenience to avoid using the ### operator. Also: tab is selected on closure and closure is deferred by one frame to allow code to undo it without flicker.</p>
+      </dd>
       
     
   </dl>

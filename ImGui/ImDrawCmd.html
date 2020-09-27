@@ -749,7 +749,7 @@
     Overview
   </h2>
 
-  <p>[<a href="https://github.com/ocornut/imgui/blob/v1.78/imgui.h#L1976" target="_blank">View C++ header</a>]</p>
+  <p><a href="https://github.com/ocornut/imgui/blob/v1.78/imgui.h#L1976" target="_blank">struct ImDrawCmd</a></p>
 
 
 
@@ -788,7 +788,7 @@
   </h2>
   
     
-      <a href="https://github.com/oprypin/crystal-imgui/blob/master/src/obj.cr#L56" target="_blank">
+      <a href="https://github.com/oprypin/crystal-imgui/blob/master/src/obj.cr#L3940" target="_blank">
         obj.cr
       </a>
     
@@ -812,7 +812,7 @@
       <li class="entry-summary">
         <a href="#new:ImDrawCmd-class-method" class="signature"><strong>.new</strong> : ImDrawCmd</a>
         
-          <div class="summary"><p>[<a href="https://github.com/ocornut/imgui/blob/v1.78/imgui.h#L1986" target="_blank">View C++ header</a>]</p></div>
+          <div class="summary"><p>Also ensure our padding fields are zeroed</p></div>
         
       </li>
     
@@ -835,6 +835,8 @@
       <li class="entry-summary">
         <a href="#clip_rect:ImVec4-instance-method" class="signature"><strong>#clip_rect</strong> : ImVec4</a>
         
+          <div class="summary"><p>4*4 Clipping rectangle (x1, y1, x2, y2).</p></div>
+        
       </li>
     
       <li class="entry-summary">
@@ -844,6 +846,8 @@
     
       <li class="entry-summary">
         <a href="#elem_count:UInt32-instance-method" class="signature"><strong>#elem_count</strong> : UInt32</a>
+        
+          <div class="summary"><p>4 Number of indices (multiple of 3) to be rendered as triangles.</p></div>
         
       </li>
     
@@ -855,6 +859,8 @@
       <li class="entry-summary">
         <a href="#idx_offset:UInt32-instance-method" class="signature"><strong>#idx_offset</strong> : UInt32</a>
         
+          <div class="summary"><p>4 Start offset in index buffer.</p></div>
+        
       </li>
     
       <li class="entry-summary">
@@ -864,6 +870,8 @@
     
       <li class="entry-summary">
         <a href="#texture_id:ImTextureID-instance-method" class="signature"><strong>#texture_id</strong> : ImTextureID</a>
+        
+          <div class="summary"><p>4-8 User-provided texture ID.</p></div>
         
       </li>
     
@@ -880,6 +888,8 @@
       <li class="entry-summary">
         <a href="#user_callback:ImDrawCallback-instance-method" class="signature"><strong>#user_callback</strong> : ImDrawCallback</a>
         
+          <div class="summary"><p>4-8 If != NULL, call the function instead of rendering the vertices.</p></div>
+        
       </li>
     
       <li class="entry-summary">
@@ -890,6 +900,8 @@
       <li class="entry-summary">
         <a href="#user_callback_data:Pointer(Void)-instance-method" class="signature"><strong>#user_callback_data</strong> : Pointer(Void)</a>
         
+          <div class="summary"><p>4-8 The draw callback code can access this.</p></div>
+        
       </li>
     
       <li class="entry-summary">
@@ -899,6 +911,8 @@
     
       <li class="entry-summary">
         <a href="#vtx_offset:UInt32-instance-method" class="signature"><strong>#vtx_offset</strong> : UInt32</a>
+        
+          <div class="summary"><p>4 Start offset in vertex buffer.</p></div>
         
       </li>
     
@@ -977,13 +991,15 @@
       
         <div class="doc">
           
-          <p>[<a href="https://github.com/ocornut/imgui/blob/v1.78/imgui.h#L1986" target="_blank">View C++ header</a>]</p>
+          <p>Also ensure our padding fields are zeroed</p>
+
+<p><a href="https://github.com/ocornut/imgui/blob/v1.78/imgui.h#L1986" target="_blank">ImDrawCmd::ImDrawCmd()</a></p>
         </div>
       
       <br/>
       <div>
         
-          [<a href="https://github.com/oprypin/crystal-imgui/blob/master/src/obj.cr#L116" target="_blank">View source</a>]
+          [<a href="https://github.com/oprypin/crystal-imgui/blob/master/src/obj.cr#L4016" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -1010,10 +1026,16 @@
         <a class="method-permalink" href="#clip_rect:ImVec4-instance-method">#</a>
       </div>
       
+        <div class="doc">
+          
+          <p>4*4
+Clipping rectangle (x1, y1, x2, y2). Subtract ImDrawData->DisplayPos to get clipping rectangle in "viewport" coordinates</p>
+        </div>
+      
       <br/>
       <div>
         
-          [<a href="https://github.com/oprypin/crystal-imgui/blob/master/src/obj.cr#L59" target="_blank">View source</a>]
+          [<a href="https://github.com/oprypin/crystal-imgui/blob/master/src/obj.cr#L3945" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -1029,7 +1051,7 @@
       <br/>
       <div>
         
-          [<a href="https://github.com/oprypin/crystal-imgui/blob/master/src/obj.cr#L63" target="_blank">View source</a>]
+          [<a href="https://github.com/oprypin/crystal-imgui/blob/master/src/obj.cr#L3949" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -1042,10 +1064,16 @@
         <a class="method-permalink" href="#elem_count:UInt32-instance-method">#</a>
       </div>
       
+        <div class="doc">
+          
+          <p>4
+Number of indices (multiple of 3) to be rendered as triangles. Vertices are stored in the callee ImDrawList's vtx_buffer[] array, indices in idx_buffer[].</p>
+        </div>
+      
       <br/>
       <div>
         
-          [<a href="https://github.com/oprypin/crystal-imgui/blob/master/src/obj.cr#L91" target="_blank">View source</a>]
+          [<a href="https://github.com/oprypin/crystal-imgui/blob/master/src/obj.cr#L3985" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -1061,7 +1089,7 @@
       <br/>
       <div>
         
-          [<a href="https://github.com/oprypin/crystal-imgui/blob/master/src/obj.cr#L95" target="_blank">View source</a>]
+          [<a href="https://github.com/oprypin/crystal-imgui/blob/master/src/obj.cr#L3989" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -1074,10 +1102,16 @@
         <a class="method-permalink" href="#idx_offset:UInt32-instance-method">#</a>
       </div>
       
+        <div class="doc">
+          
+          <p>4
+Start offset in index buffer. Always equal to sum of ElemCount drawn so far.</p>
+        </div>
+      
       <br/>
       <div>
         
-          [<a href="https://github.com/oprypin/crystal-imgui/blob/master/src/obj.cr#L83" target="_blank">View source</a>]
+          [<a href="https://github.com/oprypin/crystal-imgui/blob/master/src/obj.cr#L3975" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -1093,7 +1127,7 @@
       <br/>
       <div>
         
-          [<a href="https://github.com/oprypin/crystal-imgui/blob/master/src/obj.cr#L87" target="_blank">View source</a>]
+          [<a href="https://github.com/oprypin/crystal-imgui/blob/master/src/obj.cr#L3979" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -1106,10 +1140,16 @@
         <a class="method-permalink" href="#texture_id:ImTextureID-instance-method">#</a>
       </div>
       
+        <div class="doc">
+          
+          <p>4-8
+User-provided texture ID. Set by user in ImfontAtlas::SetTexID() for fonts or passed to Image*() functions. Ignore if never using images or multiple fonts atlas.</p>
+        </div>
+      
       <br/>
       <div>
         
-          [<a href="https://github.com/oprypin/crystal-imgui/blob/master/src/obj.cr#L67" target="_blank">View source</a>]
+          [<a href="https://github.com/oprypin/crystal-imgui/blob/master/src/obj.cr#L3955" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -1125,7 +1165,7 @@
       <br/>
       <div>
         
-          [<a href="https://github.com/oprypin/crystal-imgui/blob/master/src/obj.cr#L71" target="_blank">View source</a>]
+          [<a href="https://github.com/oprypin/crystal-imgui/blob/master/src/obj.cr#L3959" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -1141,7 +1181,7 @@
       <br/>
       <div>
         
-          [<a href="https://github.com/oprypin/crystal-imgui/blob/master/src/obj.cr#L57" target="_blank">View source</a>]
+          [<a href="https://github.com/oprypin/crystal-imgui/blob/master/src/obj.cr#L3941" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -1154,10 +1194,16 @@
         <a class="method-permalink" href="#user_callback:ImDrawCallback-instance-method">#</a>
       </div>
       
+        <div class="doc">
+          
+          <p>4-8
+If != NULL, call the function instead of rendering the vertices. clip_rect and texture_id will be set normally.</p>
+        </div>
+      
       <br/>
       <div>
         
-          [<a href="https://github.com/oprypin/crystal-imgui/blob/master/src/obj.cr#L99" target="_blank">View source</a>]
+          [<a href="https://github.com/oprypin/crystal-imgui/blob/master/src/obj.cr#L3995" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -1173,7 +1219,7 @@
       <br/>
       <div>
         
-          [<a href="https://github.com/oprypin/crystal-imgui/blob/master/src/obj.cr#L103" target="_blank">View source</a>]
+          [<a href="https://github.com/oprypin/crystal-imgui/blob/master/src/obj.cr#L3999" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -1186,10 +1232,16 @@
         <a class="method-permalink" href="#user_callback_data:Pointer(Void)-instance-method">#</a>
       </div>
       
+        <div class="doc">
+          
+          <p>4-8
+The draw callback code can access this.</p>
+        </div>
+      
       <br/>
       <div>
         
-          [<a href="https://github.com/oprypin/crystal-imgui/blob/master/src/obj.cr#L107" target="_blank">View source</a>]
+          [<a href="https://github.com/oprypin/crystal-imgui/blob/master/src/obj.cr#L4005" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -1205,7 +1257,7 @@
       <br/>
       <div>
         
-          [<a href="https://github.com/oprypin/crystal-imgui/blob/master/src/obj.cr#L111" target="_blank">View source</a>]
+          [<a href="https://github.com/oprypin/crystal-imgui/blob/master/src/obj.cr#L4009" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -1218,10 +1270,16 @@
         <a class="method-permalink" href="#vtx_offset:UInt32-instance-method">#</a>
       </div>
       
+        <div class="doc">
+          
+          <p>4
+Start offset in vertex buffer. ImGuiBackendFlags_RendererHasVtxOffset: always 0, otherwise may be >0 to support meshes larger than 64K vertices with 16-bit indices.</p>
+        </div>
+      
       <br/>
       <div>
         
-          [<a href="https://github.com/oprypin/crystal-imgui/blob/master/src/obj.cr#L75" target="_blank">View source</a>]
+          [<a href="https://github.com/oprypin/crystal-imgui/blob/master/src/obj.cr#L3965" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -1237,7 +1295,7 @@
       <br/>
       <div>
         
-          [<a href="https://github.com/oprypin/crystal-imgui/blob/master/src/obj.cr#L79" target="_blank">View source</a>]
+          [<a href="https://github.com/oprypin/crystal-imgui/blob/master/src/obj.cr#L3969" target="_blank">View source</a>]
         
       </div>
     </div>

@@ -747,7 +747,7 @@
     Overview
   </h2>
 
-  <p>[<a href="https://github.com/ocornut/imgui/blob/v1.78/imgui.h#L2052" target="_blank">View C++ header</a>]</p>
+  <p><a href="https://github.com/ocornut/imgui/blob/v1.78/imgui.h#L2052" target="_blank">enum ImDrawListFlags_</a></p>
 
 
 
@@ -772,7 +772,7 @@
   </h2>
   
     
-      <a href="https://github.com/oprypin/crystal-imgui/blob/master/src/types.cr#L19" target="_blank">
+      <a href="https://github.com/oprypin/crystal-imgui/blob/master/src/types.cr#L883" target="_blank">
         types.cr
       </a>
     
@@ -802,20 +802,36 @@
         <strong>AntiAliasedLines</strong> = <code><span class="n">1</span></code>
       </dt>
       
+      <dd class="entry-const-doc">
+        <p>Enable anti-aliased lines/borders (*2 the number of triangles for 1.0f wide line or lines thin enough to be drawn using textures, otherwise *3 the number of triangles)</p>
+      </dd>
+      
     
       <dt class="entry-const" id="AntiAliasedLinesUseTex">
         <strong>AntiAliasedLinesUseTex</strong> = <code><span class="n">2</span></code>
       </dt>
+      
+      <dd class="entry-const-doc">
+        <p>Enable anti-aliased lines/borders using textures when possible. Require back-end to render with bilinear filtering.</p>
+      </dd>
       
     
       <dt class="entry-const" id="AntiAliasedFill">
         <strong>AntiAliasedFill</strong> = <code><span class="n">4</span></code>
       </dt>
       
+      <dd class="entry-const-doc">
+        <p>Enable anti-aliased edge around filled shapes (rounded rectangles, circles).</p>
+      </dd>
+      
     
       <dt class="entry-const" id="AllowVtxOffset">
         <strong>AllowVtxOffset</strong> = <code><span class="n">8</span></code>
       </dt>
+      
+      <dd class="entry-const-doc">
+        <p>Can emit 'VtxOffset > 0' to allow large meshes. Set when 'ImGuiBackendFlags_RendererHasVtxOffset' is enabled.</p>
+      </dd>
       
     
   </dl>
@@ -936,7 +952,7 @@
       <br/>
       <div>
         
-          [<a href="https://github.com/oprypin/crystal-imgui/blob/master/src/types.cr#L24" target="_blank">View source</a>]
+          [<a href="https://github.com/oprypin/crystal-imgui/blob/master/src/types.cr#L892" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -952,7 +968,7 @@
       <br/>
       <div>
         
-          [<a href="https://github.com/oprypin/crystal-imgui/blob/master/src/types.cr#L23" target="_blank">View source</a>]
+          [<a href="https://github.com/oprypin/crystal-imgui/blob/master/src/types.cr#L890" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -968,7 +984,7 @@
       <br/>
       <div>
         
-          [<a href="https://github.com/oprypin/crystal-imgui/blob/master/src/types.cr#L21" target="_blank">View source</a>]
+          [<a href="https://github.com/oprypin/crystal-imgui/blob/master/src/types.cr#L886" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -984,7 +1000,7 @@
       <br/>
       <div>
         
-          [<a href="https://github.com/oprypin/crystal-imgui/blob/master/src/types.cr#L22" target="_blank">View source</a>]
+          [<a href="https://github.com/oprypin/crystal-imgui/blob/master/src/types.cr#L888" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -1000,7 +1016,7 @@
       <br/>
       <div>
         
-          [<a href="https://github.com/oprypin/crystal-imgui/blob/master/src/types.cr#L20" target="_blank">View source</a>]
+          [<a href="https://github.com/oprypin/crystal-imgui/blob/master/src/types.cr#L884" target="_blank">View source</a>]
         
       </div>
     </div>

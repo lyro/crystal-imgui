@@ -747,7 +747,7 @@
     Overview
   </h2>
 
-  <p>[<a href="https://github.com/ocornut/imgui/blob/v1.78/imgui.h#L794" target="_blank">View C++ header</a>]</p>
+  <p><a href="https://github.com/ocornut/imgui/blob/v1.78/imgui.h#L794" target="_blank">enum ImGuiWindowFlags_</a></p>
 
 
 
@@ -772,7 +772,7 @@
   </h2>
   
     
-      <a href="https://github.com/oprypin/crystal-imgui/blob/master/src/types.cr#L496" target="_blank">
+      <a href="https://github.com/oprypin/crystal-imgui/blob/master/src/types.cr#L40" target="_blank">
         types.cr
       </a>
     
@@ -802,100 +802,180 @@
         <strong>NoTitleBar</strong> = <code><span class="n">1</span></code>
       </dt>
       
+      <dd class="entry-const-doc">
+        <p>Disable title-bar</p>
+      </dd>
+      
     
       <dt class="entry-const" id="NoResize">
         <strong>NoResize</strong> = <code><span class="n">2</span></code>
       </dt>
+      
+      <dd class="entry-const-doc">
+        <p>Disable user resizing with the lower-right grip</p>
+      </dd>
       
     
       <dt class="entry-const" id="NoMove">
         <strong>NoMove</strong> = <code><span class="n">4</span></code>
       </dt>
       
+      <dd class="entry-const-doc">
+        <p>Disable user moving the window</p>
+      </dd>
+      
     
       <dt class="entry-const" id="NoScrollbar">
         <strong>NoScrollbar</strong> = <code><span class="n">8</span></code>
       </dt>
+      
+      <dd class="entry-const-doc">
+        <p>Disable scrollbars (window can still scroll with mouse or programmatically)</p>
+      </dd>
       
     
       <dt class="entry-const" id="NoScrollWithMouse">
         <strong>NoScrollWithMouse</strong> = <code><span class="n">16</span></code>
       </dt>
       
+      <dd class="entry-const-doc">
+        <p>Disable user vertically scrolling with mouse wheel. On child window, mouse wheel will be forwarded to the parent unless NoScrollbar is also set.</p>
+      </dd>
+      
     
       <dt class="entry-const" id="NoCollapse">
         <strong>NoCollapse</strong> = <code><span class="n">32</span></code>
       </dt>
+      
+      <dd class="entry-const-doc">
+        <p>Disable user collapsing window by double-clicking on it</p>
+      </dd>
       
     
       <dt class="entry-const" id="AlwaysAutoResize">
         <strong>AlwaysAutoResize</strong> = <code><span class="n">64</span></code>
       </dt>
       
+      <dd class="entry-const-doc">
+        <p>Resize every window to its content every frame</p>
+      </dd>
+      
     
       <dt class="entry-const" id="NoBackground">
         <strong>NoBackground</strong> = <code><span class="n">128</span></code>
       </dt>
+      
+      <dd class="entry-const-doc">
+        <p>Disable drawing background color (WindowBg, etc.) and outside border. Similar as using SetNextWindowBgAlpha(0.0f).</p>
+      </dd>
       
     
       <dt class="entry-const" id="NoSavedSettings">
         <strong>NoSavedSettings</strong> = <code><span class="n">256</span></code>
       </dt>
       
+      <dd class="entry-const-doc">
+        <p>Never load/save settings in .ini file</p>
+      </dd>
+      
     
       <dt class="entry-const" id="NoMouseInputs">
         <strong>NoMouseInputs</strong> = <code><span class="n">512</span></code>
       </dt>
+      
+      <dd class="entry-const-doc">
+        <p>Disable catching mouse, hovering test with pass through.</p>
+      </dd>
       
     
       <dt class="entry-const" id="MenuBar">
         <strong>MenuBar</strong> = <code><span class="n">1024</span></code>
       </dt>
       
+      <dd class="entry-const-doc">
+        <p>Has a menu-bar</p>
+      </dd>
+      
     
       <dt class="entry-const" id="HorizontalScrollbar">
         <strong>HorizontalScrollbar</strong> = <code><span class="n">2048</span></code>
       </dt>
+      
+      <dd class="entry-const-doc">
+        <p>Allow horizontal scrollbar to appear (off by default). You may use SetNextWindowContentSize(ImVec2(width,0.0f)); prior to calling Begin() to specify width. Read code in imgui_demo in the "Horizontal Scrolling" section.</p>
+      </dd>
       
     
       <dt class="entry-const" id="NoFocusOnAppearing">
         <strong>NoFocusOnAppearing</strong> = <code><span class="n">4096</span></code>
       </dt>
       
+      <dd class="entry-const-doc">
+        <p>Disable taking focus when transitioning from hidden to visible state</p>
+      </dd>
+      
     
       <dt class="entry-const" id="NoBringToFrontOnFocus">
         <strong>NoBringToFrontOnFocus</strong> = <code><span class="n">8192</span></code>
       </dt>
+      
+      <dd class="entry-const-doc">
+        <p>Disable bringing window to front when taking focus (e.g. clicking on it or programmatically giving it focus)</p>
+      </dd>
       
     
       <dt class="entry-const" id="AlwaysVerticalScrollbar">
         <strong>AlwaysVerticalScrollbar</strong> = <code><span class="n">16384</span></code>
       </dt>
       
+      <dd class="entry-const-doc">
+        <p>Always show vertical scrollbar (even if ContentSize.y &lt; Size.y)</p>
+      </dd>
+      
     
       <dt class="entry-const" id="AlwaysHorizontalScrollbar">
         <strong>AlwaysHorizontalScrollbar</strong> = <code><span class="n">32768</span></code>
       </dt>
+      
+      <dd class="entry-const-doc">
+        <p>Always show horizontal scrollbar (even if ContentSize.x &lt; Size.x)</p>
+      </dd>
       
     
       <dt class="entry-const" id="AlwaysUseWindowPadding">
         <strong>AlwaysUseWindowPadding</strong> = <code><span class="n">65536</span></code>
       </dt>
       
+      <dd class="entry-const-doc">
+        <p>Ensure child windows without border uses style.WindowPadding (ignored by default for non-bordered child windows, because more convenient)</p>
+      </dd>
+      
     
       <dt class="entry-const" id="NoNavInputs">
         <strong>NoNavInputs</strong> = <code><span class="n">262144</span></code>
       </dt>
+      
+      <dd class="entry-const-doc">
+        <p>No gamepad/keyboard navigation within the window</p>
+      </dd>
       
     
       <dt class="entry-const" id="NoNavFocus">
         <strong>NoNavFocus</strong> = <code><span class="n">524288</span></code>
       </dt>
       
+      <dd class="entry-const-doc">
+        <p>No focusing toward this window with gamepad/keyboard navigation (e.g. skipped by CTRL+TAB)</p>
+      </dd>
+      
     
       <dt class="entry-const" id="UnsavedDocument">
         <strong>UnsavedDocument</strong> = <code><span class="n">1048576</span></code>
       </dt>
+      
+      <dd class="entry-const-doc">
+        <p>Append '*' to title without affecting the ID, as a convenience to avoid using the ### operator. When used in a tab/docking context, tab is selected on closure and closure is deferred by one frame to allow code to cancel the closure (with a confirmation popup, etc.) without flicker.</p>
+      </dd>
       
     
       <dt class="entry-const" id="NoNav">
@@ -917,30 +997,54 @@
         <strong>NavFlattened</strong> = <code><span class="n">8388608</span></code>
       </dt>
       
+      <dd class="entry-const-doc">
+        <p>[BETA] Allow gamepad/keyboard navigation to cross over parent border to this child (only use on child that have no scrolling!)</p>
+      </dd>
+      
     
       <dt class="entry-const" id="ChildWindow">
         <strong>ChildWindow</strong> = <code><span class="n">16777216</span></code>
       </dt>
+      
+      <dd class="entry-const-doc">
+        <p>Don't use! For internal use by BeginChild()</p>
+      </dd>
       
     
       <dt class="entry-const" id="Tooltip">
         <strong>Tooltip</strong> = <code><span class="n">33554432</span></code>
       </dt>
       
+      <dd class="entry-const-doc">
+        <p>Don't use! For internal use by BeginTooltip()</p>
+      </dd>
+      
     
       <dt class="entry-const" id="Popup">
         <strong>Popup</strong> = <code><span class="n">67108864</span></code>
       </dt>
+      
+      <dd class="entry-const-doc">
+        <p>Don't use! For internal use by BeginPopup()</p>
+      </dd>
       
     
       <dt class="entry-const" id="Modal">
         <strong>Modal</strong> = <code><span class="n">134217728</span></code>
       </dt>
       
+      <dd class="entry-const-doc">
+        <p>Don't use! For internal use by BeginPopupModal()</p>
+      </dd>
+      
     
       <dt class="entry-const" id="ChildMenu">
         <strong>ChildMenu</strong> = <code><span class="n">268435456</span></code>
       </dt>
+      
+      <dd class="entry-const-doc">
+        <p>Don't use! For internal use by BeginMenu()</p>
+      </dd>
       
     
   </dl>
@@ -1186,7 +1290,7 @@
       <br/>
       <div>
         
-          [<a href="https://github.com/oprypin/crystal-imgui/blob/master/src/types.cr#L504" target="_blank">View source</a>]
+          [<a href="https://github.com/oprypin/crystal-imgui/blob/master/src/types.cr#L55" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -1202,7 +1306,7 @@
       <br/>
       <div>
         
-          [<a href="https://github.com/oprypin/crystal-imgui/blob/master/src/types.cr#L513" target="_blank">View source</a>]
+          [<a href="https://github.com/oprypin/crystal-imgui/blob/master/src/types.cr#L73" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -1218,7 +1322,7 @@
       <br/>
       <div>
         
-          [<a href="https://github.com/oprypin/crystal-imgui/blob/master/src/types.cr#L514" target="_blank">View source</a>]
+          [<a href="https://github.com/oprypin/crystal-imgui/blob/master/src/types.cr#L75" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -1234,7 +1338,7 @@
       <br/>
       <div>
         
-          [<a href="https://github.com/oprypin/crystal-imgui/blob/master/src/types.cr#L512" target="_blank">View source</a>]
+          [<a href="https://github.com/oprypin/crystal-imgui/blob/master/src/types.cr#L71" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -1250,7 +1354,7 @@
       <br/>
       <div>
         
-          [<a href="https://github.com/oprypin/crystal-imgui/blob/master/src/types.cr#L526" target="_blank">View source</a>]
+          [<a href="https://github.com/oprypin/crystal-imgui/blob/master/src/types.cr#L96" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -1266,7 +1370,7 @@
       <br/>
       <div>
         
-          [<a href="https://github.com/oprypin/crystal-imgui/blob/master/src/types.cr#L522" target="_blank">View source</a>]
+          [<a href="https://github.com/oprypin/crystal-imgui/blob/master/src/types.cr#L88" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -1282,7 +1386,7 @@
       <br/>
       <div>
         
-          [<a href="https://github.com/oprypin/crystal-imgui/blob/master/src/types.cr#L509" target="_blank">View source</a>]
+          [<a href="https://github.com/oprypin/crystal-imgui/blob/master/src/types.cr#L65" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -1298,7 +1402,7 @@
       <br/>
       <div>
         
-          [<a href="https://github.com/oprypin/crystal-imgui/blob/master/src/types.cr#L508" target="_blank">View source</a>]
+          [<a href="https://github.com/oprypin/crystal-imgui/blob/master/src/types.cr#L63" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -1314,7 +1418,7 @@
       <br/>
       <div>
         
-          [<a href="https://github.com/oprypin/crystal-imgui/blob/master/src/types.cr#L525" target="_blank">View source</a>]
+          [<a href="https://github.com/oprypin/crystal-imgui/blob/master/src/types.cr#L94" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -1330,7 +1434,7 @@
       <br/>
       <div>
         
-          [<a href="https://github.com/oprypin/crystal-imgui/blob/master/src/types.cr#L521" target="_blank">View source</a>]
+          [<a href="https://github.com/oprypin/crystal-imgui/blob/master/src/types.cr#L86" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -1346,7 +1450,7 @@
       <br/>
       <div>
         
-          [<a href="https://github.com/oprypin/crystal-imgui/blob/master/src/types.cr#L505" target="_blank">View source</a>]
+          [<a href="https://github.com/oprypin/crystal-imgui/blob/master/src/types.cr#L57" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -1362,7 +1466,7 @@
       <br/>
       <div>
         
-          [<a href="https://github.com/oprypin/crystal-imgui/blob/master/src/types.cr#L511" target="_blank">View source</a>]
+          [<a href="https://github.com/oprypin/crystal-imgui/blob/master/src/types.cr#L69" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -1378,7 +1482,7 @@
       <br/>
       <div>
         
-          [<a href="https://github.com/oprypin/crystal-imgui/blob/master/src/types.cr#L503" target="_blank">View source</a>]
+          [<a href="https://github.com/oprypin/crystal-imgui/blob/master/src/types.cr#L53" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -1394,7 +1498,7 @@
       <br/>
       <div>
         
-          [<a href="https://github.com/oprypin/crystal-imgui/blob/master/src/types.cr#L519" target="_blank">View source</a>]
+          [<a href="https://github.com/oprypin/crystal-imgui/blob/master/src/types.cr#L83" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -1410,7 +1514,7 @@
       <br/>
       <div>
         
-          [<a href="https://github.com/oprypin/crystal-imgui/blob/master/src/types.cr#L510" target="_blank">View source</a>]
+          [<a href="https://github.com/oprypin/crystal-imgui/blob/master/src/types.cr#L67" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -1426,7 +1530,7 @@
       <br/>
       <div>
         
-          [<a href="https://github.com/oprypin/crystal-imgui/blob/master/src/types.cr#L520" target="_blank">View source</a>]
+          [<a href="https://github.com/oprypin/crystal-imgui/blob/master/src/types.cr#L84" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -1442,7 +1546,7 @@
       <br/>
       <div>
         
-          [<a href="https://github.com/oprypin/crystal-imgui/blob/master/src/types.cr#L507" target="_blank">View source</a>]
+          [<a href="https://github.com/oprypin/crystal-imgui/blob/master/src/types.cr#L61" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -1458,7 +1562,7 @@
       <br/>
       <div>
         
-          [<a href="https://github.com/oprypin/crystal-imgui/blob/master/src/types.cr#L500" target="_blank">View source</a>]
+          [<a href="https://github.com/oprypin/crystal-imgui/blob/master/src/types.cr#L47" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -1474,7 +1578,7 @@
       <br/>
       <div>
         
-          [<a href="https://github.com/oprypin/crystal-imgui/blob/master/src/types.cr#L518" target="_blank">View source</a>]
+          [<a href="https://github.com/oprypin/crystal-imgui/blob/master/src/types.cr#L82" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -1490,7 +1594,7 @@
       <br/>
       <div>
         
-          [<a href="https://github.com/oprypin/crystal-imgui/blob/master/src/types.cr#L516" target="_blank">View source</a>]
+          [<a href="https://github.com/oprypin/crystal-imgui/blob/master/src/types.cr#L79" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -1506,7 +1610,7 @@
       <br/>
       <div>
         
-          [<a href="https://github.com/oprypin/crystal-imgui/blob/master/src/types.cr#L515" target="_blank">View source</a>]
+          [<a href="https://github.com/oprypin/crystal-imgui/blob/master/src/types.cr#L77" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -1522,7 +1626,7 @@
       <br/>
       <div>
         
-          [<a href="https://github.com/oprypin/crystal-imgui/blob/master/src/types.cr#L499" target="_blank">View source</a>]
+          [<a href="https://github.com/oprypin/crystal-imgui/blob/master/src/types.cr#L45" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -1538,7 +1642,7 @@
       <br/>
       <div>
         
-          [<a href="https://github.com/oprypin/crystal-imgui/blob/master/src/types.cr#L506" target="_blank">View source</a>]
+          [<a href="https://github.com/oprypin/crystal-imgui/blob/master/src/types.cr#L59" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -1554,7 +1658,7 @@
       <br/>
       <div>
         
-          [<a href="https://github.com/oprypin/crystal-imgui/blob/master/src/types.cr#L502" target="_blank">View source</a>]
+          [<a href="https://github.com/oprypin/crystal-imgui/blob/master/src/types.cr#L51" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -1570,7 +1674,7 @@
       <br/>
       <div>
         
-          [<a href="https://github.com/oprypin/crystal-imgui/blob/master/src/types.cr#L501" target="_blank">View source</a>]
+          [<a href="https://github.com/oprypin/crystal-imgui/blob/master/src/types.cr#L49" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -1586,7 +1690,7 @@
       <br/>
       <div>
         
-          [<a href="https://github.com/oprypin/crystal-imgui/blob/master/src/types.cr#L498" target="_blank">View source</a>]
+          [<a href="https://github.com/oprypin/crystal-imgui/blob/master/src/types.cr#L43" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -1602,7 +1706,7 @@
       <br/>
       <div>
         
-          [<a href="https://github.com/oprypin/crystal-imgui/blob/master/src/types.cr#L497" target="_blank">View source</a>]
+          [<a href="https://github.com/oprypin/crystal-imgui/blob/master/src/types.cr#L41" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -1618,7 +1722,7 @@
       <br/>
       <div>
         
-          [<a href="https://github.com/oprypin/crystal-imgui/blob/master/src/types.cr#L524" target="_blank">View source</a>]
+          [<a href="https://github.com/oprypin/crystal-imgui/blob/master/src/types.cr#L92" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -1634,7 +1738,7 @@
       <br/>
       <div>
         
-          [<a href="https://github.com/oprypin/crystal-imgui/blob/master/src/types.cr#L523" target="_blank">View source</a>]
+          [<a href="https://github.com/oprypin/crystal-imgui/blob/master/src/types.cr#L90" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -1650,7 +1754,7 @@
       <br/>
       <div>
         
-          [<a href="https://github.com/oprypin/crystal-imgui/blob/master/src/types.cr#L517" target="_blank">View source</a>]
+          [<a href="https://github.com/oprypin/crystal-imgui/blob/master/src/types.cr#L81" target="_blank">View source</a>]
         
       </div>
     </div>

@@ -749,7 +749,7 @@
     Overview
   </h2>
 
-  <p>[<a href="https://github.com/ocornut/imgui/blob/v1.78/imgui.h#L1642" target="_blank">View C++ header</a>]</p>
+  <p><a href="https://github.com/ocornut/imgui/blob/v1.78/imgui.h#L1642" target="_blank">struct ImGuiInputTextCallbackData</a></p>
 
 
 
@@ -795,7 +795,7 @@
     <br/>
   
     
-      <a href="https://github.com/oprypin/crystal-imgui/blob/master/src/obj.cr#L2108" target="_blank">
+      <a href="https://github.com/oprypin/crystal-imgui/blob/master/src/obj.cr#L3391" target="_blank">
         obj.cr
       </a>
     
@@ -819,7 +819,7 @@
       <li class="entry-summary">
         <a href="#new:ImGuiInputTextCallbackData-class-method" class="signature"><strong>.new</strong> : ImGuiInputTextCallbackData</a>
         
-          <div class="summary"><p>[<a href="https://github.com/ocornut/imgui/blob/v1.78/imgui.h#L1663" target="_blank">View C++ header</a>]</p></div>
+          <div class="summary"><p><a href="https://github.com/ocornut/imgui/blob/v1.78/imgui.h#L1663" target="_blank">ImGuiInputTextCallbackData::ImGuiInputTextCallbackData()</a></p></div>
         
       </li>
     
@@ -842,6 +842,8 @@
       <li class="entry-summary">
         <a href="#buf:Pointer(LibC::Char)-instance-method" class="signature"><strong>#buf</strong> : Pointer(LibC::Char)</a>
         
+          <div class="summary"><p>Text buffer Read-write [Resize] Can replace pointer / [Completion,History,Always] Only write to pointed data, don't replace the actual pointer!</p></div>
+        
       </li>
     
       <li class="entry-summary">
@@ -851,6 +853,8 @@
     
       <li class="entry-summary">
         <a href="#buf_dirty:Bool-instance-method" class="signature"><strong>#buf_dirty</strong> : Bool</a>
+        
+          <div class="summary"><p>Set if you modify Buf/BufTextLen! Write [Completion,History,Always]</p></div>
         
       </li>
     
@@ -862,6 +866,8 @@
       <li class="entry-summary">
         <a href="#buf_size:Int32-instance-method" class="signature"><strong>#buf_size</strong> : Int32</a>
         
+          <div class="summary"><p>Buffer size (in bytes) = capacity+1 Read-only [Resize,Completion,History,Always] Include zero-terminator storage.</p></div>
+        
       </li>
     
       <li class="entry-summary">
@@ -871,6 +877,8 @@
     
       <li class="entry-summary">
         <a href="#buf_text_len:Int32-instance-method" class="signature"><strong>#buf_text_len</strong> : Int32</a>
+        
+          <div class="summary"><p>Text length (in bytes) Read-write [Resize,Completion,History,Always] Exclude zero-terminator storage.</p></div>
         
       </li>
     
@@ -887,6 +895,8 @@
       <li class="entry-summary">
         <a href="#cursor_pos:Int32-instance-method" class="signature"><strong>#cursor_pos</strong> : Int32</a>
         
+          <div class="summary"><p>Read-write [Completion,History,Always]</p></div>
+        
       </li>
     
       <li class="entry-summary">
@@ -897,12 +907,14 @@
       <li class="entry-summary">
         <a href="#delete_chars(pos:Int32,bytes_count:Int32):Void-instance-method" class="signature"><strong>#delete_chars</strong>(pos : Int32, bytes_count : Int32) : Void</a>
         
-          <div class="summary"><p>[<a href="https://github.com/ocornut/imgui/blob/v1.78/imgui.h#L1664" target="_blank">View C++ header</a>]</p></div>
+          <div class="summary"><p><a href="https://github.com/ocornut/imgui/blob/v1.78/imgui.h#L1664" target="_blank">ImGuiInputTextCallbackData::DeleteChars()</a></p></div>
         
       </li>
     
       <li class="entry-summary">
         <a href="#event_char:ImWchar-instance-method" class="signature"><strong>#event_char</strong> : ImWchar</a>
+        
+          <div class="summary"><p>Character input Read-write [CharFilter] Replace character with another one, or set to zero to drop.</p></div>
         
       </li>
     
@@ -914,6 +926,8 @@
       <li class="entry-summary">
         <a href="#event_flag:ImGuiInputTextFlags-instance-method" class="signature"><strong>#event_flag</strong> : ImGuiInputTextFlags</a>
         
+          <div class="summary"><p>One ImGuiInputTextFlags_Callback* Read-only</p></div>
+        
       </li>
     
       <li class="entry-summary">
@@ -923,6 +937,8 @@
     
       <li class="entry-summary">
         <a href="#event_key:ImGuiKey-instance-method" class="signature"><strong>#event_key</strong> : ImGuiKey</a>
+        
+          <div class="summary"><p>Key pressed (Up/Down/TAB) Read-only [Completion,History]</p></div>
         
       </li>
     
@@ -934,6 +950,8 @@
       <li class="entry-summary">
         <a href="#flags:ImGuiInputTextFlags-instance-method" class="signature"><strong>#flags</strong> : ImGuiInputTextFlags</a>
         
+          <div class="summary"><p>What user passed to InputText() Read-only</p></div>
+        
       </li>
     
       <li class="entry-summary">
@@ -944,19 +962,21 @@
       <li class="entry-summary">
         <a href="#has_selection:Bool-instance-method" class="signature"><strong>#has_selection</strong> : Bool</a>
         
-          <div class="summary"><p>[<a href="https://github.com/ocornut/imgui/blob/v1.78/imgui.h#L1666" target="_blank">View C++ header</a>]</p></div>
+          <div class="summary"><p><a href="https://github.com/ocornut/imgui/blob/v1.78/imgui.h#L1666" target="_blank">ImGuiInputTextCallbackData::HasSelection()</a></p></div>
         
       </li>
     
       <li class="entry-summary">
         <a href="#insert_chars(pos:Int32,text:Bytes%7CString):Void-instance-method" class="signature"><strong>#insert_chars</strong>(pos : Int32, text : Bytes | String) : Void</a>
         
-          <div class="summary"><p>[<a href="https://github.com/ocornut/imgui/blob/v1.78/imgui.h#L1665" target="_blank">View C++ header</a>]</p></div>
+          <div class="summary"><p><a href="https://github.com/ocornut/imgui/blob/v1.78/imgui.h#L1665" target="_blank">ImGuiInputTextCallbackData::InsertChars()</a></p></div>
         
       </li>
     
       <li class="entry-summary">
         <a href="#selection_end:Int32-instance-method" class="signature"><strong>#selection_end</strong> : Int32</a>
+        
+          <div class="summary"><p>Read-write [Completion,History,Always]</p></div>
         
       </li>
     
@@ -967,6 +987,8 @@
     
       <li class="entry-summary">
         <a href="#selection_start:Int32-instance-method" class="signature"><strong>#selection_start</strong> : Int32</a>
+        
+          <div class="summary"><p>Read-write [Completion,History,Always] == to SelectionEnd when no selection)</p></div>
         
       </li>
     
@@ -982,6 +1004,8 @@
     
       <li class="entry-summary">
         <a href="#user_data:Pointer(Void)-instance-method" class="signature"><strong>#user_data</strong> : Pointer(Void)</a>
+        
+          <div class="summary"><p>What user passed to InputText() Read-only</p></div>
         
       </li>
     
@@ -1060,13 +1084,13 @@
       
         <div class="doc">
           
-          <p>[<a href="https://github.com/ocornut/imgui/blob/v1.78/imgui.h#L1663" target="_blank">View C++ header</a>]</p>
+          <p><a href="https://github.com/ocornut/imgui/blob/v1.78/imgui.h#L1663" target="_blank">ImGuiInputTextCallbackData::ImGuiInputTextCallbackData()</a></p>
         </div>
       
       <br/>
       <div>
         
-          [<a href="https://github.com/oprypin/crystal-imgui/blob/master/src/obj.cr#L2218" target="_blank">View source</a>]
+          [<a href="https://github.com/oprypin/crystal-imgui/blob/master/src/obj.cr#L3521" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -1093,10 +1117,17 @@
         <a class="method-permalink" href="#buf:Pointer(LibC::Char)-instance-method">#</a>
       </div>
       
+        <div class="doc">
+          
+          <p>Text buffer
+Read-write
+[Resize] Can replace pointer / [Completion,History,Always] Only write to pointed data, don't replace the actual pointer!</p>
+        </div>
+      
       <br/>
       <div>
         
-          [<a href="https://github.com/oprypin/crystal-imgui/blob/master/src/obj.cr#L2151" target="_blank">View source</a>]
+          [<a href="https://github.com/oprypin/crystal-imgui/blob/master/src/obj.cr#L3449" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -1112,7 +1143,7 @@
       <br/>
       <div>
         
-          [<a href="https://github.com/oprypin/crystal-imgui/blob/master/src/obj.cr#L2155" target="_blank">View source</a>]
+          [<a href="https://github.com/oprypin/crystal-imgui/blob/master/src/obj.cr#L3453" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -1125,10 +1156,17 @@
         <a class="method-permalink" href="#buf_dirty:Bool-instance-method">#</a>
       </div>
       
+        <div class="doc">
+          
+          <p>Set if you modify Buf/BufTextLen!
+Write
+[Completion,History,Always]</p>
+        </div>
+      
       <br/>
       <div>
         
-          [<a href="https://github.com/oprypin/crystal-imgui/blob/master/src/obj.cr#L2175" target="_blank">View source</a>]
+          [<a href="https://github.com/oprypin/crystal-imgui/blob/master/src/obj.cr#L3482" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -1144,7 +1182,7 @@
       <br/>
       <div>
         
-          [<a href="https://github.com/oprypin/crystal-imgui/blob/master/src/obj.cr#L2179" target="_blank">View source</a>]
+          [<a href="https://github.com/oprypin/crystal-imgui/blob/master/src/obj.cr#L3486" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -1157,10 +1195,17 @@
         <a class="method-permalink" href="#buf_size:Int32-instance-method">#</a>
       </div>
       
+        <div class="doc">
+          
+          <p>Buffer size (in bytes) = capacity+1
+Read-only
+[Resize,Completion,History,Always] Include zero-terminator storage. In C land == ARRAYSIZE(my_char_array), in C++ land: string.capacity()+1</p>
+        </div>
+      
       <br/>
       <div>
         
-          [<a href="https://github.com/oprypin/crystal-imgui/blob/master/src/obj.cr#L2167" target="_blank">View source</a>]
+          [<a href="https://github.com/oprypin/crystal-imgui/blob/master/src/obj.cr#L3471" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -1176,7 +1221,7 @@
       <br/>
       <div>
         
-          [<a href="https://github.com/oprypin/crystal-imgui/blob/master/src/obj.cr#L2171" target="_blank">View source</a>]
+          [<a href="https://github.com/oprypin/crystal-imgui/blob/master/src/obj.cr#L3475" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -1189,10 +1234,17 @@
         <a class="method-permalink" href="#buf_text_len:Int32-instance-method">#</a>
       </div>
       
+        <div class="doc">
+          
+          <p>Text length (in bytes)
+Read-write
+[Resize,Completion,History,Always] Exclude zero-terminator storage. In C land: == strlen(some_text), in C++ land: string.length()</p>
+        </div>
+      
       <br/>
       <div>
         
-          [<a href="https://github.com/oprypin/crystal-imgui/blob/master/src/obj.cr#L2159" target="_blank">View source</a>]
+          [<a href="https://github.com/oprypin/crystal-imgui/blob/master/src/obj.cr#L3460" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -1208,7 +1260,7 @@
       <br/>
       <div>
         
-          [<a href="https://github.com/oprypin/crystal-imgui/blob/master/src/obj.cr#L2163" target="_blank">View source</a>]
+          [<a href="https://github.com/oprypin/crystal-imgui/blob/master/src/obj.cr#L3464" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -1237,10 +1289,16 @@
         <a class="method-permalink" href="#cursor_pos:Int32-instance-method">#</a>
       </div>
       
+        <div class="doc">
+          
+          <p>Read-write
+[Completion,History,Always]</p>
+        </div>
+      
       <br/>
       <div>
         
-          [<a href="https://github.com/oprypin/crystal-imgui/blob/master/src/obj.cr#L2183" target="_blank">View source</a>]
+          [<a href="https://github.com/oprypin/crystal-imgui/blob/master/src/obj.cr#L3492" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -1256,7 +1314,7 @@
       <br/>
       <div>
         
-          [<a href="https://github.com/oprypin/crystal-imgui/blob/master/src/obj.cr#L2187" target="_blank">View source</a>]
+          [<a href="https://github.com/oprypin/crystal-imgui/blob/master/src/obj.cr#L3496" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -1271,13 +1329,13 @@
       
         <div class="doc">
           
-          <p>[<a href="https://github.com/ocornut/imgui/blob/v1.78/imgui.h#L1664" target="_blank">View C++ header</a>]</p>
+          <p><a href="https://github.com/ocornut/imgui/blob/v1.78/imgui.h#L1664" target="_blank">ImGuiInputTextCallbackData::DeleteChars()</a></p>
         </div>
       
       <br/>
       <div>
         
-          [<a href="https://github.com/oprypin/crystal-imgui/blob/master/src/obj.cr#L2208" target="_blank">View source</a>]
+          [<a href="https://github.com/oprypin/crystal-imgui/blob/master/src/obj.cr#L3527" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -1290,10 +1348,17 @@
         <a class="method-permalink" href="#event_char:ImWchar-instance-method">#</a>
       </div>
       
+        <div class="doc">
+          
+          <p>Character input
+Read-write
+[CharFilter] Replace character with another one, or set to zero to drop. return 1 is equivalent to setting EventChar=0;</p>
+        </div>
+      
       <br/>
       <div>
         
-          [<a href="https://github.com/oprypin/crystal-imgui/blob/master/src/obj.cr#L2135" target="_blank">View source</a>]
+          [<a href="https://github.com/oprypin/crystal-imgui/blob/master/src/obj.cr#L3427" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -1309,7 +1374,7 @@
       <br/>
       <div>
         
-          [<a href="https://github.com/oprypin/crystal-imgui/blob/master/src/obj.cr#L2139" target="_blank">View source</a>]
+          [<a href="https://github.com/oprypin/crystal-imgui/blob/master/src/obj.cr#L3431" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -1322,10 +1387,16 @@
         <a class="method-permalink" href="#event_flag:ImGuiInputTextFlags-instance-method">#</a>
       </div>
       
+        <div class="doc">
+          
+          <p>One ImGuiInputTextFlags_Callback*
+Read-only</p>
+        </div>
+      
       <br/>
       <div>
         
-          [<a href="https://github.com/oprypin/crystal-imgui/blob/master/src/obj.cr#L2111" target="_blank">View source</a>]
+          [<a href="https://github.com/oprypin/crystal-imgui/blob/master/src/obj.cr#L3396" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -1341,7 +1412,7 @@
       <br/>
       <div>
         
-          [<a href="https://github.com/oprypin/crystal-imgui/blob/master/src/obj.cr#L2115" target="_blank">View source</a>]
+          [<a href="https://github.com/oprypin/crystal-imgui/blob/master/src/obj.cr#L3400" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -1354,10 +1425,17 @@
         <a class="method-permalink" href="#event_key:ImGuiKey-instance-method">#</a>
       </div>
       
+        <div class="doc">
+          
+          <p>Key pressed (Up/Down/TAB)
+Read-only
+[Completion,History]</p>
+        </div>
+      
       <br/>
       <div>
         
-          [<a href="https://github.com/oprypin/crystal-imgui/blob/master/src/obj.cr#L2143" target="_blank">View source</a>]
+          [<a href="https://github.com/oprypin/crystal-imgui/blob/master/src/obj.cr#L3438" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -1373,7 +1451,7 @@
       <br/>
       <div>
         
-          [<a href="https://github.com/oprypin/crystal-imgui/blob/master/src/obj.cr#L2147" target="_blank">View source</a>]
+          [<a href="https://github.com/oprypin/crystal-imgui/blob/master/src/obj.cr#L3442" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -1386,10 +1464,16 @@
         <a class="method-permalink" href="#flags:ImGuiInputTextFlags-instance-method">#</a>
       </div>
       
+        <div class="doc">
+          
+          <p>What user passed to InputText()
+Read-only</p>
+        </div>
+      
       <br/>
       <div>
         
-          [<a href="https://github.com/oprypin/crystal-imgui/blob/master/src/obj.cr#L2119" target="_blank">View source</a>]
+          [<a href="https://github.com/oprypin/crystal-imgui/blob/master/src/obj.cr#L3406" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -1405,7 +1489,7 @@
       <br/>
       <div>
         
-          [<a href="https://github.com/oprypin/crystal-imgui/blob/master/src/obj.cr#L2123" target="_blank">View source</a>]
+          [<a href="https://github.com/oprypin/crystal-imgui/blob/master/src/obj.cr#L3410" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -1420,13 +1504,13 @@
       
         <div class="doc">
           
-          <p>[<a href="https://github.com/ocornut/imgui/blob/v1.78/imgui.h#L1666" target="_blank">View C++ header</a>]</p>
+          <p><a href="https://github.com/ocornut/imgui/blob/v1.78/imgui.h#L1666" target="_blank">ImGuiInputTextCallbackData::HasSelection()</a></p>
         </div>
       
       <br/>
       <div>
         
-          [<a href="https://github.com/oprypin/crystal-imgui/blob/master/src/obj.cr#L2213" target="_blank">View source</a>]
+          [<a href="https://github.com/oprypin/crystal-imgui/blob/master/src/obj.cr#L3537" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -1441,13 +1525,13 @@
       
         <div class="doc">
           
-          <p>[<a href="https://github.com/ocornut/imgui/blob/v1.78/imgui.h#L1665" target="_blank">View C++ header</a>]</p>
+          <p><a href="https://github.com/ocornut/imgui/blob/v1.78/imgui.h#L1665" target="_blank">ImGuiInputTextCallbackData::InsertChars()</a></p>
         </div>
       
       <br/>
       <div>
         
-          [<a href="https://github.com/oprypin/crystal-imgui/blob/master/src/obj.cr#L2224" target="_blank">View source</a>]
+          [<a href="https://github.com/oprypin/crystal-imgui/blob/master/src/obj.cr#L3532" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -1460,10 +1544,16 @@
         <a class="method-permalink" href="#selection_end:Int32-instance-method">#</a>
       </div>
       
+        <div class="doc">
+          
+          <p>Read-write
+[Completion,History,Always]</p>
+        </div>
+      
       <br/>
       <div>
         
-          [<a href="https://github.com/oprypin/crystal-imgui/blob/master/src/obj.cr#L2199" target="_blank">View source</a>]
+          [<a href="https://github.com/oprypin/crystal-imgui/blob/master/src/obj.cr#L3512" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -1479,7 +1569,7 @@
       <br/>
       <div>
         
-          [<a href="https://github.com/oprypin/crystal-imgui/blob/master/src/obj.cr#L2203" target="_blank">View source</a>]
+          [<a href="https://github.com/oprypin/crystal-imgui/blob/master/src/obj.cr#L3516" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -1492,10 +1582,16 @@
         <a class="method-permalink" href="#selection_start:Int32-instance-method">#</a>
       </div>
       
+        <div class="doc">
+          
+          <p>Read-write
+[Completion,History,Always] == to SelectionEnd when no selection)</p>
+        </div>
+      
       <br/>
       <div>
         
-          [<a href="https://github.com/oprypin/crystal-imgui/blob/master/src/obj.cr#L2191" target="_blank">View source</a>]
+          [<a href="https://github.com/oprypin/crystal-imgui/blob/master/src/obj.cr#L3502" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -1511,7 +1607,7 @@
       <br/>
       <div>
         
-          [<a href="https://github.com/oprypin/crystal-imgui/blob/master/src/obj.cr#L2195" target="_blank">View source</a>]
+          [<a href="https://github.com/oprypin/crystal-imgui/blob/master/src/obj.cr#L3506" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -1527,7 +1623,7 @@
       <br/>
       <div>
         
-          [<a href="https://github.com/oprypin/crystal-imgui/blob/master/src/obj.cr#L2109" target="_blank">View source</a>]
+          [<a href="https://github.com/oprypin/crystal-imgui/blob/master/src/obj.cr#L3392" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -1540,10 +1636,16 @@
         <a class="method-permalink" href="#user_data:Pointer(Void)-instance-method">#</a>
       </div>
       
+        <div class="doc">
+          
+          <p>What user passed to InputText()
+Read-only</p>
+        </div>
+      
       <br/>
       <div>
         
-          [<a href="https://github.com/oprypin/crystal-imgui/blob/master/src/obj.cr#L2127" target="_blank">View source</a>]
+          [<a href="https://github.com/oprypin/crystal-imgui/blob/master/src/obj.cr#L3416" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -1559,7 +1661,7 @@
       <br/>
       <div>
         
-          [<a href="https://github.com/oprypin/crystal-imgui/blob/master/src/obj.cr#L2131" target="_blank">View source</a>]
+          [<a href="https://github.com/oprypin/crystal-imgui/blob/master/src/obj.cr#L3420" target="_blank">View source</a>]
         
       </div>
     </div>

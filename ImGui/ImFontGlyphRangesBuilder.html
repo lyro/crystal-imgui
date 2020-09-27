@@ -749,7 +749,7 @@
     Overview
   </h2>
 
-  <p>[<a href="https://github.com/ocornut/imgui/blob/v1.78/imgui.h#L2246" target="_blank">View C++ header</a>]</p>
+  <p><a href="https://github.com/ocornut/imgui/blob/v1.78/imgui.h#L2246" target="_blank">struct ImFontGlyphRangesBuilder</a></p>
 
 
 
@@ -788,14 +788,14 @@
   </h2>
   
     
-      <a href="https://github.com/oprypin/crystal-imgui/blob/master/src/obj.cr#L1376" target="_blank">
+      <a href="https://github.com/oprypin/crystal-imgui/blob/master/src/obj.cr#L4715" target="_blank">
         obj.cr
       </a>
     
     <br/>
   
     
-      <a href="https://github.com/oprypin/crystal-imgui/blob/master/src/types.cr#L595" target="_blank">
+      <a href="https://github.com/oprypin/crystal-imgui/blob/master/src/types.cr#L917" target="_blank">
         types.cr
       </a>
     
@@ -824,7 +824,7 @@
       <li class="entry-summary">
         <a href="#new:ImFontGlyphRangesBuilder-class-method" class="signature"><strong>.new</strong> : ImFontGlyphRangesBuilder</a>
         
-          <div class="summary"><p>[<a href="https://github.com/ocornut/imgui/blob/v1.78/imgui.h#L2250" target="_blank">View C++ header</a>]</p></div>
+          <div class="summary"><p><a href="https://github.com/ocornut/imgui/blob/v1.78/imgui.h#L2250" target="_blank">ImFontGlyphRangesBuilder::ImFontGlyphRangesBuilder()</a></p></div>
         
       </li>
     
@@ -847,54 +847,56 @@
       <li class="entry-summary">
         <a href="#add_char(c:ImWchar):Void-instance-method" class="signature"><strong>#add_char</strong>(c : ImWchar) : Void</a>
         
-          <div class="summary"><p>[<a href="https://github.com/ocornut/imgui/blob/v1.78/imgui.h#L2254" target="_blank">View C++ header</a>]</p></div>
+          <div class="summary"><p>Add character</p></div>
         
       </li>
     
       <li class="entry-summary">
         <a href="#add_ranges(ranges:Pointer(ImWchar)):Void-instance-method" class="signature"><strong>#add_ranges</strong>(ranges : Pointer(ImWchar)) : Void</a>
         
-          <div class="summary"><p>[<a href="https://github.com/ocornut/imgui/blob/v1.78/imgui.h#L2256" target="_blank">View C++ header</a>]</p></div>
+          <div class="summary"><p>Add ranges, e.g.</p></div>
         
       </li>
     
       <li class="entry-summary">
         <a href="#add_text(text:Bytes%7CString):Void-instance-method" class="signature"><strong>#add_text</strong>(text : Bytes | String) : Void</a>
         
-          <div class="summary"><p>[<a href="https://github.com/ocornut/imgui/blob/v1.78/imgui.h#L2255" target="_blank">View C++ header</a>]</p></div>
+          <div class="summary"><p>Add string (each character of the UTF-8 string are added)</p></div>
         
       </li>
     
       <li class="entry-summary">
         <a href="#build_ranges:ImVector-instance-method" class="signature"><strong>#build_ranges</strong> : ImVector</a>
         
-          <div class="summary"><p>[<a href="https://github.com/ocornut/imgui/blob/v1.78/imgui.h#L2257" target="_blank">View C++ header</a>]</p></div>
+          <div class="summary"><p>Output new ranges</p></div>
         
       </li>
     
       <li class="entry-summary">
         <a href="#clear:Void-instance-method" class="signature"><strong>#clear</strong> : Void</a>
         
-          <div class="summary"><p>[<a href="https://github.com/ocornut/imgui/blob/v1.78/imgui.h#L2251" target="_blank">View C++ header</a>]</p></div>
+          <div class="summary"><p><a href="https://github.com/ocornut/imgui/blob/v1.78/imgui.h#L2251" target="_blank">ImFontGlyphRangesBuilder::Clear()</a></p></div>
         
       </li>
     
       <li class="entry-summary">
         <a href="#get_bit(n:LibC::SizeT):Bool-instance-method" class="signature"><strong>#get_bit</strong>(n : LibC::SizeT) : Bool</a>
         
-          <div class="summary"><p>[<a href="https://github.com/ocornut/imgui/blob/v1.78/imgui.h#L2252" target="_blank">View C++ header</a>]</p></div>
+          <div class="summary"><p>Get bit n in the array</p></div>
         
       </li>
     
       <li class="entry-summary">
         <a href="#set_bit(n:LibC::SizeT):Void-instance-method" class="signature"><strong>#set_bit</strong>(n : LibC::SizeT) : Void</a>
         
-          <div class="summary"><p>[<a href="https://github.com/ocornut/imgui/blob/v1.78/imgui.h#L2253" target="_blank">View C++ header</a>]</p></div>
+          <div class="summary"><p>Set bit n in the array</p></div>
         
       </li>
     
       <li class="entry-summary">
         <a href="#used_chars:ImVector(UInt32)-instance-method" class="signature"><strong>#used_chars</strong> : ImVector(UInt32)</a>
+        
+          <div class="summary"><p>Store 1-bit per Unicode code point (0=unused, 1=used)</p></div>
         
       </li>
     
@@ -988,7 +990,7 @@
       <br/>
       <div>
         
-          [<a href="https://github.com/oprypin/crystal-imgui/blob/master/src/types.cr#L598" target="_blank">View source</a>]
+          [<a href="https://github.com/oprypin/crystal-imgui/blob/master/src/types.cr#L920" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -1003,13 +1005,13 @@
       
         <div class="doc">
           
-          <p>[<a href="https://github.com/ocornut/imgui/blob/v1.78/imgui.h#L2250" target="_blank">View C++ header</a>]</p>
+          <p><a href="https://github.com/ocornut/imgui/blob/v1.78/imgui.h#L2250" target="_blank">ImFontGlyphRangesBuilder::ImFontGlyphRangesBuilder()</a></p>
         </div>
       
       <br/>
       <div>
         
-          [<a href="https://github.com/oprypin/crystal-imgui/blob/master/src/obj.cr#L1420" target="_blank">View source</a>]
+          [<a href="https://github.com/oprypin/crystal-imgui/blob/master/src/obj.cr#L4729" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -1038,13 +1040,15 @@
       
         <div class="doc">
           
-          <p>[<a href="https://github.com/ocornut/imgui/blob/v1.78/imgui.h#L2254" target="_blank">View C++ header</a>]</p>
+          <p>Add character</p>
+
+<p><a href="https://github.com/ocornut/imgui/blob/v1.78/imgui.h#L2254" target="_blank">ImFontGlyphRangesBuilder::AddChar()</a></p>
         </div>
       
       <br/>
       <div>
         
-          [<a href="https://github.com/oprypin/crystal-imgui/blob/master/src/obj.cr#L1389" target="_blank">View source</a>]
+          [<a href="https://github.com/oprypin/crystal-imgui/blob/master/src/obj.cr#L4756" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -1059,13 +1063,15 @@
       
         <div class="doc">
           
-          <p>[<a href="https://github.com/ocornut/imgui/blob/v1.78/imgui.h#L2256" target="_blank">View C++ header</a>]</p>
+          <p>Add ranges, e.g. builder.AddRanges(ImFontAtlas::GetGlyphRangesDefault()) to force add all of ASCII/Latin+Ext</p>
+
+<p><a href="https://github.com/ocornut/imgui/blob/v1.78/imgui.h#L2256" target="_blank">ImFontGlyphRangesBuilder::AddRanges()</a></p>
         </div>
       
       <br/>
       <div>
         
-          [<a href="https://github.com/oprypin/crystal-imgui/blob/master/src/obj.cr#L1394" target="_blank">View source</a>]
+          [<a href="https://github.com/oprypin/crystal-imgui/blob/master/src/obj.cr#L4770" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -1080,13 +1086,15 @@
       
         <div class="doc">
           
-          <p>[<a href="https://github.com/ocornut/imgui/blob/v1.78/imgui.h#L2255" target="_blank">View C++ header</a>]</p>
+          <p>Add string (each character of the UTF-8 string are added)</p>
+
+<p><a href="https://github.com/ocornut/imgui/blob/v1.78/imgui.h#L2255" target="_blank">ImFontGlyphRangesBuilder::AddText()</a></p>
         </div>
       
       <br/>
       <div>
         
-          [<a href="https://github.com/oprypin/crystal-imgui/blob/master/src/obj.cr#L1399" target="_blank">View source</a>]
+          [<a href="https://github.com/oprypin/crystal-imgui/blob/master/src/obj.cr#L4763" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -1101,13 +1109,15 @@
       
         <div class="doc">
           
-          <p>[<a href="https://github.com/ocornut/imgui/blob/v1.78/imgui.h#L2257" target="_blank">View C++ header</a>]</p>
+          <p>Output new ranges</p>
+
+<p><a href="https://github.com/ocornut/imgui/blob/v1.78/imgui.h#L2257" target="_blank">ImFontGlyphRangesBuilder::BuildRanges()</a></p>
         </div>
       
       <br/>
       <div>
         
-          [<a href="https://github.com/oprypin/crystal-imgui/blob/master/src/obj.cr#L1404" target="_blank">View source</a>]
+          [<a href="https://github.com/oprypin/crystal-imgui/blob/master/src/obj.cr#L4777" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -1122,13 +1132,13 @@
       
         <div class="doc">
           
-          <p>[<a href="https://github.com/ocornut/imgui/blob/v1.78/imgui.h#L2251" target="_blank">View C++ header</a>]</p>
+          <p><a href="https://github.com/ocornut/imgui/blob/v1.78/imgui.h#L2251" target="_blank">ImFontGlyphRangesBuilder::Clear()</a></p>
         </div>
       
       <br/>
       <div>
         
-          [<a href="https://github.com/oprypin/crystal-imgui/blob/master/src/obj.cr#L1410" target="_blank">View source</a>]
+          [<a href="https://github.com/oprypin/crystal-imgui/blob/master/src/obj.cr#L4735" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -1143,13 +1153,15 @@
       
         <div class="doc">
           
-          <p>[<a href="https://github.com/ocornut/imgui/blob/v1.78/imgui.h#L2252" target="_blank">View C++ header</a>]</p>
+          <p>Get bit n in the array</p>
+
+<p><a href="https://github.com/ocornut/imgui/blob/v1.78/imgui.h#L2252" target="_blank">ImFontGlyphRangesBuilder::GetBit()</a></p>
         </div>
       
       <br/>
       <div>
         
-          [<a href="https://github.com/oprypin/crystal-imgui/blob/master/src/obj.cr#L1415" target="_blank">View source</a>]
+          [<a href="https://github.com/oprypin/crystal-imgui/blob/master/src/obj.cr#L4742" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -1164,13 +1176,15 @@
       
         <div class="doc">
           
-          <p>[<a href="https://github.com/ocornut/imgui/blob/v1.78/imgui.h#L2253" target="_blank">View C++ header</a>]</p>
+          <p>Set bit n in the array</p>
+
+<p><a href="https://github.com/ocornut/imgui/blob/v1.78/imgui.h#L2253" target="_blank">ImFontGlyphRangesBuilder::SetBit()</a></p>
         </div>
       
       <br/>
       <div>
         
-          [<a href="https://github.com/oprypin/crystal-imgui/blob/master/src/obj.cr#L1426" target="_blank">View source</a>]
+          [<a href="https://github.com/oprypin/crystal-imgui/blob/master/src/obj.cr#L4749" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -1183,10 +1197,15 @@
         <a class="method-permalink" href="#used_chars:ImVector(UInt32)-instance-method">#</a>
       </div>
       
+        <div class="doc">
+          
+          <p>Store 1-bit per Unicode code point (0=unused, 1=used)</p>
+        </div>
+      
       <br/>
       <div>
         
-          [<a href="https://github.com/oprypin/crystal-imgui/blob/master/src/obj.cr#L1379" target="_blank">View source</a>]
+          [<a href="https://github.com/oprypin/crystal-imgui/blob/master/src/obj.cr#L4719" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -1202,7 +1221,7 @@
       <br/>
       <div>
         
-          [<a href="https://github.com/oprypin/crystal-imgui/blob/master/src/types.cr#L596" target="_blank">View source</a>]
+          [<a href="https://github.com/oprypin/crystal-imgui/blob/master/src/types.cr#L918" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -1218,7 +1237,7 @@
       <br/>
       <div>
         
-          [<a href="https://github.com/oprypin/crystal-imgui/blob/master/src/obj.cr#L1384" target="_blank">View source</a>]
+          [<a href="https://github.com/oprypin/crystal-imgui/blob/master/src/obj.cr#L4724" target="_blank">View source</a>]
         
       </div>
     </div>

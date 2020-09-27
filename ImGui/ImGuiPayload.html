@@ -749,7 +749,7 @@
     Overview
   </h2>
 
-  <p>[<a href="https://github.com/ocornut/imgui/blob/v1.78/imgui.h#L1680" target="_blank">View C++ header</a>]</p>
+  <p><a href="https://github.com/ocornut/imgui/blob/v1.78/imgui.h#L1680" target="_blank">struct ImGuiPayload</a></p>
 
 
 
@@ -788,7 +788,7 @@
   </h2>
   
     
-      <a href="https://github.com/oprypin/crystal-imgui/blob/master/src/obj.cr#L2269" target="_blank">
+      <a href="https://github.com/oprypin/crystal-imgui/blob/master/src/obj.cr#L3588" target="_blank">
         obj.cr
       </a>
     
@@ -812,7 +812,7 @@
       <li class="entry-summary">
         <a href="#new:ImGuiPayload-class-method" class="signature"><strong>.new</strong> : ImGuiPayload</a>
         
-          <div class="summary"><p>[<a href="https://github.com/ocornut/imgui/blob/v1.78/imgui.h#L1694" target="_blank">View C++ header</a>]</p></div>
+          <div class="summary"><p><a href="https://github.com/ocornut/imgui/blob/v1.78/imgui.h#L1694" target="_blank">ImGuiPayload::ImGuiPayload()</a></p></div>
         
       </li>
     
@@ -835,12 +835,14 @@
       <li class="entry-summary">
         <a href="#clear:Void-instance-method" class="signature"><strong>#clear</strong> : Void</a>
         
-          <div class="summary"><p>[<a href="https://github.com/ocornut/imgui/blob/v1.78/imgui.h#L1695" target="_blank">View C++ header</a>]</p></div>
+          <div class="summary"><p><a href="https://github.com/ocornut/imgui/blob/v1.78/imgui.h#L1695" target="_blank">ImGuiPayload::Clear()</a></p></div>
         
       </li>
     
       <li class="entry-summary">
         <a href="#data:Pointer(Void)-instance-method" class="signature"><strong>#data</strong> : Pointer(Void)</a>
+        
+          <div class="summary"><p>Data (copied and owned by dear imgui)</p></div>
         
       </li>
     
@@ -852,6 +854,8 @@
       <li class="entry-summary">
         <a href="#data_frame_count:Int32-instance-method" class="signature"><strong>#data_frame_count</strong> : Int32</a>
         
+          <div class="summary"><p>Data timestamp</p></div>
+        
       </li>
     
       <li class="entry-summary">
@@ -861,6 +865,8 @@
     
       <li class="entry-summary">
         <a href="#data_size:Int32-instance-method" class="signature"><strong>#data_size</strong> : Int32</a>
+        
+          <div class="summary"><p>Data size</p></div>
         
       </li>
     
@@ -872,6 +878,8 @@
       <li class="entry-summary">
         <a href="#data_type:Slice(LibC::Char)-instance-method" class="signature"><strong>#data_type</strong> : Slice(LibC::Char)</a>
         
+          <div class="summary"><p>Data type tag (short user-supplied string, 32 characters max)</p></div>
+        
       </li>
     
       <li class="entry-summary">
@@ -881,6 +889,8 @@
     
       <li class="entry-summary">
         <a href="#delivery:Bool-instance-method" class="signature"><strong>#delivery</strong> : Bool</a>
+        
+          <div class="summary"><p>Set when AcceptDragDropPayload() was called and mouse button is released over the target item.</p></div>
         
       </li>
     
@@ -892,26 +902,28 @@
       <li class="entry-summary">
         <a href="#is_data_type(type:String):Bool-instance-method" class="signature"><strong>#is_data_type</strong>(type : String) : Bool</a>
         
-          <div class="summary"><p>[<a href="https://github.com/ocornut/imgui/blob/v1.78/imgui.h#L1696" target="_blank">View C++ header</a>]</p></div>
+          <div class="summary"><p><a href="https://github.com/ocornut/imgui/blob/v1.78/imgui.h#L1696" target="_blank">ImGuiPayload::IsDataType()</a></p></div>
         
       </li>
     
       <li class="entry-summary">
         <a href="#is_delivery:Bool-instance-method" class="signature"><strong>#is_delivery</strong> : Bool</a>
         
-          <div class="summary"><p>[<a href="https://github.com/ocornut/imgui/blob/v1.78/imgui.h#L1698" target="_blank">View C++ header</a>]</p></div>
+          <div class="summary"><p><a href="https://github.com/ocornut/imgui/blob/v1.78/imgui.h#L1698" target="_blank">ImGuiPayload::IsDelivery()</a></p></div>
         
       </li>
     
       <li class="entry-summary">
         <a href="#is_preview:Bool-instance-method" class="signature"><strong>#is_preview</strong> : Bool</a>
         
-          <div class="summary"><p>[<a href="https://github.com/ocornut/imgui/blob/v1.78/imgui.h#L1697" target="_blank">View C++ header</a>]</p></div>
+          <div class="summary"><p><a href="https://github.com/ocornut/imgui/blob/v1.78/imgui.h#L1697" target="_blank">ImGuiPayload::IsPreview()</a></p></div>
         
       </li>
     
       <li class="entry-summary">
         <a href="#preview:Bool-instance-method" class="signature"><strong>#preview</strong> : Bool</a>
+        
+          <div class="summary"><p>Set when AcceptDragDropPayload() was called and mouse has been hovering the target item (nb: handle overlapping drag targets)</p></div>
         
       </li>
     
@@ -923,6 +935,8 @@
       <li class="entry-summary">
         <a href="#source_id:ImGuiID-instance-method" class="signature"><strong>#source_id</strong> : ImGuiID</a>
         
+          <div class="summary"><p>Source item id</p></div>
+        
       </li>
     
       <li class="entry-summary">
@@ -932,6 +946,8 @@
     
       <li class="entry-summary">
         <a href="#source_parent_id:ImGuiID-instance-method" class="signature"><strong>#source_parent_id</strong> : ImGuiID</a>
+        
+          <div class="summary"><p>Source parent id (if available)</p></div>
         
       </li>
     
@@ -1015,13 +1031,13 @@
       
         <div class="doc">
           
-          <p>[<a href="https://github.com/ocornut/imgui/blob/v1.78/imgui.h#L1694" target="_blank">View C++ header</a>]</p>
+          <p><a href="https://github.com/ocornut/imgui/blob/v1.78/imgui.h#L1694" target="_blank">ImGuiPayload::ImGuiPayload()</a></p>
         </div>
       
       <br/>
       <div>
         
-          [<a href="https://github.com/oprypin/crystal-imgui/blob/master/src/obj.cr#L2342" target="_blank">View source</a>]
+          [<a href="https://github.com/oprypin/crystal-imgui/blob/master/src/obj.cr#L3664" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -1050,13 +1066,13 @@
       
         <div class="doc">
           
-          <p>[<a href="https://github.com/ocornut/imgui/blob/v1.78/imgui.h#L1695" target="_blank">View C++ header</a>]</p>
+          <p><a href="https://github.com/ocornut/imgui/blob/v1.78/imgui.h#L1695" target="_blank">ImGuiPayload::Clear()</a></p>
         </div>
       
       <br/>
       <div>
         
-          [<a href="https://github.com/oprypin/crystal-imgui/blob/master/src/obj.cr#L2337" target="_blank">View source</a>]
+          [<a href="https://github.com/oprypin/crystal-imgui/blob/master/src/obj.cr#L3670" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -1069,10 +1085,15 @@
         <a class="method-permalink" href="#data:Pointer(Void)-instance-method">#</a>
       </div>
       
+        <div class="doc">
+          
+          <p>Data (copied and owned by dear imgui)</p>
+        </div>
+      
       <br/>
       <div>
         
-          [<a href="https://github.com/oprypin/crystal-imgui/blob/master/src/obj.cr#L2272" target="_blank">View source</a>]
+          [<a href="https://github.com/oprypin/crystal-imgui/blob/master/src/obj.cr#L3592" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -1088,7 +1109,7 @@
       <br/>
       <div>
         
-          [<a href="https://github.com/oprypin/crystal-imgui/blob/master/src/obj.cr#L2276" target="_blank">View source</a>]
+          [<a href="https://github.com/oprypin/crystal-imgui/blob/master/src/obj.cr#L3596" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -1101,10 +1122,15 @@
         <a class="method-permalink" href="#data_frame_count:Int32-instance-method">#</a>
       </div>
       
+        <div class="doc">
+          
+          <p>Data timestamp</p>
+        </div>
+      
       <br/>
       <div>
         
-          [<a href="https://github.com/oprypin/crystal-imgui/blob/master/src/obj.cr#L2304" target="_blank">View source</a>]
+          [<a href="https://github.com/oprypin/crystal-imgui/blob/master/src/obj.cr#L3628" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -1120,7 +1146,7 @@
       <br/>
       <div>
         
-          [<a href="https://github.com/oprypin/crystal-imgui/blob/master/src/obj.cr#L2308" target="_blank">View source</a>]
+          [<a href="https://github.com/oprypin/crystal-imgui/blob/master/src/obj.cr#L3632" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -1133,10 +1159,15 @@
         <a class="method-permalink" href="#data_size:Int32-instance-method">#</a>
       </div>
       
+        <div class="doc">
+          
+          <p>Data size</p>
+        </div>
+      
       <br/>
       <div>
         
-          [<a href="https://github.com/oprypin/crystal-imgui/blob/master/src/obj.cr#L2280" target="_blank">View source</a>]
+          [<a href="https://github.com/oprypin/crystal-imgui/blob/master/src/obj.cr#L3601" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -1152,7 +1183,7 @@
       <br/>
       <div>
         
-          [<a href="https://github.com/oprypin/crystal-imgui/blob/master/src/obj.cr#L2284" target="_blank">View source</a>]
+          [<a href="https://github.com/oprypin/crystal-imgui/blob/master/src/obj.cr#L3605" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -1165,10 +1196,15 @@
         <a class="method-permalink" href="#data_type:Slice(LibC::Char)-instance-method">#</a>
       </div>
       
+        <div class="doc">
+          
+          <p>Data type tag (short user-supplied string, 32 characters max)</p>
+        </div>
+      
       <br/>
       <div>
         
-          [<a href="https://github.com/oprypin/crystal-imgui/blob/master/src/obj.cr#L2312" target="_blank">View source</a>]
+          [<a href="https://github.com/oprypin/crystal-imgui/blob/master/src/obj.cr#L3637" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -1184,7 +1220,7 @@
       <br/>
       <div>
         
-          [<a href="https://github.com/oprypin/crystal-imgui/blob/master/src/obj.cr#L2316" target="_blank">View source</a>]
+          [<a href="https://github.com/oprypin/crystal-imgui/blob/master/src/obj.cr#L3641" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -1197,10 +1233,15 @@
         <a class="method-permalink" href="#delivery:Bool-instance-method">#</a>
       </div>
       
+        <div class="doc">
+          
+          <p>Set when AcceptDragDropPayload() was called and mouse button is released over the target item.</p>
+        </div>
+      
       <br/>
       <div>
         
-          [<a href="https://github.com/oprypin/crystal-imgui/blob/master/src/obj.cr#L2328" target="_blank">View source</a>]
+          [<a href="https://github.com/oprypin/crystal-imgui/blob/master/src/obj.cr#L3655" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -1216,7 +1257,7 @@
       <br/>
       <div>
         
-          [<a href="https://github.com/oprypin/crystal-imgui/blob/master/src/obj.cr#L2332" target="_blank">View source</a>]
+          [<a href="https://github.com/oprypin/crystal-imgui/blob/master/src/obj.cr#L3659" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -1231,13 +1272,13 @@
       
         <div class="doc">
           
-          <p>[<a href="https://github.com/ocornut/imgui/blob/v1.78/imgui.h#L1696" target="_blank">View C++ header</a>]</p>
+          <p><a href="https://github.com/ocornut/imgui/blob/v1.78/imgui.h#L1696" target="_blank">ImGuiPayload::IsDataType()</a></p>
         </div>
       
       <br/>
       <div>
         
-          [<a href="https://github.com/oprypin/crystal-imgui/blob/master/src/obj.cr#L2348" target="_blank">View source</a>]
+          [<a href="https://github.com/oprypin/crystal-imgui/blob/master/src/obj.cr#L3675" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -1252,13 +1293,13 @@
       
         <div class="doc">
           
-          <p>[<a href="https://github.com/ocornut/imgui/blob/v1.78/imgui.h#L1698" target="_blank">View C++ header</a>]</p>
+          <p><a href="https://github.com/ocornut/imgui/blob/v1.78/imgui.h#L1698" target="_blank">ImGuiPayload::IsDelivery()</a></p>
         </div>
       
       <br/>
       <div>
         
-          [<a href="https://github.com/oprypin/crystal-imgui/blob/master/src/obj.cr#L2353" target="_blank">View source</a>]
+          [<a href="https://github.com/oprypin/crystal-imgui/blob/master/src/obj.cr#L3685" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -1273,13 +1314,13 @@
       
         <div class="doc">
           
-          <p>[<a href="https://github.com/ocornut/imgui/blob/v1.78/imgui.h#L1697" target="_blank">View C++ header</a>]</p>
+          <p><a href="https://github.com/ocornut/imgui/blob/v1.78/imgui.h#L1697" target="_blank">ImGuiPayload::IsPreview()</a></p>
         </div>
       
       <br/>
       <div>
         
-          [<a href="https://github.com/oprypin/crystal-imgui/blob/master/src/obj.cr#L2358" target="_blank">View source</a>]
+          [<a href="https://github.com/oprypin/crystal-imgui/blob/master/src/obj.cr#L3680" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -1292,10 +1333,15 @@
         <a class="method-permalink" href="#preview:Bool-instance-method">#</a>
       </div>
       
+        <div class="doc">
+          
+          <p>Set when AcceptDragDropPayload() was called and mouse has been hovering the target item (nb: handle overlapping drag targets)</p>
+        </div>
+      
       <br/>
       <div>
         
-          [<a href="https://github.com/oprypin/crystal-imgui/blob/master/src/obj.cr#L2320" target="_blank">View source</a>]
+          [<a href="https://github.com/oprypin/crystal-imgui/blob/master/src/obj.cr#L3646" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -1311,7 +1357,7 @@
       <br/>
       <div>
         
-          [<a href="https://github.com/oprypin/crystal-imgui/blob/master/src/obj.cr#L2324" target="_blank">View source</a>]
+          [<a href="https://github.com/oprypin/crystal-imgui/blob/master/src/obj.cr#L3650" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -1324,10 +1370,15 @@
         <a class="method-permalink" href="#source_id:ImGuiID-instance-method">#</a>
       </div>
       
+        <div class="doc">
+          
+          <p>Source item id</p>
+        </div>
+      
       <br/>
       <div>
         
-          [<a href="https://github.com/oprypin/crystal-imgui/blob/master/src/obj.cr#L2288" target="_blank">View source</a>]
+          [<a href="https://github.com/oprypin/crystal-imgui/blob/master/src/obj.cr#L3610" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -1343,7 +1394,7 @@
       <br/>
       <div>
         
-          [<a href="https://github.com/oprypin/crystal-imgui/blob/master/src/obj.cr#L2292" target="_blank">View source</a>]
+          [<a href="https://github.com/oprypin/crystal-imgui/blob/master/src/obj.cr#L3614" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -1356,10 +1407,15 @@
         <a class="method-permalink" href="#source_parent_id:ImGuiID-instance-method">#</a>
       </div>
       
+        <div class="doc">
+          
+          <p>Source parent id (if available)</p>
+        </div>
+      
       <br/>
       <div>
         
-          [<a href="https://github.com/oprypin/crystal-imgui/blob/master/src/obj.cr#L2296" target="_blank">View source</a>]
+          [<a href="https://github.com/oprypin/crystal-imgui/blob/master/src/obj.cr#L3619" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -1375,7 +1431,7 @@
       <br/>
       <div>
         
-          [<a href="https://github.com/oprypin/crystal-imgui/blob/master/src/obj.cr#L2300" target="_blank">View source</a>]
+          [<a href="https://github.com/oprypin/crystal-imgui/blob/master/src/obj.cr#L3623" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -1391,7 +1447,7 @@
       <br/>
       <div>
         
-          [<a href="https://github.com/oprypin/crystal-imgui/blob/master/src/obj.cr#L2270" target="_blank">View source</a>]
+          [<a href="https://github.com/oprypin/crystal-imgui/blob/master/src/obj.cr#L3589" target="_blank">View source</a>]
         
       </div>
     </div>

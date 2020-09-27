@@ -771,7 +771,7 @@
   </h2>
   
     
-      <a href="https://github.com/oprypin/crystal-imgui/blob/master/src/types.cr#L284" target="_blank">
+      <a href="https://github.com/oprypin/crystal-imgui/blob/master/src/types.cr#L147" target="_blank">
         types.cr
       </a>
     
@@ -796,90 +796,162 @@
         <strong>AllowTabInput</strong> = <code><span class="n">1024</span></code>
       </dt>
       
+      <dd class="entry-const-doc">
+        <p>Pressing TAB input a '\t' character into the text field</p>
+      </dd>
+      
     
       <dt class="entry-const" id="AlwaysInsertMode">
         <strong>AlwaysInsertMode</strong> = <code><span class="n">8192</span></code>
       </dt>
+      
+      <dd class="entry-const-doc">
+        <p>Insert mode</p>
+      </dd>
       
     
       <dt class="entry-const" id="AutoSelectAll">
         <strong>AutoSelectAll</strong> = <code><span class="n">16</span></code>
       </dt>
       
+      <dd class="entry-const-doc">
+        <p>Select entire text when first taking mouse focus</p>
+      </dd>
+      
     
       <dt class="entry-const" id="CallbackAlways">
         <strong>CallbackAlways</strong> = <code><span class="n">256</span></code>
       </dt>
+      
+      <dd class="entry-const-doc">
+        <p>Callback on each iteration. User code may query cursor position, modify text buffer.</p>
+      </dd>
       
     
       <dt class="entry-const" id="CallbackCharFilter">
         <strong>CallbackCharFilter</strong> = <code><span class="n">512</span></code>
       </dt>
       
+      <dd class="entry-const-doc">
+        <p>Callback on character inputs to replace or discard them. Modify 'EventChar' to replace or discard, or return 1 in callback to discard.</p>
+      </dd>
+      
     
       <dt class="entry-const" id="CallbackCompletion">
         <strong>CallbackCompletion</strong> = <code><span class="n">64</span></code>
       </dt>
+      
+      <dd class="entry-const-doc">
+        <p>Callback on pressing TAB (for completion handling)</p>
+      </dd>
       
     
       <dt class="entry-const" id="CallbackHistory">
         <strong>CallbackHistory</strong> = <code><span class="n">128</span></code>
       </dt>
       
+      <dd class="entry-const-doc">
+        <p>Callback on pressing Up/Down arrows (for history handling)</p>
+      </dd>
+      
     
       <dt class="entry-const" id="CallbackResize">
         <strong>CallbackResize</strong> = <code><span class="n">262144</span></code>
       </dt>
+      
+      <dd class="entry-const-doc">
+        <p>Callback on buffer capacity changes request (beyond 'buf_size' parameter value), allowing the string to grow. Notify when the string wants to be resized (for string types which hold a cache of their Size). You will be provided a new BufSize in the callback and NEED to honor it. (see misc/cpp/imgui_stdlib.h for an example of using this)</p>
+      </dd>
       
     
       <dt class="entry-const" id="CharsDecimal">
         <strong>CharsDecimal</strong> = <code><span class="n">1</span></code>
       </dt>
       
+      <dd class="entry-const-doc">
+        <p>Allow 0123456789.+-*/</p>
+      </dd>
+      
     
       <dt class="entry-const" id="CharsHexadecimal">
         <strong>CharsHexadecimal</strong> = <code><span class="n">2</span></code>
       </dt>
+      
+      <dd class="entry-const-doc">
+        <p>Allow 0123456789ABCDEFabcdef</p>
+      </dd>
       
     
       <dt class="entry-const" id="CharsNoBlank">
         <strong>CharsNoBlank</strong> = <code><span class="n">8</span></code>
       </dt>
       
+      <dd class="entry-const-doc">
+        <p>Filter out spaces, tabs</p>
+      </dd>
+      
     
       <dt class="entry-const" id="CharsScientific">
         <strong>CharsScientific</strong> = <code><span class="n">131072</span></code>
       </dt>
+      
+      <dd class="entry-const-doc">
+        <p>Allow 0123456789.+-*/eE (Scientific notation input)</p>
+      </dd>
       
     
       <dt class="entry-const" id="CharsUppercase">
         <strong>CharsUppercase</strong> = <code><span class="n">4</span></code>
       </dt>
       
+      <dd class="entry-const-doc">
+        <p>Turn a..z into A..Z</p>
+      </dd>
+      
     
       <dt class="entry-const" id="CtrlEnterForNewLine">
         <strong>CtrlEnterForNewLine</strong> = <code><span class="n">2048</span></code>
       </dt>
+      
+      <dd class="entry-const-doc">
+        <p>In multi-line mode, unfocus with Enter, add new line with Ctrl+Enter (default is opposite: unfocus with Ctrl+Enter, add line with Enter).</p>
+      </dd>
       
     
       <dt class="entry-const" id="EnterReturnsTrue">
         <strong>EnterReturnsTrue</strong> = <code><span class="n">32</span></code>
       </dt>
       
+      <dd class="entry-const-doc">
+        <p>Return 'true' when Enter is pressed (as opposed to every time the value was modified). Consider looking at the IsItemDeactivatedAfterEdit() function.</p>
+      </dd>
+      
     
       <dt class="entry-const" id="Multiline">
         <strong>Multiline</strong> = <code><span class="n">1048576</span></code>
       </dt>
+      
+      <dd class="entry-const-doc">
+        <p>For internal use by InputTextMultiline()</p>
+      </dd>
       
     
       <dt class="entry-const" id="NoHorizontalScroll">
         <strong>NoHorizontalScroll</strong> = <code><span class="n">4096</span></code>
       </dt>
       
+      <dd class="entry-const-doc">
+        <p>Disable following the cursor horizontally</p>
+      </dd>
+      
     
       <dt class="entry-const" id="NoMarkEdited">
         <strong>NoMarkEdited</strong> = <code><span class="n">2097152</span></code>
       </dt>
+      
+      <dd class="entry-const-doc">
+        <p>For internal use by functions using InputText() before reformatting data</p>
+      </dd>
       
     
       <dt class="entry-const" id="None">
@@ -891,15 +963,27 @@
         <strong>NoUndoRedo</strong> = <code><span class="n">65536</span></code>
       </dt>
       
+      <dd class="entry-const-doc">
+        <p>Disable undo/redo. Note that input text owns the text data while active, if you want to provide your own undo/redo stack you need e.g. to call ClearActiveID().</p>
+      </dd>
+      
     
       <dt class="entry-const" id="Password">
         <strong>Password</strong> = <code><span class="n">32768</span></code>
       </dt>
       
+      <dd class="entry-const-doc">
+        <p>Password mode, display all characters as '*'</p>
+      </dd>
+      
     
       <dt class="entry-const" id="ReadOnly">
         <strong>ReadOnly</strong> = <code><span class="n">16384</span></code>
       </dt>
+      
+      <dd class="entry-const-doc">
+        <p>Read-only mode</p>
+      </dd>
       
     
   </dl>

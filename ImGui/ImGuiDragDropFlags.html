@@ -747,7 +747,7 @@
     Overview
   </h2>
 
-  <p>[<a href="https://github.com/ocornut/imgui/blob/v1.78/imgui.h#L986" target="_blank">View C++ header</a>]</p>
+  <p><a href="https://github.com/ocornut/imgui/blob/v1.78/imgui.h#L986" target="_blank">enum ImGuiDragDropFlags_</a></p>
 
 
 
@@ -772,7 +772,7 @@
   </h2>
   
     
-      <a href="https://github.com/oprypin/crystal-imgui/blob/master/src/types.cr#L216" target="_blank">
+      <a href="https://github.com/oprypin/crystal-imgui/blob/master/src/types.cr#L330" target="_blank">
         types.cr
       </a>
     
@@ -802,50 +802,90 @@
         <strong>SourceNoPreviewTooltip</strong> = <code><span class="n">1</span></code>
       </dt>
       
+      <dd class="entry-const-doc">
+        <p>By default, a successful call to BeginDragDropSource opens a tooltip so you can display a preview or description of the source contents. This flag disable this behavior.</p>
+      </dd>
+      
     
       <dt class="entry-const" id="SourceNoDisableHover">
         <strong>SourceNoDisableHover</strong> = <code><span class="n">2</span></code>
       </dt>
+      
+      <dd class="entry-const-doc">
+        <p>By default, when dragging we clear data so that IsItemHovered() will return false, to avoid subsequent user code submitting tooltips. This flag disable this behavior so you can still call IsItemHovered() on the source item.</p>
+      </dd>
       
     
       <dt class="entry-const" id="SourceNoHoldToOpenOthers">
         <strong>SourceNoHoldToOpenOthers</strong> = <code><span class="n">4</span></code>
       </dt>
       
+      <dd class="entry-const-doc">
+        <p>Disable the behavior that allows to open tree nodes and collapsing header by holding over them while dragging a source item.</p>
+      </dd>
+      
     
       <dt class="entry-const" id="SourceAllowNullID">
         <strong>SourceAllowNullID</strong> = <code><span class="n">8</span></code>
       </dt>
+      
+      <dd class="entry-const-doc">
+        <p>Allow items such as Text(), Image() that have no unique identifier to be used as drag source, by manufacturing a temporary identifier based on their window-relative position. This is extremely unusual within the dear imgui ecosystem and so we made it explicit.</p>
+      </dd>
       
     
       <dt class="entry-const" id="SourceExtern">
         <strong>SourceExtern</strong> = <code><span class="n">16</span></code>
       </dt>
       
+      <dd class="entry-const-doc">
+        <p>External source (from outside of dear imgui), won't attempt to read current item/window info. Will always return true. Only one Extern source can be active simultaneously.</p>
+      </dd>
+      
     
       <dt class="entry-const" id="SourceAutoExpirePayload">
         <strong>SourceAutoExpirePayload</strong> = <code><span class="n">32</span></code>
       </dt>
+      
+      <dd class="entry-const-doc">
+        <p>Automatically expire the payload if the source cease to be submitted (otherwise payloads are persisting while being dragged)</p>
+      </dd>
       
     
       <dt class="entry-const" id="AcceptBeforeDelivery">
         <strong>AcceptBeforeDelivery</strong> = <code><span class="n">1024</span></code>
       </dt>
       
+      <dd class="entry-const-doc">
+        <p>AcceptDragDropPayload() will returns true even before the mouse button is released. You can then call IsDelivery() to test if the payload needs to be delivered.</p>
+      </dd>
+      
     
       <dt class="entry-const" id="AcceptNoDrawDefaultRect">
         <strong>AcceptNoDrawDefaultRect</strong> = <code><span class="n">2048</span></code>
       </dt>
+      
+      <dd class="entry-const-doc">
+        <p>Do not draw the default highlight rectangle when hovering over target.</p>
+      </dd>
       
     
       <dt class="entry-const" id="AcceptNoPreviewTooltip">
         <strong>AcceptNoPreviewTooltip</strong> = <code><span class="n">4096</span></code>
       </dt>
       
+      <dd class="entry-const-doc">
+        <p>Request hiding the BeginDragDropSource tooltip from the BeginDragDropTarget site.</p>
+      </dd>
+      
     
       <dt class="entry-const" id="AcceptPeekOnly">
         <strong>AcceptPeekOnly</strong> = <code><span class="n">3072</span></code>
       </dt>
+      
+      <dd class="entry-const-doc">
+        <p>For peeking ahead and inspecting the payload before delivery.</p>
+      </dd>
       
     
   </dl>
@@ -996,7 +1036,7 @@
       <br/>
       <div>
         
-          [<a href="https://github.com/oprypin/crystal-imgui/blob/master/src/types.cr#L224" target="_blank">View source</a>]
+          [<a href="https://github.com/oprypin/crystal-imgui/blob/master/src/types.cr#L345" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -1012,7 +1052,7 @@
       <br/>
       <div>
         
-          [<a href="https://github.com/oprypin/crystal-imgui/blob/master/src/types.cr#L225" target="_blank">View source</a>]
+          [<a href="https://github.com/oprypin/crystal-imgui/blob/master/src/types.cr#L347" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -1028,7 +1068,7 @@
       <br/>
       <div>
         
-          [<a href="https://github.com/oprypin/crystal-imgui/blob/master/src/types.cr#L226" target="_blank">View source</a>]
+          [<a href="https://github.com/oprypin/crystal-imgui/blob/master/src/types.cr#L349" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -1044,7 +1084,7 @@
       <br/>
       <div>
         
-          [<a href="https://github.com/oprypin/crystal-imgui/blob/master/src/types.cr#L227" target="_blank">View source</a>]
+          [<a href="https://github.com/oprypin/crystal-imgui/blob/master/src/types.cr#L351" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -1060,7 +1100,7 @@
       <br/>
       <div>
         
-          [<a href="https://github.com/oprypin/crystal-imgui/blob/master/src/types.cr#L217" target="_blank">View source</a>]
+          [<a href="https://github.com/oprypin/crystal-imgui/blob/master/src/types.cr#L331" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -1076,7 +1116,7 @@
       <br/>
       <div>
         
-          [<a href="https://github.com/oprypin/crystal-imgui/blob/master/src/types.cr#L221" target="_blank">View source</a>]
+          [<a href="https://github.com/oprypin/crystal-imgui/blob/master/src/types.cr#L339" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -1092,7 +1132,7 @@
       <br/>
       <div>
         
-          [<a href="https://github.com/oprypin/crystal-imgui/blob/master/src/types.cr#L223" target="_blank">View source</a>]
+          [<a href="https://github.com/oprypin/crystal-imgui/blob/master/src/types.cr#L343" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -1108,7 +1148,7 @@
       <br/>
       <div>
         
-          [<a href="https://github.com/oprypin/crystal-imgui/blob/master/src/types.cr#L222" target="_blank">View source</a>]
+          [<a href="https://github.com/oprypin/crystal-imgui/blob/master/src/types.cr#L341" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -1124,7 +1164,7 @@
       <br/>
       <div>
         
-          [<a href="https://github.com/oprypin/crystal-imgui/blob/master/src/types.cr#L219" target="_blank">View source</a>]
+          [<a href="https://github.com/oprypin/crystal-imgui/blob/master/src/types.cr#L335" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -1140,7 +1180,7 @@
       <br/>
       <div>
         
-          [<a href="https://github.com/oprypin/crystal-imgui/blob/master/src/types.cr#L220" target="_blank">View source</a>]
+          [<a href="https://github.com/oprypin/crystal-imgui/blob/master/src/types.cr#L337" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -1156,7 +1196,7 @@
       <br/>
       <div>
         
-          [<a href="https://github.com/oprypin/crystal-imgui/blob/master/src/types.cr#L218" target="_blank">View source</a>]
+          [<a href="https://github.com/oprypin/crystal-imgui/blob/master/src/types.cr#L333" target="_blank">View source</a>]
         
       </div>
     </div>

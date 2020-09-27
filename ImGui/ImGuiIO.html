@@ -749,7 +749,7 @@
     Overview
   </h2>
 
-  <p>[<a href="https://github.com/ocornut/imgui/blob/v1.78/imgui.h#L1493" target="_blank">View C++ header</a>]</p>
+  <p><a href="https://github.com/ocornut/imgui/blob/v1.78/imgui.h#L1493" target="_blank">struct ImGuiIO</a></p>
 
 
 
@@ -788,7 +788,7 @@
   </h2>
   
     
-      <a href="https://github.com/oprypin/crystal-imgui/blob/master/src/obj.cr#L1434" target="_blank">
+      <a href="https://github.com/oprypin/crystal-imgui/blob/master/src/obj.cr#L2608" target="_blank">
         obj.cr
       </a>
     
@@ -812,7 +812,7 @@
       <li class="entry-summary">
         <a href="#new:ImGuiIO-class-method" class="signature"><strong>.new</strong> : ImGuiIO</a>
         
-          <div class="summary"><p>[<a href="https://github.com/ocornut/imgui/blob/v1.78/imgui.h#L1627" target="_blank">View C++ header</a>]</p></div>
+          <div class="summary"><p><a href="https://github.com/ocornut/imgui/blob/v1.78/imgui.h#L1627" target="_blank">ImGuiIO::ImGuiIO()</a></p></div>
         
       </li>
     
@@ -835,26 +835,28 @@
       <li class="entry-summary">
         <a href="#add_input_character(c:UInt32):Void-instance-method" class="signature"><strong>#add_input_character</strong>(c : UInt32) : Void</a>
         
-          <div class="summary"><p>[<a href="https://github.com/ocornut/imgui/blob/v1.78/imgui.h#L1576" target="_blank">View C++ header</a>]</p></div>
+          <div class="summary"><p>Queue new character input</p></div>
         
       </li>
     
       <li class="entry-summary">
         <a href="#add_input_character_utf16(c:ImWchar16):Void-instance-method" class="signature"><strong>#add_input_character_utf16</strong>(c : ImWchar16) : Void</a>
         
-          <div class="summary"><p>[<a href="https://github.com/ocornut/imgui/blob/v1.78/imgui.h#L1577" target="_blank">View C++ header</a>]</p></div>
+          <div class="summary"><p>Queue new character input from an UTF-16 character, it can be a surrogate</p></div>
         
       </li>
     
       <li class="entry-summary">
         <a href="#add_input_characters_utf8(str:String):Void-instance-method" class="signature"><strong>#add_input_characters_utf8</strong>(str : String) : Void</a>
         
-          <div class="summary"><p>[<a href="https://github.com/ocornut/imgui/blob/v1.78/imgui.h#L1578" target="_blank">View C++ header</a>]</p></div>
+          <div class="summary"><p>Queue new characters input from an UTF-8 string</p></div>
         
       </li>
     
       <li class="entry-summary">
         <a href="#backend_flags:ImGuiBackendFlags-instance-method" class="signature"><strong>#backend_flags</strong> : ImGuiBackendFlags</a>
+        
+          <div class="summary"><p>= 0 See ImGuiBackendFlags_ enum.</p></div>
         
       </li>
     
@@ -866,6 +868,8 @@
       <li class="entry-summary">
         <a href="#backend_language_user_data:Pointer(Void)-instance-method" class="signature"><strong>#backend_language_user_data</strong> : Pointer(Void)</a>
         
+          <div class="summary"><p>= NULL User data for non C++ programming language back-end</p></div>
+        
       </li>
     
       <li class="entry-summary">
@@ -875,6 +879,8 @@
     
       <li class="entry-summary">
         <a href="#backend_platform_name:String?-instance-method" class="signature"><strong>#backend_platform_name</strong> : String?</a>
+        
+          <div class="summary"><p>= NULL</p></div>
         
       </li>
     
@@ -886,6 +892,8 @@
       <li class="entry-summary">
         <a href="#backend_platform_user_data:Pointer(Void)-instance-method" class="signature"><strong>#backend_platform_user_data</strong> : Pointer(Void)</a>
         
+          <div class="summary"><p>= NULL User data for platform back-end</p></div>
+        
       </li>
     
       <li class="entry-summary">
@@ -895,6 +903,8 @@
     
       <li class="entry-summary">
         <a href="#backend_renderer_name:String?-instance-method" class="signature"><strong>#backend_renderer_name</strong> : String?</a>
+        
+          <div class="summary"><p>= NULL</p></div>
         
       </li>
     
@@ -906,6 +916,8 @@
       <li class="entry-summary">
         <a href="#backend_renderer_user_data:Pointer(Void)-instance-method" class="signature"><strong>#backend_renderer_user_data</strong> : Pointer(Void)</a>
         
+          <div class="summary"><p>= NULL User data for renderer back-end</p></div>
+        
       </li>
     
       <li class="entry-summary">
@@ -916,7 +928,7 @@
       <li class="entry-summary">
         <a href="#clear_input_characters:Void-instance-method" class="signature"><strong>#clear_input_characters</strong> : Void</a>
         
-          <div class="summary"><p>[<a href="https://github.com/ocornut/imgui/blob/v1.78/imgui.h#L1579" target="_blank">View C++ header</a>]</p></div>
+          <div class="summary"><p>Clear the text input buffer manually</p></div>
         
       </li>
     
@@ -933,6 +945,8 @@
       <li class="entry-summary">
         <a href="#config_flags:ImGuiConfigFlags-instance-method" class="signature"><strong>#config_flags</strong> : ImGuiConfigFlags</a>
         
+          <div class="summary"><p>= 0 See ImGuiConfigFlags_ enum.</p></div>
+        
       </li>
     
       <li class="entry-summary">
@@ -942,6 +956,8 @@
     
       <li class="entry-summary">
         <a href="#config_input_text_cursor_blink:Bool-instance-method" class="signature"><strong>#config_input_text_cursor_blink</strong> : Bool</a>
+        
+          <div class="summary"><p>= true Set to false to disable blinking cursor, for users who consider it distracting.</p></div>
         
       </li>
     
@@ -953,6 +969,8 @@
       <li class="entry-summary">
         <a href="#config_mac_osx_behaviors:Bool-instance-method" class="signature"><strong>#config_mac_osx_behaviors</strong> : Bool</a>
         
+          <div class="summary"><p>= defined(__APPLE__) OS X style: Text editing cursor movement using Alt instead of Ctrl, Shortcuts using Cmd/Super instead of Ctrl, Line/Text Start and End using Cmd+Arrows instead of Home/End, Double click selects by word instead of selecting whole text, Multi-selection in lists uses Cmd/Super instead of Ctrl (was called io.OptMacOSXBehaviors prior to 1.63)</p></div>
+        
       </li>
     
       <li class="entry-summary">
@@ -962,6 +980,8 @@
     
       <li class="entry-summary">
         <a href="#config_windows_memory_compact_timer:Float32-instance-method" class="signature"><strong>#config_windows_memory_compact_timer</strong> : Float32</a>
+        
+          <div class="summary"><p>= 60.0f [BETA] Compact window memory usage when unused.</p></div>
         
       </li>
     
@@ -973,6 +993,8 @@
       <li class="entry-summary">
         <a href="#config_windows_move_from_title_bar_only:Bool-instance-method" class="signature"><strong>#config_windows_move_from_title_bar_only</strong> : Bool</a>
         
+          <div class="summary"><p>= false [BETA] Set to true to only allow moving windows when clicked+dragged from the title bar.</p></div>
+        
       </li>
     
       <li class="entry-summary">
@@ -982,6 +1004,8 @@
     
       <li class="entry-summary">
         <a href="#config_windows_resize_from_edges:Bool-instance-method" class="signature"><strong>#config_windows_resize_from_edges</strong> : Bool</a>
+        
+          <div class="summary"><p>= true Enable resizing of windows from their edges and from the lower-left corner.</p></div>
         
       </li>
     
@@ -993,6 +1017,8 @@
       <li class="entry-summary">
         <a href="#delta_time:Float32-instance-method" class="signature"><strong>#delta_time</strong> : Float32</a>
         
+          <div class="summary"><p>= 1.0f/60.0f Time elapsed since last frame, in seconds.</p></div>
+        
       </li>
     
       <li class="entry-summary">
@@ -1002,6 +1028,8 @@
     
       <li class="entry-summary">
         <a href="#display_framebuffer_scale:ImVec2-instance-method" class="signature"><strong>#display_framebuffer_scale</strong> : ImVec2</a>
+        
+          <div class="summary"><p>= (1, 1) For retina display or other situations where window coordinates are different from framebuffer coordinates.</p></div>
         
       </li>
     
@@ -1013,6 +1041,8 @@
       <li class="entry-summary">
         <a href="#display_size:ImVec2-instance-method" class="signature"><strong>#display_size</strong> : ImVec2</a>
         
+          <div class="summary"><p>&lt;unset> Main display size, in pixels.</p></div>
+        
       </li>
     
       <li class="entry-summary">
@@ -1022,6 +1052,8 @@
     
       <li class="entry-summary">
         <a href="#font_allow_user_scaling:Bool-instance-method" class="signature"><strong>#font_allow_user_scaling</strong> : Bool</a>
+        
+          <div class="summary"><p>= false Allow user scaling text of individual window with CTRL+Wheel.</p></div>
         
       </li>
     
@@ -1033,6 +1065,8 @@
       <li class="entry-summary">
         <a href="#font_default:ImFont-instance-method" class="signature"><strong>#font_default</strong> : ImFont</a>
         
+          <div class="summary"><p>= NULL Font to use on NewFrame().</p></div>
+        
       </li>
     
       <li class="entry-summary">
@@ -1042,6 +1076,8 @@
     
       <li class="entry-summary">
         <a href="#font_global_scale:Float32-instance-method" class="signature"><strong>#font_global_scale</strong> : Float32</a>
+        
+          <div class="summary"><p>= 1.0f Global scale all fonts</p></div>
         
       </li>
     
@@ -1053,6 +1089,8 @@
       <li class="entry-summary">
         <a href="#fonts:ImFontAtlas-instance-method" class="signature"><strong>#fonts</strong> : ImFontAtlas</a>
         
+          <div class="summary"><p>&lt;auto> Font atlas: load, rasterize and pack one or more fonts into a single texture.</p></div>
+        
       </li>
     
       <li class="entry-summary">
@@ -1062,6 +1100,8 @@
     
       <li class="entry-summary">
         <a href="#framerate:Float32-instance-method" class="signature"><strong>#framerate</strong> : Float32</a>
+        
+          <div class="summary"><p>Application framerate estimate, in frame per second.</p></div>
         
       </li>
     
@@ -1093,6 +1133,8 @@
       <li class="entry-summary">
         <a href="#ime_window_handle:Pointer(Void)-instance-method" class="signature"><strong>#ime_window_handle</strong> : Pointer(Void)</a>
         
+          <div class="summary"><p>= NULL (Windows) Set this to your HWND to get automatic IME cursor positioning.</p></div>
+        
       </li>
     
       <li class="entry-summary">
@@ -1102,6 +1144,8 @@
     
       <li class="entry-summary">
         <a href="#ini_filename:String?-instance-method" class="signature"><strong>#ini_filename</strong> : String?</a>
+        
+          <div class="summary"><p>= "imgui.ini" Path to .ini file.</p></div>
         
       </li>
     
@@ -1113,6 +1157,8 @@
       <li class="entry-summary">
         <a href="#ini_saving_rate:Float32-instance-method" class="signature"><strong>#ini_saving_rate</strong> : Float32</a>
         
+          <div class="summary"><p>= 5.0f Minimum time between saving positions/sizes to .ini file, in seconds.</p></div>
+        
       </li>
     
       <li class="entry-summary">
@@ -1122,6 +1168,8 @@
     
       <li class="entry-summary">
         <a href="#input_queue_characters:ImVector(ImWchar)-instance-method" class="signature"><strong>#input_queue_characters</strong> : ImVector(ImWchar)</a>
+        
+          <div class="summary"><p>Queue of <em>characters</em> input (obtained by platform back-end).</p></div>
         
       </li>
     
@@ -1133,6 +1181,8 @@
       <li class="entry-summary">
         <a href="#input_queue_surrogate:ImWchar16-instance-method" class="signature"><strong>#input_queue_surrogate</strong> : ImWchar16</a>
         
+          <div class="summary"><p>For AddInputCharacterUTF16</p></div>
+        
       </li>
     
       <li class="entry-summary">
@@ -1142,6 +1192,8 @@
     
       <li class="entry-summary">
         <a href="#key_alt:Bool-instance-method" class="signature"><strong>#key_alt</strong> : Bool</a>
+        
+          <div class="summary"><p>Keyboard modifier pressed: Alt</p></div>
         
       </li>
     
@@ -1153,6 +1205,8 @@
       <li class="entry-summary">
         <a href="#key_ctrl:Bool-instance-method" class="signature"><strong>#key_ctrl</strong> : Bool</a>
         
+          <div class="summary"><p>Keyboard modifier pressed: Control</p></div>
+        
       </li>
     
       <li class="entry-summary">
@@ -1162,6 +1216,8 @@
     
       <li class="entry-summary">
         <a href="#key_map:Slice(Int32)-instance-method" class="signature"><strong>#key_map</strong> : Slice(Int32)</a>
+        
+          <div class="summary"><p>&lt;unset> Map of indices into the KeysDown[512] entries array which represent your "native" keyboard state.</p></div>
         
       </li>
     
@@ -1173,6 +1229,8 @@
       <li class="entry-summary">
         <a href="#key_mods:ImGuiKeyModFlags-instance-method" class="signature"><strong>#key_mods</strong> : ImGuiKeyModFlags</a>
         
+          <div class="summary"><p>Key mods flags (same as io.KeyCtrl/KeyShift/KeyAlt/KeySuper but merged into flags), updated by NewFrame()</p></div>
+        
       </li>
     
       <li class="entry-summary">
@@ -1182,6 +1240,8 @@
     
       <li class="entry-summary">
         <a href="#key_repeat_delay:Float32-instance-method" class="signature"><strong>#key_repeat_delay</strong> : Float32</a>
+        
+          <div class="summary"><p>= 0.250f When holding a key/button, time before it starts repeating, in seconds (for buttons in Repeat mode, etc.).</p></div>
         
       </li>
     
@@ -1193,6 +1253,8 @@
       <li class="entry-summary">
         <a href="#key_repeat_rate:Float32-instance-method" class="signature"><strong>#key_repeat_rate</strong> : Float32</a>
         
+          <div class="summary"><p>= 0.050f When holding a key/button, rate at which it repeats, in seconds.</p></div>
+        
       </li>
     
       <li class="entry-summary">
@@ -1202,6 +1264,8 @@
     
       <li class="entry-summary">
         <a href="#key_shift:Bool-instance-method" class="signature"><strong>#key_shift</strong> : Bool</a>
+        
+          <div class="summary"><p>Keyboard modifier pressed: Shift</p></div>
         
       </li>
     
@@ -1213,6 +1277,8 @@
       <li class="entry-summary">
         <a href="#key_super:Bool-instance-method" class="signature"><strong>#key_super</strong> : Bool</a>
         
+          <div class="summary"><p>Keyboard modifier pressed: Cmd/Super/Windows</p></div>
+        
       </li>
     
       <li class="entry-summary">
@@ -1222,6 +1288,8 @@
     
       <li class="entry-summary">
         <a href="#keys_down:Slice(Bool)-instance-method" class="signature"><strong>#keys_down</strong> : Slice(Bool)</a>
+        
+          <div class="summary"><p>Keyboard keys that are pressed (ideally left in the "native" order your engine has access to keyboard keys, so you can use your own defines/enums for keys).</p></div>
         
       </li>
     
@@ -1233,6 +1301,8 @@
       <li class="entry-summary">
         <a href="#keys_down_duration:Slice(Float32)-instance-method" class="signature"><strong>#keys_down_duration</strong> : Slice(Float32)</a>
         
+          <div class="summary"><p>Duration the keyboard key has been down (0.0f == just pressed)</p></div>
+        
       </li>
     
       <li class="entry-summary">
@@ -1242,6 +1312,8 @@
     
       <li class="entry-summary">
         <a href="#keys_down_duration_prev:Slice(Float32)-instance-method" class="signature"><strong>#keys_down_duration_prev</strong> : Slice(Float32)</a>
+        
+          <div class="summary"><p>Previous duration the key has been down</p></div>
         
       </li>
     
@@ -1253,6 +1325,8 @@
       <li class="entry-summary">
         <a href="#log_filename:String?-instance-method" class="signature"><strong>#log_filename</strong> : String?</a>
         
+          <div class="summary"><p>= "imgui_log.txt"// Path to .log file (default parameter to ImGui::LogToFile when no file is specified).</p></div>
+        
       </li>
     
       <li class="entry-summary">
@@ -1262,6 +1336,8 @@
     
       <li class="entry-summary">
         <a href="#metrics_active_allocations:Int32-instance-method" class="signature"><strong>#metrics_active_allocations</strong> : Int32</a>
+        
+          <div class="summary"><p>Number of active allocations, updated by MemAlloc/MemFree based on current context.</p></div>
         
       </li>
     
@@ -1273,6 +1349,8 @@
       <li class="entry-summary">
         <a href="#metrics_active_windows:Int32-instance-method" class="signature"><strong>#metrics_active_windows</strong> : Int32</a>
         
+          <div class="summary"><p>Number of active windows</p></div>
+        
       </li>
     
       <li class="entry-summary">
@@ -1282,6 +1360,8 @@
     
       <li class="entry-summary">
         <a href="#metrics_render_indices:Int32-instance-method" class="signature"><strong>#metrics_render_indices</strong> : Int32</a>
+        
+          <div class="summary"><p>Indices output during last call to Render() = number of triangles * 3</p></div>
         
       </li>
     
@@ -1293,6 +1373,8 @@
       <li class="entry-summary">
         <a href="#metrics_render_vertices:Int32-instance-method" class="signature"><strong>#metrics_render_vertices</strong> : Int32</a>
         
+          <div class="summary"><p>Vertices output during last call to Render()</p></div>
+        
       </li>
     
       <li class="entry-summary">
@@ -1302,6 +1384,8 @@
     
       <li class="entry-summary">
         <a href="#metrics_render_windows:Int32-instance-method" class="signature"><strong>#metrics_render_windows</strong> : Int32</a>
+        
+          <div class="summary"><p>Number of visible windows</p></div>
         
       </li>
     
@@ -1313,6 +1397,8 @@
       <li class="entry-summary">
         <a href="#mouse_clicked:Slice(Bool)-instance-method" class="signature"><strong>#mouse_clicked</strong> : Slice(Bool)</a>
         
+          <div class="summary"><p>Mouse button went from !Down to Down</p></div>
+        
       </li>
     
       <li class="entry-summary">
@@ -1322,6 +1408,8 @@
     
       <li class="entry-summary">
         <a href="#mouse_clicked_pos:Slice(ImVec2)-instance-method" class="signature"><strong>#mouse_clicked_pos</strong> : Slice(ImVec2)</a>
+        
+          <div class="summary"><p>Position at time of clicking</p></div>
         
       </li>
     
@@ -1333,6 +1421,8 @@
       <li class="entry-summary">
         <a href="#mouse_clicked_time:Slice(Float64)-instance-method" class="signature"><strong>#mouse_clicked_time</strong> : Slice(Float64)</a>
         
+          <div class="summary"><p>Time of last click (used to figure out double-click)</p></div>
+        
       </li>
     
       <li class="entry-summary">
@@ -1342,6 +1432,8 @@
     
       <li class="entry-summary">
         <a href="#mouse_delta:ImVec2-instance-method" class="signature"><strong>#mouse_delta</strong> : ImVec2</a>
+        
+          <div class="summary"><p>Mouse delta.</p></div>
         
       </li>
     
@@ -1353,6 +1445,8 @@
       <li class="entry-summary">
         <a href="#mouse_double_click_max_dist:Float32-instance-method" class="signature"><strong>#mouse_double_click_max_dist</strong> : Float32</a>
         
+          <div class="summary"><p>= 6.0f Distance threshold to stay in to validate a double-click, in pixels.</p></div>
+        
       </li>
     
       <li class="entry-summary">
@@ -1362,6 +1456,8 @@
     
       <li class="entry-summary">
         <a href="#mouse_double_click_time:Float32-instance-method" class="signature"><strong>#mouse_double_click_time</strong> : Float32</a>
+        
+          <div class="summary"><p>= 0.30f Time for a double-click, in seconds.</p></div>
         
       </li>
     
@@ -1373,6 +1469,8 @@
       <li class="entry-summary">
         <a href="#mouse_double_clicked:Slice(Bool)-instance-method" class="signature"><strong>#mouse_double_clicked</strong> : Slice(Bool)</a>
         
+          <div class="summary"><p>Has mouse button been double-clicked?</p></div>
+        
       </li>
     
       <li class="entry-summary">
@@ -1382,6 +1480,8 @@
     
       <li class="entry-summary">
         <a href="#mouse_down:Slice(Bool)-instance-method" class="signature"><strong>#mouse_down</strong> : Slice(Bool)</a>
+        
+          <div class="summary"><p>Mouse buttons: 0=left, 1=right, 2=middle + extras (ImGuiMouseButton_COUNT == 5).</p></div>
         
       </li>
     
@@ -1393,6 +1493,8 @@
       <li class="entry-summary">
         <a href="#mouse_down_duration:Slice(Float32)-instance-method" class="signature"><strong>#mouse_down_duration</strong> : Slice(Float32)</a>
         
+          <div class="summary"><p>Duration the mouse button has been down (0.0f == just clicked)</p></div>
+        
       </li>
     
       <li class="entry-summary">
@@ -1402,6 +1504,8 @@
     
       <li class="entry-summary">
         <a href="#mouse_down_duration_prev:Slice(Float32)-instance-method" class="signature"><strong>#mouse_down_duration_prev</strong> : Slice(Float32)</a>
+        
+          <div class="summary"><p>Previous time the mouse button has been down</p></div>
         
       </li>
     
@@ -1413,6 +1517,8 @@
       <li class="entry-summary">
         <a href="#mouse_down_owned:Slice(Bool)-instance-method" class="signature"><strong>#mouse_down_owned</strong> : Slice(Bool)</a>
         
+          <div class="summary"><p>Track if button was clicked inside a dear imgui window.</p></div>
+        
       </li>
     
       <li class="entry-summary">
@@ -1422,6 +1528,8 @@
     
       <li class="entry-summary">
         <a href="#mouse_down_was_double_click:Slice(Bool)-instance-method" class="signature"><strong>#mouse_down_was_double_click</strong> : Slice(Bool)</a>
+        
+          <div class="summary"><p>Track if button down was a double-click</p></div>
         
       </li>
     
@@ -1433,6 +1541,8 @@
       <li class="entry-summary">
         <a href="#mouse_drag_max_distance_abs:Slice(ImVec2)-instance-method" class="signature"><strong>#mouse_drag_max_distance_abs</strong> : Slice(ImVec2)</a>
         
+          <div class="summary"><p>Maximum distance, absolute, on each axis, of how much mouse has traveled from the clicking point</p></div>
+        
       </li>
     
       <li class="entry-summary">
@@ -1442,6 +1552,8 @@
     
       <li class="entry-summary">
         <a href="#mouse_drag_max_distance_sqr:Slice(Float32)-instance-method" class="signature"><strong>#mouse_drag_max_distance_sqr</strong> : Slice(Float32)</a>
+        
+          <div class="summary"><p>Squared maximum distance of how much mouse has traveled from the clicking point</p></div>
         
       </li>
     
@@ -1453,6 +1565,8 @@
       <li class="entry-summary">
         <a href="#mouse_drag_threshold:Float32-instance-method" class="signature"><strong>#mouse_drag_threshold</strong> : Float32</a>
         
+          <div class="summary"><p>= 6.0f Distance threshold before considering we are dragging.</p></div>
+        
       </li>
     
       <li class="entry-summary">
@@ -1462,6 +1576,8 @@
     
       <li class="entry-summary">
         <a href="#mouse_draw_cursor:Bool-instance-method" class="signature"><strong>#mouse_draw_cursor</strong> : Bool</a>
+        
+          <div class="summary"><p>= false Request ImGui to draw a mouse cursor for you (if you are on a platform without a mouse cursor).</p></div>
         
       </li>
     
@@ -1473,6 +1589,8 @@
       <li class="entry-summary">
         <a href="#mouse_pos:ImVec2-instance-method" class="signature"><strong>#mouse_pos</strong> : ImVec2</a>
         
+          <div class="summary"><p>Mouse position, in pixels.</p></div>
+        
       </li>
     
       <li class="entry-summary">
@@ -1482,6 +1600,8 @@
     
       <li class="entry-summary">
         <a href="#mouse_pos_prev:ImVec2-instance-method" class="signature"><strong>#mouse_pos_prev</strong> : ImVec2</a>
+        
+          <div class="summary"><p>Previous mouse position (note that MouseDelta is not necessary == MousePos-MousePosPrev, in case either position is invalid)</p></div>
         
       </li>
     
@@ -1493,6 +1613,8 @@
       <li class="entry-summary">
         <a href="#mouse_released:Slice(Bool)-instance-method" class="signature"><strong>#mouse_released</strong> : Slice(Bool)</a>
         
+          <div class="summary"><p>Mouse button went from Down to !Down</p></div>
+        
       </li>
     
       <li class="entry-summary">
@@ -1502,6 +1624,8 @@
     
       <li class="entry-summary">
         <a href="#mouse_wheel:Float32-instance-method" class="signature"><strong>#mouse_wheel</strong> : Float32</a>
+        
+          <div class="summary"><p>Mouse wheel Vertical: 1 unit scrolls about 5 lines text.</p></div>
         
       </li>
     
@@ -1513,6 +1637,8 @@
       <li class="entry-summary">
         <a href="#mouse_wheel_h:Float32-instance-method" class="signature"><strong>#mouse_wheel_h</strong> : Float32</a>
         
+          <div class="summary"><p>Mouse wheel Horizontal.</p></div>
+        
       </li>
     
       <li class="entry-summary">
@@ -1523,6 +1649,8 @@
       <li class="entry-summary">
         <a href="#nav_active:Bool-instance-method" class="signature"><strong>#nav_active</strong> : Bool</a>
         
+          <div class="summary"><p>Keyboard/Gamepad navigation is currently allowed (will handle ImGuiKey_NavXXX events) = a window is focused and it doesn't use the ImGuiWindowFlags_NoNavInputs flag.</p></div>
+        
       </li>
     
       <li class="entry-summary">
@@ -1532,6 +1660,8 @@
     
       <li class="entry-summary">
         <a href="#nav_inputs:Slice(Float32)-instance-method" class="signature"><strong>#nav_inputs</strong> : Slice(Float32)</a>
+        
+          <div class="summary"><p>Gamepad inputs.</p></div>
         
       </li>
     
@@ -1563,6 +1693,8 @@
       <li class="entry-summary">
         <a href="#nav_visible:Bool-instance-method" class="signature"><strong>#nav_visible</strong> : Bool</a>
         
+          <div class="summary"><p>Keyboard/Gamepad navigation is visible and allowed (will handle ImGuiKey_NavXXX events).</p></div>
+        
       </li>
     
       <li class="entry-summary">
@@ -1572,6 +1704,8 @@
     
       <li class="entry-summary">
         <a href="#pen_pressure:Float32-instance-method" class="signature"><strong>#pen_pressure</strong> : Float32</a>
+        
+          <div class="summary"><p>Touch/Pen pressure (0.0f to 1.0f, should be >0.0f only when MouseDown[0] == true).</p></div>
         
       </li>
     
@@ -1608,6 +1742,8 @@
       <li class="entry-summary">
         <a href="#user_data:Pointer(Void)-instance-method" class="signature"><strong>#user_data</strong> : Pointer(Void)</a>
         
+          <div class="summary"><p>= NULL Store your own data for retrieval by callbacks.</p></div>
+        
       </li>
     
       <li class="entry-summary">
@@ -1617,6 +1753,8 @@
     
       <li class="entry-summary">
         <a href="#want_capture_keyboard:Bool-instance-method" class="signature"><strong>#want_capture_keyboard</strong> : Bool</a>
+        
+          <div class="summary"><p>Set when Dear ImGui will use keyboard inputs, in this case do not dispatch them to your main game/application (either way, always pass keyboard inputs to imgui).</p></div>
         
       </li>
     
@@ -1628,6 +1766,8 @@
       <li class="entry-summary">
         <a href="#want_capture_mouse:Bool-instance-method" class="signature"><strong>#want_capture_mouse</strong> : Bool</a>
         
+          <div class="summary"><p>Set when Dear ImGui will use mouse inputs, in this case do not dispatch them to your main game/application (either way, always pass on mouse inputs to imgui).</p></div>
+        
       </li>
     
       <li class="entry-summary">
@@ -1637,6 +1777,8 @@
     
       <li class="entry-summary">
         <a href="#want_save_ini_settings:Bool-instance-method" class="signature"><strong>#want_save_ini_settings</strong> : Bool</a>
+        
+          <div class="summary"><p>When manual .ini load/save is active (io.IniFilename == NULL), this will be set to notify your application that you can call SaveIniSettingsToMemory() and save yourself.</p></div>
         
       </li>
     
@@ -1648,6 +1790,8 @@
       <li class="entry-summary">
         <a href="#want_set_mouse_pos:Bool-instance-method" class="signature"><strong>#want_set_mouse_pos</strong> : Bool</a>
         
+          <div class="summary"><p>MousePos has been altered, back-end should reposition mouse on next frame.</p></div>
+        
       </li>
     
       <li class="entry-summary">
@@ -1657,6 +1801,8 @@
     
       <li class="entry-summary">
         <a href="#want_text_input:Bool-instance-method" class="signature"><strong>#want_text_input</strong> : Bool</a>
+        
+          <div class="summary"><p>Mobile/console: when set, you may display an on-screen keyboard.</p></div>
         
       </li>
     
@@ -1735,13 +1881,13 @@
       
         <div class="doc">
           
-          <p>[<a href="https://github.com/ocornut/imgui/blob/v1.78/imgui.h#L1627" target="_blank">View C++ header</a>]</p>
+          <p><a href="https://github.com/ocornut/imgui/blob/v1.78/imgui.h#L1627" target="_blank">ImGuiIO::ImGuiIO()</a></p>
         </div>
       
       <br/>
       <div>
         
-          [<a href="https://github.com/oprypin/crystal-imgui/blob/master/src/obj.cr#L2099" target="_blank">View source</a>]
+          [<a href="https://github.com/oprypin/crystal-imgui/blob/master/src/obj.cr#L3382" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -1770,13 +1916,15 @@
       
         <div class="doc">
           
-          <p>[<a href="https://github.com/ocornut/imgui/blob/v1.78/imgui.h#L1576" target="_blank">View C++ header</a>]</p>
+          <p>Queue new character input</p>
+
+<p><a href="https://github.com/ocornut/imgui/blob/v1.78/imgui.h#L1576" target="_blank">ImGuiIO::AddInputCharacter()</a></p>
         </div>
       
       <br/>
       <div>
         
-          [<a href="https://github.com/oprypin/crystal-imgui/blob/master/src/obj.cr#L2079" target="_blank">View source</a>]
+          [<a href="https://github.com/oprypin/crystal-imgui/blob/master/src/obj.cr#L3356" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -1791,13 +1939,15 @@
       
         <div class="doc">
           
-          <p>[<a href="https://github.com/ocornut/imgui/blob/v1.78/imgui.h#L1577" target="_blank">View C++ header</a>]</p>
+          <p>Queue new character input from an UTF-16 character, it can be a surrogate</p>
+
+<p><a href="https://github.com/ocornut/imgui/blob/v1.78/imgui.h#L1577" target="_blank">ImGuiIO::AddInputCharacterUTF16()</a></p>
         </div>
       
       <br/>
       <div>
         
-          [<a href="https://github.com/oprypin/crystal-imgui/blob/master/src/obj.cr#L2084" target="_blank">View source</a>]
+          [<a href="https://github.com/oprypin/crystal-imgui/blob/master/src/obj.cr#L3363" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -1812,13 +1962,15 @@
       
         <div class="doc">
           
-          <p>[<a href="https://github.com/ocornut/imgui/blob/v1.78/imgui.h#L1578" target="_blank">View C++ header</a>]</p>
+          <p>Queue new characters input from an UTF-8 string</p>
+
+<p><a href="https://github.com/ocornut/imgui/blob/v1.78/imgui.h#L1578" target="_blank">ImGuiIO::AddInputCharactersUTF8()</a></p>
         </div>
       
       <br/>
       <div>
         
-          [<a href="https://github.com/oprypin/crystal-imgui/blob/master/src/obj.cr#L2089" target="_blank">View source</a>]
+          [<a href="https://github.com/oprypin/crystal-imgui/blob/master/src/obj.cr#L3370" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -1831,10 +1983,16 @@
         <a class="method-permalink" href="#backend_flags:ImGuiBackendFlags-instance-method">#</a>
       </div>
       
+        <div class="doc">
+          
+          <p>= 0
+See ImGuiBackendFlags_ enum. Set by back-end (imgui_impl_xxx files or custom back-end) to communicate features supported by the back-end.</p>
+        </div>
+      
       <br/>
       <div>
         
-          [<a href="https://github.com/oprypin/crystal-imgui/blob/master/src/obj.cr#L1445" target="_blank">View source</a>]
+          [<a href="https://github.com/oprypin/crystal-imgui/blob/master/src/obj.cr#L2623" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -1850,7 +2008,7 @@
       <br/>
       <div>
         
-          [<a href="https://github.com/oprypin/crystal-imgui/blob/master/src/obj.cr#L1449" target="_blank">View source</a>]
+          [<a href="https://github.com/oprypin/crystal-imgui/blob/master/src/obj.cr#L2627" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -1863,10 +2021,16 @@
         <a class="method-permalink" href="#backend_language_user_data:Pointer(Void)-instance-method">#</a>
       </div>
       
+        <div class="doc">
+          
+          <p>= NULL
+User data for non C++ programming language back-end</p>
+        </div>
+      
       <br/>
       <div>
         
-          [<a href="https://github.com/oprypin/crystal-imgui/blob/master/src/obj.cr#L1669" target="_blank">View source</a>]
+          [<a href="https://github.com/oprypin/crystal-imgui/blob/master/src/obj.cr#L2900" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -1882,7 +2046,7 @@
       <br/>
       <div>
         
-          [<a href="https://github.com/oprypin/crystal-imgui/blob/master/src/obj.cr#L1673" target="_blank">View source</a>]
+          [<a href="https://github.com/oprypin/crystal-imgui/blob/master/src/obj.cr#L2904" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -1895,10 +2059,15 @@
         <a class="method-permalink" href="#backend_platform_name:String?-instance-method">#</a>
       </div>
       
+        <div class="doc">
+          
+          <p>= NULL</p>
+        </div>
+      
       <br/>
       <div>
         
-          [<a href="https://github.com/oprypin/crystal-imgui/blob/master/src/obj.cr#L1637" target="_blank">View source</a>]
+          [<a href="https://github.com/oprypin/crystal-imgui/blob/master/src/obj.cr#L2861" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -1914,7 +2083,7 @@
       <br/>
       <div>
         
-          [<a href="https://github.com/oprypin/crystal-imgui/blob/master/src/obj.cr#L1641" target="_blank">View source</a>]
+          [<a href="https://github.com/oprypin/crystal-imgui/blob/master/src/obj.cr#L2865" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -1927,10 +2096,16 @@
         <a class="method-permalink" href="#backend_platform_user_data:Pointer(Void)-instance-method">#</a>
       </div>
       
+        <div class="doc">
+          
+          <p>= NULL
+User data for platform back-end</p>
+        </div>
+      
       <br/>
       <div>
         
-          [<a href="https://github.com/oprypin/crystal-imgui/blob/master/src/obj.cr#L1653" target="_blank">View source</a>]
+          [<a href="https://github.com/oprypin/crystal-imgui/blob/master/src/obj.cr#L2880" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -1946,7 +2121,7 @@
       <br/>
       <div>
         
-          [<a href="https://github.com/oprypin/crystal-imgui/blob/master/src/obj.cr#L1657" target="_blank">View source</a>]
+          [<a href="https://github.com/oprypin/crystal-imgui/blob/master/src/obj.cr#L2884" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -1959,10 +2134,15 @@
         <a class="method-permalink" href="#backend_renderer_name:String?-instance-method">#</a>
       </div>
       
+        <div class="doc">
+          
+          <p>= NULL</p>
+        </div>
+      
       <br/>
       <div>
         
-          [<a href="https://github.com/oprypin/crystal-imgui/blob/master/src/obj.cr#L1645" target="_blank">View source</a>]
+          [<a href="https://github.com/oprypin/crystal-imgui/blob/master/src/obj.cr#L2870" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -1978,7 +2158,7 @@
       <br/>
       <div>
         
-          [<a href="https://github.com/oprypin/crystal-imgui/blob/master/src/obj.cr#L1649" target="_blank">View source</a>]
+          [<a href="https://github.com/oprypin/crystal-imgui/blob/master/src/obj.cr#L2874" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -1991,10 +2171,16 @@
         <a class="method-permalink" href="#backend_renderer_user_data:Pointer(Void)-instance-method">#</a>
       </div>
       
+        <div class="doc">
+          
+          <p>= NULL
+User data for renderer back-end</p>
+        </div>
+      
       <br/>
       <div>
         
-          [<a href="https://github.com/oprypin/crystal-imgui/blob/master/src/obj.cr#L1661" target="_blank">View source</a>]
+          [<a href="https://github.com/oprypin/crystal-imgui/blob/master/src/obj.cr#L2890" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -2010,7 +2196,7 @@
       <br/>
       <div>
         
-          [<a href="https://github.com/oprypin/crystal-imgui/blob/master/src/obj.cr#L1665" target="_blank">View source</a>]
+          [<a href="https://github.com/oprypin/crystal-imgui/blob/master/src/obj.cr#L2894" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -2025,13 +2211,15 @@
       
         <div class="doc">
           
-          <p>[<a href="https://github.com/ocornut/imgui/blob/v1.78/imgui.h#L1579" target="_blank">View C++ header</a>]</p>
+          <p>Clear the text input buffer manually</p>
+
+<p><a href="https://github.com/ocornut/imgui/blob/v1.78/imgui.h#L1579" target="_blank">ImGuiIO::ClearInputCharacters()</a></p>
         </div>
       
       <br/>
       <div>
         
-          [<a href="https://github.com/oprypin/crystal-imgui/blob/master/src/obj.cr#L2094" target="_blank">View source</a>]
+          [<a href="https://github.com/oprypin/crystal-imgui/blob/master/src/obj.cr#L3377" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -2047,7 +2235,7 @@
       <br/>
       <div>
         
-          [<a href="https://github.com/oprypin/crystal-imgui/blob/master/src/obj.cr#L1693" target="_blank">View source</a>]
+          [<a href="https://github.com/oprypin/crystal-imgui/blob/master/src/obj.cr#L2924" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -2063,7 +2251,7 @@
       <br/>
       <div>
         
-          [<a href="https://github.com/oprypin/crystal-imgui/blob/master/src/obj.cr#L1697" target="_blank">View source</a>]
+          [<a href="https://github.com/oprypin/crystal-imgui/blob/master/src/obj.cr#L2928" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -2076,10 +2264,16 @@
         <a class="method-permalink" href="#config_flags:ImGuiConfigFlags-instance-method">#</a>
       </div>
       
+        <div class="doc">
+          
+          <p>= 0
+See ImGuiConfigFlags_ enum. Set by user/application. Gamepad/keyboard navigation options, etc.</p>
+        </div>
+      
       <br/>
       <div>
         
-          [<a href="https://github.com/oprypin/crystal-imgui/blob/master/src/obj.cr#L1437" target="_blank">View source</a>]
+          [<a href="https://github.com/oprypin/crystal-imgui/blob/master/src/obj.cr#L2613" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -2095,7 +2289,7 @@
       <br/>
       <div>
         
-          [<a href="https://github.com/oprypin/crystal-imgui/blob/master/src/obj.cr#L1441" target="_blank">View source</a>]
+          [<a href="https://github.com/oprypin/crystal-imgui/blob/master/src/obj.cr#L2617" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -2108,10 +2302,16 @@
         <a class="method-permalink" href="#config_input_text_cursor_blink:Bool-instance-method">#</a>
       </div>
       
+        <div class="doc">
+          
+          <p>= true
+Set to false to disable blinking cursor, for users who consider it distracting. (was called: io.OptCursorBlink prior to 1.63)</p>
+        </div>
+      
       <br/>
       <div>
         
-          [<a href="https://github.com/oprypin/crystal-imgui/blob/master/src/obj.cr#L1605" target="_blank">View source</a>]
+          [<a href="https://github.com/oprypin/crystal-imgui/blob/master/src/obj.cr#L2822" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -2127,7 +2327,7 @@
       <br/>
       <div>
         
-          [<a href="https://github.com/oprypin/crystal-imgui/blob/master/src/obj.cr#L1609" target="_blank">View source</a>]
+          [<a href="https://github.com/oprypin/crystal-imgui/blob/master/src/obj.cr#L2826" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -2140,10 +2340,16 @@
         <a class="method-permalink" href="#config_mac_osx_behaviors:Bool-instance-method">#</a>
       </div>
       
+        <div class="doc">
+          
+          <p>= defined(__APPLE__)
+OS X style: Text editing cursor movement using Alt instead of Ctrl, Shortcuts using Cmd/Super instead of Ctrl, Line/Text Start and End using Cmd+Arrows instead of Home/End, Double click selects by word instead of selecting whole text, Multi-selection in lists uses Cmd/Super instead of Ctrl (was called io.OptMacOSXBehaviors prior to 1.63)</p>
+        </div>
+      
       <br/>
       <div>
         
-          [<a href="https://github.com/oprypin/crystal-imgui/blob/master/src/obj.cr#L1597" target="_blank">View source</a>]
+          [<a href="https://github.com/oprypin/crystal-imgui/blob/master/src/obj.cr#L2812" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -2159,7 +2365,7 @@
       <br/>
       <div>
         
-          [<a href="https://github.com/oprypin/crystal-imgui/blob/master/src/obj.cr#L1601" target="_blank">View source</a>]
+          [<a href="https://github.com/oprypin/crystal-imgui/blob/master/src/obj.cr#L2816" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -2172,10 +2378,16 @@
         <a class="method-permalink" href="#config_windows_memory_compact_timer:Float32-instance-method">#</a>
       </div>
       
+        <div class="doc">
+          
+          <p>= 60.0f
+[BETA] Compact window memory usage when unused. Set to -1.0f to disable.</p>
+        </div>
+      
       <br/>
       <div>
         
-          [<a href="https://github.com/oprypin/crystal-imgui/blob/master/src/obj.cr#L1629" target="_blank">View source</a>]
+          [<a href="https://github.com/oprypin/crystal-imgui/blob/master/src/obj.cr#L2852" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -2191,7 +2403,7 @@
       <br/>
       <div>
         
-          [<a href="https://github.com/oprypin/crystal-imgui/blob/master/src/obj.cr#L1633" target="_blank">View source</a>]
+          [<a href="https://github.com/oprypin/crystal-imgui/blob/master/src/obj.cr#L2856" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -2204,10 +2416,16 @@
         <a class="method-permalink" href="#config_windows_move_from_title_bar_only:Bool-instance-method">#</a>
       </div>
       
+        <div class="doc">
+          
+          <p>= false
+[BETA] Set to true to only allow moving windows when clicked+dragged from the title bar. Windows without a title bar are not affected.</p>
+        </div>
+      
       <br/>
       <div>
         
-          [<a href="https://github.com/oprypin/crystal-imgui/blob/master/src/obj.cr#L1621" target="_blank">View source</a>]
+          [<a href="https://github.com/oprypin/crystal-imgui/blob/master/src/obj.cr#L2842" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -2223,7 +2441,7 @@
       <br/>
       <div>
         
-          [<a href="https://github.com/oprypin/crystal-imgui/blob/master/src/obj.cr#L1625" target="_blank">View source</a>]
+          [<a href="https://github.com/oprypin/crystal-imgui/blob/master/src/obj.cr#L2846" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -2236,10 +2454,16 @@
         <a class="method-permalink" href="#config_windows_resize_from_edges:Bool-instance-method">#</a>
       </div>
       
+        <div class="doc">
+          
+          <p>= true
+Enable resizing of windows from their edges and from the lower-left corner. This requires (io.BackendFlags & ImGuiBackendFlags_HasMouseCursors) because it needs mouse cursor feedback. (This used to be a per-window ImGuiWindowFlags_ResizeFromAnySide flag)</p>
+        </div>
+      
       <br/>
       <div>
         
-          [<a href="https://github.com/oprypin/crystal-imgui/blob/master/src/obj.cr#L1613" target="_blank">View source</a>]
+          [<a href="https://github.com/oprypin/crystal-imgui/blob/master/src/obj.cr#L2832" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -2255,7 +2479,7 @@
       <br/>
       <div>
         
-          [<a href="https://github.com/oprypin/crystal-imgui/blob/master/src/obj.cr#L1617" target="_blank">View source</a>]
+          [<a href="https://github.com/oprypin/crystal-imgui/blob/master/src/obj.cr#L2836" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -2268,10 +2492,16 @@
         <a class="method-permalink" href="#delta_time:Float32-instance-method">#</a>
       </div>
       
+        <div class="doc">
+          
+          <p>= 1.0f/60.0f
+Time elapsed since last frame, in seconds.</p>
+        </div>
+      
       <br/>
       <div>
         
-          [<a href="https://github.com/oprypin/crystal-imgui/blob/master/src/obj.cr#L1461" target="_blank">View source</a>]
+          [<a href="https://github.com/oprypin/crystal-imgui/blob/master/src/obj.cr#L2643" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -2287,7 +2517,7 @@
       <br/>
       <div>
         
-          [<a href="https://github.com/oprypin/crystal-imgui/blob/master/src/obj.cr#L1465" target="_blank">View source</a>]
+          [<a href="https://github.com/oprypin/crystal-imgui/blob/master/src/obj.cr#L2647" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -2300,10 +2530,16 @@
         <a class="method-permalink" href="#display_framebuffer_scale:ImVec2-instance-method">#</a>
       </div>
       
+        <div class="doc">
+          
+          <p>= (1, 1)
+For retina display or other situations where window coordinates are different from framebuffer coordinates. This generally ends up in ImDrawData::FramebufferScale.</p>
+        </div>
+      
       <br/>
       <div>
         
-          [<a href="https://github.com/oprypin/crystal-imgui/blob/master/src/obj.cr#L1581" target="_blank">View source</a>]
+          [<a href="https://github.com/oprypin/crystal-imgui/blob/master/src/obj.cr#L2792" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -2319,7 +2555,7 @@
       <br/>
       <div>
         
-          [<a href="https://github.com/oprypin/crystal-imgui/blob/master/src/obj.cr#L1585" target="_blank">View source</a>]
+          [<a href="https://github.com/oprypin/crystal-imgui/blob/master/src/obj.cr#L2796" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -2332,10 +2568,16 @@
         <a class="method-permalink" href="#display_size:ImVec2-instance-method">#</a>
       </div>
       
+        <div class="doc">
+          
+          <p>&lt;unset>
+Main display size, in pixels.</p>
+        </div>
+      
       <br/>
       <div>
         
-          [<a href="https://github.com/oprypin/crystal-imgui/blob/master/src/obj.cr#L1453" target="_blank">View source</a>]
+          [<a href="https://github.com/oprypin/crystal-imgui/blob/master/src/obj.cr#L2633" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -2351,7 +2593,7 @@
       <br/>
       <div>
         
-          [<a href="https://github.com/oprypin/crystal-imgui/blob/master/src/obj.cr#L1457" target="_blank">View source</a>]
+          [<a href="https://github.com/oprypin/crystal-imgui/blob/master/src/obj.cr#L2637" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -2364,10 +2606,16 @@
         <a class="method-permalink" href="#font_allow_user_scaling:Bool-instance-method">#</a>
       </div>
       
+        <div class="doc">
+          
+          <p>= false
+Allow user scaling text of individual window with CTRL+Wheel.</p>
+        </div>
+      
       <br/>
       <div>
         
-          [<a href="https://github.com/oprypin/crystal-imgui/blob/master/src/obj.cr#L1565" target="_blank">View source</a>]
+          [<a href="https://github.com/oprypin/crystal-imgui/blob/master/src/obj.cr#L2772" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -2383,7 +2631,7 @@
       <br/>
       <div>
         
-          [<a href="https://github.com/oprypin/crystal-imgui/blob/master/src/obj.cr#L1569" target="_blank">View source</a>]
+          [<a href="https://github.com/oprypin/crystal-imgui/blob/master/src/obj.cr#L2776" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -2396,10 +2644,16 @@
         <a class="method-permalink" href="#font_default:ImFont-instance-method">#</a>
       </div>
       
+        <div class="doc">
+          
+          <p>= NULL
+Font to use on NewFrame(). Use NULL to uses Fonts->Fonts[0].</p>
+        </div>
+      
       <br/>
       <div>
         
-          [<a href="https://github.com/oprypin/crystal-imgui/blob/master/src/obj.cr#L1573" target="_blank">View source</a>]
+          [<a href="https://github.com/oprypin/crystal-imgui/blob/master/src/obj.cr#L2782" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -2415,7 +2669,7 @@
       <br/>
       <div>
         
-          [<a href="https://github.com/oprypin/crystal-imgui/blob/master/src/obj.cr#L1577" target="_blank">View source</a>]
+          [<a href="https://github.com/oprypin/crystal-imgui/blob/master/src/obj.cr#L2786" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -2428,10 +2682,16 @@
         <a class="method-permalink" href="#font_global_scale:Float32-instance-method">#</a>
       </div>
       
+        <div class="doc">
+          
+          <p>= 1.0f
+Global scale all fonts</p>
+        </div>
+      
       <br/>
       <div>
         
-          [<a href="https://github.com/oprypin/crystal-imgui/blob/master/src/obj.cr#L1557" target="_blank">View source</a>]
+          [<a href="https://github.com/oprypin/crystal-imgui/blob/master/src/obj.cr#L2762" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -2447,7 +2707,7 @@
       <br/>
       <div>
         
-          [<a href="https://github.com/oprypin/crystal-imgui/blob/master/src/obj.cr#L1561" target="_blank">View source</a>]
+          [<a href="https://github.com/oprypin/crystal-imgui/blob/master/src/obj.cr#L2766" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -2460,10 +2720,16 @@
         <a class="method-permalink" href="#fonts:ImFontAtlas-instance-method">#</a>
       </div>
       
+        <div class="doc">
+          
+          <p>&lt;auto>
+Font atlas: load, rasterize and pack one or more fonts into a single texture.</p>
+        </div>
+      
       <br/>
       <div>
         
-          [<a href="https://github.com/oprypin/crystal-imgui/blob/master/src/obj.cr#L1549" target="_blank">View source</a>]
+          [<a href="https://github.com/oprypin/crystal-imgui/blob/master/src/obj.cr#L2752" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -2479,7 +2745,7 @@
       <br/>
       <div>
         
-          [<a href="https://github.com/oprypin/crystal-imgui/blob/master/src/obj.cr#L1553" target="_blank">View source</a>]
+          [<a href="https://github.com/oprypin/crystal-imgui/blob/master/src/obj.cr#L2756" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -2492,10 +2758,15 @@
         <a class="method-permalink" href="#framerate:Float32-instance-method">#</a>
       </div>
       
+        <div class="doc">
+          
+          <p>Application framerate estimate, in frame per second. Solely for convenience. Rolling average estimation based on io.DeltaTime over 120 frames.</p>
+        </div>
+      
       <br/>
       <div>
         
-          [<a href="https://github.com/oprypin/crystal-imgui/blob/master/src/obj.cr#L1861" target="_blank">View source</a>]
+          [<a href="https://github.com/oprypin/crystal-imgui/blob/master/src/obj.cr#L3112" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -2511,7 +2782,7 @@
       <br/>
       <div>
         
-          [<a href="https://github.com/oprypin/crystal-imgui/blob/master/src/obj.cr#L1865" target="_blank">View source</a>]
+          [<a href="https://github.com/oprypin/crystal-imgui/blob/master/src/obj.cr#L3116" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -2527,7 +2798,7 @@
       <br/>
       <div>
         
-          [<a href="https://github.com/oprypin/crystal-imgui/blob/master/src/obj.cr#L1677" target="_blank">View source</a>]
+          [<a href="https://github.com/oprypin/crystal-imgui/blob/master/src/obj.cr#L2908" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -2543,7 +2814,7 @@
       <br/>
       <div>
         
-          [<a href="https://github.com/oprypin/crystal-imgui/blob/master/src/obj.cr#L1681" target="_blank">View source</a>]
+          [<a href="https://github.com/oprypin/crystal-imgui/blob/master/src/obj.cr#L2912" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -2559,7 +2830,7 @@
       <br/>
       <div>
         
-          [<a href="https://github.com/oprypin/crystal-imgui/blob/master/src/obj.cr#L1701" target="_blank">View source</a>]
+          [<a href="https://github.com/oprypin/crystal-imgui/blob/master/src/obj.cr#L2932" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -2575,7 +2846,7 @@
       <br/>
       <div>
         
-          [<a href="https://github.com/oprypin/crystal-imgui/blob/master/src/obj.cr#L1705" target="_blank">View source</a>]
+          [<a href="https://github.com/oprypin/crystal-imgui/blob/master/src/obj.cr#L2936" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -2588,10 +2859,16 @@
         <a class="method-permalink" href="#ime_window_handle:Pointer(Void)-instance-method">#</a>
       </div>
       
+        <div class="doc">
+          
+          <p>= NULL
+(Windows) Set this to your HWND to get automatic IME cursor positioning.</p>
+        </div>
+      
       <br/>
       <div>
         
-          [<a href="https://github.com/oprypin/crystal-imgui/blob/master/src/obj.cr#L1709" target="_blank">View source</a>]
+          [<a href="https://github.com/oprypin/crystal-imgui/blob/master/src/obj.cr#L2942" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -2607,7 +2884,7 @@
       <br/>
       <div>
         
-          [<a href="https://github.com/oprypin/crystal-imgui/blob/master/src/obj.cr#L1713" target="_blank">View source</a>]
+          [<a href="https://github.com/oprypin/crystal-imgui/blob/master/src/obj.cr#L2946" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -2620,10 +2897,16 @@
         <a class="method-permalink" href="#ini_filename:String?-instance-method">#</a>
       </div>
       
+        <div class="doc">
+          
+          <p>= "imgui.ini"
+Path to .ini file. Set NULL to disable automatic .ini loading/saving, if e.g. you want to manually load/save from memory.</p>
+        </div>
+      
       <br/>
       <div>
         
-          [<a href="https://github.com/oprypin/crystal-imgui/blob/master/src/obj.cr#L1477" target="_blank">View source</a>]
+          [<a href="https://github.com/oprypin/crystal-imgui/blob/master/src/obj.cr#L2663" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -2639,7 +2922,7 @@
       <br/>
       <div>
         
-          [<a href="https://github.com/oprypin/crystal-imgui/blob/master/src/obj.cr#L1481" target="_blank">View source</a>]
+          [<a href="https://github.com/oprypin/crystal-imgui/blob/master/src/obj.cr#L2667" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -2652,10 +2935,16 @@
         <a class="method-permalink" href="#ini_saving_rate:Float32-instance-method">#</a>
       </div>
       
+        <div class="doc">
+          
+          <p>= 5.0f
+Minimum time between saving positions/sizes to .ini file, in seconds.</p>
+        </div>
+      
       <br/>
       <div>
         
-          [<a href="https://github.com/oprypin/crystal-imgui/blob/master/src/obj.cr#L1469" target="_blank">View source</a>]
+          [<a href="https://github.com/oprypin/crystal-imgui/blob/master/src/obj.cr#L2653" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -2671,7 +2960,7 @@
       <br/>
       <div>
         
-          [<a href="https://github.com/oprypin/crystal-imgui/blob/master/src/obj.cr#L1473" target="_blank">View source</a>]
+          [<a href="https://github.com/oprypin/crystal-imgui/blob/master/src/obj.cr#L2657" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -2684,10 +2973,15 @@
         <a class="method-permalink" href="#input_queue_characters:ImVector(ImWchar)-instance-method">#</a>
       </div>
       
+        <div class="doc">
+          
+          <p>Queue of <em>characters</em> input (obtained by platform back-end). Fill using AddInputCharacter() helper.</p>
+        </div>
+      
       <br/>
       <div>
         
-          [<a href="https://github.com/oprypin/crystal-imgui/blob/master/src/obj.cr#L2069" target="_blank">View source</a>]
+          [<a href="https://github.com/oprypin/crystal-imgui/blob/master/src/obj.cr#L3344" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -2703,7 +2997,7 @@
       <br/>
       <div>
         
-          [<a href="https://github.com/oprypin/crystal-imgui/blob/master/src/obj.cr#L2074" target="_blank">View source</a>]
+          [<a href="https://github.com/oprypin/crystal-imgui/blob/master/src/obj.cr#L3349" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -2716,10 +3010,15 @@
         <a class="method-permalink" href="#input_queue_surrogate:ImWchar16-instance-method">#</a>
       </div>
       
+        <div class="doc">
+          
+          <p>For AddInputCharacterUTF16</p>
+        </div>
+      
       <br/>
       <div>
         
-          [<a href="https://github.com/oprypin/crystal-imgui/blob/master/src/obj.cr#L2061" target="_blank">View source</a>]
+          [<a href="https://github.com/oprypin/crystal-imgui/blob/master/src/obj.cr#L3335" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -2735,7 +3034,7 @@
       <br/>
       <div>
         
-          [<a href="https://github.com/oprypin/crystal-imgui/blob/master/src/obj.cr#L2065" target="_blank">View source</a>]
+          [<a href="https://github.com/oprypin/crystal-imgui/blob/master/src/obj.cr#L3339" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -2748,10 +3047,15 @@
         <a class="method-permalink" href="#key_alt:Bool-instance-method">#</a>
       </div>
       
+        <div class="doc">
+          
+          <p>Keyboard modifier pressed: Alt</p>
+        </div>
+      
       <br/>
       <div>
         
-          [<a href="https://github.com/oprypin/crystal-imgui/blob/master/src/obj.cr#L1773" target="_blank">View source</a>]
+          [<a href="https://github.com/oprypin/crystal-imgui/blob/master/src/obj.cr#L3013" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -2767,7 +3071,7 @@
       <br/>
       <div>
         
-          [<a href="https://github.com/oprypin/crystal-imgui/blob/master/src/obj.cr#L1777" target="_blank">View source</a>]
+          [<a href="https://github.com/oprypin/crystal-imgui/blob/master/src/obj.cr#L3017" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -2780,10 +3084,15 @@
         <a class="method-permalink" href="#key_ctrl:Bool-instance-method">#</a>
       </div>
       
+        <div class="doc">
+          
+          <p>Keyboard modifier pressed: Control</p>
+        </div>
+      
       <br/>
       <div>
         
-          [<a href="https://github.com/oprypin/crystal-imgui/blob/master/src/obj.cr#L1757" target="_blank">View source</a>]
+          [<a href="https://github.com/oprypin/crystal-imgui/blob/master/src/obj.cr#L2995" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -2799,7 +3108,7 @@
       <br/>
       <div>
         
-          [<a href="https://github.com/oprypin/crystal-imgui/blob/master/src/obj.cr#L1761" target="_blank">View source</a>]
+          [<a href="https://github.com/oprypin/crystal-imgui/blob/master/src/obj.cr#L2999" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -2812,10 +3121,16 @@
         <a class="method-permalink" href="#key_map:Slice(Int32)-instance-method">#</a>
       </div>
       
+        <div class="doc">
+          
+          <p>&lt;unset>
+Map of indices into the KeysDown[512] entries array which represent your "native" keyboard state.</p>
+        </div>
+      
       <br/>
       <div>
         
-          [<a href="https://github.com/oprypin/crystal-imgui/blob/master/src/obj.cr#L1517" target="_blank">View source</a>]
+          [<a href="https://github.com/oprypin/crystal-imgui/blob/master/src/obj.cr#L2712" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -2831,7 +3146,7 @@
       <br/>
       <div>
         
-          [<a href="https://github.com/oprypin/crystal-imgui/blob/master/src/obj.cr#L1521" target="_blank">View source</a>]
+          [<a href="https://github.com/oprypin/crystal-imgui/blob/master/src/obj.cr#L2716" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -2844,10 +3159,15 @@
         <a class="method-permalink" href="#key_mods:ImGuiKeyModFlags-instance-method">#</a>
       </div>
       
+        <div class="doc">
+          
+          <p>Key mods flags (same as io.KeyCtrl/KeyShift/KeyAlt/KeySuper but merged into flags), updated by NewFrame()</p>
+        </div>
+      
       <br/>
       <div>
         
-          [<a href="https://github.com/oprypin/crystal-imgui/blob/master/src/obj.cr#L1917" target="_blank">View source</a>]
+          [<a href="https://github.com/oprypin/crystal-imgui/blob/master/src/obj.cr#L3175" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -2863,7 +3183,7 @@
       <br/>
       <div>
         
-          [<a href="https://github.com/oprypin/crystal-imgui/blob/master/src/obj.cr#L1921" target="_blank">View source</a>]
+          [<a href="https://github.com/oprypin/crystal-imgui/blob/master/src/obj.cr#L3179" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -2876,10 +3196,16 @@
         <a class="method-permalink" href="#key_repeat_delay:Float32-instance-method">#</a>
       </div>
       
+        <div class="doc">
+          
+          <p>= 0.250f
+When holding a key/button, time before it starts repeating, in seconds (for buttons in Repeat mode, etc.).</p>
+        </div>
+      
       <br/>
       <div>
         
-          [<a href="https://github.com/oprypin/crystal-imgui/blob/master/src/obj.cr#L1525" target="_blank">View source</a>]
+          [<a href="https://github.com/oprypin/crystal-imgui/blob/master/src/obj.cr#L2722" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -2895,7 +3221,7 @@
       <br/>
       <div>
         
-          [<a href="https://github.com/oprypin/crystal-imgui/blob/master/src/obj.cr#L1529" target="_blank">View source</a>]
+          [<a href="https://github.com/oprypin/crystal-imgui/blob/master/src/obj.cr#L2726" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -2908,10 +3234,16 @@
         <a class="method-permalink" href="#key_repeat_rate:Float32-instance-method">#</a>
       </div>
       
+        <div class="doc">
+          
+          <p>= 0.050f
+When holding a key/button, rate at which it repeats, in seconds.</p>
+        </div>
+      
       <br/>
       <div>
         
-          [<a href="https://github.com/oprypin/crystal-imgui/blob/master/src/obj.cr#L1533" target="_blank">View source</a>]
+          [<a href="https://github.com/oprypin/crystal-imgui/blob/master/src/obj.cr#L2732" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -2927,7 +3259,7 @@
       <br/>
       <div>
         
-          [<a href="https://github.com/oprypin/crystal-imgui/blob/master/src/obj.cr#L1537" target="_blank">View source</a>]
+          [<a href="https://github.com/oprypin/crystal-imgui/blob/master/src/obj.cr#L2736" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -2940,10 +3272,15 @@
         <a class="method-permalink" href="#key_shift:Bool-instance-method">#</a>
       </div>
       
+        <div class="doc">
+          
+          <p>Keyboard modifier pressed: Shift</p>
+        </div>
+      
       <br/>
       <div>
         
-          [<a href="https://github.com/oprypin/crystal-imgui/blob/master/src/obj.cr#L1765" target="_blank">View source</a>]
+          [<a href="https://github.com/oprypin/crystal-imgui/blob/master/src/obj.cr#L3004" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -2959,7 +3296,7 @@
       <br/>
       <div>
         
-          [<a href="https://github.com/oprypin/crystal-imgui/blob/master/src/obj.cr#L1769" target="_blank">View source</a>]
+          [<a href="https://github.com/oprypin/crystal-imgui/blob/master/src/obj.cr#L3008" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -2972,10 +3309,15 @@
         <a class="method-permalink" href="#key_super:Bool-instance-method">#</a>
       </div>
       
+        <div class="doc">
+          
+          <p>Keyboard modifier pressed: Cmd/Super/Windows</p>
+        </div>
+      
       <br/>
       <div>
         
-          [<a href="https://github.com/oprypin/crystal-imgui/blob/master/src/obj.cr#L1781" target="_blank">View source</a>]
+          [<a href="https://github.com/oprypin/crystal-imgui/blob/master/src/obj.cr#L3022" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -2991,7 +3333,7 @@
       <br/>
       <div>
         
-          [<a href="https://github.com/oprypin/crystal-imgui/blob/master/src/obj.cr#L1785" target="_blank">View source</a>]
+          [<a href="https://github.com/oprypin/crystal-imgui/blob/master/src/obj.cr#L3026" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -3004,10 +3346,15 @@
         <a class="method-permalink" href="#keys_down:Slice(Bool)-instance-method">#</a>
       </div>
       
+        <div class="doc">
+          
+          <p>Keyboard keys that are pressed (ideally left in the "native" order your engine has access to keyboard keys, so you can use your own defines/enums for keys).</p>
+        </div>
+      
       <br/>
       <div>
         
-          [<a href="https://github.com/oprypin/crystal-imgui/blob/master/src/obj.cr#L1789" target="_blank">View source</a>]
+          [<a href="https://github.com/oprypin/crystal-imgui/blob/master/src/obj.cr#L3031" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -3023,7 +3370,7 @@
       <br/>
       <div>
         
-          [<a href="https://github.com/oprypin/crystal-imgui/blob/master/src/obj.cr#L1793" target="_blank">View source</a>]
+          [<a href="https://github.com/oprypin/crystal-imgui/blob/master/src/obj.cr#L3035" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -3036,10 +3383,15 @@
         <a class="method-permalink" href="#keys_down_duration:Slice(Float32)-instance-method">#</a>
       </div>
       
+        <div class="doc">
+          
+          <p>Duration the keyboard key has been down (0.0f == just pressed)</p>
+        </div>
+      
       <br/>
       <div>
         
-          [<a href="https://github.com/oprypin/crystal-imgui/blob/master/src/obj.cr#L2021" target="_blank">View source</a>]
+          [<a href="https://github.com/oprypin/crystal-imgui/blob/master/src/obj.cr#L3292" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -3055,7 +3407,7 @@
       <br/>
       <div>
         
-          [<a href="https://github.com/oprypin/crystal-imgui/blob/master/src/obj.cr#L2025" target="_blank">View source</a>]
+          [<a href="https://github.com/oprypin/crystal-imgui/blob/master/src/obj.cr#L3296" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -3068,10 +3420,15 @@
         <a class="method-permalink" href="#keys_down_duration_prev:Slice(Float32)-instance-method">#</a>
       </div>
       
+        <div class="doc">
+          
+          <p>Previous duration the key has been down</p>
+        </div>
+      
       <br/>
       <div>
         
-          [<a href="https://github.com/oprypin/crystal-imgui/blob/master/src/obj.cr#L2029" target="_blank">View source</a>]
+          [<a href="https://github.com/oprypin/crystal-imgui/blob/master/src/obj.cr#L3301" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -3087,7 +3444,7 @@
       <br/>
       <div>
         
-          [<a href="https://github.com/oprypin/crystal-imgui/blob/master/src/obj.cr#L2033" target="_blank">View source</a>]
+          [<a href="https://github.com/oprypin/crystal-imgui/blob/master/src/obj.cr#L3305" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -3100,10 +3457,15 @@
         <a class="method-permalink" href="#log_filename:String?-instance-method">#</a>
       </div>
       
+        <div class="doc">
+          
+          <p>= "imgui_log.txt"// Path to .log file (default parameter to ImGui::LogToFile when no file is specified).</p>
+        </div>
+      
       <br/>
       <div>
         
-          [<a href="https://github.com/oprypin/crystal-imgui/blob/master/src/obj.cr#L1485" target="_blank">View source</a>]
+          [<a href="https://github.com/oprypin/crystal-imgui/blob/master/src/obj.cr#L2672" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -3119,7 +3481,7 @@
       <br/>
       <div>
         
-          [<a href="https://github.com/oprypin/crystal-imgui/blob/master/src/obj.cr#L1489" target="_blank">View source</a>]
+          [<a href="https://github.com/oprypin/crystal-imgui/blob/master/src/obj.cr#L2676" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -3132,10 +3494,15 @@
         <a class="method-permalink" href="#metrics_active_allocations:Int32-instance-method">#</a>
       </div>
       
+        <div class="doc">
+          
+          <p>Number of active allocations, updated by MemAlloc/MemFree based on current context. May be off if you have multiple imgui contexts.</p>
+        </div>
+      
       <br/>
       <div>
         
-          [<a href="https://github.com/oprypin/crystal-imgui/blob/master/src/obj.cr#L1901" target="_blank">View source</a>]
+          [<a href="https://github.com/oprypin/crystal-imgui/blob/master/src/obj.cr#L3157" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -3151,7 +3518,7 @@
       <br/>
       <div>
         
-          [<a href="https://github.com/oprypin/crystal-imgui/blob/master/src/obj.cr#L1905" target="_blank">View source</a>]
+          [<a href="https://github.com/oprypin/crystal-imgui/blob/master/src/obj.cr#L3161" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -3164,10 +3531,15 @@
         <a class="method-permalink" href="#metrics_active_windows:Int32-instance-method">#</a>
       </div>
       
+        <div class="doc">
+          
+          <p>Number of active windows</p>
+        </div>
+      
       <br/>
       <div>
         
-          [<a href="https://github.com/oprypin/crystal-imgui/blob/master/src/obj.cr#L1893" target="_blank">View source</a>]
+          [<a href="https://github.com/oprypin/crystal-imgui/blob/master/src/obj.cr#L3148" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -3183,7 +3555,7 @@
       <br/>
       <div>
         
-          [<a href="https://github.com/oprypin/crystal-imgui/blob/master/src/obj.cr#L1897" target="_blank">View source</a>]
+          [<a href="https://github.com/oprypin/crystal-imgui/blob/master/src/obj.cr#L3152" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -3196,10 +3568,15 @@
         <a class="method-permalink" href="#metrics_render_indices:Int32-instance-method">#</a>
       </div>
       
+        <div class="doc">
+          
+          <p>Indices output during last call to Render() = number of triangles * 3</p>
+        </div>
+      
       <br/>
       <div>
         
-          [<a href="https://github.com/oprypin/crystal-imgui/blob/master/src/obj.cr#L1877" target="_blank">View source</a>]
+          [<a href="https://github.com/oprypin/crystal-imgui/blob/master/src/obj.cr#L3130" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -3215,7 +3592,7 @@
       <br/>
       <div>
         
-          [<a href="https://github.com/oprypin/crystal-imgui/blob/master/src/obj.cr#L1881" target="_blank">View source</a>]
+          [<a href="https://github.com/oprypin/crystal-imgui/blob/master/src/obj.cr#L3134" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -3228,10 +3605,15 @@
         <a class="method-permalink" href="#metrics_render_vertices:Int32-instance-method">#</a>
       </div>
       
+        <div class="doc">
+          
+          <p>Vertices output during last call to Render()</p>
+        </div>
+      
       <br/>
       <div>
         
-          [<a href="https://github.com/oprypin/crystal-imgui/blob/master/src/obj.cr#L1869" target="_blank">View source</a>]
+          [<a href="https://github.com/oprypin/crystal-imgui/blob/master/src/obj.cr#L3121" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -3247,7 +3629,7 @@
       <br/>
       <div>
         
-          [<a href="https://github.com/oprypin/crystal-imgui/blob/master/src/obj.cr#L1873" target="_blank">View source</a>]
+          [<a href="https://github.com/oprypin/crystal-imgui/blob/master/src/obj.cr#L3125" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -3260,10 +3642,15 @@
         <a class="method-permalink" href="#metrics_render_windows:Int32-instance-method">#</a>
       </div>
       
+        <div class="doc">
+          
+          <p>Number of visible windows</p>
+        </div>
+      
       <br/>
       <div>
         
-          [<a href="https://github.com/oprypin/crystal-imgui/blob/master/src/obj.cr#L1885" target="_blank">View source</a>]
+          [<a href="https://github.com/oprypin/crystal-imgui/blob/master/src/obj.cr#L3139" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -3279,7 +3666,7 @@
       <br/>
       <div>
         
-          [<a href="https://github.com/oprypin/crystal-imgui/blob/master/src/obj.cr#L1889" target="_blank">View source</a>]
+          [<a href="https://github.com/oprypin/crystal-imgui/blob/master/src/obj.cr#L3143" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -3292,10 +3679,15 @@
         <a class="method-permalink" href="#mouse_clicked:Slice(Bool)-instance-method">#</a>
       </div>
       
+        <div class="doc">
+          
+          <p>Mouse button went from !Down to Down</p>
+        </div>
+      
       <br/>
       <div>
         
-          [<a href="https://github.com/oprypin/crystal-imgui/blob/master/src/obj.cr#L1949" target="_blank">View source</a>]
+          [<a href="https://github.com/oprypin/crystal-imgui/blob/master/src/obj.cr#L3211" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -3311,7 +3703,7 @@
       <br/>
       <div>
         
-          [<a href="https://github.com/oprypin/crystal-imgui/blob/master/src/obj.cr#L1953" target="_blank">View source</a>]
+          [<a href="https://github.com/oprypin/crystal-imgui/blob/master/src/obj.cr#L3215" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -3324,10 +3716,15 @@
         <a class="method-permalink" href="#mouse_clicked_pos:Slice(ImVec2)-instance-method">#</a>
       </div>
       
+        <div class="doc">
+          
+          <p>Position at time of clicking</p>
+        </div>
+      
       <br/>
       <div>
         
-          [<a href="https://github.com/oprypin/crystal-imgui/blob/master/src/obj.cr#L1933" target="_blank">View source</a>]
+          [<a href="https://github.com/oprypin/crystal-imgui/blob/master/src/obj.cr#L3193" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -3343,7 +3740,7 @@
       <br/>
       <div>
         
-          [<a href="https://github.com/oprypin/crystal-imgui/blob/master/src/obj.cr#L1937" target="_blank">View source</a>]
+          [<a href="https://github.com/oprypin/crystal-imgui/blob/master/src/obj.cr#L3197" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -3356,10 +3753,15 @@
         <a class="method-permalink" href="#mouse_clicked_time:Slice(Float64)-instance-method">#</a>
       </div>
       
+        <div class="doc">
+          
+          <p>Time of last click (used to figure out double-click)</p>
+        </div>
+      
       <br/>
       <div>
         
-          [<a href="https://github.com/oprypin/crystal-imgui/blob/master/src/obj.cr#L1941" target="_blank">View source</a>]
+          [<a href="https://github.com/oprypin/crystal-imgui/blob/master/src/obj.cr#L3202" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -3375,7 +3777,7 @@
       <br/>
       <div>
         
-          [<a href="https://github.com/oprypin/crystal-imgui/blob/master/src/obj.cr#L1945" target="_blank">View source</a>]
+          [<a href="https://github.com/oprypin/crystal-imgui/blob/master/src/obj.cr#L3206" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -3388,10 +3790,15 @@
         <a class="method-permalink" href="#mouse_delta:ImVec2-instance-method">#</a>
       </div>
       
+        <div class="doc">
+          
+          <p>Mouse delta. Note that this is zero if either current or previous position are invalid (-FLT_MAX,-FLT_MAX), so a disappearing/reappearing mouse won't have a huge delta.</p>
+        </div>
+      
       <br/>
       <div>
         
-          [<a href="https://github.com/oprypin/crystal-imgui/blob/master/src/obj.cr#L1909" target="_blank">View source</a>]
+          [<a href="https://github.com/oprypin/crystal-imgui/blob/master/src/obj.cr#L3166" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -3407,7 +3814,7 @@
       <br/>
       <div>
         
-          [<a href="https://github.com/oprypin/crystal-imgui/blob/master/src/obj.cr#L1913" target="_blank">View source</a>]
+          [<a href="https://github.com/oprypin/crystal-imgui/blob/master/src/obj.cr#L3170" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -3420,10 +3827,16 @@
         <a class="method-permalink" href="#mouse_double_click_max_dist:Float32-instance-method">#</a>
       </div>
       
+        <div class="doc">
+          
+          <p>= 6.0f
+Distance threshold to stay in to validate a double-click, in pixels.</p>
+        </div>
+      
       <br/>
       <div>
         
-          [<a href="https://github.com/oprypin/crystal-imgui/blob/master/src/obj.cr#L1501" target="_blank">View source</a>]
+          [<a href="https://github.com/oprypin/crystal-imgui/blob/master/src/obj.cr#L2692" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -3439,7 +3852,7 @@
       <br/>
       <div>
         
-          [<a href="https://github.com/oprypin/crystal-imgui/blob/master/src/obj.cr#L1505" target="_blank">View source</a>]
+          [<a href="https://github.com/oprypin/crystal-imgui/blob/master/src/obj.cr#L2696" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -3452,10 +3865,16 @@
         <a class="method-permalink" href="#mouse_double_click_time:Float32-instance-method">#</a>
       </div>
       
+        <div class="doc">
+          
+          <p>= 0.30f
+Time for a double-click, in seconds.</p>
+        </div>
+      
       <br/>
       <div>
         
-          [<a href="https://github.com/oprypin/crystal-imgui/blob/master/src/obj.cr#L1493" target="_blank">View source</a>]
+          [<a href="https://github.com/oprypin/crystal-imgui/blob/master/src/obj.cr#L2682" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -3471,7 +3890,7 @@
       <br/>
       <div>
         
-          [<a href="https://github.com/oprypin/crystal-imgui/blob/master/src/obj.cr#L1497" target="_blank">View source</a>]
+          [<a href="https://github.com/oprypin/crystal-imgui/blob/master/src/obj.cr#L2686" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -3484,10 +3903,15 @@
         <a class="method-permalink" href="#mouse_double_clicked:Slice(Bool)-instance-method">#</a>
       </div>
       
+        <div class="doc">
+          
+          <p>Has mouse button been double-clicked?</p>
+        </div>
+      
       <br/>
       <div>
         
-          [<a href="https://github.com/oprypin/crystal-imgui/blob/master/src/obj.cr#L1957" target="_blank">View source</a>]
+          [<a href="https://github.com/oprypin/crystal-imgui/blob/master/src/obj.cr#L3220" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -3503,7 +3927,7 @@
       <br/>
       <div>
         
-          [<a href="https://github.com/oprypin/crystal-imgui/blob/master/src/obj.cr#L1961" target="_blank">View source</a>]
+          [<a href="https://github.com/oprypin/crystal-imgui/blob/master/src/obj.cr#L3224" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -3516,10 +3940,15 @@
         <a class="method-permalink" href="#mouse_down:Slice(Bool)-instance-method">#</a>
       </div>
       
+        <div class="doc">
+          
+          <p>Mouse buttons: 0=left, 1=right, 2=middle + extras (ImGuiMouseButton_COUNT == 5). Dear ImGui mostly uses left and right buttons. Others buttons allows us to track if the mouse is being used by your application + available to user as a convenience via IsMouse** API.</p>
+        </div>
+      
       <br/>
       <div>
         
-          [<a href="https://github.com/oprypin/crystal-imgui/blob/master/src/obj.cr#L1733" target="_blank">View source</a>]
+          [<a href="https://github.com/oprypin/crystal-imgui/blob/master/src/obj.cr#L2968" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -3535,7 +3964,7 @@
       <br/>
       <div>
         
-          [<a href="https://github.com/oprypin/crystal-imgui/blob/master/src/obj.cr#L1737" target="_blank">View source</a>]
+          [<a href="https://github.com/oprypin/crystal-imgui/blob/master/src/obj.cr#L2972" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -3548,10 +3977,15 @@
         <a class="method-permalink" href="#mouse_down_duration:Slice(Float32)-instance-method">#</a>
       </div>
       
+        <div class="doc">
+          
+          <p>Duration the mouse button has been down (0.0f == just clicked)</p>
+        </div>
+      
       <br/>
       <div>
         
-          [<a href="https://github.com/oprypin/crystal-imgui/blob/master/src/obj.cr#L1989" target="_blank">View source</a>]
+          [<a href="https://github.com/oprypin/crystal-imgui/blob/master/src/obj.cr#L3256" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -3567,7 +4001,7 @@
       <br/>
       <div>
         
-          [<a href="https://github.com/oprypin/crystal-imgui/blob/master/src/obj.cr#L1993" target="_blank">View source</a>]
+          [<a href="https://github.com/oprypin/crystal-imgui/blob/master/src/obj.cr#L3260" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -3580,10 +4014,15 @@
         <a class="method-permalink" href="#mouse_down_duration_prev:Slice(Float32)-instance-method">#</a>
       </div>
       
+        <div class="doc">
+          
+          <p>Previous time the mouse button has been down</p>
+        </div>
+      
       <br/>
       <div>
         
-          [<a href="https://github.com/oprypin/crystal-imgui/blob/master/src/obj.cr#L1997" target="_blank">View source</a>]
+          [<a href="https://github.com/oprypin/crystal-imgui/blob/master/src/obj.cr#L3265" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -3599,7 +4038,7 @@
       <br/>
       <div>
         
-          [<a href="https://github.com/oprypin/crystal-imgui/blob/master/src/obj.cr#L2001" target="_blank">View source</a>]
+          [<a href="https://github.com/oprypin/crystal-imgui/blob/master/src/obj.cr#L3269" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -3612,10 +4051,15 @@
         <a class="method-permalink" href="#mouse_down_owned:Slice(Bool)-instance-method">#</a>
       </div>
       
+        <div class="doc">
+          
+          <p>Track if button was clicked inside a dear imgui window. We don't request mouse capture from the application if click started outside ImGui bounds.</p>
+        </div>
+      
       <br/>
       <div>
         
-          [<a href="https://github.com/oprypin/crystal-imgui/blob/master/src/obj.cr#L1973" target="_blank">View source</a>]
+          [<a href="https://github.com/oprypin/crystal-imgui/blob/master/src/obj.cr#L3238" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -3631,7 +4075,7 @@
       <br/>
       <div>
         
-          [<a href="https://github.com/oprypin/crystal-imgui/blob/master/src/obj.cr#L1977" target="_blank">View source</a>]
+          [<a href="https://github.com/oprypin/crystal-imgui/blob/master/src/obj.cr#L3242" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -3644,10 +4088,15 @@
         <a class="method-permalink" href="#mouse_down_was_double_click:Slice(Bool)-instance-method">#</a>
       </div>
       
+        <div class="doc">
+          
+          <p>Track if button down was a double-click</p>
+        </div>
+      
       <br/>
       <div>
         
-          [<a href="https://github.com/oprypin/crystal-imgui/blob/master/src/obj.cr#L1981" target="_blank">View source</a>]
+          [<a href="https://github.com/oprypin/crystal-imgui/blob/master/src/obj.cr#L3247" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -3663,7 +4112,7 @@
       <br/>
       <div>
         
-          [<a href="https://github.com/oprypin/crystal-imgui/blob/master/src/obj.cr#L1985" target="_blank">View source</a>]
+          [<a href="https://github.com/oprypin/crystal-imgui/blob/master/src/obj.cr#L3251" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -3676,10 +4125,15 @@
         <a class="method-permalink" href="#mouse_drag_max_distance_abs:Slice(ImVec2)-instance-method">#</a>
       </div>
       
+        <div class="doc">
+          
+          <p>Maximum distance, absolute, on each axis, of how much mouse has traveled from the clicking point</p>
+        </div>
+      
       <br/>
       <div>
         
-          [<a href="https://github.com/oprypin/crystal-imgui/blob/master/src/obj.cr#L2005" target="_blank">View source</a>]
+          [<a href="https://github.com/oprypin/crystal-imgui/blob/master/src/obj.cr#L3274" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -3695,7 +4149,7 @@
       <br/>
       <div>
         
-          [<a href="https://github.com/oprypin/crystal-imgui/blob/master/src/obj.cr#L2009" target="_blank">View source</a>]
+          [<a href="https://github.com/oprypin/crystal-imgui/blob/master/src/obj.cr#L3278" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -3708,10 +4162,15 @@
         <a class="method-permalink" href="#mouse_drag_max_distance_sqr:Slice(Float32)-instance-method">#</a>
       </div>
       
+        <div class="doc">
+          
+          <p>Squared maximum distance of how much mouse has traveled from the clicking point</p>
+        </div>
+      
       <br/>
       <div>
         
-          [<a href="https://github.com/oprypin/crystal-imgui/blob/master/src/obj.cr#L2013" target="_blank">View source</a>]
+          [<a href="https://github.com/oprypin/crystal-imgui/blob/master/src/obj.cr#L3283" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -3727,7 +4186,7 @@
       <br/>
       <div>
         
-          [<a href="https://github.com/oprypin/crystal-imgui/blob/master/src/obj.cr#L2017" target="_blank">View source</a>]
+          [<a href="https://github.com/oprypin/crystal-imgui/blob/master/src/obj.cr#L3287" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -3740,10 +4199,16 @@
         <a class="method-permalink" href="#mouse_drag_threshold:Float32-instance-method">#</a>
       </div>
       
+        <div class="doc">
+          
+          <p>= 6.0f
+Distance threshold before considering we are dragging.</p>
+        </div>
+      
       <br/>
       <div>
         
-          [<a href="https://github.com/oprypin/crystal-imgui/blob/master/src/obj.cr#L1509" target="_blank">View source</a>]
+          [<a href="https://github.com/oprypin/crystal-imgui/blob/master/src/obj.cr#L2702" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -3759,7 +4224,7 @@
       <br/>
       <div>
         
-          [<a href="https://github.com/oprypin/crystal-imgui/blob/master/src/obj.cr#L1513" target="_blank">View source</a>]
+          [<a href="https://github.com/oprypin/crystal-imgui/blob/master/src/obj.cr#L2706" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -3772,10 +4237,16 @@
         <a class="method-permalink" href="#mouse_draw_cursor:Bool-instance-method">#</a>
       </div>
       
+        <div class="doc">
+          
+          <p>= false
+Request ImGui to draw a mouse cursor for you (if you are on a platform without a mouse cursor). Cannot be easily renamed to 'io.ConfigXXX' because this is frequently used by back-end implementations.</p>
+        </div>
+      
       <br/>
       <div>
         
-          [<a href="https://github.com/oprypin/crystal-imgui/blob/master/src/obj.cr#L1589" target="_blank">View source</a>]
+          [<a href="https://github.com/oprypin/crystal-imgui/blob/master/src/obj.cr#L2802" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -3791,7 +4262,7 @@
       <br/>
       <div>
         
-          [<a href="https://github.com/oprypin/crystal-imgui/blob/master/src/obj.cr#L1593" target="_blank">View source</a>]
+          [<a href="https://github.com/oprypin/crystal-imgui/blob/master/src/obj.cr#L2806" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -3804,10 +4275,15 @@
         <a class="method-permalink" href="#mouse_pos:ImVec2-instance-method">#</a>
       </div>
       
+        <div class="doc">
+          
+          <p>Mouse position, in pixels. Set to ImVec2(-FLT_MAX, -FLT_MAX) if mouse is unavailable (on another screen, etc.)</p>
+        </div>
+      
       <br/>
       <div>
         
-          [<a href="https://github.com/oprypin/crystal-imgui/blob/master/src/obj.cr#L1725" target="_blank">View source</a>]
+          [<a href="https://github.com/oprypin/crystal-imgui/blob/master/src/obj.cr#L2959" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -3823,7 +4299,7 @@
       <br/>
       <div>
         
-          [<a href="https://github.com/oprypin/crystal-imgui/blob/master/src/obj.cr#L1729" target="_blank">View source</a>]
+          [<a href="https://github.com/oprypin/crystal-imgui/blob/master/src/obj.cr#L2963" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -3836,10 +4312,15 @@
         <a class="method-permalink" href="#mouse_pos_prev:ImVec2-instance-method">#</a>
       </div>
       
+        <div class="doc">
+          
+          <p>Previous mouse position (note that MouseDelta is not necessary == MousePos-MousePosPrev, in case either position is invalid)</p>
+        </div>
+      
       <br/>
       <div>
         
-          [<a href="https://github.com/oprypin/crystal-imgui/blob/master/src/obj.cr#L1925" target="_blank">View source</a>]
+          [<a href="https://github.com/oprypin/crystal-imgui/blob/master/src/obj.cr#L3184" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -3855,7 +4336,7 @@
       <br/>
       <div>
         
-          [<a href="https://github.com/oprypin/crystal-imgui/blob/master/src/obj.cr#L1929" target="_blank">View source</a>]
+          [<a href="https://github.com/oprypin/crystal-imgui/blob/master/src/obj.cr#L3188" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -3868,10 +4349,15 @@
         <a class="method-permalink" href="#mouse_released:Slice(Bool)-instance-method">#</a>
       </div>
       
+        <div class="doc">
+          
+          <p>Mouse button went from Down to !Down</p>
+        </div>
+      
       <br/>
       <div>
         
-          [<a href="https://github.com/oprypin/crystal-imgui/blob/master/src/obj.cr#L1965" target="_blank">View source</a>]
+          [<a href="https://github.com/oprypin/crystal-imgui/blob/master/src/obj.cr#L3229" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -3887,7 +4373,7 @@
       <br/>
       <div>
         
-          [<a href="https://github.com/oprypin/crystal-imgui/blob/master/src/obj.cr#L1969" target="_blank">View source</a>]
+          [<a href="https://github.com/oprypin/crystal-imgui/blob/master/src/obj.cr#L3233" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -3900,10 +4386,15 @@
         <a class="method-permalink" href="#mouse_wheel:Float32-instance-method">#</a>
       </div>
       
+        <div class="doc">
+          
+          <p>Mouse wheel Vertical: 1 unit scrolls about 5 lines text.</p>
+        </div>
+      
       <br/>
       <div>
         
-          [<a href="https://github.com/oprypin/crystal-imgui/blob/master/src/obj.cr#L1741" target="_blank">View source</a>]
+          [<a href="https://github.com/oprypin/crystal-imgui/blob/master/src/obj.cr#L2977" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -3919,7 +4410,7 @@
       <br/>
       <div>
         
-          [<a href="https://github.com/oprypin/crystal-imgui/blob/master/src/obj.cr#L1745" target="_blank">View source</a>]
+          [<a href="https://github.com/oprypin/crystal-imgui/blob/master/src/obj.cr#L2981" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -3932,10 +4423,15 @@
         <a class="method-permalink" href="#mouse_wheel_h:Float32-instance-method">#</a>
       </div>
       
+        <div class="doc">
+          
+          <p>Mouse wheel Horizontal. Most users don't have a mouse with an horizontal wheel, may not be filled by all back-ends.</p>
+        </div>
+      
       <br/>
       <div>
         
-          [<a href="https://github.com/oprypin/crystal-imgui/blob/master/src/obj.cr#L1749" target="_blank">View source</a>]
+          [<a href="https://github.com/oprypin/crystal-imgui/blob/master/src/obj.cr#L2986" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -3951,7 +4447,7 @@
       <br/>
       <div>
         
-          [<a href="https://github.com/oprypin/crystal-imgui/blob/master/src/obj.cr#L1753" target="_blank">View source</a>]
+          [<a href="https://github.com/oprypin/crystal-imgui/blob/master/src/obj.cr#L2990" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -3964,10 +4460,15 @@
         <a class="method-permalink" href="#nav_active:Bool-instance-method">#</a>
       </div>
       
+        <div class="doc">
+          
+          <p>Keyboard/Gamepad navigation is currently allowed (will handle ImGuiKey_NavXXX events) = a window is focused and it doesn't use the ImGuiWindowFlags_NoNavInputs flag.</p>
+        </div>
+      
       <br/>
       <div>
         
-          [<a href="https://github.com/oprypin/crystal-imgui/blob/master/src/obj.cr#L1845" target="_blank">View source</a>]
+          [<a href="https://github.com/oprypin/crystal-imgui/blob/master/src/obj.cr#L3094" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -3983,7 +4484,7 @@
       <br/>
       <div>
         
-          [<a href="https://github.com/oprypin/crystal-imgui/blob/master/src/obj.cr#L1849" target="_blank">View source</a>]
+          [<a href="https://github.com/oprypin/crystal-imgui/blob/master/src/obj.cr#L3098" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -3996,10 +4497,15 @@
         <a class="method-permalink" href="#nav_inputs:Slice(Float32)-instance-method">#</a>
       </div>
       
+        <div class="doc">
+          
+          <p>Gamepad inputs. Cleared back to zero by EndFrame(). Keyboard keys will be auto-mapped and be written here by NewFrame().</p>
+        </div>
+      
       <br/>
       <div>
         
-          [<a href="https://github.com/oprypin/crystal-imgui/blob/master/src/obj.cr#L1797" target="_blank">View source</a>]
+          [<a href="https://github.com/oprypin/crystal-imgui/blob/master/src/obj.cr#L3040" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -4015,7 +4521,7 @@
       <br/>
       <div>
         
-          [<a href="https://github.com/oprypin/crystal-imgui/blob/master/src/obj.cr#L1801" target="_blank">View source</a>]
+          [<a href="https://github.com/oprypin/crystal-imgui/blob/master/src/obj.cr#L3044" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -4031,7 +4537,7 @@
       <br/>
       <div>
         
-          [<a href="https://github.com/oprypin/crystal-imgui/blob/master/src/obj.cr#L2037" target="_blank">View source</a>]
+          [<a href="https://github.com/oprypin/crystal-imgui/blob/master/src/obj.cr#L3309" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -4047,7 +4553,7 @@
       <br/>
       <div>
         
-          [<a href="https://github.com/oprypin/crystal-imgui/blob/master/src/obj.cr#L2041" target="_blank">View source</a>]
+          [<a href="https://github.com/oprypin/crystal-imgui/blob/master/src/obj.cr#L3313" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -4063,7 +4569,7 @@
       <br/>
       <div>
         
-          [<a href="https://github.com/oprypin/crystal-imgui/blob/master/src/obj.cr#L2045" target="_blank">View source</a>]
+          [<a href="https://github.com/oprypin/crystal-imgui/blob/master/src/obj.cr#L3317" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -4079,7 +4585,7 @@
       <br/>
       <div>
         
-          [<a href="https://github.com/oprypin/crystal-imgui/blob/master/src/obj.cr#L2049" target="_blank">View source</a>]
+          [<a href="https://github.com/oprypin/crystal-imgui/blob/master/src/obj.cr#L3321" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -4092,10 +4598,15 @@
         <a class="method-permalink" href="#nav_visible:Bool-instance-method">#</a>
       </div>
       
+        <div class="doc">
+          
+          <p>Keyboard/Gamepad navigation is visible and allowed (will handle ImGuiKey_NavXXX events).</p>
+        </div>
+      
       <br/>
       <div>
         
-          [<a href="https://github.com/oprypin/crystal-imgui/blob/master/src/obj.cr#L1853" target="_blank">View source</a>]
+          [<a href="https://github.com/oprypin/crystal-imgui/blob/master/src/obj.cr#L3103" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -4111,7 +4622,7 @@
       <br/>
       <div>
         
-          [<a href="https://github.com/oprypin/crystal-imgui/blob/master/src/obj.cr#L1857" target="_blank">View source</a>]
+          [<a href="https://github.com/oprypin/crystal-imgui/blob/master/src/obj.cr#L3107" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -4124,10 +4635,15 @@
         <a class="method-permalink" href="#pen_pressure:Float32-instance-method">#</a>
       </div>
       
+        <div class="doc">
+          
+          <p>Touch/Pen pressure (0.0f to 1.0f, should be >0.0f only when MouseDown[0] == true). Helper storage currently unused by Dear ImGui.</p>
+        </div>
+      
       <br/>
       <div>
         
-          [<a href="https://github.com/oprypin/crystal-imgui/blob/master/src/obj.cr#L2053" target="_blank">View source</a>]
+          [<a href="https://github.com/oprypin/crystal-imgui/blob/master/src/obj.cr#L3326" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -4143,7 +4659,7 @@
       <br/>
       <div>
         
-          [<a href="https://github.com/oprypin/crystal-imgui/blob/master/src/obj.cr#L2057" target="_blank">View source</a>]
+          [<a href="https://github.com/oprypin/crystal-imgui/blob/master/src/obj.cr#L3330" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -4159,7 +4675,7 @@
       <br/>
       <div>
         
-          [<a href="https://github.com/oprypin/crystal-imgui/blob/master/src/obj.cr#L1717" target="_blank">View source</a>]
+          [<a href="https://github.com/oprypin/crystal-imgui/blob/master/src/obj.cr#L2950" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -4175,7 +4691,7 @@
       <br/>
       <div>
         
-          [<a href="https://github.com/oprypin/crystal-imgui/blob/master/src/obj.cr#L1721" target="_blank">View source</a>]
+          [<a href="https://github.com/oprypin/crystal-imgui/blob/master/src/obj.cr#L2954" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -4191,7 +4707,7 @@
       <br/>
       <div>
         
-          [<a href="https://github.com/oprypin/crystal-imgui/blob/master/src/obj.cr#L1685" target="_blank">View source</a>]
+          [<a href="https://github.com/oprypin/crystal-imgui/blob/master/src/obj.cr#L2916" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -4207,7 +4723,7 @@
       <br/>
       <div>
         
-          [<a href="https://github.com/oprypin/crystal-imgui/blob/master/src/obj.cr#L1689" target="_blank">View source</a>]
+          [<a href="https://github.com/oprypin/crystal-imgui/blob/master/src/obj.cr#L2920" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -4223,7 +4739,7 @@
       <br/>
       <div>
         
-          [<a href="https://github.com/oprypin/crystal-imgui/blob/master/src/obj.cr#L1435" target="_blank">View source</a>]
+          [<a href="https://github.com/oprypin/crystal-imgui/blob/master/src/obj.cr#L2609" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -4236,10 +4752,16 @@
         <a class="method-permalink" href="#user_data:Pointer(Void)-instance-method">#</a>
       </div>
       
+        <div class="doc">
+          
+          <p>= NULL
+Store your own data for retrieval by callbacks.</p>
+        </div>
+      
       <br/>
       <div>
         
-          [<a href="https://github.com/oprypin/crystal-imgui/blob/master/src/obj.cr#L1541" target="_blank">View source</a>]
+          [<a href="https://github.com/oprypin/crystal-imgui/blob/master/src/obj.cr#L2742" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -4255,7 +4777,7 @@
       <br/>
       <div>
         
-          [<a href="https://github.com/oprypin/crystal-imgui/blob/master/src/obj.cr#L1545" target="_blank">View source</a>]
+          [<a href="https://github.com/oprypin/crystal-imgui/blob/master/src/obj.cr#L2746" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -4268,10 +4790,15 @@
         <a class="method-permalink" href="#want_capture_keyboard:Bool-instance-method">#</a>
       </div>
       
+        <div class="doc">
+          
+          <p>Set when Dear ImGui will use keyboard inputs, in this case do not dispatch them to your main game/application (either way, always pass keyboard inputs to imgui). (e.g. InputText active, or an imgui window is focused and navigation is enabled, etc.).</p>
+        </div>
+      
       <br/>
       <div>
         
-          [<a href="https://github.com/oprypin/crystal-imgui/blob/master/src/obj.cr#L1813" target="_blank">View source</a>]
+          [<a href="https://github.com/oprypin/crystal-imgui/blob/master/src/obj.cr#L3058" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -4287,7 +4814,7 @@
       <br/>
       <div>
         
-          [<a href="https://github.com/oprypin/crystal-imgui/blob/master/src/obj.cr#L1817" target="_blank">View source</a>]
+          [<a href="https://github.com/oprypin/crystal-imgui/blob/master/src/obj.cr#L3062" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -4300,10 +4827,15 @@
         <a class="method-permalink" href="#want_capture_mouse:Bool-instance-method">#</a>
       </div>
       
+        <div class="doc">
+          
+          <p>Set when Dear ImGui will use mouse inputs, in this case do not dispatch them to your main game/application (either way, always pass on mouse inputs to imgui). (e.g. unclicked mouse is hovering over an imgui window, widget is active, mouse was clicked over an imgui window, etc.).</p>
+        </div>
+      
       <br/>
       <div>
         
-          [<a href="https://github.com/oprypin/crystal-imgui/blob/master/src/obj.cr#L1805" target="_blank">View source</a>]
+          [<a href="https://github.com/oprypin/crystal-imgui/blob/master/src/obj.cr#L3049" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -4319,7 +4851,7 @@
       <br/>
       <div>
         
-          [<a href="https://github.com/oprypin/crystal-imgui/blob/master/src/obj.cr#L1809" target="_blank">View source</a>]
+          [<a href="https://github.com/oprypin/crystal-imgui/blob/master/src/obj.cr#L3053" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -4332,10 +4864,15 @@
         <a class="method-permalink" href="#want_save_ini_settings:Bool-instance-method">#</a>
       </div>
       
+        <div class="doc">
+          
+          <p>When manual .ini load/save is active (io.IniFilename == NULL), this will be set to notify your application that you can call SaveIniSettingsToMemory() and save yourself. Important: clear io.WantSaveIniSettings yourself after saving!</p>
+        </div>
+      
       <br/>
       <div>
         
-          [<a href="https://github.com/oprypin/crystal-imgui/blob/master/src/obj.cr#L1837" target="_blank">View source</a>]
+          [<a href="https://github.com/oprypin/crystal-imgui/blob/master/src/obj.cr#L3085" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -4351,7 +4888,7 @@
       <br/>
       <div>
         
-          [<a href="https://github.com/oprypin/crystal-imgui/blob/master/src/obj.cr#L1841" target="_blank">View source</a>]
+          [<a href="https://github.com/oprypin/crystal-imgui/blob/master/src/obj.cr#L3089" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -4364,10 +4901,15 @@
         <a class="method-permalink" href="#want_set_mouse_pos:Bool-instance-method">#</a>
       </div>
       
+        <div class="doc">
+          
+          <p>MousePos has been altered, back-end should reposition mouse on next frame. Rarely used! Set only when ImGuiConfigFlags_NavEnableSetMousePos flag is enabled.</p>
+        </div>
+      
       <br/>
       <div>
         
-          [<a href="https://github.com/oprypin/crystal-imgui/blob/master/src/obj.cr#L1829" target="_blank">View source</a>]
+          [<a href="https://github.com/oprypin/crystal-imgui/blob/master/src/obj.cr#L3076" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -4383,7 +4925,7 @@
       <br/>
       <div>
         
-          [<a href="https://github.com/oprypin/crystal-imgui/blob/master/src/obj.cr#L1833" target="_blank">View source</a>]
+          [<a href="https://github.com/oprypin/crystal-imgui/blob/master/src/obj.cr#L3080" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -4396,10 +4938,15 @@
         <a class="method-permalink" href="#want_text_input:Bool-instance-method">#</a>
       </div>
       
+        <div class="doc">
+          
+          <p>Mobile/console: when set, you may display an on-screen keyboard. This is set by Dear ImGui when it wants textual keyboard input to happen (e.g. when a InputText widget is active).</p>
+        </div>
+      
       <br/>
       <div>
         
-          [<a href="https://github.com/oprypin/crystal-imgui/blob/master/src/obj.cr#L1821" target="_blank">View source</a>]
+          [<a href="https://github.com/oprypin/crystal-imgui/blob/master/src/obj.cr#L3067" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -4415,7 +4962,7 @@
       <br/>
       <div>
         
-          [<a href="https://github.com/oprypin/crystal-imgui/blob/master/src/obj.cr#L1825" target="_blank">View source</a>]
+          [<a href="https://github.com/oprypin/crystal-imgui/blob/master/src/obj.cr#L3071" target="_blank">View source</a>]
         
       </div>
     </div>

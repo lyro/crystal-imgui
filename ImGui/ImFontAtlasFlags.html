@@ -747,7 +747,7 @@
     Overview
   </h2>
 
-  <p>[<a href="https://github.com/ocornut/imgui/blob/v1.78/imgui.h#L2274" target="_blank">View C++ header</a>]</p>
+  <p><a href="https://github.com/ocornut/imgui/blob/v1.78/imgui.h#L2274" target="_blank">enum ImFontAtlasFlags_</a></p>
 
 
 
@@ -772,7 +772,7 @@
   </h2>
   
     
-      <a href="https://github.com/oprypin/crystal-imgui/blob/master/src/types.cr#L30" target="_blank">
+      <a href="https://github.com/oprypin/crystal-imgui/blob/master/src/types.cr#L928" target="_blank">
         types.cr
       </a>
     
@@ -802,15 +802,27 @@
         <strong>NoPowerOfTwoHeight</strong> = <code><span class="n">1</span></code>
       </dt>
       
+      <dd class="entry-const-doc">
+        <p>Don't round the height to next power of two</p>
+      </dd>
+      
     
       <dt class="entry-const" id="NoMouseCursors">
         <strong>NoMouseCursors</strong> = <code><span class="n">2</span></code>
       </dt>
       
+      <dd class="entry-const-doc">
+        <p>Don't build software mouse cursors into the atlas (save a little texture memory)</p>
+      </dd>
+      
     
       <dt class="entry-const" id="NoBakedLines">
         <strong>NoBakedLines</strong> = <code><span class="n">4</span></code>
       </dt>
+      
+      <dd class="entry-const-doc">
+        <p>Don't build thick line textures into the atlas (save a little texture memory). The AntiAliasedLinesUseTex features uses them, otherwise they will be rendered using polygons (more expensive for CPU/GPU).</p>
+      </dd>
       
     
   </dl>
@@ -926,7 +938,7 @@
       <br/>
       <div>
         
-          [<a href="https://github.com/oprypin/crystal-imgui/blob/master/src/types.cr#L34" target="_blank">View source</a>]
+          [<a href="https://github.com/oprypin/crystal-imgui/blob/master/src/types.cr#L935" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -942,7 +954,7 @@
       <br/>
       <div>
         
-          [<a href="https://github.com/oprypin/crystal-imgui/blob/master/src/types.cr#L33" target="_blank">View source</a>]
+          [<a href="https://github.com/oprypin/crystal-imgui/blob/master/src/types.cr#L933" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -958,7 +970,7 @@
       <br/>
       <div>
         
-          [<a href="https://github.com/oprypin/crystal-imgui/blob/master/src/types.cr#L32" target="_blank">View source</a>]
+          [<a href="https://github.com/oprypin/crystal-imgui/blob/master/src/types.cr#L931" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -974,7 +986,7 @@
       <br/>
       <div>
         
-          [<a href="https://github.com/oprypin/crystal-imgui/blob/master/src/types.cr#L31" target="_blank">View source</a>]
+          [<a href="https://github.com/oprypin/crystal-imgui/blob/master/src/types.cr#L929" target="_blank">View source</a>]
         
       </div>
     </div>

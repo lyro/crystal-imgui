@@ -771,7 +771,7 @@
   </h2>
   
     
-      <a href="https://github.com/oprypin/crystal-imgui/blob/master/src/types.cr#L389" target="_blank">
+      <a href="https://github.com/oprypin/crystal-imgui/blob/master/src/types.cr#L207" target="_blank">
         types.cr
       </a>
     
@@ -801,10 +801,18 @@
         <strong>AnyPopupId</strong> = <code><span class="n">128</span></code>
       </dt>
       
+      <dd class="entry-const-doc">
+        <p>For IsPopupOpen(): ignore the ImGuiID parameter and test for any popup.</p>
+      </dd>
+      
     
       <dt class="entry-const" id="AnyPopupLevel">
         <strong>AnyPopupLevel</strong> = <code><span class="n">256</span></code>
       </dt>
+      
+      <dd class="entry-const-doc">
+        <p>For IsPopupOpen(): search/test at any level of the popup stack (default test in the current level)</p>
+      </dd>
       
     
       <dt class="entry-const" id="MouseButtonDefault_">
@@ -816,6 +824,10 @@
         <strong>MouseButtonLeft</strong> = <code><span class="n">0</span></code>
       </dt>
       
+      <dd class="entry-const-doc">
+        <p>For BeginPopupContext*(): open on Left Mouse release. Guaranted to always be == 0 (same as ImGuiMouseButton_Left)</p>
+      </dd>
+      
     
       <dt class="entry-const" id="MouseButtonMask_">
         <strong>MouseButtonMask_</strong> = <code><span class="n">31</span></code>
@@ -826,10 +838,18 @@
         <strong>MouseButtonMiddle</strong> = <code><span class="n">2</span></code>
       </dt>
       
+      <dd class="entry-const-doc">
+        <p>For BeginPopupContext*(): open on Middle Mouse release. Guaranted to always be == 2 (same as ImGuiMouseButton_Middle)</p>
+      </dd>
+      
     
       <dt class="entry-const" id="MouseButtonRight">
         <strong>MouseButtonRight</strong> = <code><span class="n">1</span></code>
       </dt>
+      
+      <dd class="entry-const-doc">
+        <p>For BeginPopupContext*(): open on Right Mouse release. Guaranted to always be == 1 (same as ImGuiMouseButton_Right)</p>
+      </dd>
       
     
       <dt class="entry-const" id="None">
@@ -841,10 +861,18 @@
         <strong>NoOpenOverExistingPopup</strong> = <code><span class="n">32</span></code>
       </dt>
       
+      <dd class="entry-const-doc">
+        <p>For OpenPopup<em>(), BeginPopupContext</em>(): don't open if there's already a popup at the same level of the popup stack</p>
+      </dd>
+      
     
       <dt class="entry-const" id="NoOpenOverItems">
         <strong>NoOpenOverItems</strong> = <code><span class="n">64</span></code>
       </dt>
+      
+      <dd class="entry-const-doc">
+        <p>For BeginPopupContextWindow(): don't return true when hovering items, only when hovering empty space</p>
+      </dd>
       
     
   </dl>

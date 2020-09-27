@@ -747,7 +747,7 @@
     Overview
   </h2>
 
-  <p>[<a href="https://github.com/ocornut/imgui/blob/v1.78/imgui.h#L1340" target="_blank">View C++ header</a>]</p>
+  <p><a href="https://github.com/ocornut/imgui/blob/v1.78/imgui.h#L1340" target="_blank">enum ImGuiCond_</a></p>
 
 
 
@@ -772,7 +772,7 @@
   </h2>
   
     
-      <a href="https://github.com/oprypin/crystal-imgui/blob/master/src/types.cr#L165" target="_blank">
+      <a href="https://github.com/oprypin/crystal-imgui/blob/master/src/types.cr#L770" target="_blank">
         types.cr
       </a>
     
@@ -797,25 +797,45 @@
         <strong>None</strong> = <code><span class="n">0</span></code>
       </dt>
       
+      <dd class="entry-const-doc">
+        <p>No condition (always set the variable), same as _Always</p>
+      </dd>
+      
     
       <dt class="entry-const" id="Always">
         <strong>Always</strong> = <code><span class="n">1</span></code>
       </dt>
+      
+      <dd class="entry-const-doc">
+        <p>No condition (always set the variable)</p>
+      </dd>
       
     
       <dt class="entry-const" id="Once">
         <strong>Once</strong> = <code><span class="n">2</span></code>
       </dt>
       
+      <dd class="entry-const-doc">
+        <p>Set the variable once per runtime session (only the first call will succeed)</p>
+      </dd>
+      
     
       <dt class="entry-const" id="FirstUseEver">
         <strong>FirstUseEver</strong> = <code><span class="n">4</span></code>
       </dt>
       
+      <dd class="entry-const-doc">
+        <p>Set the variable if the object/window has no persistently saved data (no entry in .ini file)</p>
+      </dd>
+      
     
       <dt class="entry-const" id="Appearing">
         <strong>Appearing</strong> = <code><span class="n">8</span></code>
       </dt>
+      
+      <dd class="entry-const-doc">
+        <p>Set the variable if the object/window is appearing after being hidden/inactive (or the first time)</p>
+      </dd>
       
     
   </dl>
@@ -936,7 +956,7 @@
       <br/>
       <div>
         
-          [<a href="https://github.com/oprypin/crystal-imgui/blob/master/src/types.cr#L167" target="_blank">View source</a>]
+          [<a href="https://github.com/oprypin/crystal-imgui/blob/master/src/types.cr#L774" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -952,7 +972,7 @@
       <br/>
       <div>
         
-          [<a href="https://github.com/oprypin/crystal-imgui/blob/master/src/types.cr#L170" target="_blank">View source</a>]
+          [<a href="https://github.com/oprypin/crystal-imgui/blob/master/src/types.cr#L780" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -968,7 +988,7 @@
       <br/>
       <div>
         
-          [<a href="https://github.com/oprypin/crystal-imgui/blob/master/src/types.cr#L169" target="_blank">View source</a>]
+          [<a href="https://github.com/oprypin/crystal-imgui/blob/master/src/types.cr#L778" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -984,7 +1004,7 @@
       <br/>
       <div>
         
-          [<a href="https://github.com/oprypin/crystal-imgui/blob/master/src/types.cr#L166" target="_blank">View source</a>]
+          [<a href="https://github.com/oprypin/crystal-imgui/blob/master/src/types.cr#L772" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -1000,7 +1020,7 @@
       <br/>
       <div>
         
-          [<a href="https://github.com/oprypin/crystal-imgui/blob/master/src/types.cr#L168" target="_blank">View source</a>]
+          [<a href="https://github.com/oprypin/crystal-imgui/blob/master/src/types.cr#L776" target="_blank">View source</a>]
         
       </div>
     </div>

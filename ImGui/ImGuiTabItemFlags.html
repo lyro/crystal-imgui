@@ -747,7 +747,7 @@
     Overview
   </h2>
 
-  <p>[<a href="https://github.com/ocornut/imgui/blob/v1.78/imgui.h#L947" target="_blank">View C++ header</a>]</p>
+  <p><a href="https://github.com/ocornut/imgui/blob/v1.78/imgui.h#L947" target="_blank">enum ImGuiTabItemFlags_</a></p>
 
 
 
@@ -772,7 +772,7 @@
   </h2>
   
     
-      <a href="https://github.com/oprypin/crystal-imgui/blob/master/src/types.cr#L462" target="_blank">
+      <a href="https://github.com/oprypin/crystal-imgui/blob/master/src/types.cr#L275" target="_blank">
         types.cr
       </a>
     
@@ -802,25 +802,45 @@
         <strong>UnsavedDocument</strong> = <code><span class="n">1</span></code>
       </dt>
       
+      <dd class="entry-const-doc">
+        <p>Append '*' to title without affecting the ID, as a convenience to avoid using the ### operator. Also: tab is selected on closure and closure is deferred by one frame to allow code to undo it without flicker.</p>
+      </dd>
+      
     
       <dt class="entry-const" id="SetSelected">
         <strong>SetSelected</strong> = <code><span class="n">2</span></code>
       </dt>
+      
+      <dd class="entry-const-doc">
+        <p>Trigger flag to programmatically make the tab selected when calling BeginTabItem()</p>
+      </dd>
       
     
       <dt class="entry-const" id="NoCloseWithMiddleMouseButton">
         <strong>NoCloseWithMiddleMouseButton</strong> = <code><span class="n">4</span></code>
       </dt>
       
+      <dd class="entry-const-doc">
+        <p>Disable behavior of closing tabs (that are submitted with p_open != NULL) with middle mouse button. You can still repro this behavior on user's side with if (IsItemHovered() && IsMouseClicked(2)) *p_open = false.</p>
+      </dd>
+      
     
       <dt class="entry-const" id="NoPushId">
         <strong>NoPushId</strong> = <code><span class="n">8</span></code>
       </dt>
       
+      <dd class="entry-const-doc">
+        <p>Don't call PushID(tab->ID)/PopID() on BeginTabItem()/EndTabItem()</p>
+      </dd>
+      
     
       <dt class="entry-const" id="NoTooltip">
         <strong>NoTooltip</strong> = <code><span class="n">16</span></code>
       </dt>
+      
+      <dd class="entry-const-doc">
+        <p>Disable tooltip for the given tab</p>
+      </dd>
       
     
   </dl>
@@ -946,7 +966,7 @@
       <br/>
       <div>
         
-          [<a href="https://github.com/oprypin/crystal-imgui/blob/master/src/types.cr#L466" target="_blank">View source</a>]
+          [<a href="https://github.com/oprypin/crystal-imgui/blob/master/src/types.cr#L282" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -962,7 +982,7 @@
       <br/>
       <div>
         
-          [<a href="https://github.com/oprypin/crystal-imgui/blob/master/src/types.cr#L467" target="_blank">View source</a>]
+          [<a href="https://github.com/oprypin/crystal-imgui/blob/master/src/types.cr#L284" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -978,7 +998,7 @@
       <br/>
       <div>
         
-          [<a href="https://github.com/oprypin/crystal-imgui/blob/master/src/types.cr#L468" target="_blank">View source</a>]
+          [<a href="https://github.com/oprypin/crystal-imgui/blob/master/src/types.cr#L286" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -994,7 +1014,7 @@
       <br/>
       <div>
         
-          [<a href="https://github.com/oprypin/crystal-imgui/blob/master/src/types.cr#L463" target="_blank">View source</a>]
+          [<a href="https://github.com/oprypin/crystal-imgui/blob/master/src/types.cr#L276" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -1010,7 +1030,7 @@
       <br/>
       <div>
         
-          [<a href="https://github.com/oprypin/crystal-imgui/blob/master/src/types.cr#L465" target="_blank">View source</a>]
+          [<a href="https://github.com/oprypin/crystal-imgui/blob/master/src/types.cr#L280" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -1026,7 +1046,7 @@
       <br/>
       <div>
         
-          [<a href="https://github.com/oprypin/crystal-imgui/blob/master/src/types.cr#L464" target="_blank">View source</a>]
+          [<a href="https://github.com/oprypin/crystal-imgui/blob/master/src/types.cr#L278" target="_blank">View source</a>]
         
       </div>
     </div>

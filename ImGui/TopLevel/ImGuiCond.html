@@ -771,7 +771,7 @@
   </h2>
   
     
-      <a href="https://github.com/oprypin/crystal-imgui/blob/master/src/types.cr#L172" target="_blank">
+      <a href="https://github.com/oprypin/crystal-imgui/blob/master/src/types.cr#L782" target="_blank">
         types.cr
       </a>
     
@@ -796,25 +796,45 @@
         <strong>Always</strong> = <code><span class="n">1</span></code>
       </dt>
       
+      <dd class="entry-const-doc">
+        <p>No condition (always set the variable)</p>
+      </dd>
+      
     
       <dt class="entry-const" id="Appearing">
         <strong>Appearing</strong> = <code><span class="n">8</span></code>
       </dt>
+      
+      <dd class="entry-const-doc">
+        <p>Set the variable if the object/window is appearing after being hidden/inactive (or the first time)</p>
+      </dd>
       
     
       <dt class="entry-const" id="FirstUseEver">
         <strong>FirstUseEver</strong> = <code><span class="n">4</span></code>
       </dt>
       
+      <dd class="entry-const-doc">
+        <p>Set the variable if the object/window has no persistently saved data (no entry in .ini file)</p>
+      </dd>
+      
     
       <dt class="entry-const" id="None">
         <strong>None</strong> = <code><span class="n">0</span></code>
       </dt>
       
+      <dd class="entry-const-doc">
+        <p>No condition (always set the variable), same as _Always</p>
+      </dd>
+      
     
       <dt class="entry-const" id="Once">
         <strong>Once</strong> = <code><span class="n">2</span></code>
       </dt>
+      
+      <dd class="entry-const-doc">
+        <p>Set the variable once per runtime session (only the first call will succeed)</p>
+      </dd>
       
     
   </dl>

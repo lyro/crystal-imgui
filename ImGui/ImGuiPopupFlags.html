@@ -747,7 +747,7 @@
     Overview
   </h2>
 
-  <p>[<a href="https://github.com/ocornut/imgui/blob/v1.78/imgui.h#L890" target="_blank">View C++ header</a>]</p>
+  <p><a href="https://github.com/ocornut/imgui/blob/v1.78/imgui.h#L890" target="_blank">enum ImGuiPopupFlags_</a></p>
 
 
 
@@ -772,7 +772,7 @@
   </h2>
   
     
-      <a href="https://github.com/oprypin/crystal-imgui/blob/master/src/types.cr#L376" target="_blank">
+      <a href="https://github.com/oprypin/crystal-imgui/blob/master/src/types.cr#L187" target="_blank">
         types.cr
       </a>
     
@@ -802,15 +802,27 @@
         <strong>MouseButtonLeft</strong> = <code><span class="n">0</span></code>
       </dt>
       
+      <dd class="entry-const-doc">
+        <p>For BeginPopupContext*(): open on Left Mouse release. Guaranted to always be == 0 (same as ImGuiMouseButton_Left)</p>
+      </dd>
+      
     
       <dt class="entry-const" id="MouseButtonRight">
         <strong>MouseButtonRight</strong> = <code><span class="n">1</span></code>
       </dt>
       
+      <dd class="entry-const-doc">
+        <p>For BeginPopupContext*(): open on Right Mouse release. Guaranted to always be == 1 (same as ImGuiMouseButton_Right)</p>
+      </dd>
+      
     
       <dt class="entry-const" id="MouseButtonMiddle">
         <strong>MouseButtonMiddle</strong> = <code><span class="n">2</span></code>
       </dt>
+      
+      <dd class="entry-const-doc">
+        <p>For BeginPopupContext*(): open on Middle Mouse release. Guaranted to always be == 2 (same as ImGuiMouseButton_Middle)</p>
+      </dd>
       
     
       <dt class="entry-const" id="MouseButtonMask_">
@@ -827,20 +839,36 @@
         <strong>NoOpenOverExistingPopup</strong> = <code><span class="n">32</span></code>
       </dt>
       
+      <dd class="entry-const-doc">
+        <p>For OpenPopup<em>(), BeginPopupContext</em>(): don't open if there's already a popup at the same level of the popup stack</p>
+      </dd>
+      
     
       <dt class="entry-const" id="NoOpenOverItems">
         <strong>NoOpenOverItems</strong> = <code><span class="n">64</span></code>
       </dt>
+      
+      <dd class="entry-const-doc">
+        <p>For BeginPopupContextWindow(): don't return true when hovering items, only when hovering empty space</p>
+      </dd>
       
     
       <dt class="entry-const" id="AnyPopupId">
         <strong>AnyPopupId</strong> = <code><span class="n">128</span></code>
       </dt>
       
+      <dd class="entry-const-doc">
+        <p>For IsPopupOpen(): ignore the ImGuiID parameter and test for any popup.</p>
+      </dd>
+      
     
       <dt class="entry-const" id="AnyPopupLevel">
         <strong>AnyPopupLevel</strong> = <code><span class="n">256</span></code>
       </dt>
+      
+      <dd class="entry-const-doc">
+        <p>For IsPopupOpen(): search/test at any level of the popup stack (default test in the current level)</p>
+      </dd>
       
     
       <dt class="entry-const" id="AnyPopup">
@@ -996,7 +1024,7 @@
       <br/>
       <div>
         
-          [<a href="https://github.com/oprypin/crystal-imgui/blob/master/src/types.cr#L387" target="_blank">View source</a>]
+          [<a href="https://github.com/oprypin/crystal-imgui/blob/master/src/types.cr#L205" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -1012,7 +1040,7 @@
       <br/>
       <div>
         
-          [<a href="https://github.com/oprypin/crystal-imgui/blob/master/src/types.cr#L385" target="_blank">View source</a>]
+          [<a href="https://github.com/oprypin/crystal-imgui/blob/master/src/types.cr#L202" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -1028,7 +1056,7 @@
       <br/>
       <div>
         
-          [<a href="https://github.com/oprypin/crystal-imgui/blob/master/src/types.cr#L386" target="_blank">View source</a>]
+          [<a href="https://github.com/oprypin/crystal-imgui/blob/master/src/types.cr#L204" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -1044,7 +1072,7 @@
       <br/>
       <div>
         
-          [<a href="https://github.com/oprypin/crystal-imgui/blob/master/src/types.cr#L382" target="_blank">View source</a>]
+          [<a href="https://github.com/oprypin/crystal-imgui/blob/master/src/types.cr#L196" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -1060,7 +1088,7 @@
       <br/>
       <div>
         
-          [<a href="https://github.com/oprypin/crystal-imgui/blob/master/src/types.cr#L378" target="_blank">View source</a>]
+          [<a href="https://github.com/oprypin/crystal-imgui/blob/master/src/types.cr#L190" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -1076,7 +1104,7 @@
       <br/>
       <div>
         
-          [<a href="https://github.com/oprypin/crystal-imgui/blob/master/src/types.cr#L381" target="_blank">View source</a>]
+          [<a href="https://github.com/oprypin/crystal-imgui/blob/master/src/types.cr#L195" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -1092,7 +1120,7 @@
       <br/>
       <div>
         
-          [<a href="https://github.com/oprypin/crystal-imgui/blob/master/src/types.cr#L380" target="_blank">View source</a>]
+          [<a href="https://github.com/oprypin/crystal-imgui/blob/master/src/types.cr#L194" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -1108,7 +1136,7 @@
       <br/>
       <div>
         
-          [<a href="https://github.com/oprypin/crystal-imgui/blob/master/src/types.cr#L379" target="_blank">View source</a>]
+          [<a href="https://github.com/oprypin/crystal-imgui/blob/master/src/types.cr#L192" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -1124,7 +1152,7 @@
       <br/>
       <div>
         
-          [<a href="https://github.com/oprypin/crystal-imgui/blob/master/src/types.cr#L383" target="_blank">View source</a>]
+          [<a href="https://github.com/oprypin/crystal-imgui/blob/master/src/types.cr#L198" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -1140,7 +1168,7 @@
       <br/>
       <div>
         
-          [<a href="https://github.com/oprypin/crystal-imgui/blob/master/src/types.cr#L384" target="_blank">View source</a>]
+          [<a href="https://github.com/oprypin/crystal-imgui/blob/master/src/types.cr#L200" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -1156,7 +1184,7 @@
       <br/>
       <div>
         
-          [<a href="https://github.com/oprypin/crystal-imgui/blob/master/src/types.cr#L377" target="_blank">View source</a>]
+          [<a href="https://github.com/oprypin/crystal-imgui/blob/master/src/types.cr#L188" target="_blank">View source</a>]
         
       </div>
     </div>

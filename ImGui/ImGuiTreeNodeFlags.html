@@ -747,7 +747,7 @@
     Overview
   </h2>
 
-  <p>[<a href="https://github.com/ocornut/imgui/blob/v1.78/imgui.h#L863" target="_blank">View C++ header</a>]</p>
+  <p><a href="https://github.com/ocornut/imgui/blob/v1.78/imgui.h#L863" target="_blank">enum ImGuiTreeNodeFlags_</a></p>
 
 
 
@@ -772,7 +772,7 @@
   </h2>
   
     
-      <a href="https://github.com/oprypin/crystal-imgui/blob/master/src/types.cr#L474" target="_blank">
+      <a href="https://github.com/oprypin/crystal-imgui/blob/master/src/types.cr#L151" target="_blank">
         types.cr
       </a>
     
@@ -802,70 +802,126 @@
         <strong>Selected</strong> = <code><span class="n">1</span></code>
       </dt>
       
+      <dd class="entry-const-doc">
+        <p>Draw as selected</p>
+      </dd>
+      
     
       <dt class="entry-const" id="Framed">
         <strong>Framed</strong> = <code><span class="n">2</span></code>
       </dt>
+      
+      <dd class="entry-const-doc">
+        <p>Full colored frame (e.g. for CollapsingHeader)</p>
+      </dd>
       
     
       <dt class="entry-const" id="AllowItemOverlap">
         <strong>AllowItemOverlap</strong> = <code><span class="n">4</span></code>
       </dt>
       
+      <dd class="entry-const-doc">
+        <p>Hit testing to allow subsequent widgets to overlap this one</p>
+      </dd>
+      
     
       <dt class="entry-const" id="NoTreePushOnOpen">
         <strong>NoTreePushOnOpen</strong> = <code><span class="n">8</span></code>
       </dt>
+      
+      <dd class="entry-const-doc">
+        <p>Don't do a TreePush() when open (e.g. for CollapsingHeader) = no extra indent nor pushing on ID stack</p>
+      </dd>
       
     
       <dt class="entry-const" id="NoAutoOpenOnLog">
         <strong>NoAutoOpenOnLog</strong> = <code><span class="n">16</span></code>
       </dt>
       
+      <dd class="entry-const-doc">
+        <p>Don't automatically and temporarily open node when Logging is active (by default logging will automatically open tree nodes)</p>
+      </dd>
+      
     
       <dt class="entry-const" id="DefaultOpen">
         <strong>DefaultOpen</strong> = <code><span class="n">32</span></code>
       </dt>
+      
+      <dd class="entry-const-doc">
+        <p>Default node to be open</p>
+      </dd>
       
     
       <dt class="entry-const" id="OpenOnDoubleClick">
         <strong>OpenOnDoubleClick</strong> = <code><span class="n">64</span></code>
       </dt>
       
+      <dd class="entry-const-doc">
+        <p>Need double-click to open node</p>
+      </dd>
+      
     
       <dt class="entry-const" id="OpenOnArrow">
         <strong>OpenOnArrow</strong> = <code><span class="n">128</span></code>
       </dt>
+      
+      <dd class="entry-const-doc">
+        <p>Only open when clicking on the arrow part. If ImGuiTreeNodeFlags_OpenOnDoubleClick is also set, single-click arrow or double-click all box to open.</p>
+      </dd>
       
     
       <dt class="entry-const" id="Leaf">
         <strong>Leaf</strong> = <code><span class="n">256</span></code>
       </dt>
       
+      <dd class="entry-const-doc">
+        <p>No collapsing, no arrow (use as a convenience for leaf nodes).</p>
+      </dd>
+      
     
       <dt class="entry-const" id="Bullet">
         <strong>Bullet</strong> = <code><span class="n">512</span></code>
       </dt>
+      
+      <dd class="entry-const-doc">
+        <p>Display a bullet instead of arrow</p>
+      </dd>
       
     
       <dt class="entry-const" id="FramePadding">
         <strong>FramePadding</strong> = <code><span class="n">1024</span></code>
       </dt>
       
+      <dd class="entry-const-doc">
+        <p>Use FramePadding (even for an unframed text node) to vertically align text baseline to regular widget height. Equivalent to calling AlignTextToFramePadding().</p>
+      </dd>
+      
     
       <dt class="entry-const" id="SpanAvailWidth">
         <strong>SpanAvailWidth</strong> = <code><span class="n">2048</span></code>
       </dt>
+      
+      <dd class="entry-const-doc">
+        <p>Extend hit box to the right-most edge, even if not framed. This is not the default in order to allow adding other items on the same line. In the future we may refactor the hit system to be front-to-back, allowing natural overlaps and then this can become the default.</p>
+      </dd>
       
     
       <dt class="entry-const" id="SpanFullWidth">
         <strong>SpanFullWidth</strong> = <code><span class="n">4096</span></code>
       </dt>
       
+      <dd class="entry-const-doc">
+        <p>Extend hit box to the left-most and right-most edges (bypass the indented area).</p>
+      </dd>
+      
     
       <dt class="entry-const" id="NavLeftJumpsBackHere">
         <strong>NavLeftJumpsBackHere</strong> = <code><span class="n">8192</span></code>
       </dt>
+      
+      <dd class="entry-const-doc">
+        <p>(WIP) Nav: left direction may move to this TreeNode() from any of its child (items submitted between TreeNode and TreePop)</p>
+      </dd>
       
     
       <dt class="entry-const" id="CollapsingHeader">
@@ -1046,7 +1102,7 @@
       <br/>
       <div>
         
-          [<a href="https://github.com/oprypin/crystal-imgui/blob/master/src/types.cr#L478" target="_blank">View source</a>]
+          [<a href="https://github.com/oprypin/crystal-imgui/blob/master/src/types.cr#L158" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -1062,7 +1118,7 @@
       <br/>
       <div>
         
-          [<a href="https://github.com/oprypin/crystal-imgui/blob/master/src/types.cr#L485" target="_blank">View source</a>]
+          [<a href="https://github.com/oprypin/crystal-imgui/blob/master/src/types.cr#L172" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -1078,7 +1134,7 @@
       <br/>
       <div>
         
-          [<a href="https://github.com/oprypin/crystal-imgui/blob/master/src/types.cr#L490" target="_blank">View source</a>]
+          [<a href="https://github.com/oprypin/crystal-imgui/blob/master/src/types.cr#L181" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -1094,7 +1150,7 @@
       <br/>
       <div>
         
-          [<a href="https://github.com/oprypin/crystal-imgui/blob/master/src/types.cr#L481" target="_blank">View source</a>]
+          [<a href="https://github.com/oprypin/crystal-imgui/blob/master/src/types.cr#L164" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -1110,7 +1166,7 @@
       <br/>
       <div>
         
-          [<a href="https://github.com/oprypin/crystal-imgui/blob/master/src/types.cr#L486" target="_blank">View source</a>]
+          [<a href="https://github.com/oprypin/crystal-imgui/blob/master/src/types.cr#L174" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -1126,7 +1182,7 @@
       <br/>
       <div>
         
-          [<a href="https://github.com/oprypin/crystal-imgui/blob/master/src/types.cr#L477" target="_blank">View source</a>]
+          [<a href="https://github.com/oprypin/crystal-imgui/blob/master/src/types.cr#L156" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -1142,7 +1198,7 @@
       <br/>
       <div>
         
-          [<a href="https://github.com/oprypin/crystal-imgui/blob/master/src/types.cr#L484" target="_blank">View source</a>]
+          [<a href="https://github.com/oprypin/crystal-imgui/blob/master/src/types.cr#L170" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -1158,7 +1214,7 @@
       <br/>
       <div>
         
-          [<a href="https://github.com/oprypin/crystal-imgui/blob/master/src/types.cr#L489" target="_blank">View source</a>]
+          [<a href="https://github.com/oprypin/crystal-imgui/blob/master/src/types.cr#L180" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -1174,7 +1230,7 @@
       <br/>
       <div>
         
-          [<a href="https://github.com/oprypin/crystal-imgui/blob/master/src/types.cr#L480" target="_blank">View source</a>]
+          [<a href="https://github.com/oprypin/crystal-imgui/blob/master/src/types.cr#L162" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -1190,7 +1246,7 @@
       <br/>
       <div>
         
-          [<a href="https://github.com/oprypin/crystal-imgui/blob/master/src/types.cr#L479" target="_blank">View source</a>]
+          [<a href="https://github.com/oprypin/crystal-imgui/blob/master/src/types.cr#L160" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -1206,7 +1262,7 @@
       <br/>
       <div>
         
-          [<a href="https://github.com/oprypin/crystal-imgui/blob/master/src/types.cr#L475" target="_blank">View source</a>]
+          [<a href="https://github.com/oprypin/crystal-imgui/blob/master/src/types.cr#L152" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -1222,7 +1278,7 @@
       <br/>
       <div>
         
-          [<a href="https://github.com/oprypin/crystal-imgui/blob/master/src/types.cr#L483" target="_blank">View source</a>]
+          [<a href="https://github.com/oprypin/crystal-imgui/blob/master/src/types.cr#L168" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -1238,7 +1294,7 @@
       <br/>
       <div>
         
-          [<a href="https://github.com/oprypin/crystal-imgui/blob/master/src/types.cr#L482" target="_blank">View source</a>]
+          [<a href="https://github.com/oprypin/crystal-imgui/blob/master/src/types.cr#L166" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -1254,7 +1310,7 @@
       <br/>
       <div>
         
-          [<a href="https://github.com/oprypin/crystal-imgui/blob/master/src/types.cr#L476" target="_blank">View source</a>]
+          [<a href="https://github.com/oprypin/crystal-imgui/blob/master/src/types.cr#L154" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -1270,7 +1326,7 @@
       <br/>
       <div>
         
-          [<a href="https://github.com/oprypin/crystal-imgui/blob/master/src/types.cr#L487" target="_blank">View source</a>]
+          [<a href="https://github.com/oprypin/crystal-imgui/blob/master/src/types.cr#L176" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -1286,7 +1342,7 @@
       <br/>
       <div>
         
-          [<a href="https://github.com/oprypin/crystal-imgui/blob/master/src/types.cr#L488" target="_blank">View source</a>]
+          [<a href="https://github.com/oprypin/crystal-imgui/blob/master/src/types.cr#L178" target="_blank">View source</a>]
         
       </div>
     </div>

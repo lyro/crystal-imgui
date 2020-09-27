@@ -749,7 +749,7 @@
     Overview
   </h2>
 
-  <p>[<a href="https://github.com/ocornut/imgui/blob/v1.78/imgui.h#L1883" target="_blank">View C++ header</a>]</p>
+  <p><a href="https://github.com/ocornut/imgui/blob/v1.78/imgui.h#L1883" target="_blank">struct ImGuiListClipper</a></p>
 
 
 
@@ -788,14 +788,14 @@
   </h2>
   
     
-      <a href="https://github.com/oprypin/crystal-imgui/blob/master/src/obj.cr#L2232" target="_blank">
+      <a href="https://github.com/oprypin/crystal-imgui/blob/master/src/obj.cr#L3860" target="_blank">
         obj.cr
       </a>
     
     <br/>
   
     
-      <a href="https://github.com/oprypin/crystal-imgui/blob/master/src/types.cr#L605" target="_blank">
+      <a href="https://github.com/oprypin/crystal-imgui/blob/master/src/types.cr#L811" target="_blank">
         types.cr
       </a>
     
@@ -824,7 +824,7 @@
       <li class="entry-summary">
         <a href="#new(items_count:Int32=-1,items_height:Float32=-1.0):ImGuiListClipper-class-method" class="signature"><strong>.new</strong>(items_count : Int32 = <span class="n">-1</span>, items_height : Float32 = <span class="n">-1.0</span>) : ImGuiListClipper</a>
         
-          <div class="summary"><p>[<a href="https://github.com/ocornut/imgui/blob/v1.78/imgui.h#L1896" target="_blank">View C++ header</a>]</p></div>
+          <div class="summary"><p>NB: Begin() initialize every fields (as we allow user to call Begin/End multiple times on a same instance if they want).</p></div>
         
       </li>
     
@@ -847,7 +847,7 @@
       <li class="entry-summary">
         <a href="#begin(items_count:Int32,items_height:Float32=-1.0):Void-instance-method" class="signature"><strong>#begin</strong>(items_count : Int32, items_height : Float32 = <span class="n">-1.0</span>) : Void</a>
         
-          <div class="summary"><p>[<a href="https://github.com/ocornut/imgui/blob/v1.78/imgui.h#L1900" target="_blank">View C++ header</a>]</p></div>
+          <div class="summary"><p>Automatically called by constructor if you passed 'items_count' or by Step() in Step 1.</p></div>
         
       </li>
     
@@ -874,7 +874,7 @@
       <li class="entry-summary">
         <a href="#end:Void-instance-method" class="signature"><strong>#end</strong> : Void</a>
         
-          <div class="summary"><p>[<a href="https://github.com/ocornut/imgui/blob/v1.78/imgui.h#L1901" target="_blank">View C++ header</a>]</p></div>
+          <div class="summary"><p>Automatically called on the last call of Step() that returns false.</p></div>
         
       </li>
     
@@ -911,7 +911,7 @@
       <li class="entry-summary">
         <a href="#step:Bool-instance-method" class="signature"><strong>#step</strong> : Bool</a>
         
-          <div class="summary"><p>[<a href="https://github.com/ocornut/imgui/blob/v1.78/imgui.h#L1899" target="_blank">View C++ header</a>]</p></div>
+          <div class="summary"><p>Call until it returns false.</p></div>
         
       </li>
     
@@ -1005,7 +1005,7 @@
       <br/>
       <div>
         
-          [<a href="https://github.com/oprypin/crystal-imgui/blob/master/src/types.cr#L613" target="_blank">View source</a>]
+          [<a href="https://github.com/oprypin/crystal-imgui/blob/master/src/types.cr#L819" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -1020,13 +1020,15 @@
       
         <div class="doc">
           
-          <p>[<a href="https://github.com/ocornut/imgui/blob/v1.78/imgui.h#L1896" target="_blank">View C++ header</a>]</p>
+          <p>NB: Begin() initialize every fields (as we allow user to call Begin/End multiple times on a same instance if they want).</p>
+
+<p><a href="https://github.com/ocornut/imgui/blob/v1.78/imgui.h#L1896" target="_blank">ImGuiListClipper::ImGuiListClipper()</a></p>
         </div>
       
       <br/>
       <div>
         
-          [<a href="https://github.com/oprypin/crystal-imgui/blob/master/src/obj.cr#L2246" target="_blank">View source</a>]
+          [<a href="https://github.com/oprypin/crystal-imgui/blob/master/src/obj.cr#L3866" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -1055,13 +1057,15 @@
       
         <div class="doc">
           
-          <p>[<a href="https://github.com/ocornut/imgui/blob/v1.78/imgui.h#L1900" target="_blank">View C++ header</a>]</p>
+          <p>Automatically called by constructor if you passed 'items_count' or by Step() in Step 1.</p>
+
+<p><a href="https://github.com/ocornut/imgui/blob/v1.78/imgui.h#L1900" target="_blank">ImGuiListClipper::Begin()</a></p>
         </div>
       
       <br/>
       <div>
         
-          [<a href="https://github.com/oprypin/crystal-imgui/blob/master/src/obj.cr#L2236" target="_blank">View source</a>]
+          [<a href="https://github.com/oprypin/crystal-imgui/blob/master/src/obj.cr#L3881" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -1077,7 +1081,7 @@
       <br/>
       <div>
         
-          [<a href="https://github.com/oprypin/crystal-imgui/blob/master/src/types.cr#L607" target="_blank">View source</a>]
+          [<a href="https://github.com/oprypin/crystal-imgui/blob/master/src/types.cr#L813" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -1093,7 +1097,7 @@
       <br/>
       <div>
         
-          [<a href="https://github.com/oprypin/crystal-imgui/blob/master/src/types.cr#L607" target="_blank">View source</a>]
+          [<a href="https://github.com/oprypin/crystal-imgui/blob/master/src/types.cr#L813" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -1109,7 +1113,7 @@
       <br/>
       <div>
         
-          [<a href="https://github.com/oprypin/crystal-imgui/blob/master/src/types.cr#L606" target="_blank">View source</a>]
+          [<a href="https://github.com/oprypin/crystal-imgui/blob/master/src/types.cr#L812" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -1125,7 +1129,7 @@
       <br/>
       <div>
         
-          [<a href="https://github.com/oprypin/crystal-imgui/blob/master/src/types.cr#L606" target="_blank">View source</a>]
+          [<a href="https://github.com/oprypin/crystal-imgui/blob/master/src/types.cr#L812" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -1140,13 +1144,15 @@
       
         <div class="doc">
           
-          <p>[<a href="https://github.com/ocornut/imgui/blob/v1.78/imgui.h#L1901" target="_blank">View C++ header</a>]</p>
+          <p>Automatically called on the last call of Step() that returns false.</p>
+
+<p><a href="https://github.com/ocornut/imgui/blob/v1.78/imgui.h#L1901" target="_blank">ImGuiListClipper::End()</a></p>
         </div>
       
       <br/>
       <div>
         
-          [<a href="https://github.com/oprypin/crystal-imgui/blob/master/src/obj.cr#L2241" target="_blank">View source</a>]
+          [<a href="https://github.com/oprypin/crystal-imgui/blob/master/src/obj.cr#L3888" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -1162,7 +1168,7 @@
       <br/>
       <div>
         
-          [<a href="https://github.com/oprypin/crystal-imgui/blob/master/src/types.cr#L608" target="_blank">View source</a>]
+          [<a href="https://github.com/oprypin/crystal-imgui/blob/master/src/types.cr#L814" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -1178,7 +1184,7 @@
       <br/>
       <div>
         
-          [<a href="https://github.com/oprypin/crystal-imgui/blob/master/src/types.cr#L608" target="_blank">View source</a>]
+          [<a href="https://github.com/oprypin/crystal-imgui/blob/master/src/types.cr#L814" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -1194,7 +1200,7 @@
       <br/>
       <div>
         
-          [<a href="https://github.com/oprypin/crystal-imgui/blob/master/src/types.cr#L610" target="_blank">View source</a>]
+          [<a href="https://github.com/oprypin/crystal-imgui/blob/master/src/types.cr#L816" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -1210,7 +1216,7 @@
       <br/>
       <div>
         
-          [<a href="https://github.com/oprypin/crystal-imgui/blob/master/src/types.cr#L610" target="_blank">View source</a>]
+          [<a href="https://github.com/oprypin/crystal-imgui/blob/master/src/types.cr#L816" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -1226,7 +1232,7 @@
       <br/>
       <div>
         
-          [<a href="https://github.com/oprypin/crystal-imgui/blob/master/src/types.cr#L611" target="_blank">View source</a>]
+          [<a href="https://github.com/oprypin/crystal-imgui/blob/master/src/types.cr#L817" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -1242,7 +1248,7 @@
       <br/>
       <div>
         
-          [<a href="https://github.com/oprypin/crystal-imgui/blob/master/src/types.cr#L611" target="_blank">View source</a>]
+          [<a href="https://github.com/oprypin/crystal-imgui/blob/master/src/types.cr#L817" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -1257,13 +1263,15 @@
       
         <div class="doc">
           
-          <p>[<a href="https://github.com/ocornut/imgui/blob/v1.78/imgui.h#L1899" target="_blank">View C++ header</a>]</p>
+          <p>Call until it returns false. The DisplayStart/DisplayEnd fields will be set and you can process/draw those items.</p>
+
+<p><a href="https://github.com/ocornut/imgui/blob/v1.78/imgui.h#L1899" target="_blank">ImGuiListClipper::Step()</a></p>
         </div>
       
       <br/>
       <div>
         
-          [<a href="https://github.com/oprypin/crystal-imgui/blob/master/src/obj.cr#L2252" target="_blank">View source</a>]
+          [<a href="https://github.com/oprypin/crystal-imgui/blob/master/src/obj.cr#L3874" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -1279,7 +1287,7 @@
       <br/>
       <div>
         
-          [<a href="https://github.com/oprypin/crystal-imgui/blob/master/src/types.cr#L609" target="_blank">View source</a>]
+          [<a href="https://github.com/oprypin/crystal-imgui/blob/master/src/types.cr#L815" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -1295,7 +1303,7 @@
       <br/>
       <div>
         
-          [<a href="https://github.com/oprypin/crystal-imgui/blob/master/src/types.cr#L609" target="_blank">View source</a>]
+          [<a href="https://github.com/oprypin/crystal-imgui/blob/master/src/types.cr#L815" target="_blank">View source</a>]
         
       </div>
     </div>

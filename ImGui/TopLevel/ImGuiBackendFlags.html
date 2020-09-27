@@ -771,7 +771,7 @@
   </h2>
   
     
-      <a href="https://github.com/oprypin/crystal-imgui/blob/master/src/types.cr#L47" target="_blank">
+      <a href="https://github.com/oprypin/crystal-imgui/blob/master/src/types.cr#L524" target="_blank">
         types.cr
       </a>
     
@@ -796,15 +796,27 @@
         <strong>HasGamepad</strong> = <code><span class="n">1</span></code>
       </dt>
       
+      <dd class="entry-const-doc">
+        <p>Back-end Platform supports gamepad and currently has one connected.</p>
+      </dd>
+      
     
       <dt class="entry-const" id="HasMouseCursors">
         <strong>HasMouseCursors</strong> = <code><span class="n">2</span></code>
       </dt>
       
+      <dd class="entry-const-doc">
+        <p>Back-end Platform supports honoring GetMouseCursor() value to change the OS cursor shape.</p>
+      </dd>
+      
     
       <dt class="entry-const" id="HasSetMousePos">
         <strong>HasSetMousePos</strong> = <code><span class="n">4</span></code>
       </dt>
+      
+      <dd class="entry-const-doc">
+        <p>Back-end Platform supports io.WantSetMousePos requests to reposition the OS mouse position (only used if ImGuiConfigFlags_NavEnableSetMousePos is set).</p>
+      </dd>
       
     
       <dt class="entry-const" id="None">
@@ -815,6 +827,10 @@
       <dt class="entry-const" id="RendererHasVtxOffset">
         <strong>RendererHasVtxOffset</strong> = <code><span class="n">8</span></code>
       </dt>
+      
+      <dd class="entry-const-doc">
+        <p>Back-end Renderer supports ImDrawCmd::VtxOffset. This enables output of large meshes (64K+ vertices) while still using 16-bit indices.</p>
+      </dd>
       
     
   </dl>

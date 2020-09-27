@@ -747,7 +747,7 @@
     Overview
   </h2>
 
-  <p>[<a href="https://github.com/ocornut/imgui/blob/v1.78/imgui.h#L1124" target="_blank">View C++ header</a>]</p>
+  <p><a href="https://github.com/ocornut/imgui/blob/v1.78/imgui.h#L1124" target="_blank">enum ImGuiBackendFlags_</a></p>
 
 
 
@@ -772,7 +772,7 @@
   </h2>
   
     
-      <a href="https://github.com/oprypin/crystal-imgui/blob/master/src/types.cr#L40" target="_blank">
+      <a href="https://github.com/oprypin/crystal-imgui/blob/master/src/types.cr#L513" target="_blank">
         types.cr
       </a>
     
@@ -802,20 +802,36 @@
         <strong>HasGamepad</strong> = <code><span class="n">1</span></code>
       </dt>
       
+      <dd class="entry-const-doc">
+        <p>Back-end Platform supports gamepad and currently has one connected.</p>
+      </dd>
+      
     
       <dt class="entry-const" id="HasMouseCursors">
         <strong>HasMouseCursors</strong> = <code><span class="n">2</span></code>
       </dt>
+      
+      <dd class="entry-const-doc">
+        <p>Back-end Platform supports honoring GetMouseCursor() value to change the OS cursor shape.</p>
+      </dd>
       
     
       <dt class="entry-const" id="HasSetMousePos">
         <strong>HasSetMousePos</strong> = <code><span class="n">4</span></code>
       </dt>
       
+      <dd class="entry-const-doc">
+        <p>Back-end Platform supports io.WantSetMousePos requests to reposition the OS mouse position (only used if ImGuiConfigFlags_NavEnableSetMousePos is set).</p>
+      </dd>
+      
     
       <dt class="entry-const" id="RendererHasVtxOffset">
         <strong>RendererHasVtxOffset</strong> = <code><span class="n">8</span></code>
       </dt>
+      
+      <dd class="entry-const-doc">
+        <p>Back-end Renderer supports ImDrawCmd::VtxOffset. This enables output of large meshes (64K+ vertices) while still using 16-bit indices.</p>
+      </dd>
       
     
   </dl>
@@ -936,7 +952,7 @@
       <br/>
       <div>
         
-          [<a href="https://github.com/oprypin/crystal-imgui/blob/master/src/types.cr#L42" target="_blank">View source</a>]
+          [<a href="https://github.com/oprypin/crystal-imgui/blob/master/src/types.cr#L516" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -952,7 +968,7 @@
       <br/>
       <div>
         
-          [<a href="https://github.com/oprypin/crystal-imgui/blob/master/src/types.cr#L43" target="_blank">View source</a>]
+          [<a href="https://github.com/oprypin/crystal-imgui/blob/master/src/types.cr#L518" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -968,7 +984,7 @@
       <br/>
       <div>
         
-          [<a href="https://github.com/oprypin/crystal-imgui/blob/master/src/types.cr#L44" target="_blank">View source</a>]
+          [<a href="https://github.com/oprypin/crystal-imgui/blob/master/src/types.cr#L520" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -984,7 +1000,7 @@
       <br/>
       <div>
         
-          [<a href="https://github.com/oprypin/crystal-imgui/blob/master/src/types.cr#L41" target="_blank">View source</a>]
+          [<a href="https://github.com/oprypin/crystal-imgui/blob/master/src/types.cr#L514" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -1000,7 +1016,7 @@
       <br/>
       <div>
         
-          [<a href="https://github.com/oprypin/crystal-imgui/blob/master/src/types.cr#L45" target="_blank">View source</a>]
+          [<a href="https://github.com/oprypin/crystal-imgui/blob/master/src/types.cr#L522" target="_blank">View source</a>]
         
       </div>
     </div>

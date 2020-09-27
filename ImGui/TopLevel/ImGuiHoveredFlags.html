@@ -771,7 +771,7 @@
   </h2>
   
     
-      <a href="https://github.com/oprypin/crystal-imgui/blob/master/src/types.cr#L256" target="_blank">
+      <a href="https://github.com/oprypin/crystal-imgui/blob/master/src/types.cr#L326" target="_blank">
         types.cr
       </a>
     
@@ -796,35 +796,63 @@
         <strong>AllowWhenBlockedByActiveItem</strong> = <code><span class="n">32</span></code>
       </dt>
       
+      <dd class="entry-const-doc">
+        <p>Return true even if an active item is blocking access to this item/window. Useful for Drag and Drop patterns.</p>
+      </dd>
+      
     
       <dt class="entry-const" id="AllowWhenBlockedByPopup">
         <strong>AllowWhenBlockedByPopup</strong> = <code><span class="n">8</span></code>
       </dt>
+      
+      <dd class="entry-const-doc">
+        <p>Return true even if a popup window is normally blocking access to this item/window</p>
+      </dd>
       
     
       <dt class="entry-const" id="AllowWhenDisabled">
         <strong>AllowWhenDisabled</strong> = <code><span class="n">128</span></code>
       </dt>
       
+      <dd class="entry-const-doc">
+        <p>Return true even if the item is disabled</p>
+      </dd>
+      
     
       <dt class="entry-const" id="AllowWhenOverlapped">
         <strong>AllowWhenOverlapped</strong> = <code><span class="n">64</span></code>
       </dt>
+      
+      <dd class="entry-const-doc">
+        <p>Return true even if the position is obstructed or overlapped by another window</p>
+      </dd>
       
     
       <dt class="entry-const" id="AnyWindow">
         <strong>AnyWindow</strong> = <code><span class="n">4</span></code>
       </dt>
       
+      <dd class="entry-const-doc">
+        <p>IsWindowHovered() only: Return true if any window is hovered</p>
+      </dd>
+      
     
       <dt class="entry-const" id="ChildWindows">
         <strong>ChildWindows</strong> = <code><span class="n">1</span></code>
       </dt>
       
+      <dd class="entry-const-doc">
+        <p>IsWindowHovered() only: Return true if any children of the window is hovered</p>
+      </dd>
+      
     
       <dt class="entry-const" id="None">
         <strong>None</strong> = <code><span class="n">0</span></code>
       </dt>
+      
+      <dd class="entry-const-doc">
+        <p>Return true if directly over the item/window, not obstructed by another window, not obstructed by an active popup or modal blocking inputs under them.</p>
+      </dd>
       
     
       <dt class="entry-const" id="RectOnly">
@@ -840,6 +868,10 @@
       <dt class="entry-const" id="RootWindow">
         <strong>RootWindow</strong> = <code><span class="n">2</span></code>
       </dt>
+      
+      <dd class="entry-const-doc">
+        <p>IsWindowHovered() only: Test from root window (top most parent of the current hierarchy)</p>
+      </dd>
       
     
   </dl>

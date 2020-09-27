@@ -749,7 +749,7 @@
     Overview
   </h2>
 
-  <p>[<a href="https://github.com/ocornut/imgui/blob/v1.78/imgui.h#L2261" target="_blank">View C++ header</a>]</p>
+  <p><a href="https://github.com/ocornut/imgui/blob/v1.78/imgui.h#L2261" target="_blank">struct ImFontAtlasCustomRect</a></p>
 
 
 
@@ -788,7 +788,7 @@
   </h2>
   
     
-      <a href="https://github.com/oprypin/crystal-imgui/blob/master/src/obj.cr#L1124" target="_blank">
+      <a href="https://github.com/oprypin/crystal-imgui/blob/master/src/obj.cr#L4784" target="_blank">
         obj.cr
       </a>
     
@@ -812,7 +812,7 @@
       <li class="entry-summary">
         <a href="#new:ImFontAtlasCustomRect-class-method" class="signature"><strong>.new</strong> : ImFontAtlasCustomRect</a>
         
-          <div class="summary"><p>[<a href="https://github.com/ocornut/imgui/blob/v1.78/imgui.h#L2269" target="_blank">View C++ header</a>]</p></div>
+          <div class="summary"><p><a href="https://github.com/ocornut/imgui/blob/v1.78/imgui.h#L2269" target="_blank">ImFontAtlasCustomRect::ImFontAtlasCustomRect()</a></p></div>
         
       </li>
     
@@ -835,6 +835,8 @@
       <li class="entry-summary">
         <a href="#font:ImFont-instance-method" class="signature"><strong>#font</strong> : ImFont</a>
         
+          <div class="summary"><p>Input For custom font glyphs only: target font</p></div>
+        
       </li>
     
       <li class="entry-summary">
@@ -844,6 +846,8 @@
     
       <li class="entry-summary">
         <a href="#glyph_advance_x:Float32-instance-method" class="signature"><strong>#glyph_advance_x</strong> : Float32</a>
+        
+          <div class="summary"><p>Input For custom font glyphs only: glyph xadvance</p></div>
         
       </li>
     
@@ -855,6 +859,8 @@
       <li class="entry-summary">
         <a href="#glyph_id:UInt32-instance-method" class="signature"><strong>#glyph_id</strong> : UInt32</a>
         
+          <div class="summary"><p>Input For custom font glyphs only (ID &lt; 0x110000)</p></div>
+        
       </li>
     
       <li class="entry-summary">
@@ -864,6 +870,8 @@
     
       <li class="entry-summary">
         <a href="#glyph_offset:ImVec2-instance-method" class="signature"><strong>#glyph_offset</strong> : ImVec2</a>
+        
+          <div class="summary"><p>Input For custom font glyphs only: glyph display offset</p></div>
         
       </li>
     
@@ -875,6 +883,8 @@
       <li class="entry-summary">
         <a href="#height:UInt16-instance-method" class="signature"><strong>#height</strong> : UInt16</a>
         
+          <div class="summary"><p>Input Desired rectangle dimension</p></div>
+        
       </li>
     
       <li class="entry-summary">
@@ -885,7 +895,7 @@
       <li class="entry-summary">
         <a href="#is_packed:Bool-instance-method" class="signature"><strong>#is_packed</strong> : Bool</a>
         
-          <div class="summary"><p>[<a href="https://github.com/ocornut/imgui/blob/v1.78/imgui.h#L2270" target="_blank">View C++ header</a>]</p></div>
+          <div class="summary"><p><a href="https://github.com/ocornut/imgui/blob/v1.78/imgui.h#L2270" target="_blank">ImFontAtlasCustomRect::IsPacked()</a></p></div>
         
       </li>
     
@@ -897,6 +907,8 @@
       <li class="entry-summary">
         <a href="#width:UInt16-instance-method" class="signature"><strong>#width</strong> : UInt16</a>
         
+          <div class="summary"><p>Input Desired rectangle dimension</p></div>
+        
       </li>
     
       <li class="entry-summary">
@@ -907,6 +919,8 @@
       <li class="entry-summary">
         <a href="#x:UInt16-instance-method" class="signature"><strong>#x</strong> : UInt16</a>
         
+          <div class="summary"><p>Output Packed position in Atlas</p></div>
+        
       </li>
     
       <li class="entry-summary">
@@ -916,6 +930,8 @@
     
       <li class="entry-summary">
         <a href="#y:UInt16-instance-method" class="signature"><strong>#y</strong> : UInt16</a>
+        
+          <div class="summary"><p>Output Packed position in Atlas</p></div>
         
       </li>
     
@@ -994,13 +1010,13 @@
       
         <div class="doc">
           
-          <p>[<a href="https://github.com/ocornut/imgui/blob/v1.78/imgui.h#L2269" target="_blank">View C++ header</a>]</p>
+          <p><a href="https://github.com/ocornut/imgui/blob/v1.78/imgui.h#L2269" target="_blank">ImFontAtlasCustomRect::ImFontAtlasCustomRect()</a></p>
         </div>
       
       <br/>
       <div>
         
-          [<a href="https://github.com/oprypin/crystal-imgui/blob/master/src/obj.cr#L1192" target="_blank">View source</a>]
+          [<a href="https://github.com/oprypin/crystal-imgui/blob/master/src/obj.cr#L4868" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -1027,10 +1043,16 @@
         <a class="method-permalink" href="#font:ImFont-instance-method">#</a>
       </div>
       
+        <div class="doc">
+          
+          <p>Input
+For custom font glyphs only: target font</p>
+        </div>
+      
       <br/>
       <div>
         
-          [<a href="https://github.com/oprypin/crystal-imgui/blob/master/src/obj.cr#L1183" target="_blank">View source</a>]
+          [<a href="https://github.com/oprypin/crystal-imgui/blob/master/src/obj.cr#L4859" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -1046,7 +1068,7 @@
       <br/>
       <div>
         
-          [<a href="https://github.com/oprypin/crystal-imgui/blob/master/src/obj.cr#L1187" target="_blank">View source</a>]
+          [<a href="https://github.com/oprypin/crystal-imgui/blob/master/src/obj.cr#L4863" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -1059,10 +1081,16 @@
         <a class="method-permalink" href="#glyph_advance_x:Float32-instance-method">#</a>
       </div>
       
+        <div class="doc">
+          
+          <p>Input
+For custom font glyphs only: glyph xadvance</p>
+        </div>
+      
       <br/>
       <div>
         
-          [<a href="https://github.com/oprypin/crystal-imgui/blob/master/src/obj.cr#L1167" target="_blank">View source</a>]
+          [<a href="https://github.com/oprypin/crystal-imgui/blob/master/src/obj.cr#L4839" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -1078,7 +1106,7 @@
       <br/>
       <div>
         
-          [<a href="https://github.com/oprypin/crystal-imgui/blob/master/src/obj.cr#L1171" target="_blank">View source</a>]
+          [<a href="https://github.com/oprypin/crystal-imgui/blob/master/src/obj.cr#L4843" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -1091,10 +1119,16 @@
         <a class="method-permalink" href="#glyph_id:UInt32-instance-method">#</a>
       </div>
       
+        <div class="doc">
+          
+          <p>Input
+For custom font glyphs only (ID &lt; 0x110000)</p>
+        </div>
+      
       <br/>
       <div>
         
-          [<a href="https://github.com/oprypin/crystal-imgui/blob/master/src/obj.cr#L1159" target="_blank">View source</a>]
+          [<a href="https://github.com/oprypin/crystal-imgui/blob/master/src/obj.cr#L4829" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -1110,7 +1144,7 @@
       <br/>
       <div>
         
-          [<a href="https://github.com/oprypin/crystal-imgui/blob/master/src/obj.cr#L1163" target="_blank">View source</a>]
+          [<a href="https://github.com/oprypin/crystal-imgui/blob/master/src/obj.cr#L4833" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -1123,10 +1157,16 @@
         <a class="method-permalink" href="#glyph_offset:ImVec2-instance-method">#</a>
       </div>
       
+        <div class="doc">
+          
+          <p>Input
+For custom font glyphs only: glyph display offset</p>
+        </div>
+      
       <br/>
       <div>
         
-          [<a href="https://github.com/oprypin/crystal-imgui/blob/master/src/obj.cr#L1175" target="_blank">View source</a>]
+          [<a href="https://github.com/oprypin/crystal-imgui/blob/master/src/obj.cr#L4849" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -1142,7 +1182,7 @@
       <br/>
       <div>
         
-          [<a href="https://github.com/oprypin/crystal-imgui/blob/master/src/obj.cr#L1179" target="_blank">View source</a>]
+          [<a href="https://github.com/oprypin/crystal-imgui/blob/master/src/obj.cr#L4853" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -1155,10 +1195,16 @@
         <a class="method-permalink" href="#height:UInt16-instance-method">#</a>
       </div>
       
+        <div class="doc">
+          
+          <p>Input
+Desired rectangle dimension</p>
+        </div>
+      
       <br/>
       <div>
         
-          [<a href="https://github.com/oprypin/crystal-imgui/blob/master/src/obj.cr#L1135" target="_blank">View source</a>]
+          [<a href="https://github.com/oprypin/crystal-imgui/blob/master/src/obj.cr#L4799" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -1174,7 +1220,7 @@
       <br/>
       <div>
         
-          [<a href="https://github.com/oprypin/crystal-imgui/blob/master/src/obj.cr#L1139" target="_blank">View source</a>]
+          [<a href="https://github.com/oprypin/crystal-imgui/blob/master/src/obj.cr#L4803" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -1189,13 +1235,13 @@
       
         <div class="doc">
           
-          <p>[<a href="https://github.com/ocornut/imgui/blob/v1.78/imgui.h#L2270" target="_blank">View C++ header</a>]</p>
+          <p><a href="https://github.com/ocornut/imgui/blob/v1.78/imgui.h#L2270" target="_blank">ImFontAtlasCustomRect::IsPacked()</a></p>
         </div>
       
       <br/>
       <div>
         
-          [<a href="https://github.com/oprypin/crystal-imgui/blob/master/src/obj.cr#L1198" target="_blank">View source</a>]
+          [<a href="https://github.com/oprypin/crystal-imgui/blob/master/src/obj.cr#L4874" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -1211,7 +1257,7 @@
       <br/>
       <div>
         
-          [<a href="https://github.com/oprypin/crystal-imgui/blob/master/src/obj.cr#L1125" target="_blank">View source</a>]
+          [<a href="https://github.com/oprypin/crystal-imgui/blob/master/src/obj.cr#L4785" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -1224,10 +1270,16 @@
         <a class="method-permalink" href="#width:UInt16-instance-method">#</a>
       </div>
       
+        <div class="doc">
+          
+          <p>Input
+Desired rectangle dimension</p>
+        </div>
+      
       <br/>
       <div>
         
-          [<a href="https://github.com/oprypin/crystal-imgui/blob/master/src/obj.cr#L1127" target="_blank">View source</a>]
+          [<a href="https://github.com/oprypin/crystal-imgui/blob/master/src/obj.cr#L4789" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -1243,7 +1295,7 @@
       <br/>
       <div>
         
-          [<a href="https://github.com/oprypin/crystal-imgui/blob/master/src/obj.cr#L1131" target="_blank">View source</a>]
+          [<a href="https://github.com/oprypin/crystal-imgui/blob/master/src/obj.cr#L4793" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -1256,10 +1308,16 @@
         <a class="method-permalink" href="#x:UInt16-instance-method">#</a>
       </div>
       
+        <div class="doc">
+          
+          <p>Output
+Packed position in Atlas</p>
+        </div>
+      
       <br/>
       <div>
         
-          [<a href="https://github.com/oprypin/crystal-imgui/blob/master/src/obj.cr#L1143" target="_blank">View source</a>]
+          [<a href="https://github.com/oprypin/crystal-imgui/blob/master/src/obj.cr#L4809" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -1275,7 +1333,7 @@
       <br/>
       <div>
         
-          [<a href="https://github.com/oprypin/crystal-imgui/blob/master/src/obj.cr#L1147" target="_blank">View source</a>]
+          [<a href="https://github.com/oprypin/crystal-imgui/blob/master/src/obj.cr#L4813" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -1288,10 +1346,16 @@
         <a class="method-permalink" href="#y:UInt16-instance-method">#</a>
       </div>
       
+        <div class="doc">
+          
+          <p>Output
+Packed position in Atlas</p>
+        </div>
+      
       <br/>
       <div>
         
-          [<a href="https://github.com/oprypin/crystal-imgui/blob/master/src/obj.cr#L1151" target="_blank">View source</a>]
+          [<a href="https://github.com/oprypin/crystal-imgui/blob/master/src/obj.cr#L4819" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -1307,7 +1371,7 @@
       <br/>
       <div>
         
-          [<a href="https://github.com/oprypin/crystal-imgui/blob/master/src/obj.cr#L1155" target="_blank">View source</a>]
+          [<a href="https://github.com/oprypin/crystal-imgui/blob/master/src/obj.cr#L4823" target="_blank">View source</a>]
         
       </div>
     </div>

@@ -771,7 +771,7 @@
   </h2>
   
     
-      <a href="https://github.com/oprypin/crystal-imgui/blob/master/src/types.cr#L458" target="_blank">
+      <a href="https://github.com/oprypin/crystal-imgui/blob/master/src/types.cr#L271" target="_blank">
         types.cr
       </a>
     
@@ -796,6 +796,10 @@
         <strong>AutoSelectNewTabs</strong> = <code><span class="n">2</span></code>
       </dt>
       
+      <dd class="entry-const-doc">
+        <p>Automatically select new tabs when they appear</p>
+      </dd>
+      
     
       <dt class="entry-const" id="FittingPolicyDefault_">
         <strong>FittingPolicyDefault_</strong> = <code><span class="n">64</span></code>
@@ -811,15 +815,27 @@
         <strong>FittingPolicyResizeDown</strong> = <code><span class="n">64</span></code>
       </dt>
       
+      <dd class="entry-const-doc">
+        <p>Resize tabs when they don't fit</p>
+      </dd>
+      
     
       <dt class="entry-const" id="FittingPolicyScroll">
         <strong>FittingPolicyScroll</strong> = <code><span class="n">128</span></code>
       </dt>
       
+      <dd class="entry-const-doc">
+        <p>Add scroll buttons when tabs don't fit</p>
+      </dd>
+      
     
       <dt class="entry-const" id="NoCloseWithMiddleMouseButton">
         <strong>NoCloseWithMiddleMouseButton</strong> = <code><span class="n">8</span></code>
       </dt>
+      
+      <dd class="entry-const-doc">
+        <p>Disable behavior of closing tabs (that are submitted with p_open != NULL) with middle mouse button. You can still repro this behavior on user's side with if (IsItemHovered() && IsMouseClicked(2)) *p_open = false.</p>
+      </dd>
       
     
       <dt class="entry-const" id="None">
@@ -831,20 +847,36 @@
         <strong>NoTabListScrollingButtons</strong> = <code><span class="n">16</span></code>
       </dt>
       
+      <dd class="entry-const-doc">
+        <p>Disable scrolling buttons (apply when fitting policy is ImGuiTabBarFlags_FittingPolicyScroll)</p>
+      </dd>
+      
     
       <dt class="entry-const" id="NoTooltip">
         <strong>NoTooltip</strong> = <code><span class="n">32</span></code>
       </dt>
+      
+      <dd class="entry-const-doc">
+        <p>Disable tooltips when hovering a tab</p>
+      </dd>
       
     
       <dt class="entry-const" id="Reorderable">
         <strong>Reorderable</strong> = <code><span class="n">1</span></code>
       </dt>
       
+      <dd class="entry-const-doc">
+        <p>Allow manually dragging tabs to re-order them + New tabs are appended at the end of list</p>
+      </dd>
+      
     
       <dt class="entry-const" id="TabListPopupButton">
         <strong>TabListPopupButton</strong> = <code><span class="n">4</span></code>
       </dt>
+      
+      <dd class="entry-const-doc">
+        <p>Disable buttons to open the tab list popup</p>
+      </dd>
       
     
   </dl>

@@ -747,7 +747,7 @@
     Overview
   </h2>
 
-  <p>[<a href="https://github.com/ocornut/imgui/blob/v1.78/imgui.h#L1248" target="_blank">View C++ header</a>]</p>
+  <p><a href="https://github.com/ocornut/imgui/blob/v1.78/imgui.h#L1248" target="_blank">enum ImGuiColorEditFlags_</a></p>
 
 
 
@@ -772,7 +772,7 @@
   </h2>
   
     
-      <a href="https://github.com/oprypin/crystal-imgui/blob/master/src/types.cr#L116" target="_blank">
+      <a href="https://github.com/oprypin/crystal-imgui/blob/master/src/types.cr#L656" target="_blank">
         types.cr
       </a>
     
@@ -802,115 +802,216 @@
         <strong>NoAlpha</strong> = <code><span class="n">2</span></code>
       </dt>
       
+      <dd class="entry-const-doc">
+        <p>ColorEdit, ColorPicker, ColorButton: ignore Alpha component (will only read 3 components from the input pointer).</p>
+      </dd>
+      
     
       <dt class="entry-const" id="NoPicker">
         <strong>NoPicker</strong> = <code><span class="n">4</span></code>
       </dt>
+      
+      <dd class="entry-const-doc">
+        <p>ColorEdit: disable picker when clicking on colored square.</p>
+      </dd>
       
     
       <dt class="entry-const" id="NoOptions">
         <strong>NoOptions</strong> = <code><span class="n">8</span></code>
       </dt>
       
+      <dd class="entry-const-doc">
+        <p>ColorEdit: disable toggling options menu when right-clicking on inputs/small preview.</p>
+      </dd>
+      
     
       <dt class="entry-const" id="NoSmallPreview">
         <strong>NoSmallPreview</strong> = <code><span class="n">16</span></code>
       </dt>
+      
+      <dd class="entry-const-doc">
+        <p>ColorEdit, ColorPicker: disable colored square preview next to the inputs. (e.g. to show only the inputs)</p>
+      </dd>
       
     
       <dt class="entry-const" id="NoInputs">
         <strong>NoInputs</strong> = <code><span class="n">32</span></code>
       </dt>
       
+      <dd class="entry-const-doc">
+        <p>ColorEdit, ColorPicker: disable inputs sliders/text widgets (e.g. to show only the small preview colored square).</p>
+      </dd>
+      
     
       <dt class="entry-const" id="NoTooltip">
         <strong>NoTooltip</strong> = <code><span class="n">64</span></code>
       </dt>
+      
+      <dd class="entry-const-doc">
+        <p>ColorEdit, ColorPicker, ColorButton: disable tooltip when hovering the preview.</p>
+      </dd>
       
     
       <dt class="entry-const" id="NoLabel">
         <strong>NoLabel</strong> = <code><span class="n">128</span></code>
       </dt>
       
+      <dd class="entry-const-doc">
+        <p>ColorEdit, ColorPicker: disable display of inline text label (the label is still forwarded to the tooltip and picker).</p>
+      </dd>
+      
     
       <dt class="entry-const" id="NoSidePreview">
         <strong>NoSidePreview</strong> = <code><span class="n">256</span></code>
       </dt>
+      
+      <dd class="entry-const-doc">
+        <p>ColorPicker: disable bigger color preview on right side of the picker, use small colored square preview instead.</p>
+      </dd>
       
     
       <dt class="entry-const" id="NoDragDrop">
         <strong>NoDragDrop</strong> = <code><span class="n">512</span></code>
       </dt>
       
+      <dd class="entry-const-doc">
+        <p>ColorEdit: disable drag and drop target. ColorButton: disable drag and drop source.</p>
+      </dd>
+      
     
       <dt class="entry-const" id="NoBorder">
         <strong>NoBorder</strong> = <code><span class="n">1024</span></code>
       </dt>
+      
+      <dd class="entry-const-doc">
+        <p>ColorButton: disable border (which is enforced by default)</p>
+      </dd>
       
     
       <dt class="entry-const" id="AlphaBar">
         <strong>AlphaBar</strong> = <code><span class="n">65536</span></code>
       </dt>
       
+      <dd class="entry-const-doc">
+        <p>ColorEdit, ColorPicker: show vertical alpha bar/gradient in picker.</p>
+      </dd>
+      
     
       <dt class="entry-const" id="AlphaPreview">
         <strong>AlphaPreview</strong> = <code><span class="n">131072</span></code>
       </dt>
+      
+      <dd class="entry-const-doc">
+        <p>ColorEdit, ColorPicker, ColorButton: display preview as a transparent color over a checkerboard, instead of opaque.</p>
+      </dd>
       
     
       <dt class="entry-const" id="AlphaPreviewHalf">
         <strong>AlphaPreviewHalf</strong> = <code><span class="n">262144</span></code>
       </dt>
       
+      <dd class="entry-const-doc">
+        <p>ColorEdit, ColorPicker, ColorButton: display half opaque / half checkerboard, instead of opaque.</p>
+      </dd>
+      
     
       <dt class="entry-const" id="HDR">
         <strong>HDR</strong> = <code><span class="n">524288</span></code>
       </dt>
+      
+      <dd class="entry-const-doc">
+        <p>(WIP) ColorEdit: Currently only disable 0.0f..1.0f limits in RGBA edition (note: you probably want to use ImGuiColorEditFlags_Float flag as well).</p>
+      </dd>
       
     
       <dt class="entry-const" id="DisplayRGB">
         <strong>DisplayRGB</strong> = <code><span class="n">1048576</span></code>
       </dt>
       
+      <dd class="entry-const-doc">
+        <p>[Display]
+ColorEdit: override <em>display</em> type among RGB/HSV/Hex. ColorPicker: select any combination using one or more of RGB/HSV/Hex.</p>
+      </dd>
+      
     
       <dt class="entry-const" id="DisplayHSV">
         <strong>DisplayHSV</strong> = <code><span class="n">2097152</span></code>
       </dt>
+      
+      <dd class="entry-const-doc">
+        <p>[Display]
+"</p>
+      </dd>
       
     
       <dt class="entry-const" id="DisplayHex">
         <strong>DisplayHex</strong> = <code><span class="n">4194304</span></code>
       </dt>
       
+      <dd class="entry-const-doc">
+        <p>[Display]
+"</p>
+      </dd>
+      
     
       <dt class="entry-const" id="Uint8">
         <strong>Uint8</strong> = <code><span class="n">8388608</span></code>
       </dt>
+      
+      <dd class="entry-const-doc">
+        <p>[DataType]
+ColorEdit, ColorPicker, ColorButton: <em>display</em> values formatted as 0..255.</p>
+      </dd>
       
     
       <dt class="entry-const" id="Float">
         <strong>Float</strong> = <code><span class="n">16777216</span></code>
       </dt>
       
+      <dd class="entry-const-doc">
+        <p>[DataType]
+ColorEdit, ColorPicker, ColorButton: <em>display</em> values formatted as 0.0f..1.0f floats instead of 0..255 integers. No round-trip of value via integers.</p>
+      </dd>
+      
     
       <dt class="entry-const" id="PickerHueBar">
         <strong>PickerHueBar</strong> = <code><span class="n">33554432</span></code>
       </dt>
+      
+      <dd class="entry-const-doc">
+        <p>[Picker]
+ColorPicker: bar for Hue, rectangle for Sat/Value.</p>
+      </dd>
       
     
       <dt class="entry-const" id="PickerHueWheel">
         <strong>PickerHueWheel</strong> = <code><span class="n">67108864</span></code>
       </dt>
       
+      <dd class="entry-const-doc">
+        <p>[Picker]
+ColorPicker: wheel for Hue, triangle for Sat/Value.</p>
+      </dd>
+      
     
       <dt class="entry-const" id="InputRGB">
         <strong>InputRGB</strong> = <code><span class="n">134217728</span></code>
       </dt>
       
+      <dd class="entry-const-doc">
+        <p>[Input]
+ColorEdit, ColorPicker: input and output data in RGB format.</p>
+      </dd>
+      
     
       <dt class="entry-const" id="InputHSV">
         <strong>InputHSV</strong> = <code><span class="n">268435456</span></code>
       </dt>
+      
+      <dd class="entry-const-doc">
+        <p>[Input]
+ColorEdit, ColorPicker: input and output data in HSV format.</p>
+      </dd>
       
     
       <dt class="entry-const" id="OptionsDefault_">
@@ -1176,7 +1277,7 @@
       <br/>
       <div>
         
-          [<a href="https://github.com/oprypin/crystal-imgui/blob/master/src/types.cr#L128" target="_blank">View source</a>]
+          [<a href="https://github.com/oprypin/crystal-imgui/blob/master/src/types.cr#L679" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -1192,7 +1293,7 @@
       <br/>
       <div>
         
-          [<a href="https://github.com/oprypin/crystal-imgui/blob/master/src/types.cr#L129" target="_blank">View source</a>]
+          [<a href="https://github.com/oprypin/crystal-imgui/blob/master/src/types.cr#L681" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -1208,7 +1309,7 @@
       <br/>
       <div>
         
-          [<a href="https://github.com/oprypin/crystal-imgui/blob/master/src/types.cr#L130" target="_blank">View source</a>]
+          [<a href="https://github.com/oprypin/crystal-imgui/blob/master/src/types.cr#L683" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -1224,7 +1325,7 @@
       <br/>
       <div>
         
-          [<a href="https://github.com/oprypin/crystal-imgui/blob/master/src/types.cr#L143" target="_blank">View source</a>]
+          [<a href="https://github.com/oprypin/crystal-imgui/blob/master/src/types.cr#L715" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -1240,7 +1341,7 @@
       <br/>
       <div>
         
-          [<a href="https://github.com/oprypin/crystal-imgui/blob/master/src/types.cr#L134" target="_blank">View source</a>]
+          [<a href="https://github.com/oprypin/crystal-imgui/blob/master/src/types.cr#L694" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -1256,7 +1357,7 @@
       <br/>
       <div>
         
-          [<a href="https://github.com/oprypin/crystal-imgui/blob/master/src/types.cr#L133" target="_blank">View source</a>]
+          [<a href="https://github.com/oprypin/crystal-imgui/blob/master/src/types.cr#L691" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -1272,7 +1373,7 @@
       <br/>
       <div>
         
-          [<a href="https://github.com/oprypin/crystal-imgui/blob/master/src/types.cr#L142" target="_blank">View source</a>]
+          [<a href="https://github.com/oprypin/crystal-imgui/blob/master/src/types.cr#L714" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -1288,7 +1389,7 @@
       <br/>
       <div>
         
-          [<a href="https://github.com/oprypin/crystal-imgui/blob/master/src/types.cr#L132" target="_blank">View source</a>]
+          [<a href="https://github.com/oprypin/crystal-imgui/blob/master/src/types.cr#L688" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -1304,7 +1405,7 @@
       <br/>
       <div>
         
-          [<a href="https://github.com/oprypin/crystal-imgui/blob/master/src/types.cr#L136" target="_blank">View source</a>]
+          [<a href="https://github.com/oprypin/crystal-imgui/blob/master/src/types.cr#L700" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -1320,7 +1421,7 @@
       <br/>
       <div>
         
-          [<a href="https://github.com/oprypin/crystal-imgui/blob/master/src/types.cr#L131" target="_blank">View source</a>]
+          [<a href="https://github.com/oprypin/crystal-imgui/blob/master/src/types.cr#L685" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -1336,7 +1437,7 @@
       <br/>
       <div>
         
-          [<a href="https://github.com/oprypin/crystal-imgui/blob/master/src/types.cr#L140" target="_blank">View source</a>]
+          [<a href="https://github.com/oprypin/crystal-imgui/blob/master/src/types.cr#L712" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -1352,7 +1453,7 @@
       <br/>
       <div>
         
-          [<a href="https://github.com/oprypin/crystal-imgui/blob/master/src/types.cr#L145" target="_blank">View source</a>]
+          [<a href="https://github.com/oprypin/crystal-imgui/blob/master/src/types.cr#L717" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -1368,7 +1469,7 @@
       <br/>
       <div>
         
-          [<a href="https://github.com/oprypin/crystal-imgui/blob/master/src/types.cr#L139" target="_blank">View source</a>]
+          [<a href="https://github.com/oprypin/crystal-imgui/blob/master/src/types.cr#L709" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -1384,7 +1485,7 @@
       <br/>
       <div>
         
-          [<a href="https://github.com/oprypin/crystal-imgui/blob/master/src/types.cr#L118" target="_blank">View source</a>]
+          [<a href="https://github.com/oprypin/crystal-imgui/blob/master/src/types.cr#L659" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -1400,7 +1501,7 @@
       <br/>
       <div>
         
-          [<a href="https://github.com/oprypin/crystal-imgui/blob/master/src/types.cr#L127" target="_blank">View source</a>]
+          [<a href="https://github.com/oprypin/crystal-imgui/blob/master/src/types.cr#L677" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -1416,7 +1517,7 @@
       <br/>
       <div>
         
-          [<a href="https://github.com/oprypin/crystal-imgui/blob/master/src/types.cr#L126" target="_blank">View source</a>]
+          [<a href="https://github.com/oprypin/crystal-imgui/blob/master/src/types.cr#L675" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -1432,7 +1533,7 @@
       <br/>
       <div>
         
-          [<a href="https://github.com/oprypin/crystal-imgui/blob/master/src/types.cr#L122" target="_blank">View source</a>]
+          [<a href="https://github.com/oprypin/crystal-imgui/blob/master/src/types.cr#L667" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -1448,7 +1549,7 @@
       <br/>
       <div>
         
-          [<a href="https://github.com/oprypin/crystal-imgui/blob/master/src/types.cr#L124" target="_blank">View source</a>]
+          [<a href="https://github.com/oprypin/crystal-imgui/blob/master/src/types.cr#L671" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -1464,7 +1565,7 @@
       <br/>
       <div>
         
-          [<a href="https://github.com/oprypin/crystal-imgui/blob/master/src/types.cr#L120" target="_blank">View source</a>]
+          [<a href="https://github.com/oprypin/crystal-imgui/blob/master/src/types.cr#L663" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -1480,7 +1581,7 @@
       <br/>
       <div>
         
-          [<a href="https://github.com/oprypin/crystal-imgui/blob/master/src/types.cr#L119" target="_blank">View source</a>]
+          [<a href="https://github.com/oprypin/crystal-imgui/blob/master/src/types.cr#L661" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -1496,7 +1597,7 @@
       <br/>
       <div>
         
-          [<a href="https://github.com/oprypin/crystal-imgui/blob/master/src/types.cr#L125" target="_blank">View source</a>]
+          [<a href="https://github.com/oprypin/crystal-imgui/blob/master/src/types.cr#L673" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -1512,7 +1613,7 @@
       <br/>
       <div>
         
-          [<a href="https://github.com/oprypin/crystal-imgui/blob/master/src/types.cr#L121" target="_blank">View source</a>]
+          [<a href="https://github.com/oprypin/crystal-imgui/blob/master/src/types.cr#L665" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -1528,7 +1629,7 @@
       <br/>
       <div>
         
-          [<a href="https://github.com/oprypin/crystal-imgui/blob/master/src/types.cr#L123" target="_blank">View source</a>]
+          [<a href="https://github.com/oprypin/crystal-imgui/blob/master/src/types.cr#L669" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -1544,7 +1645,7 @@
       <br/>
       <div>
         
-          [<a href="https://github.com/oprypin/crystal-imgui/blob/master/src/types.cr#L117" target="_blank">View source</a>]
+          [<a href="https://github.com/oprypin/crystal-imgui/blob/master/src/types.cr#L657" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -1560,7 +1661,7 @@
       <br/>
       <div>
         
-          [<a href="https://github.com/oprypin/crystal-imgui/blob/master/src/types.cr#L141" target="_blank">View source</a>]
+          [<a href="https://github.com/oprypin/crystal-imgui/blob/master/src/types.cr#L713" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -1576,7 +1677,7 @@
       <br/>
       <div>
         
-          [<a href="https://github.com/oprypin/crystal-imgui/blob/master/src/types.cr#L137" target="_blank">View source</a>]
+          [<a href="https://github.com/oprypin/crystal-imgui/blob/master/src/types.cr#L703" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -1592,7 +1693,7 @@
       <br/>
       <div>
         
-          [<a href="https://github.com/oprypin/crystal-imgui/blob/master/src/types.cr#L138" target="_blank">View source</a>]
+          [<a href="https://github.com/oprypin/crystal-imgui/blob/master/src/types.cr#L706" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -1608,7 +1709,7 @@
       <br/>
       <div>
         
-          [<a href="https://github.com/oprypin/crystal-imgui/blob/master/src/types.cr#L144" target="_blank">View source</a>]
+          [<a href="https://github.com/oprypin/crystal-imgui/blob/master/src/types.cr#L716" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -1624,7 +1725,7 @@
       <br/>
       <div>
         
-          [<a href="https://github.com/oprypin/crystal-imgui/blob/master/src/types.cr#L135" target="_blank">View source</a>]
+          [<a href="https://github.com/oprypin/crystal-imgui/blob/master/src/types.cr#L697" target="_blank">View source</a>]
         
       </div>
     </div>
