@@ -747,7 +747,7 @@
     Overview
   </h2>
 
-  <p><a href="https://github.com/ocornut/imgui/blob/v1.78/imgui.h#L835" target="_blank">enum ImGuiInputTextFlags_</a></p>
+  <p><a href="https://github.com/ocornut/imgui/blob/v1.79/imgui.h#L836" target="_blank">enum ImGuiInputTextFlags_</a></p>
 
 
 
@@ -969,6 +969,15 @@
       </dd>
       
     
+      <dt class="entry-const" id="CallbackEdit">
+        <strong>CallbackEdit</strong> = <code><span class="n">524288</span></code>
+      </dt>
+      
+      <dd class="entry-const-doc">
+        <p>Callback on any edit (note that InputText() already returns true on edit, the callback is useful mainly to manipulate the underlying buffer while focus is active)</p>
+      </dd>
+      
+    
       <dt class="entry-const" id="Multiline">
         <strong>Multiline</strong> = <code><span class="n">1048576</span></code>
       </dt>
@@ -1032,6 +1041,11 @@
     
       <li class="entry-summary">
         <a href="#callback_completion?-instance-method" class="signature"><strong>#callback_completion?</strong></a>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#callback_edit?-instance-method" class="signature"><strong>#callback_edit?</strong></a>
         
       </li>
     
@@ -1275,6 +1289,22 @@
       </div>
     </div>
   
+    <div class="entry-detail" id="callback_edit?-instance-method">
+      <div class="signature">
+        
+        def <strong>callback_edit?</strong>
+
+        <a class="method-permalink" href="#callback_edit?-instance-method">#</a>
+      </div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/oprypin/crystal-imgui/blob/master/src/types.cr#L143" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
     <div class="entry-detail" id="callback_history?-instance-method">
       <div class="signature">
         
@@ -1430,7 +1460,7 @@
       <br/>
       <div>
         
-          [<a href="https://github.com/oprypin/crystal-imgui/blob/master/src/types.cr#L143" target="_blank">View source</a>]
+          [<a href="https://github.com/oprypin/crystal-imgui/blob/master/src/types.cr#L145" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -1462,7 +1492,7 @@
       <br/>
       <div>
         
-          [<a href="https://github.com/oprypin/crystal-imgui/blob/master/src/types.cr#L145" target="_blank">View source</a>]
+          [<a href="https://github.com/oprypin/crystal-imgui/blob/master/src/types.cr#L147" target="_blank">View source</a>]
         
       </div>
     </div>

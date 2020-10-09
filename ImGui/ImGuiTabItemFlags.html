@@ -747,7 +747,7 @@
     Overview
   </h2>
 
-  <p><a href="https://github.com/ocornut/imgui/blob/v1.78/imgui.h#L947" target="_blank">enum ImGuiTabItemFlags_</a></p>
+  <p><a href="https://github.com/ocornut/imgui/blob/v1.79/imgui.h#L951" target="_blank">enum ImGuiTabItemFlags_</a></p>
 
 
 
@@ -772,7 +772,7 @@
   </h2>
   
     
-      <a href="https://github.com/oprypin/crystal-imgui/blob/master/src/types.cr#L275" target="_blank">
+      <a href="https://github.com/oprypin/crystal-imgui/blob/master/src/types.cr#L277" target="_blank">
         types.cr
       </a>
     
@@ -843,6 +843,33 @@
       </dd>
       
     
+      <dt class="entry-const" id="NoReorder">
+        <strong>NoReorder</strong> = <code><span class="n">32</span></code>
+      </dt>
+      
+      <dd class="entry-const-doc">
+        <p>Disable reordering this tab or having another tab cross over this tab</p>
+      </dd>
+      
+    
+      <dt class="entry-const" id="Leading">
+        <strong>Leading</strong> = <code><span class="n">64</span></code>
+      </dt>
+      
+      <dd class="entry-const-doc">
+        <p>Enforce the tab position to the left of the tab bar (after the tab list popup button)</p>
+      </dd>
+      
+    
+      <dt class="entry-const" id="Trailing">
+        <strong>Trailing</strong> = <code><span class="n">128</span></code>
+      </dt>
+      
+      <dd class="entry-const-doc">
+        <p>Enforce the tab position to the right of the tab bar (before the scrolling buttons)</p>
+      </dd>
+      
+    
   </dl>
 
 
@@ -862,12 +889,22 @@
   <ul class="list-summary">
     
       <li class="entry-summary">
+        <a href="#leading?-instance-method" class="signature"><strong>#leading?</strong></a>
+        
+      </li>
+    
+      <li class="entry-summary">
         <a href="#no_close_with_middle_mouse_button?-instance-method" class="signature"><strong>#no_close_with_middle_mouse_button?</strong></a>
         
       </li>
     
       <li class="entry-summary">
         <a href="#no_push_id?-instance-method" class="signature"><strong>#no_push_id?</strong></a>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#no_reorder?-instance-method" class="signature"><strong>#no_reorder?</strong></a>
         
       </li>
     
@@ -883,6 +920,11 @@
     
       <li class="entry-summary">
         <a href="#set_selected?-instance-method" class="signature"><strong>#set_selected?</strong></a>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#trailing?-instance-method" class="signature"><strong>#trailing?</strong></a>
         
       </li>
     
@@ -955,6 +997,22 @@
     Instance Method Detail
   </h2>
   
+    <div class="entry-detail" id="leading?-instance-method">
+      <div class="signature">
+        
+        def <strong>leading?</strong>
+
+        <a class="method-permalink" href="#leading?-instance-method">#</a>
+      </div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/oprypin/crystal-imgui/blob/master/src/types.cr#L292" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
     <div class="entry-detail" id="no_close_with_middle_mouse_button?-instance-method">
       <div class="signature">
         
@@ -966,7 +1024,7 @@
       <br/>
       <div>
         
-          [<a href="https://github.com/oprypin/crystal-imgui/blob/master/src/types.cr#L282" target="_blank">View source</a>]
+          [<a href="https://github.com/oprypin/crystal-imgui/blob/master/src/types.cr#L284" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -982,7 +1040,23 @@
       <br/>
       <div>
         
-          [<a href="https://github.com/oprypin/crystal-imgui/blob/master/src/types.cr#L284" target="_blank">View source</a>]
+          [<a href="https://github.com/oprypin/crystal-imgui/blob/master/src/types.cr#L286" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="no_reorder?-instance-method">
+      <div class="signature">
+        
+        def <strong>no_reorder?</strong>
+
+        <a class="method-permalink" href="#no_reorder?-instance-method">#</a>
+      </div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/oprypin/crystal-imgui/blob/master/src/types.cr#L290" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -998,7 +1072,7 @@
       <br/>
       <div>
         
-          [<a href="https://github.com/oprypin/crystal-imgui/blob/master/src/types.cr#L286" target="_blank">View source</a>]
+          [<a href="https://github.com/oprypin/crystal-imgui/blob/master/src/types.cr#L288" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -1014,7 +1088,7 @@
       <br/>
       <div>
         
-          [<a href="https://github.com/oprypin/crystal-imgui/blob/master/src/types.cr#L276" target="_blank">View source</a>]
+          [<a href="https://github.com/oprypin/crystal-imgui/blob/master/src/types.cr#L278" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -1030,7 +1104,23 @@
       <br/>
       <div>
         
-          [<a href="https://github.com/oprypin/crystal-imgui/blob/master/src/types.cr#L280" target="_blank">View source</a>]
+          [<a href="https://github.com/oprypin/crystal-imgui/blob/master/src/types.cr#L282" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="trailing?-instance-method">
+      <div class="signature">
+        
+        def <strong>trailing?</strong>
+
+        <a class="method-permalink" href="#trailing?-instance-method">#</a>
+      </div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/oprypin/crystal-imgui/blob/master/src/types.cr#L294" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -1046,7 +1136,7 @@
       <br/>
       <div>
         
-          [<a href="https://github.com/oprypin/crystal-imgui/blob/master/src/types.cr#L278" target="_blank">View source</a>]
+          [<a href="https://github.com/oprypin/crystal-imgui/blob/master/src/types.cr#L280" target="_blank">View source</a>]
         
       </div>
     </div>
