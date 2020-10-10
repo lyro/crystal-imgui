@@ -788,6 +788,13 @@
   </h2>
   
     
+      <a href="https://github.com/oprypin/crystal-imgui/blob/master/src/imgui.cr#L320" target="_blank">
+        imgui.cr
+      </a>
+    
+    <br/>
+  
+    
       <a href="https://github.com/oprypin/crystal-imgui/blob/master/src/obj.cr#L4090" target="_blank">
         obj.cr
       </a>
@@ -836,6 +843,11 @@
         <a href="#add_bezier_curve(p1:ImVec2,p2:ImVec2,p3:ImVec2,p4:ImVec2,col:UInt32,thickness:Float32,num_segments:Int32=0):Void-instance-method" class="signature"><strong>#add_bezier_curve</strong>(p1 : ImVec2, p2 : ImVec2, p3 : ImVec2, p4 : ImVec2, col : UInt32, thickness : Float32, num_segments : Int32 = <span class="n">0</span>) : Void</a>
         
           <div class="summary"><p><a href="https://github.com/ocornut/imgui/blob/v1.79/imgui.h#L2149" target="_blank">ImDrawList::AddBezierCurve()</a></p></div>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#add_callback(&block:ImDrawList,ImDrawCmd-%3E):Void-instance-method" class="signature"><strong>#add_callback</strong>(&block : ImDrawList, ImDrawCmd -> ) : Void</a>
         
       </li>
     
@@ -959,16 +971,16 @@
       </li>
     
       <li class="entry-summary">
-        <a href="#add_text(pos:ImVec2,col:UInt32,text:Bytes%7CString):Void-instance-method" class="signature"><strong>#add_text</strong>(pos : ImVec2, col : UInt32, text : Bytes | String) : Void</a>
+        <a href="#add_text(font:ImFont,font_size:Float32,pos:ImVec2,col:UInt32,text:Bytes%7CString,wrap_width:Float32=0.0,cpu_fine_clip_rect:Pointer(ImVec4)=Pointer(ImVec4).null):Void-instance-method" class="signature"><strong>#add_text</strong>(font : ImFont, font_size : Float32, pos : ImVec2, col : UInt32, text : Bytes | String, wrap_width : Float32 = <span class="n">0.0</span>, cpu_fine_clip_rect : Pointer(ImVec4) = <span class="t">Pointer</span>(<span class="t">ImVec4</span>).null) : Void</a>
         
-          <div class="summary"><p><a href="https://github.com/ocornut/imgui/blob/v1.79/imgui.h#L2145" target="_blank">ImDrawList::AddText()</a></p></div>
+          <div class="summary"><p><a href="https://github.com/ocornut/imgui/blob/v1.79/imgui.h#L2146" target="_blank">ImDrawList::AddText()</a></p></div>
         
       </li>
     
       <li class="entry-summary">
-        <a href="#add_text(font:ImFont,font_size:Float32,pos:ImVec2,col:UInt32,text:Bytes%7CString,wrap_width:Float32=0.0,cpu_fine_clip_rect:Pointer(ImVec4)=Pointer(ImVec4).null):Void-instance-method" class="signature"><strong>#add_text</strong>(font : ImFont, font_size : Float32, pos : ImVec2, col : UInt32, text : Bytes | String, wrap_width : Float32 = <span class="n">0.0</span>, cpu_fine_clip_rect : Pointer(ImVec4) = <span class="t">Pointer</span>(<span class="t">ImVec4</span>).null) : Void</a>
+        <a href="#add_text(pos:ImVec2,col:UInt32,text:Bytes%7CString):Void-instance-method" class="signature"><strong>#add_text</strong>(pos : ImVec2, col : UInt32, text : Bytes | String) : Void</a>
         
-          <div class="summary"><p><a href="https://github.com/ocornut/imgui/blob/v1.79/imgui.h#L2146" target="_blank">ImDrawList::AddText()</a></p></div>
+          <div class="summary"><p><a href="https://github.com/ocornut/imgui/blob/v1.79/imgui.h#L2145" target="_blank">ImDrawList::AddText()</a></p></div>
         
       </li>
     
@@ -1351,6 +1363,22 @@
       </div>
     </div>
   
+    <div class="entry-detail" id="add_callback(&block:ImDrawList,ImDrawCmd->):Void-instance-method">
+      <div class="signature">
+        
+        def <strong>add_callback</strong>(&block : <a href="../ImGui/ImDrawList.html">ImDrawList</a>, <a href="../ImGui/ImDrawCmd.html">ImDrawCmd</a> -> ) : Void
+
+        <a class="method-permalink" href="#add_callback(&block:ImDrawList,ImDrawCmd-%3E):Void-instance-method">#</a>
+      </div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/oprypin/crystal-imgui/blob/master/src/imgui.cr#L321" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
     <div class="entry-detail" id="add_callback(callback:ImDrawCallback,callback_data:Pointer(Void)):Void-instance-method">
       <div class="signature">
         
@@ -1718,27 +1746,6 @@
       </div>
     </div>
   
-    <div class="entry-detail" id="add_text(pos:ImVec2,col:UInt32,text:Bytes|String):Void-instance-method">
-      <div class="signature">
-        
-        def <strong>add_text</strong>(pos : <a href="../ImGui/ImVec2.html">ImVec2</a>, col : UInt32, text : Bytes | String) : Void
-
-        <a class="method-permalink" href="#add_text(pos:ImVec2,col:UInt32,text:Bytes%7CString):Void-instance-method">#</a>
-      </div>
-      
-        <div class="doc">
-          
-          <p><a href="https://github.com/ocornut/imgui/blob/v1.79/imgui.h#L2145" target="_blank">ImDrawList::AddText()</a></p>
-        </div>
-      
-      <br/>
-      <div>
-        
-          [<a href="https://github.com/oprypin/crystal-imgui/blob/master/src/obj.cr#L4242" target="_blank">View source</a>]
-        
-      </div>
-    </div>
-  
     <div class="entry-detail" id="add_text(font:ImFont,font_size:Float32,pos:ImVec2,col:UInt32,text:Bytes|String,wrap_width:Float32=0.0,cpu_fine_clip_rect:Pointer(ImVec4)=Pointer(ImVec4).null):Void-instance-method">
       <div class="signature">
         
@@ -1756,6 +1763,27 @@
       <div>
         
           [<a href="https://github.com/oprypin/crystal-imgui/blob/master/src/obj.cr#L4247" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="add_text(pos:ImVec2,col:UInt32,text:Bytes|String):Void-instance-method">
+      <div class="signature">
+        
+        def <strong>add_text</strong>(pos : <a href="../ImGui/ImVec2.html">ImVec2</a>, col : UInt32, text : Bytes | String) : Void
+
+        <a class="method-permalink" href="#add_text(pos:ImVec2,col:UInt32,text:Bytes%7CString):Void-instance-method">#</a>
+      </div>
+      
+        <div class="doc">
+          
+          <p><a href="https://github.com/ocornut/imgui/blob/v1.79/imgui.h#L2145" target="_blank">ImDrawList::AddText()</a></p>
+        </div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/oprypin/crystal-imgui/blob/master/src/obj.cr#L4242" target="_blank">View source</a>]
         
       </div>
     </div>
